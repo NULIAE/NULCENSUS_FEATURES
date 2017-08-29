@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the CensusFeature feature.
+ */
+
+include_once 'censusfeature.features.inc';
