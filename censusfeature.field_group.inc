@@ -158,6 +158,107 @@ function censusfeature_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_ce_voter_race|node|census|form';
+  $field_group->group_name = 'group_ce_voter_race';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'census';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_ce';
+  $field_group->data = array(
+    'label' => 'Race',
+    'weight' => '287',
+    'children' => array(
+      0 => 'field_male',
+      1 => 'field_female_ce_voter',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'formatter' => 'open',
+      'instance_settings' => array(
+        'description' => '',
+        'show_label' => 1,
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+        'classes' => 'group-ce-voter-race field-group-div',
+        'required_fields' => 1,
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups['group_ce_voter_race|node|census|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_ce_voter|node|census|form';
+  $field_group->group_name = 'group_ce_voter';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'census';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_ce';
+  $field_group->data = array(
+    'label' => 'Voter Registration',
+    'weight' => '286',
+    'children' => array(
+      0 => 'field_voter_registration',
+      1 => 'field_voter_unduplicated',
+      2 => 'field_voter_duplicates',
+      3 => 'field_voter__societal_impact',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'formatter' => 'open',
+      'instance_settings' => array(
+        'description' => '',
+        'show_label' => 1,
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+        'classes' => 'group-ce-voter field-group-div',
+        'required_fields' => 1,
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups['group_ce_voter|node|census|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_ce|node|census|form';
+  $field_group->group_name = 'group_ce';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'census';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Civic Engagement',
+    'weight' => '138',
+    'children' => array(
+      0 => 'group_ce_voter',
+      1 => 'group_ce_voter_race',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'formatter' => 'open',
+      'instance_settings' => array(
+        'description' => '',
+        'show_label' => 1,
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+        'classes' => 'group-ce field-group-div',
+        'required_fields' => 1,
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups['group_ce|node|census|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_hispanic|node|census|form';
   $field_group->group_name = 'group_hispanic';
   $field_group->entity_type = 'node';
@@ -334,11 +435,13 @@ function censusfeature_field_group_info() {
   // Included for use with string extractors like potx.
   t('African American');
   t('Asian American');
+  t('Civic Engagement');
   t('Hispanic/Latino');
   t('Native American');
   t('Other');
   t('Race');
   t('Total');
+  t('Voter Registration');
   t('What is the racial/gender composition of your board?');
   t('White');
 

@@ -2301,6 +2301,26 @@ function censusfeature_field_default_field_bases() {
     'type' => 'markup',
   );
 
+  // Exported field_base: 'field_female_ce_voter'.
+  $field_bases['field_female_ce_voter'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_female_ce_voter',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'markup',
+    'settings' => array(
+      'markup' => array(
+        'format' => 'full_html',
+        'value' => '<div class="nulTableCell"><h3>Female</h3></div>',
+      ),
+    ),
+    'translatable' => 0,
+    'type' => 'markup',
+  );
+
   // Exported field_base: 'field_first_name'.
   $field_bases['field_first_name'] = array(
     'active' => 1,
@@ -3078,6 +3098,26 @@ function censusfeature_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'list_boolean',
+  );
+
+  // Exported field_base: 'field_male'.
+  $field_bases['field_male'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_male',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'markup',
+    'settings' => array(
+      'markup' => array(
+        'format' => 'full_html',
+        'value' => '<div class="nulTableCell"><h3>Male</h3></div>',
+      ),
+    ),
+    'translatable' => 0,
+    'type' => 'markup',
   );
 
   // Exported field_base: 'field_market_value_of_property'.
@@ -4487,26 +4527,6 @@ function censusfeature_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'list_boolean',
-  );
-
-  // Exported field_base: 'field_spacer3'.
-  $field_bases['field_spacer3'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_spacer3',
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'markup',
-    'settings' => array(
-      'markup' => array(
-        'format' => 'filtered_html',
-        'value' => '<div class="nulTableCell"></div>',
-      ),
-    ),
-    'translatable' => 0,
-    'type' => 'markup',
   );
 
   // Exported field_base: 'field_state_of_black_report'.

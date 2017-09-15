@@ -216,7 +216,7 @@ function censusfeature_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 240,
+      'weight' => 234,
     ),
   );
 
@@ -262,7 +262,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 236,
+      'weight' => 230,
     ),
   );
 
@@ -308,7 +308,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 235,
+      'weight' => 229,
     ),
   );
 
@@ -354,7 +354,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 232,
+      'weight' => 226,
     ),
   );
 
@@ -400,7 +400,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 231,
+      'weight' => 225,
     ),
   );
 
@@ -440,7 +440,7 @@ function censusfeature_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 239,
+      'weight' => 233,
     ),
   );
 
@@ -486,7 +486,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 225,
+      'weight' => 219,
     ),
   );
 
@@ -532,7 +532,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 223,
+      'weight' => 217,
     ),
   );
 
@@ -578,7 +578,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 230,
+      'weight' => 224,
     ),
   );
 
@@ -624,7 +624,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 229,
+      'weight' => 223,
     ),
   );
 
@@ -670,7 +670,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 234,
+      'weight' => 228,
     ),
   );
 
@@ -716,7 +716,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 233,
+      'weight' => 227,
     ),
   );
 
@@ -762,7 +762,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 238,
+      'weight' => 232,
     ),
   );
 
@@ -808,7 +808,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 237,
+      'weight' => 231,
     ),
   );
 
@@ -854,7 +854,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 226,
+      'weight' => 220,
     ),
   );
 
@@ -900,7 +900,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 224,
+      'weight' => 218,
     ),
   );
 
@@ -946,7 +946,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 228,
+      'weight' => 222,
     ),
   );
 
@@ -992,7 +992,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 227,
+      'weight' => 221,
     ),
   );
 
@@ -2770,7 +2770,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 130,
+      'weight' => 125,
     ),
   );
 
@@ -2816,7 +2816,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 142,
+      'weight' => 137,
     ),
   );
 
@@ -2862,7 +2862,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 135,
+      'weight' => 130,
     ),
   );
 
@@ -2908,7 +2908,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 131,
+      'weight' => 126,
     ),
   );
 
@@ -2945,7 +2945,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 141,
+      'weight' => 136,
     ),
   );
 
@@ -2991,7 +2991,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 132,
+      'weight' => 127,
     ),
   );
 
@@ -3037,7 +3037,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 137,
+      'weight' => 132,
     ),
   );
 
@@ -3083,7 +3083,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 139,
+      'weight' => 134,
     ),
   );
 
@@ -3123,7 +3123,7 @@ function censusfeature_field_default_field_instances() {
         'rows' => 2,
       ),
       'type' => 'text_textarea',
-      'weight' => 140,
+      'weight' => 135,
     ),
   );
 
@@ -3169,7 +3169,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 138,
+      'weight' => 133,
     ),
   );
 
@@ -3215,7 +3215,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 133,
+      'weight' => 128,
     ),
   );
 
@@ -3261,7 +3261,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 136,
+      'weight' => 131,
     ),
   );
 
@@ -3307,7 +3307,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 129,
+      'weight' => 124,
     ),
   );
 
@@ -3353,7 +3353,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 134,
+      'weight' => 129,
     ),
   );
 
@@ -3705,7 +3705,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 172,
+      'weight' => 166,
     ),
   );
 
@@ -3751,7 +3751,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 171,
+      'weight' => 165,
     ),
   );
 
@@ -3797,7 +3797,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 168,
+      'weight' => 162,
     ),
   );
 
@@ -3843,7 +3843,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 167,
+      'weight' => 161,
     ),
   );
 
@@ -3888,7 +3888,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 161,
+      'weight' => 155,
     ),
   );
 
@@ -3934,7 +3934,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 166,
+      'weight' => 160,
     ),
   );
 
@@ -3980,7 +3980,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 165,
+      'weight' => 159,
     ),
   );
 
@@ -4026,7 +4026,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 170,
+      'weight' => 164,
     ),
   );
 
@@ -4072,7 +4072,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 169,
+      'weight' => 163,
     ),
   );
 
@@ -4118,7 +4118,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 174,
+      'weight' => 168,
     ),
   );
 
@@ -4164,7 +4164,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 173,
+      'weight' => 167,
     ),
   );
 
@@ -4210,7 +4210,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 162,
+      'weight' => 156,
     ),
   );
 
@@ -4256,7 +4256,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 160,
+      'weight' => 154,
     ),
   );
 
@@ -4302,7 +4302,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 164,
+      'weight' => 158,
     ),
   );
 
@@ -4348,7 +4348,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 163,
+      'weight' => 157,
     ),
   );
 
@@ -4385,7 +4385,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 175,
+      'weight' => 169,
     ),
   );
 
@@ -4422,7 +4422,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 159,
+      'weight' => 153,
     ),
   );
 
@@ -4459,7 +4459,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 191,
+      'weight' => 185,
     ),
   );
 
@@ -4505,7 +4505,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 204,
+      'weight' => 198,
     ),
   );
 
@@ -4551,7 +4551,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 203,
+      'weight' => 197,
     ),
   );
 
@@ -4597,7 +4597,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 200,
+      'weight' => 194,
     ),
   );
 
@@ -4643,7 +4643,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 199,
+      'weight' => 193,
     ),
   );
 
@@ -4689,7 +4689,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 193,
+      'weight' => 187,
     ),
   );
 
@@ -4735,7 +4735,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 198,
+      'weight' => 192,
     ),
   );
 
@@ -4781,7 +4781,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 197,
+      'weight' => 191,
     ),
   );
 
@@ -4827,7 +4827,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 202,
+      'weight' => 196,
     ),
   );
 
@@ -4873,7 +4873,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 201,
+      'weight' => 195,
     ),
   );
 
@@ -4919,7 +4919,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 206,
+      'weight' => 200,
     ),
   );
 
@@ -4965,7 +4965,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 205,
+      'weight' => 199,
     ),
   );
 
@@ -5011,7 +5011,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 194,
+      'weight' => 188,
     ),
   );
 
@@ -5057,7 +5057,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 192,
+      'weight' => 186,
     ),
   );
 
@@ -5103,7 +5103,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 196,
+      'weight' => 190,
     ),
   );
 
@@ -5149,7 +5149,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 195,
+      'weight' => 189,
     ),
   );
 
@@ -5287,7 +5287,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 281,
+      'weight' => 275,
     ),
   );
 
@@ -5333,7 +5333,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 280,
+      'weight' => 274,
     ),
   );
 
@@ -5379,7 +5379,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 277,
+      'weight' => 271,
     ),
   );
 
@@ -5425,7 +5425,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 276,
+      'weight' => 270,
     ),
   );
 
@@ -5471,7 +5471,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 275,
+      'weight' => 269,
     ),
   );
 
@@ -5517,7 +5517,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 274,
+      'weight' => 268,
     ),
   );
 
@@ -5563,7 +5563,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 279,
+      'weight' => 273,
     ),
   );
 
@@ -5609,7 +5609,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 278,
+      'weight' => 272,
     ),
   );
 
@@ -5655,7 +5655,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 283,
+      'weight' => 277,
     ),
   );
 
@@ -5701,7 +5701,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 282,
+      'weight' => 276,
     ),
   );
 
@@ -5747,7 +5747,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 285,
+      'weight' => 279,
     ),
   );
 
@@ -5793,7 +5793,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 284,
+      'weight' => 278,
     ),
   );
 
@@ -5839,7 +5839,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 273,
+      'weight' => 267,
     ),
   );
 
@@ -5885,7 +5885,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 272,
+      'weight' => 266,
     ),
   );
 
@@ -6269,6 +6269,42 @@ function censusfeature_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-census-field_female_ce_voter'.
+  $field_instances['node-census-field_female_ce_voter'] = array(
+    'bundle' => 'census',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_default',
+        'weight' => 324,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_female_ce_voter',
+    'label' => 'female_ce_voter',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 283,
+    ),
+  );
+
   // Exported field_instance: 'node-census-field_first_name'.
   $field_instances['node-census-field_first_name'] = array(
     'bundle' => 'census',
@@ -6351,7 +6387,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 188,
+      'weight' => 182,
     ),
   );
 
@@ -6397,7 +6433,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 187,
+      'weight' => 181,
     ),
   );
 
@@ -6443,7 +6479,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 184,
+      'weight' => 178,
     ),
   );
 
@@ -6489,7 +6525,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 183,
+      'weight' => 177,
     ),
   );
 
@@ -6535,7 +6571,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 177,
+      'weight' => 171,
     ),
   );
 
@@ -6581,7 +6617,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 182,
+      'weight' => 176,
     ),
   );
 
@@ -6627,7 +6663,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 181,
+      'weight' => 175,
     ),
   );
 
@@ -6673,7 +6709,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 186,
+      'weight' => 180,
     ),
   );
 
@@ -6719,7 +6755,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 185,
+      'weight' => 179,
     ),
   );
 
@@ -6765,7 +6801,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 190,
+      'weight' => 184,
     ),
   );
 
@@ -6811,7 +6847,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 189,
+      'weight' => 183,
     ),
   );
 
@@ -6857,7 +6893,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 178,
+      'weight' => 172,
     ),
   );
 
@@ -6903,7 +6939,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 176,
+      'weight' => 170,
     ),
   );
 
@@ -6949,7 +6985,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 180,
+      'weight' => 174,
     ),
   );
 
@@ -6995,7 +7031,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 179,
+      'weight' => 173,
     ),
   );
 
@@ -7123,7 +7159,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'markup',
       'settings' => array(),
       'type' => 'markup',
-      'weight' => 327,
+      'weight' => 280,
     ),
   );
 
@@ -8341,6 +8377,42 @@ function censusfeature_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-census-field_male'.
+  $field_instances['node-census-field_male'] = array(
+    'bundle' => 'census',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_default',
+        'weight' => 323,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_male',
+    'label' => 'Male',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 282,
+    ),
+  );
+
   // Exported field_instance: 'node-census-field_market_value_of_property'.
   $field_instances['node-census-field_market_value_of_property'] = array(
     'bundle' => 'census',
@@ -9175,7 +9247,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 220,
+      'weight' => 214,
     ),
   );
 
@@ -9221,7 +9293,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 219,
+      'weight' => 213,
     ),
   );
 
@@ -9267,7 +9339,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 216,
+      'weight' => 210,
     ),
   );
 
@@ -9313,7 +9385,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 215,
+      'weight' => 209,
     ),
   );
 
@@ -9350,7 +9422,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 207,
+      'weight' => 201,
     ),
   );
 
@@ -9396,7 +9468,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 209,
+      'weight' => 203,
     ),
   );
 
@@ -9442,7 +9514,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 214,
+      'weight' => 208,
     ),
   );
 
@@ -9488,7 +9560,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 213,
+      'weight' => 207,
     ),
   );
 
@@ -9534,7 +9606,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 218,
+      'weight' => 212,
     ),
   );
 
@@ -9580,7 +9652,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 217,
+      'weight' => 211,
     ),
   );
 
@@ -9626,7 +9698,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 222,
+      'weight' => 216,
     ),
   );
 
@@ -9672,7 +9744,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 221,
+      'weight' => 215,
     ),
   );
 
@@ -9718,7 +9790,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 210,
+      'weight' => 204,
     ),
   );
 
@@ -9764,7 +9836,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 208,
+      'weight' => 202,
     ),
   );
 
@@ -9810,7 +9882,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 212,
+      'weight' => 206,
     ),
   );
 
@@ -9856,7 +9928,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 211,
+      'weight' => 205,
     ),
   );
 
@@ -10145,7 +10217,7 @@ function censusfeature_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 259,
+      'weight' => 253,
     ),
   );
 
@@ -10188,7 +10260,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 260,
+      'weight' => 254,
     ),
   );
 
@@ -10231,7 +10303,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 262,
+      'weight' => 256,
     ),
   );
 
@@ -10274,7 +10346,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 261,
+      'weight' => 255,
     ),
   );
 
@@ -10320,7 +10392,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 264,
+      'weight' => 258,
     ),
   );
 
@@ -10366,7 +10438,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 263,
+      'weight' => 257,
     ),
   );
 
@@ -10406,7 +10478,7 @@ function censusfeature_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 241,
+      'weight' => 235,
     ),
   );
 
@@ -10449,7 +10521,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 242,
+      'weight' => 236,
     ),
   );
 
@@ -10492,7 +10564,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 244,
+      'weight' => 238,
     ),
   );
 
@@ -10535,7 +10607,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 243,
+      'weight' => 237,
     ),
   );
 
@@ -10581,7 +10653,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 246,
+      'weight' => 240,
     ),
   );
 
@@ -10627,7 +10699,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 245,
+      'weight' => 239,
     ),
   );
 
@@ -10667,7 +10739,7 @@ function censusfeature_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 247,
+      'weight' => 241,
     ),
   );
 
@@ -10706,7 +10778,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 248,
+      'weight' => 242,
     ),
   );
 
@@ -10749,7 +10821,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 250,
+      'weight' => 244,
     ),
   );
 
@@ -10792,7 +10864,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 249,
+      'weight' => 243,
     ),
   );
 
@@ -10838,7 +10910,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 252,
+      'weight' => 246,
     ),
   );
 
@@ -10884,7 +10956,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 251,
+      'weight' => 245,
     ),
   );
 
@@ -10924,7 +10996,7 @@ function censusfeature_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 253,
+      'weight' => 247,
     ),
   );
 
@@ -10967,7 +11039,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 254,
+      'weight' => 248,
     ),
   );
 
@@ -11010,7 +11082,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 256,
+      'weight' => 250,
     ),
   );
 
@@ -11053,7 +11125,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 255,
+      'weight' => 249,
     ),
   );
 
@@ -11099,7 +11171,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 258,
+      'weight' => 252,
     ),
   );
 
@@ -11145,7 +11217,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 257,
+      'weight' => 251,
     ),
   );
 
@@ -11185,7 +11257,7 @@ function censusfeature_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 265,
+      'weight' => 259,
     ),
   );
 
@@ -11224,7 +11296,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 266,
+      'weight' => 260,
     ),
   );
 
@@ -11267,7 +11339,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 268,
+      'weight' => 262,
     ),
   );
 
@@ -11310,7 +11382,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 267,
+      'weight' => 261,
     ),
   );
 
@@ -11356,7 +11428,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 270,
+      'weight' => 264,
     ),
   );
 
@@ -11402,7 +11474,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 269,
+      'weight' => 263,
     ),
   );
 
@@ -11442,7 +11514,7 @@ function censusfeature_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 271,
+      'weight' => 265,
     ),
   );
 
@@ -11480,42 +11552,6 @@ function censusfeature_field_default_field_instances() {
       'settings' => array(),
       'type' => 'options_buttons',
       'weight' => 121,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_spacer3'.
-  $field_instances['node-census-field_spacer3'] = array(
-    'bundle' => 'census',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'markup',
-        'settings' => array(),
-        'type' => 'markup_default',
-        'weight' => 322,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_spacer3',
-    'label' => 'spacer3',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(),
-      'type' => 'markup',
-      'weight' => 328,
     ),
   );
 
@@ -12159,7 +12195,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 146,
+      'weight' => 290,
     ),
   );
 
@@ -12205,7 +12241,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 156,
+      'weight' => 150,
     ),
   );
 
@@ -12251,7 +12287,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 155,
+      'weight' => 149,
     ),
   );
 
@@ -12297,7 +12333,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 152,
+      'weight' => 146,
     ),
   );
 
@@ -12343,7 +12379,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 151,
+      'weight' => 145,
     ),
   );
 
@@ -12389,7 +12425,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 145,
+      'weight' => 289,
     ),
   );
 
@@ -12435,7 +12471,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 150,
+      'weight' => 144,
     ),
   );
 
@@ -12481,7 +12517,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 149,
+      'weight' => 143,
     ),
   );
 
@@ -12527,7 +12563,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 154,
+      'weight' => 148,
     ),
   );
 
@@ -12573,7 +12609,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 153,
+      'weight' => 147,
     ),
   );
 
@@ -12619,7 +12655,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 158,
+      'weight' => 152,
     ),
   );
 
@@ -12665,7 +12701,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 157,
+      'weight' => 151,
     ),
   );
 
@@ -12702,7 +12738,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 143,
+      'weight' => 287,
     ),
   );
 
@@ -12748,7 +12784,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 144,
+      'weight' => 288,
     ),
   );
 
@@ -12794,7 +12830,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 148,
+      'weight' => 142,
     ),
   );
 
@@ -12840,7 +12876,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 147,
+      'weight' => 141,
     ),
   );
 
@@ -13888,7 +13924,7 @@ function censusfeature_field_default_field_instances() {
   t('White male board members');
   t('Year only');
   t('Zip Code');
-  t('spacer3');
+  t('female_ce_voter');
   t('totalspacer');
   t('totalspacer2');
 
