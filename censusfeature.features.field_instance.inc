@@ -216,7 +216,7 @@ function censusfeature_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 234,
+      'weight' => 232,
     ),
   );
 
@@ -262,7 +262,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 230,
+      'weight' => 228,
     ),
   );
 
@@ -308,7 +308,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 229,
+      'weight' => 227,
     ),
   );
 
@@ -354,7 +354,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 226,
+      'weight' => 224,
     ),
   );
 
@@ -400,7 +400,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 225,
+      'weight' => 223,
     ),
   );
 
@@ -440,7 +440,7 @@ function censusfeature_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 233,
+      'weight' => 231,
     ),
   );
 
@@ -486,7 +486,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 219,
+      'weight' => 217,
     ),
   );
 
@@ -532,7 +532,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 217,
+      'weight' => 215,
     ),
   );
 
@@ -578,7 +578,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 224,
+      'weight' => 222,
     ),
   );
 
@@ -624,7 +624,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 223,
+      'weight' => 221,
     ),
   );
 
@@ -670,7 +670,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 228,
+      'weight' => 226,
     ),
   );
 
@@ -716,7 +716,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 227,
+      'weight' => 225,
     ),
   );
 
@@ -762,7 +762,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 232,
+      'weight' => 230,
     ),
   );
 
@@ -808,7 +808,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 231,
+      'weight' => 229,
     ),
   );
 
@@ -854,7 +854,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 220,
+      'weight' => 218,
     ),
   );
 
@@ -900,7 +900,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 218,
+      'weight' => 216,
     ),
   );
 
@@ -946,7 +946,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 222,
+      'weight' => 220,
     ),
   );
 
@@ -992,7 +992,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 221,
+      'weight' => 219,
     ),
   );
 
@@ -3705,7 +3705,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 166,
+      'weight' => 164,
     ),
   );
 
@@ -3751,7 +3751,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 165,
+      'weight' => 163,
     ),
   );
 
@@ -3797,7 +3797,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 162,
+      'weight' => 160,
     ),
   );
 
@@ -3843,7 +3843,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 161,
+      'weight' => 159,
     ),
   );
 
@@ -3888,7 +3888,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 155,
+      'weight' => 153,
     ),
   );
 
@@ -3934,7 +3934,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 160,
+      'weight' => 158,
     ),
   );
 
@@ -3980,7 +3980,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 159,
+      'weight' => 157,
     ),
   );
 
@@ -4026,7 +4026,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 164,
+      'weight' => 162,
     ),
   );
 
@@ -4072,7 +4072,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 163,
+      'weight' => 161,
     ),
   );
 
@@ -4118,7 +4118,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 168,
+      'weight' => 166,
     ),
   );
 
@@ -4164,7 +4164,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 167,
+      'weight' => 165,
     ),
   );
 
@@ -4210,7 +4210,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 156,
+      'weight' => 154,
     ),
   );
 
@@ -4256,7 +4256,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 154,
+      'weight' => 152,
     ),
   );
 
@@ -4302,7 +4302,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 158,
+      'weight' => 156,
     ),
   );
 
@@ -4348,7 +4348,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 157,
+      'weight' => 155,
     ),
   );
 
@@ -4385,7 +4385,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 169,
+      'weight' => 167,
     ),
   );
 
@@ -4422,7 +4422,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 153,
+      'weight' => 151,
     ),
   );
 
@@ -4459,7 +4459,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 185,
+      'weight' => 183,
     ),
   );
 
@@ -4505,7 +4505,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 198,
+      'weight' => 196,
     ),
   );
 
@@ -4551,7 +4551,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 197,
+      'weight' => 195,
     ),
   );
 
@@ -4597,7 +4597,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 194,
+      'weight' => 192,
     ),
   );
 
@@ -4643,7 +4643,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 193,
+      'weight' => 191,
     ),
   );
 
@@ -4689,7 +4689,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 187,
+      'weight' => 185,
     ),
   );
 
@@ -4735,7 +4735,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 192,
+      'weight' => 190,
     ),
   );
 
@@ -4781,7 +4781,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 191,
+      'weight' => 189,
     ),
   );
 
@@ -4827,7 +4827,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 196,
+      'weight' => 194,
     ),
   );
 
@@ -4873,7 +4873,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 195,
+      'weight' => 193,
     ),
   );
 
@@ -4919,7 +4919,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 200,
+      'weight' => 198,
     ),
   );
 
@@ -4965,7 +4965,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 199,
+      'weight' => 197,
     ),
   );
 
@@ -5011,7 +5011,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 188,
+      'weight' => 186,
     ),
   );
 
@@ -5057,7 +5057,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 186,
+      'weight' => 184,
     ),
   );
 
@@ -5103,7 +5103,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 190,
+      'weight' => 188,
     ),
   );
 
@@ -5149,7 +5149,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 189,
+      'weight' => 187,
     ),
   );
 
@@ -5287,7 +5287,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 275,
+      'weight' => 274,
     ),
   );
 
@@ -5333,7 +5333,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 274,
+      'weight' => 273,
     ),
   );
 
@@ -5379,7 +5379,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 271,
+      'weight' => 270,
     ),
   );
 
@@ -5425,7 +5425,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 270,
+      'weight' => 269,
     ),
   );
 
@@ -5471,7 +5471,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 269,
+      'weight' => 268,
     ),
   );
 
@@ -5517,7 +5517,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 268,
+      'weight' => 267,
     ),
   );
 
@@ -5563,7 +5563,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 273,
+      'weight' => 272,
     ),
   );
 
@@ -5609,7 +5609,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 272,
+      'weight' => 271,
     ),
   );
 
@@ -5655,7 +5655,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 277,
+      'weight' => 276,
     ),
   );
 
@@ -5701,7 +5701,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 276,
+      'weight' => 275,
     ),
   );
 
@@ -5747,7 +5747,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 279,
+      'weight' => 278,
     ),
   );
 
@@ -5793,7 +5793,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 278,
+      'weight' => 277,
     ),
   );
 
@@ -5839,7 +5839,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 267,
+      'weight' => 266,
     ),
   );
 
@@ -5885,7 +5885,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 266,
+      'weight' => 265,
     ),
   );
 
@@ -6387,7 +6387,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 182,
+      'weight' => 180,
     ),
   );
 
@@ -6433,7 +6433,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 181,
+      'weight' => 179,
     ),
   );
 
@@ -6479,7 +6479,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 178,
+      'weight' => 176,
     ),
   );
 
@@ -6525,7 +6525,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 177,
+      'weight' => 175,
     ),
   );
 
@@ -6571,7 +6571,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 171,
+      'weight' => 169,
     ),
   );
 
@@ -6617,7 +6617,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 176,
+      'weight' => 174,
     ),
   );
 
@@ -6663,7 +6663,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 175,
+      'weight' => 173,
     ),
   );
 
@@ -6709,7 +6709,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 180,
+      'weight' => 178,
     ),
   );
 
@@ -6755,7 +6755,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 179,
+      'weight' => 177,
     ),
   );
 
@@ -6801,7 +6801,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 184,
+      'weight' => 182,
     ),
   );
 
@@ -6847,7 +6847,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 183,
+      'weight' => 181,
     ),
   );
 
@@ -6893,7 +6893,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 172,
+      'weight' => 170,
     ),
   );
 
@@ -6939,7 +6939,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 170,
+      'weight' => 168,
     ),
   );
 
@@ -6985,7 +6985,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 174,
+      'weight' => 172,
     ),
   );
 
@@ -7031,7 +7031,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 173,
+      'weight' => 171,
     ),
   );
 
@@ -7149,7 +7149,7 @@ function censusfeature_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_gender',
-    'label' => 'Gender',
+    'label' => 'UnDuplicate',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -7159,7 +7159,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'markup',
       'settings' => array(),
       'type' => 'markup',
-      'weight' => 280,
+      'weight' => 279,
     ),
   );
 
@@ -8031,6 +8031,52 @@ function censusfeature_field_default_field_instances() {
       'settings' => array(),
       'type' => 'number',
       'weight' => 40,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_indirect_contact_served'.
+  $field_instances['node-census-field_indirect_contact_served'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 340,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_indirect_contact_served',
+    'label' => 'Indirect Contact Number Served',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 337,
     ),
   );
 
@@ -9247,7 +9293,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 214,
+      'weight' => 212,
     ),
   );
 
@@ -9293,7 +9339,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 213,
+      'weight' => 211,
     ),
   );
 
@@ -9339,7 +9385,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 210,
+      'weight' => 208,
     ),
   );
 
@@ -9385,7 +9431,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 209,
+      'weight' => 207,
     ),
   );
 
@@ -9422,7 +9468,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 201,
+      'weight' => 199,
     ),
   );
 
@@ -9468,7 +9514,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 203,
+      'weight' => 201,
     ),
   );
 
@@ -9514,7 +9560,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 208,
+      'weight' => 206,
     ),
   );
 
@@ -9560,7 +9606,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 207,
+      'weight' => 205,
     ),
   );
 
@@ -9606,7 +9652,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 212,
+      'weight' => 210,
     ),
   );
 
@@ -9652,7 +9698,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 211,
+      'weight' => 209,
     ),
   );
 
@@ -9698,7 +9744,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 216,
+      'weight' => 214,
     ),
   );
 
@@ -9744,7 +9790,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 215,
+      'weight' => 213,
     ),
   );
 
@@ -9790,7 +9836,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 204,
+      'weight' => 202,
     ),
   );
 
@@ -9836,7 +9882,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 202,
+      'weight' => 200,
     ),
   );
 
@@ -9882,7 +9928,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 206,
+      'weight' => 204,
     ),
   );
 
@@ -9928,7 +9974,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 205,
+      'weight' => 203,
     ),
   );
 
@@ -10181,6 +10227,650 @@ function censusfeature_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-census-field_public_african_am_female'.
+  $field_instances['node-census-field_public_african_am_female'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 337,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_public_african_am_female',
+    'label' => 'Public Contact African American Females',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 334,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_public_african_am_male'.
+  $field_instances['node-census-field_public_african_am_male'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 336,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_public_african_am_male',
+    'label' => 'Public Contact African American Males',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 333,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_public_asian_am_female'.
+  $field_instances['node-census-field_public_asian_am_female'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 333,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_public_asian_am_female',
+    'label' => 'Public Contact Asian American Females',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 330,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_public_asian_am_male'.
+  $field_instances['node-census-field_public_asian_am_male'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 332,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_public_asian_am_male',
+    'label' => 'Public Contact Asian American Males',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 329,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_public_hispanic_female'.
+  $field_instances['node-census-field_public_hispanic_female'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 331,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_public_hispanic_female',
+    'label' => 'Public Contact Hispanic/Latio Females',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 328,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_public_hispanic_male'.
+  $field_instances['node-census-field_public_hispanic_male'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 330,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_public_hispanic_male',
+    'label' => 'Public Contact Hispanic/Latio Males',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 327,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_public_native_am_female'.
+  $field_instances['node-census-field_public_native_am_female'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 335,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_public_native_am_female',
+    'label' => 'Public Contact Native American Females',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 332,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_public_native_am_male'.
+  $field_instances['node-census-field_public_native_am_male'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 334,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_public_native_am_male',
+    'label' => 'Public Contact Native American Males',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 331,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_public_other_female'.
+  $field_instances['node-census-field_public_other_female'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 339,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_public_other_female',
+    'label' => 'Public Contact Other Females',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 336,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_public_other_male'.
+  $field_instances['node-census-field_public_other_male'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 338,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_public_other_male',
+    'label' => 'Public Contact Other Males',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 335,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_public_total_female'.
+  $field_instances['node-census-field_public_total_female'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 342,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_public_total_female',
+    'label' => 'Total Public Contact Females',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 339,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_public_total_male'.
+  $field_instances['node-census-field_public_total_male'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 341,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_public_total_male',
+    'label' => 'Total Public Contact Males',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 338,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_public_white_female'.
+  $field_instances['node-census-field_public_white_female'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 329,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_public_white_female',
+    'label' => 'Public Contact White Females',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 326,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_public_white_male'.
+  $field_instances['node-census-field_public_white_male'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 328,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_public_white_male',
+    'label' => 'Public Contact White Males',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 325,
+    ),
+  );
+
   // Exported field_instance: 'node-census-field_relief_civic_desc'.
   $field_instances['node-census-field_relief_civic_desc'] = array(
     'bundle' => 'census',
@@ -10217,7 +10907,7 @@ function censusfeature_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 253,
+      'weight' => 252,
     ),
   );
 
@@ -10260,7 +10950,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 254,
+      'weight' => 253,
     ),
   );
 
@@ -10303,7 +10993,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 256,
+      'weight' => 255,
     ),
   );
 
@@ -10346,7 +11036,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 255,
+      'weight' => 254,
     ),
   );
 
@@ -10392,7 +11082,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 258,
+      'weight' => 257,
     ),
   );
 
@@ -10438,7 +11128,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 257,
+      'weight' => 256,
     ),
   );
 
@@ -10478,7 +11168,7 @@ function censusfeature_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 235,
+      'weight' => 233,
     ),
   );
 
@@ -10521,7 +11211,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 236,
+      'weight' => 234,
     ),
   );
 
@@ -10564,7 +11254,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 238,
+      'weight' => 236,
     ),
   );
 
@@ -10607,7 +11297,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 237,
+      'weight' => 235,
     ),
   );
 
@@ -10653,7 +11343,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 240,
+      'weight' => 238,
     ),
   );
 
@@ -10699,7 +11389,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 239,
+      'weight' => 237,
     ),
   );
 
@@ -10739,7 +11429,7 @@ function censusfeature_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 241,
+      'weight' => 240,
     ),
   );
 
@@ -10778,7 +11468,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 242,
+      'weight' => 241,
     ),
   );
 
@@ -10821,7 +11511,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 244,
+      'weight' => 243,
     ),
   );
 
@@ -10864,7 +11554,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 243,
+      'weight' => 242,
     ),
   );
 
@@ -10910,7 +11600,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 246,
+      'weight' => 245,
     ),
   );
 
@@ -10956,7 +11646,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 245,
+      'weight' => 244,
     ),
   );
 
@@ -10996,7 +11686,7 @@ function censusfeature_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 247,
+      'weight' => 246,
     ),
   );
 
@@ -11039,7 +11729,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 248,
+      'weight' => 247,
     ),
   );
 
@@ -11082,7 +11772,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 250,
+      'weight' => 249,
     ),
   );
 
@@ -11125,7 +11815,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 249,
+      'weight' => 248,
     ),
   );
 
@@ -11171,7 +11861,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 252,
+      'weight' => 251,
     ),
   );
 
@@ -11217,7 +11907,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 251,
+      'weight' => 250,
     ),
   );
 
@@ -11257,7 +11947,7 @@ function censusfeature_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 259,
+      'weight' => 258,
     ),
   );
 
@@ -11296,7 +11986,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 260,
+      'weight' => 259,
     ),
   );
 
@@ -11339,7 +12029,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 262,
+      'weight' => 261,
     ),
   );
 
@@ -11382,7 +12072,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 261,
+      'weight' => 260,
     ),
   );
 
@@ -11428,7 +12118,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 264,
+      'weight' => 263,
     ),
   );
 
@@ -11474,7 +12164,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 263,
+      'weight' => 262,
     ),
   );
 
@@ -11514,7 +12204,7 @@ function censusfeature_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 265,
+      'weight' => 264,
     ),
   );
 
@@ -11552,6 +12242,42 @@ function censusfeature_field_default_field_instances() {
       'settings' => array(),
       'type' => 'options_buttons',
       'weight' => 121,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_spacer4'.
+  $field_instances['node-census-field_spacer4'] = array(
+    'bundle' => 'census',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_default',
+        'weight' => 327,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_spacer4',
+    'label' => 'spacer4',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 284,
     ),
   );
 
@@ -11953,6 +12679,78 @@ function censusfeature_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-census-field_test_1'.
+  $field_instances['node-census-field_test_1'] = array(
+    'bundle' => 'census',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_default',
+        'weight' => 325,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_test_1',
+    'label' => 'Duplicate',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 280,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_test_2'.
+  $field_instances['node-census-field_test_2'] = array(
+    'bundle' => 'census',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_default',
+        'weight' => 326,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_test_2',
+    'label' => 'test 2',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 281,
+    ),
+  );
+
   // Exported field_instance: 'node-census-field_total'.
   $field_instances['node-census-field_total'] = array(
     'bundle' => 'census',
@@ -12241,7 +13039,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 150,
+      'weight' => 148,
     ),
   );
 
@@ -12287,7 +13085,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 149,
+      'weight' => 147,
     ),
   );
 
@@ -12333,7 +13131,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 146,
+      'weight' => 144,
     ),
   );
 
@@ -12379,7 +13177,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 145,
+      'weight' => 143,
     ),
   );
 
@@ -12471,7 +13269,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 144,
+      'weight' => 142,
     ),
   );
 
@@ -12517,7 +13315,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 143,
+      'weight' => 141,
     ),
   );
 
@@ -12563,7 +13361,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 148,
+      'weight' => 146,
     ),
   );
 
@@ -12609,7 +13407,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 147,
+      'weight' => 145,
     ),
   );
 
@@ -12655,7 +13453,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 152,
+      'weight' => 150,
     ),
   );
 
@@ -12701,7 +13499,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 151,
+      'weight' => 149,
     ),
   );
 
@@ -12830,7 +13628,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 142,
+      'weight' => 140,
     ),
   );
 
@@ -12876,7 +13674,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 141,
+      'weight' => 139,
     ),
   );
 
@@ -13786,6 +14584,7 @@ function censusfeature_field_default_field_instances() {
   t('Does your affiliate have satellite offices?');
   t('Does your affiliate provide health benefits to its employees?');
   t('Does your affiliate provide life insurance to its employees?');
+  t('Duplicate');
   t('Duplicated Community Organization members registered');
   t('E. Postage/Freight');
   t('Economic Empowerment');
@@ -13795,7 +14594,6 @@ function censusfeature_field_default_field_instances() {
   t('Fax');
   t('Female');
   t('G. Interest Payments');
-  t('Gender');
   t('H. Dues/Subscription/Registration');
   t('Health');
   t('Hispanic/Latino female board members');
@@ -13811,6 +14609,7 @@ function censusfeature_field_default_field_instances() {
   t('If so, what is the present amount?');
   t('If so, what is your affiliate\'s website address?');
   t('If the affiliate owns its facilities, what is the current market value of the property?');
+  t('Indirect Contact Number Served');
   t('Is there a Guild?');
   t('Is there a Young Professionals Chapter?');
   t('Is website linked to NUL website?');
@@ -13856,6 +14655,18 @@ function censusfeature_field_default_field_instances() {
   t('President/CEO First Name');
   t('President/CEO Last Name');
   t('President/CEO Middle Name');
+  t('Public Contact African American Females');
+  t('Public Contact African American Males');
+  t('Public Contact Asian American Females');
+  t('Public Contact Asian American Males');
+  t('Public Contact Hispanic/Latio Females');
+  t('Public Contact Hispanic/Latio Males');
+  t('Public Contact Native American Females');
+  t('Public Contact Native American Males');
+  t('Public Contact Other Females');
+  t('Public Contact Other Males');
+  t('Public Contact White Females');
+  t('Public Contact White Males');
   t('Purpose of NUL Funding');
   t('Relief Civic Engagement Description');
   t('Relief Civic Engagement Funding NUL');
@@ -13897,8 +14708,11 @@ function censusfeature_field_default_field_instances() {
   t('Total');
   t('Total Direct Contact Females');
   t('Total Direct Contact Males');
+  t('Total Public Contact Females');
+  t('Total Public Contact Males');
   t('Total number of board members');
   t('Total white board members');
+  t('UnDuplicate');
   t('Unduplicated Community Organization members registered');
   t('Voter African American Female');
   t('Voter African American Male');
@@ -13925,6 +14739,8 @@ function censusfeature_field_default_field_instances() {
   t('Year only');
   t('Zip Code');
   t('female_ce_voter');
+  t('spacer4');
+  t('test 2');
   t('totalspacer');
   t('totalspacer2');
 

@@ -158,12 +158,224 @@ function censusfeature_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_ce_voter_african|node|census|form';
+  $field_group->group_name = 'group_ce_voter_african';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'census';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_ce_voter_gr';
+  $field_group->data = array(
+    'label' => 'African American',
+    'weight' => '344',
+    'children' => array(
+      0 => 'field_voter_african_amer_male',
+      1 => 'field_voter_african_amer_female',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'African American',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-ce-voter-african field-group-div nulTableRow',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_ce_voter_african|node|census|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_ce_voter_gr|node|census|form';
+  $field_group->group_name = 'group_ce_voter_gr';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'census';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Voter Registration Information',
+    'weight' => '333',
+    'children' => array(
+      0 => 'group_ce_voter_race',
+      1 => 'group_ce_voter_white',
+      2 => 'group_ce_voter_hispanic',
+      3 => 'group_ce_voter_asian',
+      4 => 'group_ce_voter_african',
+      5 => 'group_ce_voter_native',
+      6 => 'group_ce_voter_other',
+      7 => 'group_ce_voter_registered',
+      8 => 'group_ce_voter_number',
+      9 => 'group_ce_voter_impact',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Voter Registration Information',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-ce-voter-gr field-group-div nulTable',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_ce_voter_gr|node|census|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_ce_voter_impact|node|census|form';
+  $field_group->group_name = 'group_ce_voter_impact';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'census';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_ce_voter_gr';
+  $field_group->data = array(
+    'label' => 'Societal Impact',
+    'weight' => '336',
+    'children' => array(
+      0 => 'field_voter__societal_impact',
+      1 => 'field_spacer4',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Societal Impact',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-ce-voter-impact field-group-div nulTableRow',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_ce_voter_impact|node|census|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_ce_voter_native|node|census|form';
+  $field_group->group_name = 'group_ce_voter_native';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'census';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_ce_voter_gr';
+  $field_group->data = array(
+    'label' => 'Native American',
+    'weight' => '343',
+    'children' => array(
+      0 => 'field_voter_native_amer_male',
+      1 => 'field_voter_native_amer_female',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Native American',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-ce-voter-native field-group-div nulTableRow',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_ce_voter_native|node|census|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_ce_voter_number|node|census|form';
+  $field_group->group_name = 'group_ce_voter_number';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'census';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_ce_voter_gr';
+  $field_group->data = array(
+    'label' => 'Number Served or Registered',
+    'weight' => '337',
+    'children' => array(
+      0 => 'field_gender',
+      1 => 'field_test_1',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Number Served or Registered',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-ce-voter-number field-group-div nulTableRow nulTableHeader',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_ce_voter_number|node|census|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_ce_voter_other|node|census|form';
+  $field_group->group_name = 'group_ce_voter_other';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'census';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_ce_voter_gr';
+  $field_group->data = array(
+    'label' => 'Other',
+    'weight' => '345',
+    'children' => array(
+      0 => 'field_voter_other_male',
+      1 => 'field_voter_other_female',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Other',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-ce-voter-other field-group-div nulTableRow',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_ce_voter_other|node|census|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_ce_voter_race|node|census|form';
   $field_group->group_name = 'group_ce_voter_race';
   $field_group->entity_type = 'node';
   $field_group->bundle = 'census';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_ce';
+  $field_group->parent_name = 'group_ce_voter_gr';
   $field_group->data = array(
     'label' => 'Race',
     'weight' => '287',
@@ -191,6 +403,40 @@ function censusfeature_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_ce_voter_registered|node|census|form';
+  $field_group->group_name = 'group_ce_voter_registered';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'census';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_ce_voter_gr';
+  $field_group->data = array(
+    'label' => 'Voters Registered',
+    'weight' => '338',
+    'children' => array(
+      0 => 'field_voter_unduplicated',
+      1 => 'field_voter_duplicates',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Voters Registered',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-ce-voter-registered field-group-div nulTableRow',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_ce_voter_registered|node|census|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_ce_voter|node|census|form';
   $field_group->group_name = 'group_ce_voter';
   $field_group->entity_type = 'node';
@@ -202,9 +448,6 @@ function censusfeature_field_group_info() {
     'weight' => '286',
     'children' => array(
       0 => 'field_voter_registration',
-      1 => 'field_voter_unduplicated',
-      2 => 'field_voter_duplicates',
-      3 => 'field_voter__societal_impact',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -237,7 +480,6 @@ function censusfeature_field_group_info() {
     'weight' => '138',
     'children' => array(
       0 => 'group_ce_voter',
-      1 => 'group_ce_voter_race',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -438,10 +680,14 @@ function censusfeature_field_group_info() {
   t('Civic Engagement');
   t('Hispanic/Latino');
   t('Native American');
+  t('Number Served or Registered');
   t('Other');
   t('Race');
+  t('Societal Impact');
   t('Total');
   t('Voter Registration');
+  t('Voter Registration Information');
+  t('Voters Registered');
   t('What is the racial/gender composition of your board?');
   t('White');
 
