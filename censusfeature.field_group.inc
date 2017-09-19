@@ -166,7 +166,7 @@ function censusfeature_field_group_info() {
   $field_group->parent_name = 'group_ce_voter_gr';
   $field_group->data = array(
     'label' => 'African American',
-    'weight' => '344',
+    'weight' => '299',
     'children' => array(
       0 => 'field_voter_african_amer_male',
       1 => 'field_voter_african_amer_female',
@@ -192,15 +192,49 @@ function censusfeature_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_ce_voter_asian|node|census|form';
+  $field_group->group_name = 'group_ce_voter_asian';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'census';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_ce_voter_gr';
+  $field_group->data = array(
+    'label' => 'Asian American',
+    'weight' => '295',
+    'children' => array(
+      0 => 'field_voter_asian_amer_male',
+      1 => 'field_voter_asian_amer_female',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Asian American',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-ce-voter-asian field-group-div nulTableRow',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_ce_voter_asian|node|census|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_ce_voter_gr|node|census|form';
   $field_group->group_name = 'group_ce_voter_gr';
   $field_group->entity_type = 'node';
   $field_group->bundle = 'census';
   $field_group->mode = 'form';
-  $field_group->parent_name = '';
+  $field_group->parent_name = 'group_ce_voter';
   $field_group->data = array(
     'label' => 'Voter Registration Information',
-    'weight' => '333',
+    'weight' => '288',
     'children' => array(
       0 => 'group_ce_voter_race',
       1 => 'group_ce_voter_white',
@@ -220,7 +254,7 @@ function censusfeature_field_group_info() {
         'required_fields' => 1,
         'id' => '',
         'classes' => 'group-ce-voter-gr field-group-div nulTable',
-        'description' => '',
+        'description' => 'Voter Registration Information including Societal Impact, Number Served or Registered, and racial and gender breakdown',
         'show_label' => '1',
         'label_element' => 'h3',
         'effect' => 'none',
@@ -234,6 +268,40 @@ function censusfeature_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_ce_voter_hispanic|node|census|form';
+  $field_group->group_name = 'group_ce_voter_hispanic';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'census';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_ce_voter_gr';
+  $field_group->data = array(
+    'label' => 'Hispanic/Latino',
+    'weight' => '296',
+    'children' => array(
+      0 => 'field_voter_hispanic_male',
+      1 => 'field_voter_hispanic_female',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Hispanic/Latino',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-ce-voter-hispanic field-group-div nulTableRow',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_ce_voter_hispanic|node|census|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_ce_voter_impact|node|census|form';
   $field_group->group_name = 'group_ce_voter_impact';
   $field_group->entity_type = 'node';
@@ -242,7 +310,7 @@ function censusfeature_field_group_info() {
   $field_group->parent_name = 'group_ce_voter_gr';
   $field_group->data = array(
     'label' => 'Societal Impact',
-    'weight' => '336',
+    'weight' => '291',
     'children' => array(
       0 => 'field_voter__societal_impact',
       1 => 'field_spacer4',
@@ -276,7 +344,7 @@ function censusfeature_field_group_info() {
   $field_group->parent_name = 'group_ce_voter_gr';
   $field_group->data = array(
     'label' => 'Native American',
-    'weight' => '343',
+    'weight' => '298',
     'children' => array(
       0 => 'field_voter_native_amer_male',
       1 => 'field_voter_native_amer_female',
@@ -310,7 +378,7 @@ function censusfeature_field_group_info() {
   $field_group->parent_name = 'group_ce_voter_gr';
   $field_group->data = array(
     'label' => 'Number Served or Registered',
-    'weight' => '337',
+    'weight' => '292',
     'children' => array(
       0 => 'field_gender',
       1 => 'field_test_1',
@@ -344,7 +412,7 @@ function censusfeature_field_group_info() {
   $field_group->parent_name = 'group_ce_voter_gr';
   $field_group->data = array(
     'label' => 'Other',
-    'weight' => '345',
+    'weight' => '300',
     'children' => array(
       0 => 'field_voter_other_male',
       1 => 'field_voter_other_female',
@@ -378,24 +446,25 @@ function censusfeature_field_group_info() {
   $field_group->parent_name = 'group_ce_voter_gr';
   $field_group->data = array(
     'label' => 'Race',
-    'weight' => '287',
+    'weight' => '294',
     'children' => array(
       0 => 'field_male',
       1 => 'field_female_ce_voter',
     ),
     'format_type' => 'div',
     'format_settings' => array(
-      'formatter' => 'open',
+      'label' => 'Race',
       'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-ce-voter-race field-group-div nulTableHeader nulTableRow',
         'description' => '',
-        'show_label' => 1,
+        'show_label' => '1',
         'label_element' => 'h3',
         'effect' => 'none',
         'speed' => 'fast',
-        'classes' => 'group-ce-voter-race field-group-div',
-        'required_fields' => 1,
-        'id' => '',
       ),
+      'formatter' => 'open',
     ),
   );
   $field_groups['group_ce_voter_race|node|census|form'] = $field_group;
@@ -411,7 +480,7 @@ function censusfeature_field_group_info() {
   $field_group->parent_name = 'group_ce_voter_gr';
   $field_group->data = array(
     'label' => 'Voters Registered',
-    'weight' => '338',
+    'weight' => '293',
     'children' => array(
       0 => 'field_voter_unduplicated',
       1 => 'field_voter_duplicates',
@@ -437,6 +506,40 @@ function censusfeature_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_ce_voter_white|node|census|form';
+  $field_group->group_name = 'group_ce_voter_white';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'census';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_ce_voter_gr';
+  $field_group->data = array(
+    'label' => 'White',
+    'weight' => '297',
+    'children' => array(
+      0 => 'field_voter_white_male',
+      1 => 'field_voter_white_female',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'White',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-ce-voter-white field-group-div nulTableRow',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_ce_voter_white|node|census|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_ce_voter|node|census|form';
   $field_group->group_name = 'group_ce_voter';
   $field_group->entity_type = 'node';
@@ -448,20 +551,22 @@ function censusfeature_field_group_info() {
     'weight' => '286',
     'children' => array(
       0 => 'field_voter_registration',
+      1 => 'group_ce_voter_gr',
     ),
     'format_type' => 'div',
     'format_settings' => array(
-      'formatter' => 'open',
+      'label' => 'Voter Registration',
       'instance_settings' => array(
-        'description' => '',
-        'show_label' => 1,
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
-        'classes' => 'group-ce-voter field-group-div',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-ce-voter field-group-div ',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h2',
+        'effect' => 'none',
+        'speed' => 'fast',
       ),
+      'formatter' => 'open',
     ),
   );
   $field_groups['group_ce_voter|node|census|form'] = $field_group;
@@ -477,7 +582,7 @@ function censusfeature_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Civic Engagement',
-    'weight' => '138',
+    'weight' => '140',
     'children' => array(
       0 => 'group_ce_voter',
     ),
@@ -497,6 +602,354 @@ function censusfeature_field_group_info() {
     ),
   );
   $field_groups['group_ce|node|census|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_contact|node|census|form';
+  $field_group->group_name = 'group_contact';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'census';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Direct Contact, Public Contact and Indirect Contact Data',
+    'weight' => '252',
+    'children' => array(
+      0 => 'group_direct_contact',
+      1 => 'group_public_contact',
+      2 => 'group_indirect_contact',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Direct Contact, Public Contact and Indirect Contact Data',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-contact field-group-div',
+        'description' => 'Please Report as unduplicated (count the individual only once).
+Please estimate the demographic data if not recorded.',
+        'show_label' => '1',
+        'label_element' => 'h2',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_contact|node|census|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_direct_contact_african|node|census|form';
+  $field_group->group_name = 'group_direct_contact_african';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'census';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_direct_contact';
+  $field_group->data = array(
+    'label' => 'African American',
+    'weight' => '259',
+    'children' => array(
+      0 => 'field_direct_african_am_male',
+      1 => 'field_direct_african_am_female',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'African American',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-direct-contact-african field-group-div nulTableRow',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_direct_contact_african|node|census|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_direct_contact_asian|node|census|form';
+  $field_group->group_name = 'group_direct_contact_asian';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'census';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_direct_contact';
+  $field_group->data = array(
+    'label' => 'Asian American',
+    'weight' => '257',
+    'children' => array(
+      0 => 'field_direct_asian_am_male',
+      1 => 'field_direct_asian_am_female',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Asian American',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-direct-contact-asian field-group-div nulTableRow',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_direct_contact_asian|node|census|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_direct_contact_latino|node|census|form';
+  $field_group->group_name = 'group_direct_contact_latino';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'census';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_direct_contact';
+  $field_group->data = array(
+    'label' => 'Hispanic/Latino',
+    'weight' => '256',
+    'children' => array(
+      0 => 'field_direct_hispanic_male',
+      1 => 'field_direct_hispanic_female',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Hispanic/Latino',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-direct-contact-latino field-group-div nulTableRow',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_direct_contact_latino|node|census|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_direct_contact_native|node|census|form';
+  $field_group->group_name = 'group_direct_contact_native';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'census';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_direct_contact';
+  $field_group->data = array(
+    'label' => 'Native American',
+    'weight' => '258',
+    'children' => array(
+      0 => 'field_direct_native_am_male',
+      1 => 'field_direct_native_am_female',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Native American',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-direct-contact-native field-group-div nulTableRow',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_direct_contact_native|node|census|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_direct_contact_other|node|census|form';
+  $field_group->group_name = 'group_direct_contact_other';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'census';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_direct_contact';
+  $field_group->data = array(
+    'label' => 'Other',
+    'weight' => '260',
+    'children' => array(
+      0 => 'field_direct_other_male',
+      1 => 'field_direct_other_female',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Other',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-direct-contact-other field-group-div nulTableRow',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_direct_contact_other|node|census|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_direct_contact_race|node|census|form';
+  $field_group->group_name = 'group_direct_contact_race';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'census';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_direct_contact';
+  $field_group->data = array(
+    'label' => 'Race',
+    'weight' => '254',
+    'children' => array(
+      0 => 'field_direct_contact_males',
+      1 => 'field_females',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Race',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-direct-contact-race field-group-div nulTableHeader',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_direct_contact_race|node|census|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_direct_contact_totals|node|census|form';
+  $field_group->group_name = 'group_direct_contact_totals';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'census';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_direct_contact';
+  $field_group->data = array(
+    'label' => 'Total',
+    'weight' => '261',
+    'children' => array(
+      0 => 'field_direct_total_female',
+      1 => 'field_direct_total_male',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Total',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-direct-contact-totals field-group-div nulTableRow',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_direct_contact_totals|node|census|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_direct_contact_white|node|census|form';
+  $field_group->group_name = 'group_direct_contact_white';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'census';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_direct_contact';
+  $field_group->data = array(
+    'label' => 'White',
+    'weight' => '255',
+    'children' => array(
+      0 => 'field_direct_white_male',
+      1 => 'field_direct_white_female',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'White',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-direct-contact-white field-group-div nulTableRow',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_direct_contact_white|node|census|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_direct_contact|node|census|form';
+  $field_group->group_name = 'group_direct_contact';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'census';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_contact';
+  $field_group->data = array(
+    'label' => 'A. Direct Contact (i.e counseling, day care, intensive education programs and legal services)',
+    'weight' => '253',
+    'children' => array(
+      0 => 'group_direct_contact_race',
+      1 => 'group_direct_contact_totals',
+      2 => 'group_direct_contact_white',
+      3 => 'group_direct_contact_latino',
+      4 => 'group_direct_contact_other',
+      5 => 'group_direct_contact_native',
+      6 => 'group_direct_contact_asian',
+      7 => 'group_direct_contact_african',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'A. Direct Contact (i.e counseling, day care, intensive education programs and legal services)',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-direct-contact field-group-div nulTable',
+        'description' => 'These Clients generally receive extensive and/or long-term services in small groups or one-on-one. Examples include...',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_direct_contact|node|census|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -532,6 +985,39 @@ function censusfeature_field_group_info() {
     ),
   );
   $field_groups['group_hispanic|node|census|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_indirect_contact|node|census|form';
+  $field_group->group_name = 'group_indirect_contact';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'census';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_contact';
+  $field_group->data = array(
+    'label' => 'C. Indirect Contact (i.e. telephone hotlines, telephone referral services and literature distribution))',
+    'weight' => '255',
+    'children' => array(
+      0 => 'field_indirect_contact_served',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'C. Indirect Contact (i.e. telephone hotlines, telephone referral services and literature distribution))',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-indirect-contact field-group-div nulTable',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_indirect_contact|node|census|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -606,6 +1092,311 @@ function censusfeature_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_public_contact_african|node|census|form';
+  $field_group->group_name = 'group_public_contact_african';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'census';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_public_contact';
+  $field_group->data = array(
+    'label' => 'African American',
+    'weight' => '260',
+    'children' => array(
+      0 => 'field_public_african_am_male',
+      1 => 'field_public_african_am_female',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'formatter' => 'open',
+      'instance_settings' => array(
+        'description' => '',
+        'show_label' => 1,
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+        'classes' => 'group-public-contact-african field-group-div',
+        'required_fields' => 1,
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups['group_public_contact_african|node|census|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_public_contact_asian|node|census|form';
+  $field_group->group_name = 'group_public_contact_asian';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'census';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_public_contact';
+  $field_group->data = array(
+    'label' => 'Asian American',
+    'weight' => '258',
+    'children' => array(
+      0 => 'field_public_asian_am_male',
+      1 => 'field_public_asian_am_female',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'formatter' => 'open',
+      'instance_settings' => array(
+        'description' => '',
+        'show_label' => 1,
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+        'classes' => 'group-public-contact-asian field-group-div',
+        'required_fields' => 1,
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups['group_public_contact_asian|node|census|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_public_contact_header|node|census|form';
+  $field_group->group_name = 'group_public_contact_header';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'census';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_public_contact';
+  $field_group->data = array(
+    'label' => 'Race',
+    'weight' => '255',
+    'children' => array(
+      0 => 'field_public_contact_female',
+      1 => 'field_public_contact_males',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Race',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-public-contact-header field-group-div nulTableHeader',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_public_contact_header|node|census|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_public_contact_hispanic|node|census|form';
+  $field_group->group_name = 'group_public_contact_hispanic';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'census';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_public_contact';
+  $field_group->data = array(
+    'label' => 'Hispanic/Latino',
+    'weight' => '257',
+    'children' => array(
+      0 => 'field_public_hispanic_male',
+      1 => 'field_public_hispanic_female',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'formatter' => 'open',
+      'instance_settings' => array(
+        'description' => '',
+        'show_label' => 1,
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+        'classes' => 'group-public-contact-hispanic field-group-div',
+        'required_fields' => 1,
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups['group_public_contact_hispanic|node|census|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_public_contact_native|node|census|form';
+  $field_group->group_name = 'group_public_contact_native';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'census';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_public_contact';
+  $field_group->data = array(
+    'label' => 'Native American',
+    'weight' => '259',
+    'children' => array(
+      0 => 'field_public_native_am_male',
+      1 => 'field_public_native_am_female',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'formatter' => 'open',
+      'instance_settings' => array(
+        'description' => '',
+        'show_label' => 1,
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+        'classes' => 'group-public-contact-native field-group-div',
+        'required_fields' => 1,
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups['group_public_contact_native|node|census|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_public_contact_other|node|census|form';
+  $field_group->group_name = 'group_public_contact_other';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'census';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_public_contact';
+  $field_group->data = array(
+    'label' => 'Other',
+    'weight' => '261',
+    'children' => array(
+      0 => 'field_public_other_male',
+      1 => 'field_public_other_female',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'formatter' => 'open',
+      'instance_settings' => array(
+        'description' => '',
+        'show_label' => 1,
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+        'classes' => 'group-public-contact-other field-group-div',
+        'required_fields' => 1,
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups['group_public_contact_other|node|census|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_public_contact_total|node|census|form';
+  $field_group->group_name = 'group_public_contact_total';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'census';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_public_contact';
+  $field_group->data = array(
+    'label' => 'Total',
+    'weight' => '262',
+    'children' => array(
+      0 => 'field_public_total_male',
+      1 => 'field_public_total_female',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'formatter' => 'open',
+      'instance_settings' => array(
+        'description' => '',
+        'show_label' => 1,
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+        'classes' => 'group-public-contact-total field-group-div',
+        'required_fields' => 1,
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups['group_public_contact_total|node|census|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_public_contact_white|node|census|form';
+  $field_group->group_name = 'group_public_contact_white';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'census';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_public_contact';
+  $field_group->data = array(
+    'label' => 'White',
+    'weight' => '256',
+    'children' => array(
+      0 => 'field_public_white_male',
+      1 => 'field_public_white_female',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'formatter' => 'open',
+      'instance_settings' => array(
+        'description' => '',
+        'show_label' => 1,
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+        'classes' => 'group-public-contact-white field-group-div',
+        'required_fields' => 1,
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups['group_public_contact_white|node|census|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_public_contact|node|census|form';
+  $field_group->group_name = 'group_public_contact';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'census';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_contact';
+  $field_group->data = array(
+    'label' => 'B. Public Contact (i.e. workshops, presentations and training sessions)',
+    'weight' => '254',
+    'children' => array(
+      0 => 'group_public_contact_header',
+      1 => 'group_public_contact_white',
+      2 => 'group_public_contact_hispanic',
+      3 => 'group_public_contact_native',
+      4 => 'group_public_contact_asian',
+      5 => 'group_public_contact_african',
+      6 => 'group_public_contact_other',
+      7 => 'group_public_contact_total',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'B. Public Contact (i.e. workshops, presentations and training sessions)',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-public-contact field-group-div nulTable',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_public_contact|node|census|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_totalboard|node|census|form';
   $field_group->group_name = 'group_totalboard';
   $field_group->entity_type = 'node';
@@ -675,9 +1466,13 @@ function censusfeature_field_group_info() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('A. Direct Contact (i.e counseling, day care, intensive education programs and legal services)');
   t('African American');
   t('Asian American');
+  t('B. Public Contact (i.e. workshops, presentations and training sessions)');
+  t('C. Indirect Contact (i.e. telephone hotlines, telephone referral services and literature distribution))');
   t('Civic Engagement');
+  t('Direct Contact, Public Contact and Indirect Contact Data');
   t('Hispanic/Latino');
   t('Native American');
   t('Number Served or Registered');

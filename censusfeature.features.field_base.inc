@@ -1977,6 +1977,26 @@ function censusfeature_field_default_field_bases() {
     'type' => 'number_integer',
   );
 
+  // Exported field_base: 'field_direct_contact_males'.
+  $field_bases['field_direct_contact_males'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_direct_contact_males',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'markup',
+    'settings' => array(
+      'markup' => array(
+        'format' => 'full_html',
+        'value' => '<div class="nulTableCell"><h3>Males</h3></div>',
+      ),
+    ),
+    'translatable' => 0,
+    'type' => 'markup',
+  );
+
   // Exported field_base: 'field_direct_hispanic_female'.
   $field_bases['field_direct_hispanic_female'] = array(
     'active' => 1,
@@ -2315,6 +2335,26 @@ function censusfeature_field_default_field_bases() {
       'markup' => array(
         'format' => 'full_html',
         'value' => '<div class="nulTableCell"><h3>Female</h3></div>',
+      ),
+    ),
+    'translatable' => 0,
+    'type' => 'markup',
+  );
+
+  // Exported field_base: 'field_females'.
+  $field_bases['field_females'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_females',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'markup',
+    'settings' => array(
+      'markup' => array(
+        'format' => 'full_html',
+        'value' => '<div class="nulTableCell"><h3>Females</h3></div>',
       ),
     ),
     'translatable' => 0,
@@ -3930,6 +3970,46 @@ function censusfeature_field_default_field_bases() {
     'type' => 'number_integer',
   );
 
+  // Exported field_base: 'field_public_contact_female'.
+  $field_bases['field_public_contact_female'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_public_contact_female',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'markup',
+    'settings' => array(
+      'markup' => array(
+        'format' => 'full_html',
+        'value' => '<div class="nulTableCell"><h3>Female</h3></div>',
+      ),
+    ),
+    'translatable' => 0,
+    'type' => 'markup',
+  );
+
+  // Exported field_base: 'field_public_contact_males'.
+  $field_bases['field_public_contact_males'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_public_contact_males',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'markup',
+    'settings' => array(
+      'markup' => array(
+        'format' => 'full_html',
+        'value' => '<div class="nulTableCell"><h3>Males</h3></div>',
+      ),
+    ),
+    'translatable' => 0,
+    'type' => 'markup',
+  );
+
   // Exported field_base: 'field_public_hispanic_female'.
   $field_bases['field_public_hispanic_female'] = array(
     'active' => 1,
@@ -5096,26 +5176,6 @@ function censusfeature_field_default_field_bases() {
       'markup' => array(
         'format' => 'full_html',
         'value' => '<div class="nulTableCell"><h3>Duplicate</h3></div>',
-      ),
-    ),
-    'translatable' => 0,
-    'type' => 'markup',
-  );
-
-  // Exported field_base: 'field_test_2'.
-  $field_bases['field_test_2'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_test_2',
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'markup',
-    'settings' => array(
-      'markup' => array(
-        'format' => 'filtered_html',
-        'value' => 'd',
       ),
     ),
     'translatable' => 0,

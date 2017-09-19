@@ -24,6 +24,13 @@ function censusfeature_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 1,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -62,6 +69,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 31,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -114,6 +133,13 @@ function censusfeature_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 8,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 8,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -148,6 +174,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 9,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'text',
         'settings' => array(),
@@ -194,6 +227,13 @@ function censusfeature_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 261,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 261,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -216,7 +256,7 @@ function censusfeature_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 232,
+      'weight' => 220,
     ),
   );
 
@@ -228,6 +268,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 257,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -262,7 +314,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 228,
+      'weight' => 216,
     ),
   );
 
@@ -274,6 +326,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 256,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -308,7 +372,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 227,
+      'weight' => 215,
     ),
   );
 
@@ -320,6 +384,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 253,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -354,7 +430,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 224,
+      'weight' => 212,
     ),
   );
 
@@ -366,6 +442,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 252,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -400,7 +488,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 223,
+      'weight' => 211,
     ),
   );
 
@@ -412,6 +500,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 260,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'text',
         'settings' => array(),
@@ -440,7 +535,7 @@ function censusfeature_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 231,
+      'weight' => 219,
     ),
   );
 
@@ -452,6 +547,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 296,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -486,7 +593,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 217,
+      'weight' => 205,
     ),
   );
 
@@ -498,6 +605,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 247,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -532,7 +651,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 215,
+      'weight' => 203,
     ),
   );
 
@@ -544,6 +663,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 251,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -578,7 +709,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 222,
+      'weight' => 210,
     ),
   );
 
@@ -590,6 +721,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 250,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -624,7 +767,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 221,
+      'weight' => 209,
     ),
   );
 
@@ -636,6 +779,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 255,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -670,7 +825,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 226,
+      'weight' => 214,
     ),
   );
 
@@ -682,6 +837,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 254,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -716,7 +883,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 225,
+      'weight' => 213,
     ),
   );
 
@@ -728,6 +895,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 259,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -762,7 +941,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 230,
+      'weight' => 218,
     ),
   );
 
@@ -774,6 +953,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 258,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -808,7 +999,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 229,
+      'weight' => 217,
     ),
   );
 
@@ -820,6 +1011,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 297,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -854,7 +1057,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 218,
+      'weight' => 206,
     ),
   );
 
@@ -866,6 +1069,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 295,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -900,7 +1115,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 216,
+      'weight' => 204,
     ),
   );
 
@@ -912,6 +1127,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 249,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -946,7 +1173,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 220,
+      'weight' => 208,
     ),
   );
 
@@ -958,6 +1185,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 248,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -992,7 +1231,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 219,
+      'weight' => 207,
     ),
   );
 
@@ -1004,6 +1243,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 22,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'text',
         'settings' => array(),
@@ -1044,6 +1290,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 103,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -1101,6 +1359,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 104,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 104,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1136,6 +1406,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 105,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -1193,6 +1475,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 106,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 106,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1228,6 +1522,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 107,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -1285,6 +1591,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 108,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 108,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1320,6 +1638,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 101,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -1377,6 +1707,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 99,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 99,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1412,6 +1754,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 96,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -1469,6 +1823,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 98,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 98,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1504,6 +1870,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 95,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -1561,6 +1939,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 94,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 94,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1596,6 +1986,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 100,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -1653,6 +2055,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 102,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 102,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1688,6 +2102,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 97,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -1745,6 +2171,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_decimal',
         'weight' => 127,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 127,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1780,6 +2218,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 33,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -1837,6 +2287,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 147,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 147,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1872,6 +2334,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 146,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -1929,6 +2403,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 148,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 148,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1964,6 +2450,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 143,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -2021,6 +2519,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 142,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 142,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2056,6 +2566,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 140,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -2113,6 +2635,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 136,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 136,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2148,6 +2682,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 135,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -2205,6 +2751,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 137,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 137,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2240,6 +2798,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 152,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -2297,6 +2867,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 144,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 144,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2332,6 +2914,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 141,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -2389,6 +2983,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 145,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 145,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2424,6 +3030,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 150,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -2481,6 +3099,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 149,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 149,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2516,6 +3146,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 151,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -2573,6 +3215,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 133,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 133,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2608,6 +3262,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 132,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -2665,6 +3331,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 134,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 134,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2705,6 +3383,13 @@ function censusfeature_field_default_field_instances() {
         'type' => 'markup_default',
         'weight' => 316,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_default',
+        'weight' => 316,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2736,6 +3421,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 154,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -2793,6 +3490,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_decimal',
         'weight' => 166,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 166,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2828,6 +3537,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 159,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -2885,6 +3606,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_decimal',
         'weight' => 155,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 155,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2926,6 +3659,13 @@ function censusfeature_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 165,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 165,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2957,6 +3697,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 156,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -3014,6 +3766,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_decimal',
         'weight' => 161,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 161,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -3049,6 +3813,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 162,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -3101,6 +3877,13 @@ function censusfeature_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 163,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 163,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -3135,6 +3918,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 164,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -3192,6 +3987,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_decimal',
         'weight' => 157,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 157,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -3227,6 +4034,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 160,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -3284,6 +4103,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_decimal',
         'weight' => 153,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 153,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -3319,6 +4150,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 158,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -3376,6 +4219,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_decimal',
         'weight' => 34,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 34,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -3417,6 +4272,13 @@ function censusfeature_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 51,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 51,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -3447,6 +4309,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 52,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -3504,6 +4378,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 15,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 15,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -3545,6 +4431,13 @@ function censusfeature_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 10,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 10,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -3579,6 +4472,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 56,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -3636,6 +4541,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 57,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 57,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -3682,6 +4599,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 197,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 197,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -3705,7 +4634,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 164,
+      'weight' => 152,
     ),
   );
 
@@ -3717,6 +4646,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 196,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -3751,7 +4692,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 163,
+      'weight' => 151,
     ),
   );
 
@@ -3763,6 +4704,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 192,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -3797,7 +4750,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 160,
+      'weight' => 148,
     ),
   );
 
@@ -3809,6 +4762,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 191,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -3843,7 +4808,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 159,
+      'weight' => 147,
     ),
   );
 
@@ -3855,6 +4820,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 185,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -3888,7 +4865,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 153,
+      'weight' => 141,
     ),
   );
 
@@ -3900,6 +4877,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 190,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -3934,7 +4923,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 158,
+      'weight' => 146,
     ),
   );
 
@@ -3946,6 +4935,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 189,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -3980,7 +4981,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 157,
+      'weight' => 145,
     ),
   );
 
@@ -3992,6 +4993,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 193,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -4026,7 +5039,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 162,
+      'weight' => 150,
     ),
   );
 
@@ -4038,6 +5051,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 195,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -4072,7 +5097,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 161,
+      'weight' => 149,
     ),
   );
 
@@ -4084,6 +5109,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 199,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -4118,7 +5155,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 166,
+      'weight' => 154,
     ),
   );
 
@@ -4130,6 +5167,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 198,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -4164,7 +5213,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 165,
+      'weight' => 153,
     ),
   );
 
@@ -4176,6 +5225,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 186,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -4210,7 +5271,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 154,
+      'weight' => 142,
     ),
   );
 
@@ -4222,6 +5283,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 184,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -4256,7 +5329,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 152,
+      'weight' => 139,
     ),
   );
 
@@ -4268,6 +5341,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 188,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -4302,7 +5387,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 156,
+      'weight' => 144,
     ),
   );
 
@@ -4314,6 +5399,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 187,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -4348,7 +5445,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 155,
+      'weight' => 143,
     ),
   );
 
@@ -4360,6 +5457,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 200,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
@@ -4385,7 +5489,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 167,
+      'weight' => 155,
     ),
   );
 
@@ -4397,6 +5501,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 183,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
@@ -4422,7 +5533,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 151,
+      'weight' => 138,
     ),
   );
 
@@ -4434,6 +5545,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 216,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
@@ -4459,7 +5577,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 183,
+      'weight' => 171,
     ),
   );
 
@@ -4471,6 +5589,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 226,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -4505,7 +5635,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 196,
+      'weight' => 184,
     ),
   );
 
@@ -4517,6 +5647,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 225,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -4551,7 +5693,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 195,
+      'weight' => 183,
     ),
   );
 
@@ -4563,6 +5705,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 222,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -4597,7 +5751,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 192,
+      'weight' => 180,
     ),
   );
 
@@ -4609,6 +5763,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 221,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -4643,7 +5809,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 191,
+      'weight' => 179,
     ),
   );
 
@@ -4655,6 +5821,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 230,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -4689,7 +5867,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 185,
+      'weight' => 173,
     ),
   );
 
@@ -4701,6 +5879,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 220,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -4735,7 +5925,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 190,
+      'weight' => 178,
     ),
   );
 
@@ -4747,6 +5937,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 219,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -4781,7 +5983,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 189,
+      'weight' => 177,
     ),
   );
 
@@ -4793,6 +5995,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 224,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -4827,7 +6041,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 194,
+      'weight' => 182,
     ),
   );
 
@@ -4839,6 +6053,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 223,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -4873,7 +6099,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 193,
+      'weight' => 181,
     ),
   );
 
@@ -4885,6 +6111,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 228,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -4919,7 +6157,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 198,
+      'weight' => 186,
     ),
   );
 
@@ -4931,6 +6169,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 227,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -4965,7 +6215,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 197,
+      'weight' => 185,
     ),
   );
 
@@ -4977,6 +6227,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 231,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -5011,7 +6273,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 186,
+      'weight' => 174,
     ),
   );
 
@@ -5023,6 +6285,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 229,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -5057,7 +6331,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 184,
+      'weight' => 172,
     ),
   );
 
@@ -5069,6 +6343,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 218,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -5103,7 +6389,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 188,
+      'weight' => 176,
     ),
   );
 
@@ -5115,6 +6401,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 217,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -5149,7 +6447,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 187,
+      'weight' => 175,
     ),
   );
 
@@ -5161,6 +6459,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 35,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -5218,6 +6528,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 2,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 2,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -5264,6 +6586,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 307,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 307,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -5287,7 +6621,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 274,
+      'weight' => 254,
     ),
   );
 
@@ -5299,6 +6633,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 306,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -5333,7 +6679,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 273,
+      'weight' => 253,
     ),
   );
 
@@ -5345,6 +6691,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 303,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -5379,7 +6737,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 270,
+      'weight' => 256,
     ),
   );
 
@@ -5391,6 +6749,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 302,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -5425,7 +6795,50 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 269,
+      'weight' => 255,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_direct_contact_males'.
+  $field_instances['node-census-field_direct_contact_males'] = array(
+    'bundle' => 'census',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_default',
+        'weight' => 343,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_default',
+        'weight' => 343,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_direct_contact_males',
+    'label' => 'Males',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 284,
     ),
   );
 
@@ -5437,6 +6850,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 301,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -5471,7 +6896,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 268,
+      'weight' => 254,
     ),
   );
 
@@ -5483,6 +6908,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 300,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -5517,7 +6954,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 267,
+      'weight' => 253,
     ),
   );
 
@@ -5529,6 +6966,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 305,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -5563,7 +7012,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 272,
+      'weight' => 258,
     ),
   );
 
@@ -5575,6 +7024,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 304,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -5609,7 +7070,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 271,
+      'weight' => 257,
     ),
   );
 
@@ -5621,6 +7082,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 312,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -5655,7 +7128,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 276,
+      'weight' => 257,
     ),
   );
 
@@ -5667,6 +7140,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 311,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -5701,7 +7186,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 275,
+      'weight' => 256,
     ),
   );
 
@@ -5713,6 +7198,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 310,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -5747,7 +7244,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 278,
+      'weight' => 259,
     ),
   );
 
@@ -5759,6 +7256,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 313,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -5793,7 +7302,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 277,
+      'weight' => 258,
     ),
   );
 
@@ -5805,6 +7314,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 299,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -5839,7 +7360,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 266,
+      'weight' => 257,
     ),
   );
 
@@ -5851,6 +7372,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 298,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -5885,7 +7418,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 265,
+      'weight' => 256,
     ),
   );
 
@@ -5897,6 +7430,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 36,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -5954,6 +7499,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 53,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 53,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -5989,6 +7546,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 55,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -6041,6 +7610,13 @@ function censusfeature_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 16,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 16,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -6075,6 +7651,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 128,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
@@ -6118,6 +7701,13 @@ function censusfeature_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 129,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 129,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -6149,6 +7739,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 37,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -6206,6 +7808,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 14,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 14,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -6240,6 +7854,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_default',
+        'weight' => 319,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'markup',
         'settings' => array(),
@@ -6282,6 +7903,13 @@ function censusfeature_field_default_field_instances() {
         'type' => 'markup_default',
         'weight' => 324,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_default',
+        'weight' => 324,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -6301,7 +7929,50 @@ function censusfeature_field_default_field_instances() {
       'module' => 'markup',
       'settings' => array(),
       'type' => 'markup',
-      'weight' => 283,
+      'weight' => 141,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_females'.
+  $field_instances['node-census-field_females'] = array(
+    'bundle' => 'census',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_default',
+        'weight' => 344,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_default',
+        'weight' => 344,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_females',
+    'label' => 'Females',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 285,
     ),
   );
 
@@ -6313,6 +7984,13 @@ function censusfeature_field_default_field_instances() {
     'description' => 'Must be at least 5 characters',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'text',
         'settings' => array(),
@@ -6364,6 +8042,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 213,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 213,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -6387,7 +8077,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 180,
+      'weight' => 168,
     ),
   );
 
@@ -6399,6 +8089,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 212,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -6433,7 +8135,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 179,
+      'weight' => 167,
     ),
   );
 
@@ -6445,6 +8147,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 209,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -6479,7 +8193,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 176,
+      'weight' => 164,
     ),
   );
 
@@ -6491,6 +8205,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 208,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -6525,7 +8251,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 175,
+      'weight' => 163,
     ),
   );
 
@@ -6537,6 +8263,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 202,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -6571,7 +8309,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 169,
+      'weight' => 157,
     ),
   );
 
@@ -6583,6 +8321,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 207,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -6617,7 +8367,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 174,
+      'weight' => 162,
     ),
   );
 
@@ -6629,6 +8379,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 206,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -6663,7 +8425,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 173,
+      'weight' => 161,
     ),
   );
 
@@ -6675,6 +8437,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 211,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -6709,7 +8483,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 178,
+      'weight' => 166,
     ),
   );
 
@@ -6721,6 +8495,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 210,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -6755,7 +8541,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 177,
+      'weight' => 165,
     ),
   );
 
@@ -6767,6 +8553,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 215,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -6801,7 +8599,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 182,
+      'weight' => 170,
     ),
   );
 
@@ -6813,6 +8611,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 214,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -6847,7 +8657,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 181,
+      'weight' => 169,
     ),
   );
 
@@ -6859,6 +8669,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 203,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -6893,7 +8715,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 170,
+      'weight' => 158,
     ),
   );
 
@@ -6905,6 +8727,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 201,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -6939,7 +8773,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 168,
+      'weight' => 156,
     ),
   );
 
@@ -6951,6 +8785,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 205,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -6985,7 +8831,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 172,
+      'weight' => 160,
     ),
   );
 
@@ -6997,6 +8843,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 204,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -7031,7 +8889,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 171,
+      'weight' => 159,
     ),
   );
 
@@ -7043,6 +8901,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 125,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -7100,6 +8970,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_decimal',
         'weight' => 38,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 38,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -7140,6 +9022,13 @@ function censusfeature_field_default_field_instances() {
         'type' => 'markup_default',
         'weight' => 321,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_default',
+        'weight' => 321,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -7171,6 +9060,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 112,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -7228,6 +9129,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 113,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 113,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -7263,6 +9176,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 114,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -7320,6 +9245,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 115,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 115,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -7355,6 +9292,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 116,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -7412,6 +9361,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 117,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 117,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -7447,6 +9408,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 68,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -7504,6 +9477,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 66,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 66,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -7539,6 +9524,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 63,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -7596,6 +9593,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 65,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 65,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -7631,6 +9640,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 110,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -7688,6 +9709,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 61,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 61,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -7723,6 +9756,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 67,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -7780,6 +9825,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 69,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 69,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -7815,6 +9872,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 111,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -7872,6 +9941,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_decimal',
         'weight' => 39,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 39,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -7917,6 +9998,13 @@ function censusfeature_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 27,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 27,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -7950,6 +10038,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 54,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -8007,6 +10107,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_decimal',
         'weight' => 40,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 40,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -8042,7 +10154,19 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 340,
+      ),
+      'full' => array(
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -8076,7 +10200,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 337,
+      'weight' => 256,
     ),
   );
 
@@ -8088,6 +10212,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 60,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
@@ -8124,6 +10255,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 76,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
@@ -8171,6 +10309,13 @@ function censusfeature_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 24,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 24,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -8204,6 +10349,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 41,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -8261,6 +10418,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_decimal',
         'weight' => 42,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 42,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -8296,6 +10465,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 43,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -8353,6 +10534,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_decimal',
         'weight' => 44,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 44,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -8398,6 +10591,13 @@ function censusfeature_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 21,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 21,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -8436,6 +10636,13 @@ function censusfeature_field_default_field_instances() {
         'type' => 'markup_default',
         'weight' => 323,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_default',
+        'weight' => 323,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -8455,7 +10662,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'markup',
       'settings' => array(),
       'type' => 'markup',
-      'weight' => 282,
+      'weight' => 140,
     ),
   );
 
@@ -8467,6 +10674,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 50,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -8523,6 +10742,13 @@ function censusfeature_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 29,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 29,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -8562,6 +10788,13 @@ function censusfeature_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 28,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 28,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -8593,6 +10826,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 23,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -8650,6 +10895,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_decimal',
         'weight' => 45,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 45,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -8695,6 +10952,13 @@ function censusfeature_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 19,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 19,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -8728,6 +10992,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 131,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -8785,6 +11061,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 6,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 6,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -8820,6 +11108,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 7,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -8877,6 +11177,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 48,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 48,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -8911,6 +11223,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 49,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -8968,6 +11292,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_decimal',
         'weight' => 46,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 46,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -9003,6 +11339,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 58,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -9055,6 +11403,13 @@ function censusfeature_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 59,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 59,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -9095,6 +11450,13 @@ function censusfeature_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 93,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 93,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -9126,6 +11488,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 47,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
@@ -9174,6 +11543,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 126,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 126,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -9208,6 +11589,16 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 17,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'image',
         'settings' => array(
@@ -9270,6 +11661,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 244,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 244,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -9293,7 +11696,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 212,
+      'weight' => 200,
     ),
   );
 
@@ -9305,6 +11708,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 243,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -9339,7 +11754,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 211,
+      'weight' => 199,
     ),
   );
 
@@ -9351,6 +11766,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 240,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -9385,7 +11812,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 208,
+      'weight' => 196,
     ),
   );
 
@@ -9397,6 +11824,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 239,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -9431,7 +11870,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 207,
+      'weight' => 195,
     ),
   );
 
@@ -9443,6 +11882,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 232,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
@@ -9468,7 +11914,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 199,
+      'weight' => 187,
     ),
   );
 
@@ -9480,6 +11926,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 234,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -9514,7 +11972,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 201,
+      'weight' => 189,
     ),
   );
 
@@ -9526,6 +11984,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 238,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -9560,7 +12030,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 206,
+      'weight' => 194,
     ),
   );
 
@@ -9572,6 +12042,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 237,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -9606,7 +12088,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 205,
+      'weight' => 193,
     ),
   );
 
@@ -9618,6 +12100,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 242,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -9652,7 +12146,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 210,
+      'weight' => 198,
     ),
   );
 
@@ -9664,6 +12158,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 241,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -9698,7 +12204,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 209,
+      'weight' => 197,
     ),
   );
 
@@ -9710,6 +12216,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 246,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -9744,7 +12262,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 214,
+      'weight' => 202,
     ),
   );
 
@@ -9756,6 +12274,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 245,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -9790,7 +12320,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 213,
+      'weight' => 201,
     ),
   );
 
@@ -9802,6 +12332,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 294,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -9836,7 +12378,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 202,
+      'weight' => 190,
     ),
   );
 
@@ -9848,6 +12390,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 233,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -9882,7 +12436,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 200,
+      'weight' => 188,
     ),
   );
 
@@ -9894,6 +12448,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 236,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -9928,7 +12494,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 204,
+      'weight' => 192,
     ),
   );
 
@@ -9940,6 +12506,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 235,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -9974,7 +12552,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 203,
+      'weight' => 191,
     ),
   );
 
@@ -9986,6 +12564,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 3,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'text',
         'settings' => array(),
@@ -10032,6 +12617,13 @@ function censusfeature_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 5,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 5,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -10066,6 +12658,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 4,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'text',
         'settings' => array(),
@@ -10116,6 +12715,13 @@ function censusfeature_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 26,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 26,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -10159,6 +12765,13 @@ function censusfeature_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 18,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 18,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -10196,6 +12809,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 25,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
@@ -10246,6 +12866,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 337,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 337,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -10269,7 +12901,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 334,
+      'weight' => 270,
     ),
   );
 
@@ -10281,6 +12913,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 336,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -10315,7 +12959,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 333,
+      'weight' => 269,
     ),
   );
 
@@ -10327,6 +12971,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 333,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -10361,7 +13017,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 330,
+      'weight' => 266,
     ),
   );
 
@@ -10373,6 +13029,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 332,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -10407,7 +13075,93 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 329,
+      'weight' => 265,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_public_contact_female'.
+  $field_instances['node-census-field_public_contact_female'] = array(
+    'bundle' => 'census',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_default',
+        'weight' => 345,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_default',
+        'weight' => 345,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_public_contact_female',
+    'label' => 'Female',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 327,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_public_contact_males'.
+  $field_instances['node-census-field_public_contact_males'] = array(
+    'bundle' => 'census',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_default',
+        'weight' => 346,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_default',
+        'weight' => 346,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_public_contact_males',
+    'label' => 'Males',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 326,
     ),
   );
 
@@ -10419,6 +13173,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 331,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -10453,7 +13219,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 328,
+      'weight' => 264,
     ),
   );
 
@@ -10465,6 +13231,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 330,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -10499,7 +13277,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 327,
+      'weight' => 263,
     ),
   );
 
@@ -10511,6 +13289,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 335,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -10545,7 +13335,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 332,
+      'weight' => 261,
     ),
   );
 
@@ -10557,6 +13347,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 334,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -10591,7 +13393,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 331,
+      'weight' => 260,
     ),
   );
 
@@ -10603,6 +13405,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 339,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -10637,7 +13451,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 336,
+      'weight' => 263,
     ),
   );
 
@@ -10649,6 +13463,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 338,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -10683,7 +13509,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 335,
+      'weight' => 262,
     ),
   );
 
@@ -10695,6 +13521,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 342,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -10729,7 +13567,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 339,
+      'weight' => 258,
     ),
   );
 
@@ -10741,6 +13579,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 341,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -10775,7 +13625,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 338,
+      'weight' => 257,
     ),
   );
 
@@ -10787,6 +13637,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 329,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -10821,7 +13683,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 326,
+      'weight' => 262,
     ),
   );
 
@@ -10833,6 +13695,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 328,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -10867,7 +13741,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 325,
+      'weight' => 261,
     ),
   );
 
@@ -10879,6 +13753,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 281,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'text',
         'settings' => array(),
@@ -10907,7 +13788,7 @@ function censusfeature_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 252,
+      'weight' => 239,
     ),
   );
 
@@ -10923,6 +13804,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 282,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
@@ -10950,7 +13838,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 253,
+      'weight' => 240,
     ),
   );
 
@@ -10966,6 +13854,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 284,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
@@ -10993,7 +13888,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 255,
+      'weight' => 242,
     ),
   );
 
@@ -11009,6 +13904,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 283,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
@@ -11036,7 +13938,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 254,
+      'weight' => 241,
     ),
   );
 
@@ -11048,6 +13950,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 286,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -11082,7 +13996,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 257,
+      'weight' => 244,
     ),
   );
 
@@ -11094,6 +14008,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 285,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -11128,7 +14054,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 256,
+      'weight' => 243,
     ),
   );
 
@@ -11140,6 +14066,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 262,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'text',
         'settings' => array(),
@@ -11168,7 +14101,7 @@ function censusfeature_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 233,
+      'weight' => 221,
     ),
   );
 
@@ -11184,6 +14117,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 263,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
@@ -11211,7 +14151,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 234,
+      'weight' => 222,
     ),
   );
 
@@ -11227,6 +14167,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 265,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
@@ -11254,7 +14201,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 236,
+      'weight' => 224,
     ),
   );
 
@@ -11270,6 +14217,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 264,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
@@ -11297,7 +14251,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 235,
+      'weight' => 223,
     ),
   );
 
@@ -11309,6 +14263,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 267,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -11343,7 +14309,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 238,
+      'weight' => 226,
     ),
   );
 
@@ -11355,6 +14321,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 268,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -11389,7 +14367,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 237,
+      'weight' => 225,
     ),
   );
 
@@ -11401,6 +14379,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 269,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'text',
         'settings' => array(),
@@ -11429,7 +14414,7 @@ function censusfeature_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 240,
+      'weight' => 227,
     ),
   );
 
@@ -11441,6 +14426,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 270,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
@@ -11468,7 +14460,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 241,
+      'weight' => 228,
     ),
   );
 
@@ -11484,6 +14476,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 272,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
@@ -11511,7 +14510,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 243,
+      'weight' => 230,
     ),
   );
 
@@ -11527,6 +14526,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 271,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
@@ -11554,7 +14560,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 242,
+      'weight' => 229,
     ),
   );
 
@@ -11566,6 +14572,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 274,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -11600,7 +14618,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 245,
+      'weight' => 232,
     ),
   );
 
@@ -11612,6 +14630,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 273,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -11646,7 +14676,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 244,
+      'weight' => 231,
     ),
   );
 
@@ -11658,6 +14688,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 275,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'text',
         'settings' => array(),
@@ -11686,7 +14723,7 @@ function censusfeature_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 246,
+      'weight' => 233,
     ),
   );
 
@@ -11702,6 +14739,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 276,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
@@ -11729,7 +14773,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 247,
+      'weight' => 234,
     ),
   );
 
@@ -11745,6 +14789,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 278,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
@@ -11772,7 +14823,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 249,
+      'weight' => 236,
     ),
   );
 
@@ -11788,6 +14839,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 277,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
@@ -11815,7 +14873,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 248,
+      'weight' => 235,
     ),
   );
 
@@ -11827,6 +14885,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 280,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -11861,7 +14931,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 251,
+      'weight' => 238,
     ),
   );
 
@@ -11873,6 +14943,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 279,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -11907,7 +14989,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 250,
+      'weight' => 237,
     ),
   );
 
@@ -11919,6 +15001,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 287,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'text',
         'settings' => array(),
@@ -11947,7 +15036,7 @@ function censusfeature_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 258,
+      'weight' => 245,
     ),
   );
 
@@ -11959,6 +15048,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 288,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
@@ -11986,7 +15082,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 259,
+      'weight' => 246,
     ),
   );
 
@@ -12002,6 +15098,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 290,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
@@ -12029,7 +15132,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 261,
+      'weight' => 248,
     ),
   );
 
@@ -12045,6 +15148,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 289,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
@@ -12072,7 +15182,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 260,
+      'weight' => 247,
     ),
   );
 
@@ -12084,6 +15194,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 292,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -12118,7 +15240,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 263,
+      'weight' => 250,
     ),
   );
 
@@ -12130,6 +15252,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 291,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -12164,7 +15298,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 262,
+      'weight' => 249,
     ),
   );
 
@@ -12176,6 +15310,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 293,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'text',
         'settings' => array(),
@@ -12204,7 +15345,7 @@ function censusfeature_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 264,
+      'weight' => 251,
     ),
   );
 
@@ -12216,6 +15357,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 130,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
@@ -12258,6 +15406,13 @@ function censusfeature_field_default_field_instances() {
         'type' => 'markup_default',
         'weight' => 327,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_default',
+        'weight' => 327,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -12277,7 +15432,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'markup',
       'settings' => array(),
       'type' => 'markup',
-      'weight' => 284,
+      'weight' => 286,
     ),
   );
 
@@ -12293,6 +15448,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 20,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
@@ -12338,6 +15500,13 @@ function censusfeature_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 11,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 11,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -12368,6 +15537,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 121,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
@@ -12405,6 +15581,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 118,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'text',
         'settings' => array(),
@@ -12451,6 +15634,13 @@ function censusfeature_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 119,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 119,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -12485,6 +15675,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 123,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'text',
         'settings' => array(),
@@ -12531,6 +15728,13 @@ function censusfeature_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 124,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 124,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -12565,6 +15769,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 120,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'text',
         'settings' => array(),
@@ -12611,6 +15822,13 @@ function censusfeature_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 122,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 122,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -12642,6 +15860,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 13,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -12692,6 +15922,13 @@ function censusfeature_field_default_field_instances() {
         'type' => 'markup_default',
         'weight' => 325,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_default',
+        'weight' => 325,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -12715,8 +15952,8 @@ function censusfeature_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-census-field_test_2'.
-  $field_instances['node-census-field_test_2'] = array(
+  // Exported field_instance: 'node-census-field_total'.
+  $field_instances['node-census-field_total'] = array(
     'bundle' => 'census',
     'deleted' => 0,
     'description' => '',
@@ -12726,38 +15963,9 @@ function censusfeature_field_default_field_instances() {
         'module' => 'markup',
         'settings' => array(),
         'type' => 'markup_default',
-        'weight' => 326,
+        'weight' => 320,
       ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_test_2',
-    'label' => 'test 2',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(),
-      'type' => 'markup',
-      'weight' => 281,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_total'.
-  $field_instances['node-census-field_total'] = array(
-    'bundle' => 'census',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
+      'full' => array(
         'label' => 'above',
         'module' => 'markup',
         'settings' => array(),
@@ -12795,6 +16003,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 32,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -12852,6 +16072,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 109,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 109,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -12892,6 +16124,13 @@ function censusfeature_field_default_field_instances() {
         'type' => 'markup_default',
         'weight' => 317,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_default',
+        'weight' => 317,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -12922,6 +16161,13 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_default',
+        'weight' => 318,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'markup',
         'settings' => array(),
@@ -12970,6 +16216,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 170,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 170,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -12993,7 +16251,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 290,
+      'weight' => 285,
     ),
   );
 
@@ -13005,6 +16263,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 180,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -13062,6 +16332,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 179,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 179,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -13097,6 +16379,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 176,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -13154,6 +16448,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 175,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 175,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -13189,6 +16495,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 169,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -13246,6 +16564,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 174,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 174,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -13281,6 +16611,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 173,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -13338,6 +16680,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 178,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 178,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -13373,6 +16727,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 177,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -13430,6 +16796,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 182,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 182,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -13465,6 +16843,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 181,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -13517,6 +16907,13 @@ function censusfeature_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 167,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 167,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -13548,6 +16945,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 168,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -13605,6 +17014,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 172,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 172,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -13628,7 +17049,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 140,
+      'weight' => 142,
     ),
   );
 
@@ -13640,6 +17061,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 171,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -13674,7 +17107,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 139,
+      'weight' => 141,
     ),
   );
 
@@ -13686,6 +17119,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 87,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -13743,6 +17188,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 88,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 88,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -13778,6 +17235,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 89,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -13835,6 +17304,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 90,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 90,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -13870,6 +17351,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 91,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -13927,6 +17420,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 92,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 92,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -13962,6 +17467,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 84,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -14019,6 +17536,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 82,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 82,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -14054,6 +17583,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 79,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -14111,6 +17652,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 81,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 81,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -14146,6 +17699,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 78,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -14203,6 +17768,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 77,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 77,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -14238,6 +17815,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 85,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -14295,6 +17884,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 86,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 86,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -14341,6 +17942,18 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 80,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 80,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -14376,6 +17989,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 12,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -14593,6 +18218,7 @@ function censusfeature_field_default_field_instances() {
   t('F. Insurance');
   t('Fax');
   t('Female');
+  t('Females');
   t('G. Interest Payments');
   t('H. Dues/Subscription/Registration');
   t('Health');
@@ -14618,6 +18244,7 @@ function censusfeature_field_default_field_instances() {
   t('L. Equipment/space rental');
   t('M. Goods and Services');
   t('Male');
+  t('Males');
   t('Money market account, endowment');
   t('Must be at least 5 characters');
   t('N. Rent/mortgage payments');
@@ -14740,7 +18367,6 @@ function censusfeature_field_default_field_instances() {
   t('Zip Code');
   t('female_ce_voter');
   t('spacer4');
-  t('test 2');
   t('totalspacer');
   t('totalspacer2');
 
