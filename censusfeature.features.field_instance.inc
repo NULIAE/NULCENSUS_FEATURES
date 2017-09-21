@@ -24,6 +24,13 @@ function censusfeature_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 1,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -71,13 +78,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 31,
+        'weight' => 30,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 30,
       ),
     ),
     'entity_type' => 'node',
@@ -114,11 +127,12 @@ function censusfeature_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 8,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'text_default',
+        'weight' => 8,
       ),
     ),
     'entity_type' => 'node',
@@ -154,11 +168,12 @@ function censusfeature_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 9,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'text_default',
+        'weight' => 9,
       ),
     ),
     'entity_type' => 'node',
@@ -192,13 +207,14 @@ function censusfeature_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 261,
+        'weight' => 219,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'text_default',
+        'weight' => 267,
       ),
     ),
     'entity_type' => 'node',
@@ -216,7 +232,7 @@ function censusfeature_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 234,
+      'weight' => 220,
     ),
   );
 
@@ -237,13 +253,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 257,
+        'weight' => 212,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 261,
       ),
     ),
     'entity_type' => 'node',
@@ -262,7 +284,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 230,
+      'weight' => 216,
     ),
   );
 
@@ -283,13 +305,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 256,
+        'weight' => 211,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 259,
       ),
     ),
     'entity_type' => 'node',
@@ -308,7 +336,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 229,
+      'weight' => 215,
     ),
   );
 
@@ -329,13 +357,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 253,
+        'weight' => 208,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 254,
       ),
     ),
     'entity_type' => 'node',
@@ -354,7 +388,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 226,
+      'weight' => 212,
     ),
   );
 
@@ -375,13 +409,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 252,
+        'weight' => 207,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 253,
       ),
     ),
     'entity_type' => 'node',
@@ -400,7 +440,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 225,
+      'weight' => 211,
     ),
   );
 
@@ -416,13 +456,14 @@ function censusfeature_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 260,
+        'weight' => 218,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'text_default',
+        'weight' => 265,
       ),
     ),
     'entity_type' => 'node',
@@ -440,7 +481,7 @@ function censusfeature_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 233,
+      'weight' => 219,
     ),
   );
 
@@ -461,13 +502,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 296,
+        'weight' => 226,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 308,
       ),
     ),
     'entity_type' => 'node',
@@ -486,7 +533,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 219,
+      'weight' => 205,
     ),
   );
 
@@ -507,13 +554,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 247,
+        'weight' => 202,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 242,
       ),
     ),
     'entity_type' => 'node',
@@ -532,7 +585,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 217,
+      'weight' => 203,
     ),
   );
 
@@ -553,13 +606,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 251,
+        'weight' => 206,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 251,
       ),
     ),
     'entity_type' => 'node',
@@ -578,7 +637,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 224,
+      'weight' => 210,
     ),
   );
 
@@ -599,13 +658,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 250,
+        'weight' => 205,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 250,
       ),
     ),
     'entity_type' => 'node',
@@ -624,7 +689,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 223,
+      'weight' => 209,
     ),
   );
 
@@ -645,13 +710,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 255,
+        'weight' => 210,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 257,
       ),
     ),
     'entity_type' => 'node',
@@ -670,7 +741,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 228,
+      'weight' => 214,
     ),
   );
 
@@ -691,13 +762,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 254,
+        'weight' => 209,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 256,
       ),
     ),
     'entity_type' => 'node',
@@ -716,7 +793,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 227,
+      'weight' => 213,
     ),
   );
 
@@ -737,13 +814,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 259,
+        'weight' => 215,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 264,
       ),
     ),
     'entity_type' => 'node',
@@ -762,7 +845,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 232,
+      'weight' => 218,
     ),
   );
 
@@ -783,13 +866,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 258,
+        'weight' => 214,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 262,
       ),
     ),
     'entity_type' => 'node',
@@ -808,7 +897,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 231,
+      'weight' => 217,
     ),
   );
 
@@ -829,13 +918,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 297,
+        'weight' => 227,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 309,
       ),
     ),
     'entity_type' => 'node',
@@ -854,7 +949,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 220,
+      'weight' => 206,
     ),
   );
 
@@ -875,13 +970,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 295,
+        'weight' => 225,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 307,
       ),
     ),
     'entity_type' => 'node',
@@ -900,7 +1001,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 218,
+      'weight' => 204,
     ),
   );
 
@@ -921,13 +1022,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 249,
+        'weight' => 204,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 245,
       ),
     ),
     'entity_type' => 'node',
@@ -946,7 +1053,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 222,
+      'weight' => 208,
     ),
   );
 
@@ -967,13 +1074,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 248,
+        'weight' => 203,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 243,
       ),
     ),
     'entity_type' => 'node',
@@ -992,7 +1105,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 221,
+      'weight' => 207,
     ),
   );
 
@@ -1010,11 +1123,12 @@ function censusfeature_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 22,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'text_default',
+        'weight' => 22,
       ),
     ),
     'entity_type' => 'node',
@@ -1053,13 +1167,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 103,
+        'weight' => 93,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 93,
       ),
     ),
     'entity_type' => 'node',
@@ -1099,13 +1219,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 104,
+        'weight' => 94,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 94,
       ),
     ),
     'entity_type' => 'node',
@@ -1145,13 +1271,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 105,
+        'weight' => 95,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 95,
       ),
     ),
     'entity_type' => 'node',
@@ -1191,13 +1323,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 106,
+        'weight' => 96,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 96,
       ),
     ),
     'entity_type' => 'node',
@@ -1237,13 +1375,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 107,
+        'weight' => 97,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 97,
       ),
     ),
     'entity_type' => 'node',
@@ -1283,13 +1427,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 108,
+        'weight' => 98,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 98,
       ),
     ),
     'entity_type' => 'node',
@@ -1329,13 +1479,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 101,
+        'weight' => 91,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 91,
       ),
     ),
     'entity_type' => 'node',
@@ -1375,13 +1531,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 99,
+        'weight' => 89,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 89,
       ),
     ),
     'entity_type' => 'node',
@@ -1421,13 +1583,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 96,
+        'weight' => 86,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 86,
       ),
     ),
     'entity_type' => 'node',
@@ -1467,13 +1635,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 98,
+        'weight' => 88,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 88,
       ),
     ),
     'entity_type' => 'node',
@@ -1513,13 +1687,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 95,
+        'weight' => 85,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 85,
       ),
     ),
     'entity_type' => 'node',
@@ -1559,13 +1739,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 94,
+        'weight' => 84,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 84,
       ),
     ),
     'entity_type' => 'node',
@@ -1605,13 +1791,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 100,
+        'weight' => 90,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 90,
       ),
     ),
     'entity_type' => 'node',
@@ -1651,13 +1843,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 102,
+        'weight' => 92,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 92,
       ),
     ),
     'entity_type' => 'node',
@@ -1697,13 +1895,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 97,
+        'weight' => 87,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 87,
       ),
     ),
     'entity_type' => 'node',
@@ -1743,13 +1947,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 127,
+        'weight' => 117,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 120,
       ),
     ),
     'entity_type' => 'node',
@@ -1789,13 +1999,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 33,
+        'weight' => 32,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 32,
       ),
     ),
     'entity_type' => 'node',
@@ -1826,6 +2042,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 139,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -1835,13 +2063,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 147,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 140,
       ),
     ),
     'entity_type' => 'node',
@@ -1872,6 +2094,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 138,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -1881,13 +2115,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 146,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 139,
       ),
     ),
     'entity_type' => 'node',
@@ -1918,6 +2146,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 140,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -1927,13 +2167,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 148,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 141,
       ),
     ),
     'entity_type' => 'node',
@@ -1964,6 +2198,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 135,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -1973,13 +2219,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 143,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 136,
       ),
     ),
     'entity_type' => 'node',
@@ -2010,6 +2250,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 134,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -2019,13 +2271,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 142,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 135,
       ),
     ),
     'entity_type' => 'node',
@@ -2056,6 +2302,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 136,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -2065,13 +2323,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 140,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 133,
       ),
     ),
     'entity_type' => 'node',
@@ -2102,6 +2354,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 129,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -2111,13 +2375,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 136,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 131,
       ),
     ),
     'entity_type' => 'node',
@@ -2148,6 +2406,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 128,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -2157,13 +2427,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 135,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 130,
       ),
     ),
     'entity_type' => 'node',
@@ -2194,6 +2458,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 130,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -2203,13 +2479,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 137,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 132,
       ),
     ),
     'entity_type' => 'node',
@@ -2240,6 +2510,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 313,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -2249,13 +2531,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 152,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 145,
       ),
     ),
     'entity_type' => 'node',
@@ -2286,6 +2562,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 134,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -2295,13 +2583,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 144,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 137,
       ),
     ),
     'entity_type' => 'node',
@@ -2332,6 +2614,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 133,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -2341,13 +2635,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 141,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 134,
       ),
     ),
     'entity_type' => 'node',
@@ -2378,6 +2666,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 135,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -2387,13 +2687,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 145,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 138,
       ),
     ),
     'entity_type' => 'node',
@@ -2424,6 +2718,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 142,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -2433,13 +2739,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 150,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 143,
       ),
     ),
     'entity_type' => 'node',
@@ -2470,6 +2770,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 141,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -2479,13 +2791,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 149,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 142,
       ),
     ),
     'entity_type' => 'node',
@@ -2516,6 +2822,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 143,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -2525,13 +2843,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 151,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 144,
       ),
     ),
     'entity_type' => 'node',
@@ -2562,6 +2874,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 124,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -2571,13 +2895,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 133,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 339,
       ),
     ),
     'entity_type' => 'node',
@@ -2608,6 +2926,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 123,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -2617,13 +2947,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 132,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 338,
       ),
     ),
     'entity_type' => 'node',
@@ -2654,6 +2978,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 125,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -2663,13 +2999,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 134,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 129,
       ),
     ),
     'entity_type' => 'node',
@@ -2699,17 +3029,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 330,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'markup',
         'settings' => array(),
         'type' => 'markup_default',
-        'weight' => 316,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 333,
       ),
     ),
     'entity_type' => 'node',
@@ -2745,13 +3076,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 154,
+        'weight' => 125,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 147,
       ),
     ),
     'entity_type' => 'node',
@@ -2791,13 +3128,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 166,
+        'weight' => 137,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 159,
       ),
     ),
     'entity_type' => 'node',
@@ -2837,13 +3180,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 159,
+        'weight' => 130,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 152,
       ),
     ),
     'entity_type' => 'node',
@@ -2883,13 +3232,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 155,
+        'weight' => 126,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 148,
       ),
     ),
     'entity_type' => 'node',
@@ -2924,13 +3279,14 @@ function censusfeature_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 165,
+        'weight' => 136,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'list_default',
+        'weight' => 158,
       ),
     ),
     'entity_type' => 'node',
@@ -2966,13 +3322,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 156,
+        'weight' => 127,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 149,
       ),
     ),
     'entity_type' => 'node',
@@ -3012,13 +3374,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 161,
+        'weight' => 132,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 154,
       ),
     ),
     'entity_type' => 'node',
@@ -3058,13 +3426,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 162,
+        'weight' => 133,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 155,
       ),
     ),
     'entity_type' => 'node',
@@ -3099,13 +3473,14 @@ function censusfeature_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 163,
+        'weight' => 134,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'text_default',
+        'weight' => 156,
       ),
     ),
     'entity_type' => 'node',
@@ -3144,13 +3519,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 164,
+        'weight' => 135,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 157,
       ),
     ),
     'entity_type' => 'node',
@@ -3190,13 +3571,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 157,
+        'weight' => 128,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 150,
       ),
     ),
     'entity_type' => 'node',
@@ -3236,13 +3623,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 160,
+        'weight' => 131,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 153,
       ),
     ),
     'entity_type' => 'node',
@@ -3282,13 +3675,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 153,
+        'weight' => 124,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 146,
       ),
     ),
     'entity_type' => 'node',
@@ -3328,13 +3727,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 158,
+        'weight' => 129,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 151,
       ),
     ),
     'entity_type' => 'node',
@@ -3374,13 +3779,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 34,
+        'weight' => 33,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 33,
       ),
     ),
     'entity_type' => 'node',
@@ -3415,13 +3826,14 @@ function censusfeature_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 51,
+        'weight' => 50,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'list_default',
+        'weight' => 50,
       ),
     ),
     'entity_type' => 'node',
@@ -3456,13 +3868,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 52,
+        'weight' => 51,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 51,
       ),
     ),
     'entity_type' => 'node',
@@ -3504,11 +3922,17 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 15,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 15,
       ),
     ),
     'entity_type' => 'node',
@@ -3545,11 +3969,12 @@ function censusfeature_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 10,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'text_default',
+        'weight' => 10,
       ),
     ),
     'entity_type' => 'node',
@@ -3588,13 +4013,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 56,
+        'weight' => 55,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 55,
       ),
     ),
     'entity_type' => 'node',
@@ -3634,13 +4065,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 57,
+        'weight' => 56,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 56,
       ),
     ),
     'entity_type' => 'node',
@@ -3680,13 +4117,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 197,
+        'weight' => 152,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 189,
       ),
     ),
     'entity_type' => 'node',
@@ -3705,7 +4148,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 166,
+      'weight' => 152,
     ),
   );
 
@@ -3726,13 +4169,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 196,
+        'weight' => 151,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 188,
       ),
     ),
     'entity_type' => 'node',
@@ -3751,7 +4200,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 165,
+      'weight' => 151,
     ),
   );
 
@@ -3772,13 +4221,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 192,
+        'weight' => 148,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 185,
       ),
     ),
     'entity_type' => 'node',
@@ -3797,7 +4252,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 162,
+      'weight' => 148,
     ),
   );
 
@@ -3818,13 +4273,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 191,
+        'weight' => 147,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 184,
       ),
     ),
     'entity_type' => 'node',
@@ -3843,7 +4304,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 161,
+      'weight' => 147,
     ),
   );
 
@@ -3864,13 +4325,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 185,
+        'weight' => 141,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 178,
       ),
     ),
     'entity_type' => 'node',
@@ -3888,7 +4355,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 155,
+      'weight' => 141,
     ),
   );
 
@@ -3909,13 +4376,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 190,
+        'weight' => 146,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 183,
       ),
     ),
     'entity_type' => 'node',
@@ -3934,7 +4407,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 160,
+      'weight' => 146,
     ),
   );
 
@@ -3955,13 +4428,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 189,
+        'weight' => 145,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 182,
       ),
     ),
     'entity_type' => 'node',
@@ -3980,7 +4459,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 159,
+      'weight' => 145,
     ),
   );
 
@@ -4001,13 +4480,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 193,
+        'weight' => 149,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 186,
       ),
     ),
     'entity_type' => 'node',
@@ -4026,7 +4511,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 164,
+      'weight' => 150,
     ),
   );
 
@@ -4047,13 +4532,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 195,
+        'weight' => 150,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 187,
       ),
     ),
     'entity_type' => 'node',
@@ -4072,7 +4563,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 163,
+      'weight' => 149,
     ),
   );
 
@@ -4093,13 +4584,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 199,
+        'weight' => 154,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 191,
       ),
     ),
     'entity_type' => 'node',
@@ -4118,7 +4615,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 168,
+      'weight' => 154,
     ),
   );
 
@@ -4139,13 +4636,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 198,
+        'weight' => 153,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 190,
       ),
     ),
     'entity_type' => 'node',
@@ -4164,7 +4667,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 167,
+      'weight' => 153,
     ),
   );
 
@@ -4185,13 +4688,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 186,
+        'weight' => 142,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 179,
       ),
     ),
     'entity_type' => 'node',
@@ -4210,7 +4719,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 156,
+      'weight' => 142,
     ),
   );
 
@@ -4231,13 +4740,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 184,
+        'weight' => 140,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 177,
       ),
     ),
     'entity_type' => 'node',
@@ -4256,7 +4771,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 154,
+      'weight' => 139,
     ),
   );
 
@@ -4277,13 +4792,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 188,
+        'weight' => 144,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 181,
       ),
     ),
     'entity_type' => 'node',
@@ -4302,7 +4823,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 158,
+      'weight' => 144,
     ),
   );
 
@@ -4323,13 +4844,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 187,
+        'weight' => 143,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 180,
       ),
     ),
     'entity_type' => 'node',
@@ -4348,7 +4875,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 157,
+      'weight' => 143,
     ),
   );
 
@@ -4364,13 +4891,14 @@ function censusfeature_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 200,
+        'weight' => 155,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'list_default',
+        'weight' => 192,
       ),
     ),
     'entity_type' => 'node',
@@ -4385,7 +4913,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 169,
+      'weight' => 155,
     ),
   );
 
@@ -4401,13 +4929,14 @@ function censusfeature_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 183,
+        'weight' => 139,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'list_default',
+        'weight' => 176,
       ),
     ),
     'entity_type' => 'node',
@@ -4422,7 +4951,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 153,
+      'weight' => 138,
     ),
   );
 
@@ -4438,13 +4967,14 @@ function censusfeature_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 216,
+        'weight' => 171,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'list_default',
+        'weight' => 208,
       ),
     ),
     'entity_type' => 'node',
@@ -4459,7 +4989,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 185,
+      'weight' => 171,
     ),
   );
 
@@ -4480,13 +5010,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 226,
+        'weight' => 181,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 218,
       ),
     ),
     'entity_type' => 'node',
@@ -4505,7 +5041,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 198,
+      'weight' => 184,
     ),
   );
 
@@ -4526,13 +5062,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 225,
+        'weight' => 180,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 217,
       ),
     ),
     'entity_type' => 'node',
@@ -4551,7 +5093,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 197,
+      'weight' => 183,
     ),
   );
 
@@ -4572,13 +5114,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 222,
+        'weight' => 177,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 214,
       ),
     ),
     'entity_type' => 'node',
@@ -4597,7 +5145,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 194,
+      'weight' => 180,
     ),
   );
 
@@ -4618,13 +5166,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 221,
+        'weight' => 176,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 213,
       ),
     ),
     'entity_type' => 'node',
@@ -4643,7 +5197,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 193,
+      'weight' => 179,
     ),
   );
 
@@ -4664,13 +5218,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 230,
+        'weight' => 185,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 222,
       ),
     ),
     'entity_type' => 'node',
@@ -4689,7 +5249,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 187,
+      'weight' => 173,
     ),
   );
 
@@ -4710,13 +5270,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 220,
+        'weight' => 175,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 212,
       ),
     ),
     'entity_type' => 'node',
@@ -4735,7 +5301,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 192,
+      'weight' => 178,
     ),
   );
 
@@ -4756,13 +5322,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 219,
+        'weight' => 174,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 211,
       ),
     ),
     'entity_type' => 'node',
@@ -4781,7 +5353,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 191,
+      'weight' => 177,
     ),
   );
 
@@ -4802,13 +5374,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 224,
+        'weight' => 179,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 216,
       ),
     ),
     'entity_type' => 'node',
@@ -4827,7 +5405,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 196,
+      'weight' => 182,
     ),
   );
 
@@ -4848,13 +5426,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 223,
+        'weight' => 178,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 215,
       ),
     ),
     'entity_type' => 'node',
@@ -4873,7 +5457,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 195,
+      'weight' => 181,
     ),
   );
 
@@ -4894,13 +5478,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 228,
+        'weight' => 183,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 220,
       ),
     ),
     'entity_type' => 'node',
@@ -4919,7 +5509,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 200,
+      'weight' => 186,
     ),
   );
 
@@ -4940,13 +5530,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 227,
+        'weight' => 182,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 219,
       ),
     ),
     'entity_type' => 'node',
@@ -4965,7 +5561,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 199,
+      'weight' => 185,
     ),
   );
 
@@ -4986,13 +5582,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 231,
+        'weight' => 186,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 223,
       ),
     ),
     'entity_type' => 'node',
@@ -5011,7 +5613,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 188,
+      'weight' => 174,
     ),
   );
 
@@ -5032,13 +5634,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 229,
+        'weight' => 184,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 221,
       ),
     ),
     'entity_type' => 'node',
@@ -5057,7 +5665,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 186,
+      'weight' => 172,
     ),
   );
 
@@ -5078,13 +5686,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 218,
+        'weight' => 173,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 210,
       ),
     ),
     'entity_type' => 'node',
@@ -5103,7 +5717,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 190,
+      'weight' => 176,
     ),
   );
 
@@ -5124,13 +5738,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 217,
+        'weight' => 172,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 209,
       ),
     ),
     'entity_type' => 'node',
@@ -5149,7 +5769,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 189,
+      'weight' => 175,
     ),
   );
 
@@ -5170,13 +5790,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 35,
+        'weight' => 34,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 34,
       ),
     ),
     'entity_type' => 'node',
@@ -5218,11 +5844,17 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 2,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 2,
       ),
     ),
     'entity_type' => 'node',
@@ -5253,6 +5885,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 238,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -5262,13 +5906,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 307,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 324,
       ),
     ),
     'entity_type' => 'node',
@@ -5287,7 +5925,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 275,
+      'weight' => 254,
     ),
   );
 
@@ -5299,6 +5937,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 237,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -5308,13 +5958,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 306,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 323,
       ),
     ),
     'entity_type' => 'node',
@@ -5333,7 +5977,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 274,
+      'weight' => 253,
     ),
   );
 
@@ -5345,6 +5989,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 218,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -5354,13 +6010,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 303,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 318,
       ),
     ),
     'entity_type' => 'node',
@@ -5379,7 +6029,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 271,
+      'weight' => 256,
     ),
   );
 
@@ -5391,6 +6041,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 217,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -5400,13 +6062,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 302,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 317,
       ),
     ),
     'entity_type' => 'node',
@@ -5425,7 +6081,44 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 270,
+      'weight' => 255,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_direct_contact_males'.
+  $field_instances['node-census-field_direct_contact_males'] = array(
+    'bundle' => 'census',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 249,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_default',
+        'weight' => 363,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_direct_contact_males',
+    'label' => 'Males',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 284,
     ),
   );
 
@@ -5437,6 +6130,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 231,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -5446,13 +6151,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 301,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 315,
       ),
     ),
     'entity_type' => 'node',
@@ -5471,7 +6170,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 269,
+      'weight' => 254,
     ),
   );
 
@@ -5483,6 +6182,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 230,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -5492,13 +6203,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 300,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 313,
       ),
     ),
     'entity_type' => 'node',
@@ -5517,7 +6222,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 268,
+      'weight' => 253,
     ),
   );
 
@@ -5529,6 +6234,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 236,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -5538,13 +6255,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 305,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 321,
       ),
     ),
     'entity_type' => 'node',
@@ -5563,7 +6274,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 273,
+      'weight' => 258,
     ),
   );
 
@@ -5575,6 +6286,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 235,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -5584,13 +6307,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 304,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 320,
       ),
     ),
     'entity_type' => 'node',
@@ -5609,7 +6326,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 272,
+      'weight' => 257,
     ),
   );
 
@@ -5621,6 +6338,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 241,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -5630,13 +6359,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 312,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 329,
       ),
     ),
     'entity_type' => 'node',
@@ -5655,7 +6378,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 277,
+      'weight' => 257,
     ),
   );
 
@@ -5667,6 +6390,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 240,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -5676,13 +6411,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 311,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 328,
       ),
     ),
     'entity_type' => 'node',
@@ -5701,7 +6430,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 276,
+      'weight' => 256,
     ),
   );
 
@@ -5713,6 +6442,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 243,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -5722,13 +6463,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 310,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 326,
       ),
     ),
     'entity_type' => 'node',
@@ -5747,7 +6482,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 279,
+      'weight' => 259,
     ),
   );
 
@@ -5759,6 +6494,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 242,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -5768,13 +6515,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 313,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 331,
       ),
     ),
     'entity_type' => 'node',
@@ -5793,7 +6534,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 278,
+      'weight' => 258,
     ),
   );
 
@@ -5805,6 +6546,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 229,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -5814,13 +6567,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 299,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 312,
       ),
     ),
     'entity_type' => 'node',
@@ -5839,7 +6586,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 267,
+      'weight' => 257,
     ),
   );
 
@@ -5851,6 +6598,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 228,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -5860,13 +6619,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 298,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 310,
       ),
     ),
     'entity_type' => 'node',
@@ -5885,7 +6638,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 266,
+      'weight' => 256,
     ),
   );
 
@@ -5906,13 +6659,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 36,
+        'weight' => 35,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 35,
       ),
     ),
     'entity_type' => 'node',
@@ -5952,13 +6711,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 53,
+        'weight' => 52,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 52,
       ),
     ),
     'entity_type' => 'node',
@@ -5998,13 +6763,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 55,
+        'weight' => 54,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 54,
       ),
     ),
     'entity_type' => 'node',
@@ -6041,11 +6812,12 @@ function censusfeature_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 16,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'text_default',
+        'weight' => 16,
       ),
     ),
     'entity_type' => 'node',
@@ -6079,13 +6851,14 @@ function censusfeature_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 128,
+        'weight' => 118,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'list_default',
+        'weight' => 121,
       ),
     ),
     'entity_type' => 'node',
@@ -6116,13 +6889,14 @@ function censusfeature_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 129,
+        'weight' => 119,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'list_default',
+        'weight' => 122,
       ),
     ),
     'entity_type' => 'node',
@@ -6138,6 +6912,186 @@ function censusfeature_field_default_field_instances() {
       'settings' => array(),
       'type' => 'options_buttons',
       'weight' => 120,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_era_describe'.
+  $field_instances['node-census-field_era_describe'] = array(
+    'bundle' => 'census',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 389,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_era_describe',
+    'label' => 'Describe the Programs',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 336,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_era_funding_source_nul'.
+  $field_instances['node-census-field_era_funding_source_nul'] = array(
+    'bundle' => 'census',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 390,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_era_funding_source_nul',
+    'label' => 'Funding Source: NUL',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 337,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_era_funding_source_other'.
+  $field_instances['node-census-field_era_funding_source_other'] = array(
+    'bundle' => 'census',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 392,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_era_funding_source_other',
+    'label' => 'Funding Source: Other',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 339,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_era_funding_source_u_way'.
+  $field_instances['node-census-field_era_funding_source_u_way'] = array(
+    'bundle' => 'census',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 391,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_era_funding_source_u_way',
+    'label' => 'Funding Source: U Way',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 338,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_era_number_served'.
+  $field_instances['node-census-field_era_number_served'] = array(
+    'bundle' => 'census',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 393,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_era_number_served',
+    'label' => 'Number Served',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 340,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_era_societal_impact'.
+  $field_instances['node-census-field_era_societal_impact'] = array(
+    'bundle' => 'census',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 394,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_era_societal_impact',
+    'label' => 'Societal Impact',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 341,
     ),
   );
 
@@ -6158,13 +7112,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 37,
+        'weight' => 36,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 36,
       ),
     ),
     'entity_type' => 'node',
@@ -6206,11 +7166,17 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 14,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 14,
       ),
     ),
     'entity_type' => 'node',
@@ -6240,17 +7206,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 258,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'markup',
         'settings' => array(),
         'type' => 'markup_default',
-        'weight' => 319,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 334,
       ),
     ),
     'entity_type' => 'node',
@@ -6276,17 +7243,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 311,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'markup',
         'settings' => array(),
         'type' => 'markup_default',
-        'weight' => 324,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 341,
       ),
     ),
     'entity_type' => 'node',
@@ -6301,7 +7269,44 @@ function censusfeature_field_default_field_instances() {
       'module' => 'markup',
       'settings' => array(),
       'type' => 'markup',
-      'weight' => 283,
+      'weight' => 141,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_females'.
+  $field_instances['node-census-field_females'] = array(
+    'bundle' => 'census',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 250,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_default',
+        'weight' => 364,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_females',
+    'label' => 'Females',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 285,
     ),
   );
 
@@ -6319,10 +7324,11 @@ function censusfeature_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 0,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
+        'type' => 'text_default',
         'weight' => 0,
       ),
     ),
@@ -6362,13 +7368,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 213,
+        'weight' => 168,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 205,
       ),
     ),
     'entity_type' => 'node',
@@ -6387,7 +7399,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 182,
+      'weight' => 168,
     ),
   );
 
@@ -6408,13 +7420,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 212,
+        'weight' => 167,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 204,
       ),
     ),
     'entity_type' => 'node',
@@ -6433,7 +7451,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 181,
+      'weight' => 167,
     ),
   );
 
@@ -6454,13 +7472,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 209,
+        'weight' => 164,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 201,
       ),
     ),
     'entity_type' => 'node',
@@ -6479,7 +7503,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 178,
+      'weight' => 164,
     ),
   );
 
@@ -6500,13 +7524,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 208,
+        'weight' => 163,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 200,
       ),
     ),
     'entity_type' => 'node',
@@ -6525,7 +7555,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 177,
+      'weight' => 163,
     ),
   );
 
@@ -6546,13 +7576,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 202,
+        'weight' => 157,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 194,
       ),
     ),
     'entity_type' => 'node',
@@ -6571,7 +7607,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 171,
+      'weight' => 157,
     ),
   );
 
@@ -6592,13 +7628,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 207,
+        'weight' => 162,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 199,
       ),
     ),
     'entity_type' => 'node',
@@ -6617,7 +7659,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 176,
+      'weight' => 162,
     ),
   );
 
@@ -6638,13 +7680,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 206,
+        'weight' => 161,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 198,
       ),
     ),
     'entity_type' => 'node',
@@ -6663,7 +7711,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 175,
+      'weight' => 161,
     ),
   );
 
@@ -6684,13 +7732,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 211,
+        'weight' => 166,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 203,
       ),
     ),
     'entity_type' => 'node',
@@ -6709,7 +7763,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 180,
+      'weight' => 166,
     ),
   );
 
@@ -6730,13 +7784,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 210,
+        'weight' => 165,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 202,
       ),
     ),
     'entity_type' => 'node',
@@ -6755,7 +7815,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 179,
+      'weight' => 165,
     ),
   );
 
@@ -6776,13 +7836,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 215,
+        'weight' => 170,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 207,
       ),
     ),
     'entity_type' => 'node',
@@ -6801,7 +7867,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 184,
+      'weight' => 170,
     ),
   );
 
@@ -6822,13 +7888,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 214,
+        'weight' => 169,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 206,
       ),
     ),
     'entity_type' => 'node',
@@ -6847,7 +7919,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 183,
+      'weight' => 169,
     ),
   );
 
@@ -6868,13 +7940,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 203,
+        'weight' => 158,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 195,
       ),
     ),
     'entity_type' => 'node',
@@ -6893,7 +7971,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 172,
+      'weight' => 158,
     ),
   );
 
@@ -6914,13 +7992,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 201,
+        'weight' => 156,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 193,
       ),
     ),
     'entity_type' => 'node',
@@ -6939,7 +8023,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 170,
+      'weight' => 156,
     ),
   );
 
@@ -6960,13 +8044,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 205,
+        'weight' => 160,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 197,
       ),
     ),
     'entity_type' => 'node',
@@ -6985,7 +8075,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 174,
+      'weight' => 160,
     ),
   );
 
@@ -7006,13 +8096,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 204,
+        'weight' => 159,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 196,
       ),
     ),
     'entity_type' => 'node',
@@ -7031,7 +8127,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 173,
+      'weight' => 159,
     ),
   );
 
@@ -7052,13 +8148,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 125,
+        'weight' => 115,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 117,
       ),
     ),
     'entity_type' => 'node',
@@ -7098,13 +8200,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 38,
+        'weight' => 37,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 37,
       ),
     ),
     'entity_type' => 'node',
@@ -7134,22 +8242,23 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 309,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'markup',
         'settings' => array(),
         'type' => 'markup_default',
-        'weight' => 321,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 339,
       ),
     ),
     'entity_type' => 'node',
     'field_name' => 'field_gender',
-    'label' => 'Gender',
+    'label' => 'UnDuplicate',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -7159,7 +8268,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'markup',
       'settings' => array(),
       'type' => 'markup',
-      'weight' => 280,
+      'weight' => 279,
     ),
   );
 
@@ -7180,13 +8289,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 112,
+        'weight' => 102,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 102,
       ),
     ),
     'entity_type' => 'node',
@@ -7226,13 +8341,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 113,
+        'weight' => 103,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 103,
       ),
     ),
     'entity_type' => 'node',
@@ -7272,13 +8393,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 114,
+        'weight' => 104,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 104,
       ),
     ),
     'entity_type' => 'node',
@@ -7318,13 +8445,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 115,
+        'weight' => 105,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 105,
       ),
     ),
     'entity_type' => 'node',
@@ -7364,13 +8497,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 116,
+        'weight' => 106,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 106,
       ),
     ),
     'entity_type' => 'node',
@@ -7410,13 +8549,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 117,
+        'weight' => 107,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 107,
       ),
     ),
     'entity_type' => 'node',
@@ -7456,13 +8601,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 68,
+        'weight' => 65,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 65,
       ),
     ),
     'entity_type' => 'node',
@@ -7502,13 +8653,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 66,
+        'weight' => 63,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 63,
       ),
     ),
     'entity_type' => 'node',
@@ -7548,13 +8705,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 63,
+        'weight' => 61,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 61,
       ),
     ),
     'entity_type' => 'node',
@@ -7594,13 +8757,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 65,
+        'weight' => 62,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 62,
       ),
     ),
     'entity_type' => 'node',
@@ -7640,13 +8809,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 110,
+        'weight' => 100,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 100,
       ),
     ),
     'entity_type' => 'node',
@@ -7686,13 +8861,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 61,
+        'weight' => 60,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 60,
       ),
     ),
     'entity_type' => 'node',
@@ -7732,13 +8913,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 67,
+        'weight' => 64,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 64,
       ),
     ),
     'entity_type' => 'node',
@@ -7778,13 +8965,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 69,
+        'weight' => 66,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 66,
       ),
     ),
     'entity_type' => 'node',
@@ -7824,13 +9017,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 111,
+        'weight' => 101,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 101,
       ),
     ),
     'entity_type' => 'node',
@@ -7870,13 +9069,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 39,
+        'weight' => 38,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 38,
       ),
     ),
     'entity_type' => 'node',
@@ -7917,11 +9122,12 @@ function censusfeature_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 27,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'list_default',
+        'weight' => 27,
       ),
     ),
     'entity_type' => 'node',
@@ -7959,13 +9165,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 54,
+        'weight' => 53,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 53,
       ),
     ),
     'entity_type' => 'node',
@@ -8005,13 +9217,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 40,
+        'weight' => 39,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 39,
       ),
     ),
     'entity_type' => 'node',
@@ -8034,6 +9252,58 @@ function censusfeature_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-census-field_indirect_contact_served'.
+  $field_instances['node-census-field_indirect_contact_served'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 254,
+      ),
+      'full' => array(
+        'label' => 'inline',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 358,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_indirect_contact_served',
+    'label' => 'Indirect Contact Number Served',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 256,
+    ),
+  );
+
   // Exported field_instance: 'node-census-field_is_there_a_guild_'.
   $field_instances['node-census-field_is_there_a_guild_'] = array(
     'bundle' => 'census',
@@ -8046,13 +9316,14 @@ function censusfeature_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 60,
+        'weight' => 59,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'list_default',
+        'weight' => 59,
       ),
     ),
     'entity_type' => 'node',
@@ -8082,13 +9353,14 @@ function censusfeature_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 76,
+        'weight' => 67,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'list_default',
+        'weight' => 67,
       ),
     ),
     'entity_type' => 'node',
@@ -8125,11 +9397,12 @@ function censusfeature_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 24,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'list_default',
+        'weight' => 24,
       ),
     ),
     'entity_type' => 'node',
@@ -8167,13 +9440,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 41,
+        'weight' => 40,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 40,
       ),
     ),
     'entity_type' => 'node',
@@ -8213,13 +9492,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 42,
+        'weight' => 41,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 41,
       ),
     ),
     'entity_type' => 'node',
@@ -8259,13 +9544,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 43,
+        'weight' => 42,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 42,
       ),
     ),
     'entity_type' => 'node',
@@ -8305,13 +9596,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 44,
+        'weight' => 43,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 43,
       ),
     ),
     'entity_type' => 'node',
@@ -8352,11 +9649,12 @@ function censusfeature_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 21,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'list_default',
+        'weight' => 21,
       ),
     ),
     'entity_type' => 'node',
@@ -8384,17 +9682,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 310,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'markup',
         'settings' => array(),
         'type' => 'markup_default',
-        'weight' => 323,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 340,
       ),
     ),
     'entity_type' => 'node',
@@ -8409,7 +9708,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'markup',
       'settings' => array(),
       'type' => 'markup',
-      'weight' => 282,
+      'weight' => 140,
     ),
   );
 
@@ -8430,13 +9729,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 50,
+        'weight' => 49,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 49,
       ),
     ),
     'entity_type' => 'node',
@@ -8477,11 +9782,12 @@ function censusfeature_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 29,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'list_default',
+        'weight' => 29,
       ),
     ),
     'entity_type' => 'node',
@@ -8516,11 +9822,12 @@ function censusfeature_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 28,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'list_default',
+        'weight' => 28,
       ),
     ),
     'entity_type' => 'node',
@@ -8558,11 +9865,17 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 23,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 23,
       ),
     ),
     'entity_type' => 'node',
@@ -8602,13 +9915,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 45,
+        'weight' => 44,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 44,
       ),
     ),
     'entity_type' => 'node',
@@ -8649,11 +9968,12 @@ function censusfeature_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 19,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'list_default',
+        'weight' => 19,
       ),
     ),
     'entity_type' => 'node',
@@ -8691,13 +10011,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 131,
+        'weight' => 121,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 128,
       ),
     ),
     'entity_type' => 'node',
@@ -8739,11 +10065,17 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 6,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 6,
       ),
     ),
     'entity_type' => 'node',
@@ -8785,11 +10117,17 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 7,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 7,
       ),
     ),
     'entity_type' => 'node',
@@ -8829,13 +10167,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 48,
+        'weight' => 47,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 47,
       ),
     ),
     'entity_type' => 'node',
@@ -8874,13 +10218,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 49,
+        'weight' => 48,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 48,
       ),
     ),
     'entity_type' => 'node',
@@ -8920,13 +10270,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 46,
+        'weight' => 45,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 45,
       ),
     ),
     'entity_type' => 'node',
@@ -8966,13 +10322,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 58,
+        'weight' => 57,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 57,
       ),
     ),
     'entity_type' => 'node',
@@ -9007,13 +10369,14 @@ function censusfeature_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 59,
+        'weight' => 58,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'text_default',
+        'weight' => 58,
       ),
     ),
     'entity_type' => 'node',
@@ -9047,13 +10410,14 @@ function censusfeature_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 93,
+        'weight' => 83,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'list_default',
+        'weight' => 83,
       ),
     ),
     'entity_type' => 'node',
@@ -9084,13 +10448,14 @@ function censusfeature_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 47,
+        'weight' => 46,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'list_default',
+        'weight' => 46,
       ),
     ),
     'entity_type' => 'node',
@@ -9126,13 +10491,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 126,
+        'weight' => 116,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 118,
       ),
     ),
     'entity_type' => 'node',
@@ -9171,11 +10542,15 @@ function censusfeature_field_default_field_instances() {
         'type' => 'image',
         'weight' => 17,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 17,
       ),
     ),
     'entity_type' => 'node',
@@ -9222,13 +10597,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 244,
+        'weight' => 199,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 237,
       ),
     ),
     'entity_type' => 'node',
@@ -9247,7 +10628,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 214,
+      'weight' => 200,
     ),
   );
 
@@ -9268,13 +10649,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 243,
+        'weight' => 198,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 236,
       ),
     ),
     'entity_type' => 'node',
@@ -9293,7 +10680,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 213,
+      'weight' => 199,
     ),
   );
 
@@ -9314,13 +10701,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 240,
+        'weight' => 195,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 232,
       ),
     ),
     'entity_type' => 'node',
@@ -9339,7 +10732,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 210,
+      'weight' => 196,
     ),
   );
 
@@ -9360,13 +10753,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 239,
+        'weight' => 194,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 231,
       ),
     ),
     'entity_type' => 'node',
@@ -9385,7 +10784,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 209,
+      'weight' => 195,
     ),
   );
 
@@ -9401,13 +10800,14 @@ function censusfeature_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 232,
+        'weight' => 187,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'list_default',
+        'weight' => 224,
       ),
     ),
     'entity_type' => 'node',
@@ -9422,7 +10822,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 201,
+      'weight' => 187,
     ),
   );
 
@@ -9443,13 +10843,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 234,
+        'weight' => 189,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 226,
       ),
     ),
     'entity_type' => 'node',
@@ -9468,7 +10874,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 203,
+      'weight' => 189,
     ),
   );
 
@@ -9489,13 +10895,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 238,
+        'weight' => 193,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 230,
       ),
     ),
     'entity_type' => 'node',
@@ -9514,7 +10926,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 208,
+      'weight' => 194,
     ),
   );
 
@@ -9535,13 +10947,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 237,
+        'weight' => 192,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 229,
       ),
     ),
     'entity_type' => 'node',
@@ -9560,7 +10978,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 207,
+      'weight' => 193,
     ),
   );
 
@@ -9581,13 +10999,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 242,
+        'weight' => 197,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 235,
       ),
     ),
     'entity_type' => 'node',
@@ -9606,7 +11030,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 212,
+      'weight' => 198,
     ),
   );
 
@@ -9627,13 +11051,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 241,
+        'weight' => 196,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 233,
       ),
     ),
     'entity_type' => 'node',
@@ -9652,7 +11082,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 211,
+      'weight' => 197,
     ),
   );
 
@@ -9673,13 +11103,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 246,
+        'weight' => 201,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 240,
       ),
     ),
     'entity_type' => 'node',
@@ -9698,7 +11134,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 216,
+      'weight' => 202,
     ),
   );
 
@@ -9719,13 +11155,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 245,
+        'weight' => 200,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 239,
       ),
     ),
     'entity_type' => 'node',
@@ -9744,7 +11186,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 215,
+      'weight' => 201,
     ),
   );
 
@@ -9765,13 +11207,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 294,
+        'weight' => 224,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 305,
       ),
     ),
     'entity_type' => 'node',
@@ -9790,7 +11238,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 204,
+      'weight' => 190,
     ),
   );
 
@@ -9811,13 +11259,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 233,
+        'weight' => 188,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 225,
       ),
     ),
     'entity_type' => 'node',
@@ -9836,7 +11290,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 202,
+      'weight' => 188,
     ),
   );
 
@@ -9857,13 +11311,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 236,
+        'weight' => 191,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 228,
       ),
     ),
     'entity_type' => 'node',
@@ -9882,7 +11342,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 206,
+      'weight' => 192,
     ),
   );
 
@@ -9903,13 +11363,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 235,
+        'weight' => 190,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 227,
       ),
     ),
     'entity_type' => 'node',
@@ -9928,7 +11394,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 205,
+      'weight' => 191,
     ),
   );
 
@@ -9946,11 +11412,12 @@ function censusfeature_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 3,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'text_default',
+        'weight' => 3,
       ),
     ),
     'entity_type' => 'node',
@@ -9986,11 +11453,12 @@ function censusfeature_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 5,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'text_default',
+        'weight' => 5,
       ),
     ),
     'entity_type' => 'node',
@@ -10026,11 +11494,12 @@ function censusfeature_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 4,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'text_default',
+        'weight' => 4,
       ),
     ),
     'entity_type' => 'node',
@@ -10070,11 +11539,12 @@ function censusfeature_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 26,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'list_default',
+        'weight' => 26,
       ),
     ),
     'entity_type' => 'node',
@@ -10113,11 +11583,12 @@ function censusfeature_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 18,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'list_default',
+        'weight' => 18,
       ),
     ),
     'entity_type' => 'node',
@@ -10156,11 +11627,12 @@ function censusfeature_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 25,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'list_default',
+        'weight' => 25,
       ),
     ),
     'entity_type' => 'node',
@@ -10181,6 +11653,808 @@ function censusfeature_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-census-field_public_african_am_female'.
+  $field_instances['node-census-field_public_african_am_female'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 251,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 354,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_public_african_am_female',
+    'label' => 'Public Contact African American Females',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 270,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_public_african_am_male'.
+  $field_instances['node-census-field_public_african_am_male'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 250,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 353,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_public_african_am_male',
+    'label' => 'Public Contact African American Males',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 269,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_public_asian_am_female'.
+  $field_instances['node-census-field_public_asian_am_female'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 250,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 349,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_public_asian_am_female',
+    'label' => 'Public Contact Asian American Females',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 266,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_public_asian_am_male'.
+  $field_instances['node-census-field_public_asian_am_male'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 249,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 348,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_public_asian_am_male',
+    'label' => 'Public Contact Asian American Males',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 265,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_public_contact_female'.
+  $field_instances['node-census-field_public_contact_female'] = array(
+    'bundle' => 'census',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 331,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_default',
+        'weight' => 365,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_public_contact_female',
+    'label' => 'Female',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 327,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_public_contact_males'.
+  $field_instances['node-census-field_public_contact_males'] = array(
+    'bundle' => 'census',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 257,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_default',
+        'weight' => 366,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_public_contact_males',
+    'label' => 'Males',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 326,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_public_hispanic_female'.
+  $field_instances['node-census-field_public_hispanic_female'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 256,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 347,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_public_hispanic_female',
+    'label' => 'Public Contact Hispanic/Latio Females',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 264,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_public_hispanic_male'.
+  $field_instances['node-census-field_public_hispanic_male'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 255,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 346,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_public_hispanic_male',
+    'label' => 'Public Contact Hispanic/Latio Males',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 263,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_public_native_am_female'.
+  $field_instances['node-census-field_public_native_am_female'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 249,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 352,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_public_native_am_female',
+    'label' => 'Public Contact Native American Females',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 261,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_public_native_am_male'.
+  $field_instances['node-census-field_public_native_am_male'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 248,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 350,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_public_native_am_male',
+    'label' => 'Public Contact Native American Males',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 260,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_public_other_female'.
+  $field_instances['node-census-field_public_other_female'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 252,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 356,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_public_other_female',
+    'label' => 'Public Contact Other Females',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 263,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_public_other_male'.
+  $field_instances['node-census-field_public_other_male'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 251,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 355,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_public_other_male',
+    'label' => 'Public Contact Other Males',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 262,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_public_total_female'.
+  $field_instances['node-census-field_public_total_female'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 256,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 361,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_public_total_female',
+    'label' => 'Total Public Contact Females',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 258,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_public_total_male'.
+  $field_instances['node-census-field_public_total_male'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 255,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 360,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_public_total_male',
+    'label' => 'Total Public Contact Males',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 257,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_public_white_female'.
+  $field_instances['node-census-field_public_white_female'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 342,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 345,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_public_white_female',
+    'label' => 'Public Contact White Females',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 262,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_public_white_male'.
+  $field_instances['node-census-field_public_white_male'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 341,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 344,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_public_white_male',
+    'label' => 'Public Contact White Males',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 261,
+    ),
+  );
+
   // Exported field_instance: 'node-census-field_relief_civic_desc'.
   $field_instances['node-census-field_relief_civic_desc'] = array(
     'bundle' => 'census',
@@ -10189,17 +12463,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 234,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 281,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 291,
       ),
     ),
     'entity_type' => 'node',
@@ -10217,7 +12492,7 @@ function censusfeature_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 253,
+      'weight' => 230,
     ),
   );
 
@@ -10233,17 +12508,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 235,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 282,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 292,
       ),
     ),
     'entity_type' => 'node',
@@ -10260,7 +12536,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 254,
+      'weight' => 231,
     ),
   );
 
@@ -10276,17 +12552,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 237,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 284,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 294,
       ),
     ),
     'entity_type' => 'node',
@@ -10303,7 +12580,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 256,
+      'weight' => 233,
     ),
   );
 
@@ -10319,17 +12596,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 236,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 283,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 293,
       ),
     ),
     'entity_type' => 'node',
@@ -10346,7 +12624,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 255,
+      'weight' => 232,
     ),
   );
 
@@ -10358,6 +12636,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 239,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -10367,13 +12657,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 286,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 296,
       ),
     ),
     'entity_type' => 'node',
@@ -10392,7 +12676,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 258,
+      'weight' => 235,
     ),
   );
 
@@ -10404,6 +12688,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 238,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -10413,13 +12709,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 285,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 295,
       ),
     ),
     'entity_type' => 'node',
@@ -10438,7 +12728,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 257,
+      'weight' => 234,
     ),
   );
 
@@ -10450,17 +12740,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 233,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 262,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 269,
       ),
     ),
     'entity_type' => 'node',
@@ -10478,7 +12769,7 @@ function censusfeature_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 235,
+      'weight' => 345,
     ),
   );
 
@@ -10494,17 +12785,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 234,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 263,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 271,
       ),
     ),
     'entity_type' => 'node',
@@ -10521,7 +12813,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 236,
+      'weight' => 346,
     ),
   );
 
@@ -10537,17 +12829,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 236,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 265,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 274,
       ),
     ),
     'entity_type' => 'node',
@@ -10564,7 +12857,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 238,
+      'weight' => 348,
     ),
   );
 
@@ -10580,17 +12873,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 235,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 264,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 272,
       ),
     ),
     'entity_type' => 'node',
@@ -10607,7 +12901,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 237,
+      'weight' => 347,
     ),
   );
 
@@ -10619,6 +12913,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 237,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -10628,13 +12934,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 267,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 276,
       ),
     ),
     'entity_type' => 'node',
@@ -10653,7 +12953,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 240,
+      'weight' => 350,
     ),
   );
 
@@ -10665,6 +12965,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 238,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -10674,13 +12986,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 268,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 278,
       ),
     ),
     'entity_type' => 'node',
@@ -10699,7 +13005,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 239,
+      'weight' => 349,
     ),
   );
 
@@ -10711,17 +13017,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 240,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 269,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 279,
       ),
     ),
     'entity_type' => 'node',
@@ -10739,7 +13046,7 @@ function censusfeature_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 241,
+      'weight' => 223,
     ),
   );
 
@@ -10751,17 +13058,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 241,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 270,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 280,
       ),
     ),
     'entity_type' => 'node',
@@ -10778,7 +13086,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 242,
+      'weight' => 224,
     ),
   );
 
@@ -10794,17 +13102,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 243,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 272,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 282,
       ),
     ),
     'entity_type' => 'node',
@@ -10821,7 +13130,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 244,
+      'weight' => 226,
     ),
   );
 
@@ -10837,17 +13146,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 242,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 271,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 281,
       ),
     ),
     'entity_type' => 'node',
@@ -10864,7 +13174,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 243,
+      'weight' => 225,
     ),
   );
 
@@ -10876,6 +13186,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 245,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -10885,13 +13207,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 274,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 284,
       ),
     ),
     'entity_type' => 'node',
@@ -10910,7 +13226,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 246,
+      'weight' => 228,
     ),
   );
 
@@ -10922,6 +13238,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 244,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -10931,13 +13259,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 273,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 283,
       ),
     ),
     'entity_type' => 'node',
@@ -10956,7 +13278,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 245,
+      'weight' => 227,
     ),
   );
 
@@ -10968,17 +13290,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 246,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 275,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 285,
       ),
     ),
     'entity_type' => 'node',
@@ -10996,7 +13319,7 @@ function censusfeature_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 247,
+      'weight' => 223,
     ),
   );
 
@@ -11012,17 +13335,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 247,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 276,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 286,
       ),
     ),
     'entity_type' => 'node',
@@ -11039,7 +13363,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 248,
+      'weight' => 224,
     ),
   );
 
@@ -11055,17 +13379,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 249,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 278,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 288,
       ),
     ),
     'entity_type' => 'node',
@@ -11082,7 +13407,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 250,
+      'weight' => 226,
     ),
   );
 
@@ -11098,17 +13423,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 248,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 277,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 287,
       ),
     ),
     'entity_type' => 'node',
@@ -11125,7 +13451,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 249,
+      'weight' => 225,
     ),
   );
 
@@ -11137,6 +13463,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 251,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -11146,13 +13484,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 280,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 290,
       ),
     ),
     'entity_type' => 'node',
@@ -11171,7 +13503,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 252,
+      'weight' => 228,
     ),
   );
 
@@ -11183,6 +13515,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 250,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -11192,13 +13536,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 279,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 289,
       ),
     ),
     'entity_type' => 'node',
@@ -11217,7 +13555,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 251,
+      'weight' => 227,
     ),
   );
 
@@ -11229,17 +13567,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 240,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 287,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 297,
       ),
     ),
     'entity_type' => 'node',
@@ -11257,7 +13596,7 @@ function censusfeature_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 259,
+      'weight' => 237,
     ),
   );
 
@@ -11269,17 +13608,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 241,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 288,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 298,
       ),
     ),
     'entity_type' => 'node',
@@ -11296,7 +13636,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 260,
+      'weight' => 238,
     ),
   );
 
@@ -11312,17 +13652,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 243,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 290,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 300,
       ),
     ),
     'entity_type' => 'node',
@@ -11339,7 +13680,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 262,
+      'weight' => 240,
     ),
   );
 
@@ -11355,17 +13696,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 242,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 289,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 299,
       ),
     ),
     'entity_type' => 'node',
@@ -11382,7 +13724,7 @@ function censusfeature_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 261,
+      'weight' => 239,
     ),
   );
 
@@ -11394,6 +13736,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 245,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -11403,13 +13757,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 292,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 302,
       ),
     ),
     'entity_type' => 'node',
@@ -11428,7 +13776,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 264,
+      'weight' => 242,
     ),
   );
 
@@ -11440,6 +13788,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 244,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -11449,13 +13809,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 291,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 301,
       ),
     ),
     'entity_type' => 'node',
@@ -11474,7 +13828,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 263,
+      'weight' => 241,
     ),
   );
 
@@ -11490,13 +13844,14 @@ function censusfeature_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 293,
+        'weight' => 223,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'text_default',
+        'weight' => 304,
       ),
     ),
     'entity_type' => 'node',
@@ -11514,7 +13869,7 @@ function censusfeature_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 265,
+      'weight' => 222,
     ),
   );
 
@@ -11530,13 +13885,14 @@ function censusfeature_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 130,
+        'weight' => 120,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'list_default',
+        'weight' => 124,
       ),
     ),
     'entity_type' => 'node',
@@ -11552,6 +13908,3911 @@ function censusfeature_field_default_field_instances() {
       'settings' => array(),
       'type' => 'options_buttons',
       'weight' => 121,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_10_city'.
+  $field_instances['node-census-field_service_area_10_city'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 296,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 438,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_10_city',
+    'label' => 'Service Area 10 City/County',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 262,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_10_hispanic'.
+  $field_instances['node-census-field_service_area_10_hispanic'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 335,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 400,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_10_hispanic',
+    'label' => 'Service Area 10 Hispanic/Latino',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 301,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_10_name'.
+  $field_instances['node-census-field_service_area_10_name'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 283,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 446,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_10_name',
+    'label' => 'Service Area 10 Name',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 249,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_10_population'.
+  $field_instances['node-census-field_service_area_10_population'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 309,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 387,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_10_population',
+    'label' => 'Service Area 10 Population',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 275,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_10_white'.
+  $field_instances['node-census-field_service_area_10_white'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 322,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 374,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_10_white',
+    'label' => 'Service Area 10 White',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 288,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_11_city'.
+  $field_instances['node-census-field_service_area_11_city'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 297,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 439,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_11_city',
+    'label' => 'Service Area 11 City/County',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 263,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_11_hispanic'.
+  $field_instances['node-census-field_service_area_11_hispanic'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 336,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 399,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_11_hispanic',
+    'label' => 'Service Area 11 Hispanic/Latino',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 302,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_11_name'.
+  $field_instances['node-census-field_service_area_11_name'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 284,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 445,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_11_name',
+    'label' => 'Service Area 11 Name',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 250,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_11_population'.
+  $field_instances['node-census-field_service_area_11_population'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 310,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 386,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_11_population',
+    'label' => 'Service Area 11 Population',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 276,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_11_white'.
+  $field_instances['node-census-field_service_area_11_white'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 323,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 373,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_11_white',
+    'label' => 'Service Area 11 White',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 289,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_12_city'.
+  $field_instances['node-census-field_service_area_12_city'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 298,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 442,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_12_city',
+    'label' => 'Service Area 12 City/County',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 264,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_12_hispanic'.
+  $field_instances['node-census-field_service_area_12_hispanic'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 337,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 393,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_12_hispanic',
+    'label' => 'Service Area 12 Hispanic/Latino',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 303,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_12_name'.
+  $field_instances['node-census-field_service_area_12_name'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 285,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 449,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_12_name',
+    'label' => 'Service Area 12 Name',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 251,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_12_population'.
+  $field_instances['node-census-field_service_area_12_population'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 311,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 385,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_12_population',
+    'label' => 'Service Area 12 Population',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 277,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_12_white'.
+  $field_instances['node-census-field_service_area_12_white'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 324,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 388,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_12_white',
+    'label' => 'Service Area 12 White',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 290,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_13_city'.
+  $field_instances['node-census-field_service_area_13_city'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 299,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 441,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_13_city',
+    'label' => 'Service Area 13 City/County',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 265,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_13_hispanic'.
+  $field_instances['node-census-field_service_area_13_hispanic'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 338,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 392,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_13_hispanic',
+    'label' => 'Service Area 13 Hispanic/Latino',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 304,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_13_name'.
+  $field_instances['node-census-field_service_area_13_name'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 286,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 450,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_13_name',
+    'label' => 'Service Area 13 Name',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 252,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_13_population'.
+  $field_instances['node-census-field_service_area_13_population'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 312,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 378,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_13_population',
+    'label' => 'Service Area 13 Population',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 278,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_13_white'.
+  $field_instances['node-census-field_service_area_13_white'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 325,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 389,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_13_white',
+    'label' => 'Service Area 13 White',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 291,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_14_city'.
+  $field_instances['node-census-field_service_area_14_city'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 300,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 440,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_14_city',
+    'label' => 'Service Area 14 City/County',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 266,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_14_hispanic'.
+  $field_instances['node-census-field_service_area_14_hispanic'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 339,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 391,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_14_hispanic',
+    'label' => 'Service Area 14 Hispanic/Latino',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 305,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_14_name'.
+  $field_instances['node-census-field_service_area_14_name'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 287,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 453,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_14_name',
+    'label' => 'Service Area 14 Name',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 253,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_14_population'.
+  $field_instances['node-census-field_service_area_14_population'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 313,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 377,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_14_population',
+    'label' => 'Service Area 14 Population',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 279,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_14_white'.
+  $field_instances['node-census-field_service_area_14_white'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 326,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 404,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_14_white',
+    'label' => 'Service Area 14 White',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 292,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_15_city'.
+  $field_instances['node-census-field_service_area_15_city'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 301,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 411,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_15_city',
+    'label' => 'Service Area 15 City/County',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 267,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_15_hispanic'.
+  $field_instances['node-census-field_service_area_15_hispanic'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 340,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 390,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_15_hispanic',
+    'label' => 'Service Area 15 Hispanic/Latino',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 306,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_15_name'.
+  $field_instances['node-census-field_service_area_15_name'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 288,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 452,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_15_name',
+    'label' => 'Service Area 15 Name',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 254,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_15_population'.
+  $field_instances['node-census-field_service_area_15_population'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 314,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 370,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_15_population',
+    'label' => 'Service Area 15 Population',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 280,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_15_white'.
+  $field_instances['node-census-field_service_area_15_white'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 327,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 403,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_15_white',
+    'label' => 'Service Area 15 White',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 293,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_1_african_am'.
+  $field_instances['node-census-field_service_area_1_african_am'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 273,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 412,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_1_african_am',
+    'label' => 'Service Area 1 African American',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 231,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_1_asian_am'.
+  $field_instances['node-census-field_service_area_1_asian_am'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 262,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 423,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_1_asian_am',
+    'label' => 'Service Area 1 Asian American',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 229,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_1_city_county'.
+  $field_instances['node-census-field_service_area_1_city_county'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 258,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 454,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_1_city_county',
+    'label' => 'Service Area 1 City/County',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 225,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_1_hispanic'.
+  $field_instances['node-census-field_service_area_1_hispanic'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 261,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 424,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_1_hispanic',
+    'label' => 'Service Area 1 Hispanic/Latino',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 228,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_1_name'.
+  $field_instances['node-census-field_service_area_1_name'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 264,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 428,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_1_name',
+    'label' => 'Service Area 1 Name',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 224,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_1_native_am'.
+  $field_instances['node-census-field_service_area_1_native_am'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 263,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 427,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_1_native_am',
+    'label' => 'Service Area 1 Native American',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 230,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_1_other'.
+  $field_instances['node-census-field_service_area_1_other'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 265,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 431,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_1_other',
+    'label' => 'Service Area 1 Other',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 232,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_1_population'.
+  $field_instances['node-census-field_service_area_1_population'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 259,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 426,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_1_population',
+    'label' => 'Service Area 1 Population',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 226,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_1_white'.
+  $field_instances['node-census-field_service_area_1_white'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 260,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 425,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_1_white',
+    'label' => 'Service Area 1 White',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 227,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_2_african_am'.
+  $field_instances['node-census-field_service_area_2_african_am'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 274,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 416,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_2_african_am',
+    'label' => 'Service Area 2 African American',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 240,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_2_asian_am'.
+  $field_instances['node-census-field_service_area_2_asian_am'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 271,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 414,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_2_asian_am',
+    'label' => 'Service Area 2 Asian American',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 238,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_2_city'.
+  $field_instances['node-census-field_service_area_2_city'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 267,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 429,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_2_city',
+    'label' => 'Service Area 2 City/County',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 234,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_2_hispanic'.
+  $field_instances['node-census-field_service_area_2_hispanic'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 269,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 421,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_2_hispanic',
+    'label' => 'Service Area 2 Hispanic/Latino',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 237,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_2_name'.
+  $field_instances['node-census-field_service_area_2_name'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 266,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 430,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_2_name',
+    'label' => 'Service Area 2 Name',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 233,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_2_native_am'.
+  $field_instances['node-census-field_service_area_2_native_am'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 272,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 413,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_2_native_am',
+    'label' => 'Service Area 2 Native American',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 239,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_2_other'.
+  $field_instances['node-census-field_service_area_2_other'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 275,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 417,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_2_other',
+    'label' => 'Service Area 2 Other',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 241,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_2_population'.
+  $field_instances['node-census-field_service_area_2_population'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 270,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 415,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_2_population',
+    'label' => 'Service Area 2 Population',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 235,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_2_white'.
+  $field_instances['node-census-field_service_area_2_white'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 268,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 422,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_2_white',
+    'label' => 'Service Area 2 White',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 236,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_3_asian_am'.
+  $field_instances['node-census-field_service_area_3_asian_am'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 341,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 394,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_3_asian_am',
+    'label' => 'Service Area 3 Asian American',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 307,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_3_city'.
+  $field_instances['node-census-field_service_area_3_city'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 289,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 451,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_3_city',
+    'label' => 'Service Area 3 City/County',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 255,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_3_hispanic'.
+  $field_instances['node-census-field_service_area_3_hispanic'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 328,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 402,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_3_hispanic',
+    'label' => 'Service Area 3 Hispanic/Latino',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 294,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_3_name'.
+  $field_instances['node-census-field_service_area_3_name'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 276,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 420,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_3_name',
+    'label' => 'Service Area 3 Name',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 242,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_3_population'.
+  $field_instances['node-census-field_service_area_3_population'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 302,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 410,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_3_population',
+    'label' => 'Service Area 3 Population',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 268,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_3_white'.
+  $field_instances['node-census-field_service_area_3_white'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 315,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 369,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_3_white',
+    'label' => 'Service Area 3 White',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 281,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_4_asian_am'.
+  $field_instances['node-census-field_service_area_4_asian_am'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 342,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 395,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_4_asian_am',
+    'label' => 'Service Area 4 Asian American',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 308,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_4_city'.
+  $field_instances['node-census-field_service_area_4_city'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 290,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 444,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_4_city',
+    'label' => 'Service Area 4 City/County',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 256,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_4_hispanic'.
+  $field_instances['node-census-field_service_area_4_hispanic'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 329,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 401,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_4_hispanic',
+    'label' => 'Service Area 4 Hispanic/Latino',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 295,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_4_name'.
+  $field_instances['node-census-field_service_area_4_name'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 277,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 419,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_4_name',
+    'label' => 'Service Area 4 Name',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 243,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_4_population'.
+  $field_instances['node-census-field_service_area_4_population'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 303,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 382,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_4_population',
+    'label' => 'Service Area 4 Population',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 269,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_4_white'.
+  $field_instances['node-census-field_service_area_4_white'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 316,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 368,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_4_white',
+    'label' => 'Service Area 4 White',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 282,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_5_asian_am'.
+  $field_instances['node-census-field_service_area_5_asian_am'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 343,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 398,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_5_asian_am',
+    'label' => 'Service Area 5 Asian American',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 309,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_5_city'.
+  $field_instances['node-census-field_service_area_5_city'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 291,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 443,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_5_city',
+    'label' => 'Service Area 5 City/County',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 257,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_5_hispanic'.
+  $field_instances['node-census-field_service_area_5_hispanic'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 330,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 405,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_5_hispanic',
+    'label' => 'Service Area 5 Hispanic/Latino',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 296,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_5_name'.
+  $field_instances['node-census-field_service_area_5_name'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 278,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 418,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_5_name',
+    'label' => 'Service Area 5 Name',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 244,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_5_population'.
+  $field_instances['node-census-field_service_area_5_population'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 304,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 381,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_5_population',
+    'label' => 'Service Area 5 Population',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 270,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_5_white'.
+  $field_instances['node-census-field_service_area_5_white'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 317,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 367,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_5_white',
+    'label' => 'Service Area 5 White',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 283,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_6_asian_am'.
+  $field_instances['node-census-field_service_area_6_asian_am'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 344,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 397,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_6_asian_am',
+    'label' => 'Service Area 6 Asian American',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 310,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_6_city'.
+  $field_instances['node-census-field_service_area_6_city'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 292,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 437,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_6_city',
+    'label' => 'Service Area 6 City/County',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 258,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_6_hispanic'.
+  $field_instances['node-census-field_service_area_6_hispanic'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 331,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 406,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_6_hispanic',
+    'label' => 'Service Area 6 Hispanic/Latino',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 297,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_6_name'.
+  $field_instances['node-census-field_service_area_6_name'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 279,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 432,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_6_name',
+    'label' => 'Service Area 6 Name',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 245,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_6_population'.
+  $field_instances['node-census-field_service_area_6_population'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 305,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 380,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_6_population',
+    'label' => 'Service Area 6 Population',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 271,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_6_white'.
+  $field_instances['node-census-field_service_area_6_white'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 318,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 371,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_6_white',
+    'label' => 'Service Area 6 White',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 284,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_7_asian_ameri'.
+  $field_instances['node-census-field_service_area_7_asian_ameri'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 345,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 396,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_7_asian_ameri',
+    'label' => 'Service Area 7 Asian American',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 311,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_7_city'.
+  $field_instances['node-census-field_service_area_7_city'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 293,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 436,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_7_city',
+    'label' => 'Service Area 7 City/County',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 259,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_7_hispanic'.
+  $field_instances['node-census-field_service_area_7_hispanic'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 332,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 409,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_7_hispanic',
+    'label' => 'Service Area 7 Hispanic/Latino',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 298,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_7_name'.
+  $field_instances['node-census-field_service_area_7_name'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 280,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 433,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_7_name',
+    'label' => 'Service Area 7 Name',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 246,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_7_population'.
+  $field_instances['node-census-field_service_area_7_population'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 306,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 379,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_7_population',
+    'label' => 'Service Area 7 Population',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 272,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_7_white'.
+  $field_instances['node-census-field_service_area_7_white'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 319,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 372,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_7_white',
+    'label' => 'Service Area 7 White',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 285,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_8_city'.
+  $field_instances['node-census-field_service_area_8_city'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 294,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 435,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_8_city',
+    'label' => 'Service Area 8 City/County',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 260,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_8_hispanic'.
+  $field_instances['node-census-field_service_area_8_hispanic'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 333,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 408,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_8_hispanic',
+    'label' => 'Service Area 8 Hispanic/Latino',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 299,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_8_name'.
+  $field_instances['node-census-field_service_area_8_name'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 281,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 448,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_8_name',
+    'label' => 'Service Area 8 Name',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 247,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_8_population'.
+  $field_instances['node-census-field_service_area_8_population'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 307,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 383,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_8_population',
+    'label' => 'Service Area 8 Population',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 273,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_8_white'.
+  $field_instances['node-census-field_service_area_8_white'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 320,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 376,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_8_white',
+    'label' => 'Service Area 8 White',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 286,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_9_city'.
+  $field_instances['node-census-field_service_area_9_city'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 295,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 434,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_9_city',
+    'label' => 'Service Area 9 City/County',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 261,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_9_hispanic'.
+  $field_instances['node-census-field_service_area_9_hispanic'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 334,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 407,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_9_hispanic',
+    'label' => 'Service Area 9 Hispanic/Latino',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 300,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_9_name'.
+  $field_instances['node-census-field_service_area_9_name'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 282,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 447,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_9_name',
+    'label' => 'Service Area 9 Name',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 248,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_9_population'.
+  $field_instances['node-census-field_service_area_9_population'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 308,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 384,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_9_population',
+    'label' => 'Service Area 9 Population',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 274,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_service_area_9_white'.
+  $field_instances['node-census-field_service_area_9_white'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 321,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 375,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_area_9_white',
+    'label' => 'Service Area 9 White',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 287,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_spacer4'.
+  $field_instances['node-census-field_spacer4'] = array(
+    'bundle' => 'census',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 143,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_default',
+        'weight' => 343,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_spacer4',
+    'label' => 'spacer4',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 286,
     ),
   );
 
@@ -11573,11 +17834,12 @@ function censusfeature_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 20,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'list_default',
+        'weight' => 20,
       ),
     ),
     'entity_type' => 'node',
@@ -11612,11 +17874,12 @@ function censusfeature_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 11,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'list_default',
+        'weight' => 11,
       ),
     ),
     'entity_type' => 'node',
@@ -11646,13 +17909,14 @@ function censusfeature_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 121,
+        'weight' => 111,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'list_default',
+        'weight' => 111,
       ),
     ),
     'entity_type' => 'node',
@@ -11683,13 +17947,14 @@ function censusfeature_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 118,
+        'weight' => 108,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'text_default',
+        'weight' => 108,
       ),
     ),
     'entity_type' => 'node',
@@ -11723,13 +17988,14 @@ function censusfeature_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 119,
+        'weight' => 109,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'text_default',
+        'weight' => 109,
       ),
     ),
     'entity_type' => 'node',
@@ -11763,13 +18029,14 @@ function censusfeature_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 123,
+        'weight' => 113,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'text_default',
+        'weight' => 113,
       ),
     ),
     'entity_type' => 'node',
@@ -11803,13 +18070,14 @@ function censusfeature_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 124,
+        'weight' => 114,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'text_default',
+        'weight' => 115,
       ),
     ),
     'entity_type' => 'node',
@@ -11843,13 +18111,14 @@ function censusfeature_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 120,
+        'weight' => 110,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'text_default',
+        'weight' => 110,
       ),
     ),
     'entity_type' => 'node',
@@ -11883,13 +18152,14 @@ function censusfeature_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 122,
+        'weight' => 112,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'list_default',
+        'weight' => 112,
       ),
     ),
     'entity_type' => 'node',
@@ -11927,11 +18197,17 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 13,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 13,
       ),
     ),
     'entity_type' => 'node',
@@ -11953,6 +18229,43 @@ function censusfeature_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-census-field_test_1'.
+  $field_instances['node-census-field_test_1'] = array(
+    'bundle' => 'census',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 310,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_default',
+        'weight' => 342,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_test_1',
+    'label' => 'Duplicate',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 280,
+    ),
+  );
+
   // Exported field_instance: 'node-census-field_total'.
   $field_instances['node-census-field_total'] = array(
     'bundle' => 'census',
@@ -11960,17 +18273,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 332,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'markup',
         'settings' => array(),
         'type' => 'markup_default',
-        'weight' => 320,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 338,
       ),
     ),
     'entity_type' => 'node',
@@ -12006,13 +18320,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 32,
+        'weight' => 31,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 31,
       ),
     ),
     'entity_type' => 'node',
@@ -12052,13 +18372,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 109,
+        'weight' => 99,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 99,
       ),
     ),
     'entity_type' => 'node',
@@ -12088,17 +18414,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 311,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'markup',
         'settings' => array(),
         'type' => 'markup_default',
-        'weight' => 317,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 335,
       ),
     ),
     'entity_type' => 'node',
@@ -12124,17 +18451,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 312,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'markup',
         'settings' => array(),
         'type' => 'markup_default',
-        'weight' => 318,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 336,
       ),
     ),
     'entity_type' => 'node',
@@ -12161,6 +18489,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 142,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -12170,13 +18510,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 170,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 163,
       ),
     ),
     'entity_type' => 'node',
@@ -12195,7 +18529,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 290,
+      'weight' => 285,
     ),
   );
 
@@ -12207,6 +18541,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 152,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -12216,13 +18562,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 180,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 173,
       ),
     ),
     'entity_type' => 'node',
@@ -12241,7 +18581,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 150,
+      'weight' => 148,
     ),
   );
 
@@ -12253,6 +18593,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 151,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -12262,13 +18614,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 179,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 172,
       ),
     ),
     'entity_type' => 'node',
@@ -12287,7 +18633,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 149,
+      'weight' => 147,
     ),
   );
 
@@ -12299,6 +18645,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 148,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -12308,13 +18666,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 176,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 169,
       ),
     ),
     'entity_type' => 'node',
@@ -12333,7 +18685,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 146,
+      'weight' => 144,
     ),
   );
 
@@ -12345,6 +18697,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 147,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -12354,13 +18718,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 175,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 168,
       ),
     ),
     'entity_type' => 'node',
@@ -12379,7 +18737,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 145,
+      'weight' => 143,
     ),
   );
 
@@ -12391,6 +18749,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 141,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -12400,13 +18770,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 169,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 162,
       ),
     ),
     'entity_type' => 'node',
@@ -12437,6 +18801,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 146,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -12446,13 +18822,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 174,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 167,
       ),
     ),
     'entity_type' => 'node',
@@ -12471,7 +18841,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 144,
+      'weight' => 142,
     ),
   );
 
@@ -12483,6 +18853,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 145,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -12492,13 +18874,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 173,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 166,
       ),
     ),
     'entity_type' => 'node',
@@ -12517,7 +18893,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 143,
+      'weight' => 141,
     ),
   );
 
@@ -12529,6 +18905,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 150,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -12538,13 +18926,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 178,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 171,
       ),
     ),
     'entity_type' => 'node',
@@ -12563,7 +18945,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 148,
+      'weight' => 146,
     ),
   );
 
@@ -12575,6 +18957,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 149,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -12584,13 +18978,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 177,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 170,
       ),
     ),
     'entity_type' => 'node',
@@ -12609,7 +18997,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 147,
+      'weight' => 145,
     ),
   );
 
@@ -12621,6 +19009,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 289,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -12630,13 +19030,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 182,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 175,
       ),
     ),
     'entity_type' => 'node',
@@ -12655,7 +19049,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 152,
+      'weight' => 150,
     ),
   );
 
@@ -12667,6 +19061,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 288,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -12676,13 +19082,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 181,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 174,
       ),
     ),
     'entity_type' => 'node',
@@ -12701,7 +19101,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 151,
+      'weight' => 149,
     ),
   );
 
@@ -12713,17 +19113,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 139,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 167,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 160,
       ),
     ),
     'entity_type' => 'node',
@@ -12750,6 +19151,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 140,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -12759,13 +19172,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 168,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 161,
       ),
     ),
     'entity_type' => 'node',
@@ -12796,6 +19203,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 144,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -12805,13 +19224,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 172,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 165,
       ),
     ),
     'entity_type' => 'node',
@@ -12842,6 +19255,18 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 143,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
@@ -12851,13 +19276,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 171,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 164,
       ),
     ),
     'entity_type' => 'node',
@@ -12897,13 +19316,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 87,
+        'weight' => 77,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 77,
       ),
     ),
     'entity_type' => 'node',
@@ -12943,13 +19368,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 88,
+        'weight' => 78,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 78,
       ),
     ),
     'entity_type' => 'node',
@@ -12989,13 +19420,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 89,
+        'weight' => 79,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 79,
       ),
     ),
     'entity_type' => 'node',
@@ -13035,13 +19472,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 90,
+        'weight' => 80,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 80,
       ),
     ),
     'entity_type' => 'node',
@@ -13081,13 +19524,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 91,
+        'weight' => 81,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 81,
       ),
     ),
     'entity_type' => 'node',
@@ -13127,13 +19576,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 92,
+        'weight' => 82,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 82,
       ),
     ),
     'entity_type' => 'node',
@@ -13173,13 +19628,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 84,
+        'weight' => 74,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 74,
       ),
     ),
     'entity_type' => 'node',
@@ -13219,13 +19680,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 82,
+        'weight' => 73,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 73,
       ),
     ),
     'entity_type' => 'node',
@@ -13265,13 +19732,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 79,
+        'weight' => 70,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 70,
       ),
     ),
     'entity_type' => 'node',
@@ -13311,13 +19784,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 81,
+        'weight' => 72,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 72,
       ),
     ),
     'entity_type' => 'node',
@@ -13357,13 +19836,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 78,
+        'weight' => 69,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 69,
       ),
     ),
     'entity_type' => 'node',
@@ -13403,13 +19888,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 77,
+        'weight' => 68,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 68,
       ),
     ),
     'entity_type' => 'node',
@@ -13449,13 +19940,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 85,
+        'weight' => 75,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 75,
       ),
     ),
     'entity_type' => 'node',
@@ -13495,13 +19992,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 86,
+        'weight' => 76,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 76,
       ),
     ),
     'entity_type' => 'node',
@@ -13541,13 +20044,19 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 80,
+        'weight' => 71,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 71,
       ),
     ),
     'entity_type' => 'node',
@@ -13589,11 +20098,17 @@ function censusfeature_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 12,
       ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 12,
       ),
     ),
     'entity_type' => 'node',
@@ -13760,6 +20275,7 @@ function censusfeature_field_default_field_instances() {
   t('Community Organizations');
   t('D. Travel');
   t('Date Established');
+  t('Describe the Programs');
   t('Direct Contact African American Females');
   t('Direct Contact African American Males');
   t('Direct Contact Asian American Females');
@@ -13786,6 +20302,7 @@ function censusfeature_field_default_field_instances() {
   t('Does your affiliate have satellite offices?');
   t('Does your affiliate provide health benefits to its employees?');
   t('Does your affiliate provide life insurance to its employees?');
+  t('Duplicate');
   t('Duplicated Community Organization members registered');
   t('E. Postage/Freight');
   t('Economic Empowerment');
@@ -13794,8 +20311,11 @@ function censusfeature_field_default_field_instances() {
   t('F. Insurance');
   t('Fax');
   t('Female');
+  t('Females');
+  t('Funding Source: NUL');
+  t('Funding Source: Other');
+  t('Funding Source: U Way');
   t('G. Interest Payments');
-  t('Gender');
   t('H. Dues/Subscription/Registration');
   t('Health');
   t('Hispanic/Latino female board members');
@@ -13811,6 +20331,7 @@ function censusfeature_field_default_field_instances() {
   t('If so, what is the present amount?');
   t('If so, what is your affiliate\'s website address?');
   t('If the affiliate owns its facilities, what is the current market value of the property?');
+  t('Indirect Contact Number Served');
   t('Is there a Guild?');
   t('Is there a Young Professionals Chapter?');
   t('Is website linked to NUL website?');
@@ -13819,6 +20340,7 @@ function censusfeature_field_default_field_instances() {
   t('L. Equipment/space rental');
   t('M. Goods and Services');
   t('Male');
+  t('Males');
   t('Money market account, endowment');
   t('Must be at least 5 characters');
   t('N. Rent/mortgage payments');
@@ -13826,6 +20348,7 @@ function censusfeature_field_default_field_instances() {
   t('Native American female board members');
   t('Native American male board members');
   t('Native American total board members');
+  t('Number Served');
   t('Number of Years as CEO');
   t('Number of Years of Service in Movement');
   t('O. Other');
@@ -13856,6 +20379,18 @@ function censusfeature_field_default_field_instances() {
   t('President/CEO First Name');
   t('President/CEO Last Name');
   t('President/CEO Middle Name');
+  t('Public Contact African American Females');
+  t('Public Contact African American Males');
+  t('Public Contact Asian American Females');
+  t('Public Contact Asian American Males');
+  t('Public Contact Hispanic/Latio Females');
+  t('Public Contact Hispanic/Latio Males');
+  t('Public Contact Native American Females');
+  t('Public Contact Native American Males');
+  t('Public Contact Other Females');
+  t('Public Contact Other Males');
+  t('Public Contact White Females');
+  t('Public Contact White Males');
   t('Purpose of NUL Funding');
   t('Relief Civic Engagement Description');
   t('Relief Civic Engagement Funding NUL');
@@ -13888,6 +20423,95 @@ function censusfeature_field_default_field_instances() {
   t('Relief Racial Justice Number Served');
   t('Relief Racial Justice Societal Impact');
   t('Rent');
+  t('Service Area 1 African American');
+  t('Service Area 1 Asian American');
+  t('Service Area 1 City/County');
+  t('Service Area 1 Hispanic/Latino');
+  t('Service Area 1 Name');
+  t('Service Area 1 Native American');
+  t('Service Area 1 Other');
+  t('Service Area 1 Population');
+  t('Service Area 1 White');
+  t('Service Area 10 City/County');
+  t('Service Area 10 Hispanic/Latino');
+  t('Service Area 10 Name');
+  t('Service Area 10 Population');
+  t('Service Area 10 White');
+  t('Service Area 11 City/County');
+  t('Service Area 11 Hispanic/Latino');
+  t('Service Area 11 Name');
+  t('Service Area 11 Population');
+  t('Service Area 11 White');
+  t('Service Area 12 City/County');
+  t('Service Area 12 Hispanic/Latino');
+  t('Service Area 12 Name');
+  t('Service Area 12 Population');
+  t('Service Area 12 White');
+  t('Service Area 13 City/County');
+  t('Service Area 13 Hispanic/Latino');
+  t('Service Area 13 Name');
+  t('Service Area 13 Population');
+  t('Service Area 13 White');
+  t('Service Area 14 City/County');
+  t('Service Area 14 Hispanic/Latino');
+  t('Service Area 14 Name');
+  t('Service Area 14 Population');
+  t('Service Area 14 White');
+  t('Service Area 15 City/County');
+  t('Service Area 15 Hispanic/Latino');
+  t('Service Area 15 Name');
+  t('Service Area 15 Population');
+  t('Service Area 15 White');
+  t('Service Area 2 African American');
+  t('Service Area 2 Asian American');
+  t('Service Area 2 City/County');
+  t('Service Area 2 Hispanic/Latino');
+  t('Service Area 2 Name');
+  t('Service Area 2 Native American');
+  t('Service Area 2 Other');
+  t('Service Area 2 Population');
+  t('Service Area 2 White');
+  t('Service Area 3 Asian American');
+  t('Service Area 3 City/County');
+  t('Service Area 3 Hispanic/Latino');
+  t('Service Area 3 Name');
+  t('Service Area 3 Population');
+  t('Service Area 3 White');
+  t('Service Area 4 Asian American');
+  t('Service Area 4 City/County');
+  t('Service Area 4 Hispanic/Latino');
+  t('Service Area 4 Name');
+  t('Service Area 4 Population');
+  t('Service Area 4 White');
+  t('Service Area 5 Asian American');
+  t('Service Area 5 City/County');
+  t('Service Area 5 Hispanic/Latino');
+  t('Service Area 5 Name');
+  t('Service Area 5 Population');
+  t('Service Area 5 White');
+  t('Service Area 6 Asian American');
+  t('Service Area 6 City/County');
+  t('Service Area 6 Hispanic/Latino');
+  t('Service Area 6 Name');
+  t('Service Area 6 Population');
+  t('Service Area 6 White');
+  t('Service Area 7 Asian American');
+  t('Service Area 7 City/County');
+  t('Service Area 7 Hispanic/Latino');
+  t('Service Area 7 Name');
+  t('Service Area 7 Population');
+  t('Service Area 7 White');
+  t('Service Area 8 City/County');
+  t('Service Area 8 Hispanic/Latino');
+  t('Service Area 8 Name');
+  t('Service Area 8 Population');
+  t('Service Area 8 White');
+  t('Service Area 9 City/County');
+  t('Service Area 9 Hispanic/Latino');
+  t('Service Area 9 Name');
+  t('Service Area 9 Population');
+  t('Service Area 9 White');
+  t('Societal Impact');
   t('State/Province');
   t('Survey Contact First Name');
   t('Survey Contact Last Name');
@@ -13897,8 +20521,11 @@ function censusfeature_field_default_field_instances() {
   t('Total');
   t('Total Direct Contact Females');
   t('Total Direct Contact Males');
+  t('Total Public Contact Females');
+  t('Total Public Contact Males');
   t('Total number of board members');
   t('Total white board members');
+  t('UnDuplicate');
   t('Unduplicated Community Organization members registered');
   t('Voter African American Female');
   t('Voter African American Male');
@@ -13925,6 +20552,7 @@ function censusfeature_field_default_field_instances() {
   t('Year only');
   t('Zip Code');
   t('female_ce_voter');
+  t('spacer4');
   t('totalspacer');
   t('totalspacer2');
 
