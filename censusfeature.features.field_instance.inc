@@ -207,7 +207,7 @@ function censusfeature_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 188,
+        'weight' => 142,
       ),
       'full' => array(
         'label' => 'above',
@@ -232,7 +232,7 @@ function censusfeature_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 204,
+      'weight' => 436,
     ),
   );
 
@@ -244,7 +244,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -253,7 +253,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 184,
+        'weight' => 149,
       ),
       'full' => array(
         'label' => 'above',
@@ -284,7 +284,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 200,
+      'weight' => 153,
     ),
   );
 
@@ -296,7 +296,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -305,7 +305,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 183,
+        'weight' => 148,
       ),
       'full' => array(
         'label' => 'above',
@@ -336,7 +336,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 199,
+      'weight' => 152,
     ),
   );
 
@@ -348,7 +348,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -357,7 +357,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 180,
+        'weight' => 145,
       ),
       'full' => array(
         'label' => 'above',
@@ -388,7 +388,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 196,
+      'weight' => 433,
     ),
   );
 
@@ -400,7 +400,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -409,7 +409,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 179,
+        'weight' => 144,
       ),
       'full' => array(
         'label' => 'above',
@@ -440,7 +440,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 195,
+      'weight' => 432,
     ),
   );
 
@@ -456,7 +456,7 @@ function censusfeature_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 187,
+        'weight' => 141,
       ),
       'full' => array(
         'label' => 'above',
@@ -481,59 +481,7 @@ function censusfeature_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 203,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_advocacy_duplicates'.
-  $field_instances['node-census-field_advocacy_duplicates'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 193,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 308,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_advocacy_duplicates',
-    'label' => 'Advocacy Efforts Duplicate',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 189,
+      'weight' => 435,
     ),
   );
 
@@ -545,7 +493,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -554,7 +502,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 174,
+        'weight' => 139,
       ),
       'full' => array(
         'label' => 'above',
@@ -585,7 +533,37 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 187,
+      'weight' => 433,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_advocacy_female'.
+  $field_instances['node-census-field_advocacy_female'] = array(
+    'bundle' => 'census',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 206,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_advocacy_female',
+    'label' => 'Females',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 167,
     ),
   );
 
@@ -597,7 +575,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -606,7 +584,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 178,
+        'weight' => 143,
       ),
       'full' => array(
         'label' => 'above',
@@ -637,7 +615,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 194,
+      'weight' => 150,
     ),
   );
 
@@ -649,7 +627,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -658,7 +636,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 177,
+        'weight' => 142,
       ),
       'full' => array(
         'label' => 'above',
@@ -689,7 +667,37 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 193,
+      'weight' => 149,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_advocacy_male'.
+  $field_instances['node-census-field_advocacy_male'] = array(
+    'bundle' => 'census',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 205,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_advocacy_male',
+    'label' => 'Males',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 166,
     ),
   );
 
@@ -701,7 +709,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -710,7 +718,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 182,
+        'weight' => 147,
       ),
       'full' => array(
         'label' => 'above',
@@ -741,7 +749,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 198,
+      'weight' => 151,
     ),
   );
 
@@ -753,7 +761,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -762,7 +770,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 181,
+        'weight' => 146,
       ),
       'full' => array(
         'label' => 'above',
@@ -793,7 +801,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 197,
+      'weight' => 150,
     ),
   );
 
@@ -805,7 +813,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -814,7 +822,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 186,
+        'weight' => 151,
       ),
       'full' => array(
         'label' => 'above',
@@ -845,7 +853,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 202,
+      'weight' => 155,
     ),
   );
 
@@ -857,7 +865,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -866,7 +874,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 185,
+        'weight' => 150,
       ),
       'full' => array(
         'label' => 'above',
@@ -897,7 +905,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 201,
+      'weight' => 154,
     ),
   );
 
@@ -909,7 +917,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -918,7 +926,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 194,
+        'weight' => 209,
       ),
       'full' => array(
         'label' => 'above',
@@ -949,59 +957,37 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 190,
+      'weight' => 443,
     ),
   );
 
-  // Exported field_instance: 'node-census-field_advocacy_unduplicated'.
-  $field_instances['node-census-field_advocacy_unduplicated'] = array(
+  // Exported field_instance: 'node-census-field_advocacy_spacer'.
+  $field_instances['node-census-field_advocacy_spacer'] = array(
     'bundle' => 'census',
-    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 192,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 307,
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 208,
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_advocacy_unduplicated',
-    'label' => 'Advocacy Efforts Unduplicate',
+    'field_name' => 'field_advocacy_spacer',
+    'label' => 'Advocacy Spacer',
     'required' => 0,
     'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 0,
-      'module' => 'number',
+      'module' => 'markup',
       'settings' => array(),
-      'type' => 'number',
-      'weight' => 188,
+      'type' => 'markup',
+      'weight' => 442,
     ),
   );
 
@@ -1013,7 +999,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -1022,7 +1008,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 176,
+        'weight' => 141,
       ),
       'full' => array(
         'label' => 'above',
@@ -1053,7 +1039,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 192,
+      'weight' => 145,
     ),
   );
 
@@ -1065,7 +1051,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -1074,7 +1060,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 175,
+        'weight' => 140,
       ),
       'full' => array(
         'label' => 'above',
@@ -1105,7 +1091,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 191,
+      'weight' => 144,
     ),
   );
 
@@ -1938,7 +1924,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -1978,7 +1964,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 118,
+      'weight' => 119,
     ),
   );
 
@@ -2357,7 +2343,7 @@ function censusfeature_field_default_field_instances() {
         'module' => 'markup',
         'settings' => array(),
         'type' => 'markup_default',
-        'weight' => 285,
+        'weight' => 169,
       ),
     ),
     'entity_type' => 'node',
@@ -2372,7 +2358,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'markup',
       'settings' => array(),
       'type' => 'markup',
-      'weight' => 123,
+      'weight' => 124,
     ),
   );
 
@@ -3106,7 +3092,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 125,
+        'weight' => 124,
       ),
       'full' => array(
         'label' => 'above',
@@ -3137,7 +3123,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 126,
+      'weight' => 127,
     ),
   );
 
@@ -3158,7 +3144,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 137,
+        'weight' => 136,
       ),
       'full' => array(
         'label' => 'above',
@@ -3189,7 +3175,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 138,
+      'weight' => 139,
     ),
   );
 
@@ -3210,7 +3196,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 130,
+        'weight' => 129,
       ),
       'full' => array(
         'label' => 'above',
@@ -3241,7 +3227,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 131,
+      'weight' => 132,
     ),
   );
 
@@ -3262,7 +3248,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 126,
+        'weight' => 125,
       ),
       'full' => array(
         'label' => 'above',
@@ -3293,7 +3279,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 127,
+      'weight' => 128,
     ),
   );
 
@@ -3309,7 +3295,7 @@ function censusfeature_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 136,
+        'weight' => 135,
       ),
       'full' => array(
         'label' => 'above',
@@ -3331,7 +3317,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 137,
+      'weight' => 138,
     ),
   );
 
@@ -3352,7 +3338,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 127,
+        'weight' => 126,
       ),
       'full' => array(
         'label' => 'above',
@@ -3383,7 +3369,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 128,
+      'weight' => 129,
     ),
   );
 
@@ -3404,7 +3390,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 132,
+        'weight' => 131,
       ),
       'full' => array(
         'label' => 'above',
@@ -3435,7 +3421,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 133,
+      'weight' => 134,
     ),
   );
 
@@ -3456,7 +3442,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 133,
+        'weight' => 132,
       ),
       'full' => array(
         'label' => 'above',
@@ -3487,7 +3473,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 135,
+      'weight' => 136,
     ),
   );
 
@@ -3503,7 +3489,7 @@ function censusfeature_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 134,
+        'weight' => 133,
       ),
       'full' => array(
         'label' => 'above',
@@ -3528,7 +3514,7 @@ function censusfeature_field_default_field_instances() {
         'rows' => 2,
       ),
       'type' => 'text_textarea',
-      'weight' => 136,
+      'weight' => 137,
     ),
   );
 
@@ -3549,7 +3535,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 135,
+        'weight' => 134,
       ),
       'full' => array(
         'label' => 'above',
@@ -3580,7 +3566,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 134,
+      'weight' => 135,
     ),
   );
 
@@ -3601,7 +3587,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 128,
+        'weight' => 127,
       ),
       'full' => array(
         'label' => 'above',
@@ -3632,7 +3618,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 129,
+      'weight' => 130,
     ),
   );
 
@@ -3653,7 +3639,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 131,
+        'weight' => 130,
       ),
       'full' => array(
         'label' => 'above',
@@ -3684,7 +3670,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 132,
+      'weight' => 133,
     ),
   );
 
@@ -3705,7 +3691,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 124,
+        'weight' => 123,
       ),
       'full' => array(
         'label' => 'above',
@@ -3736,7 +3722,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 125,
+      'weight' => 126,
     ),
   );
 
@@ -3757,7 +3743,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 129,
+        'weight' => 128,
       ),
       'full' => array(
         'label' => 'above',
@@ -3788,7 +3774,75 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 130,
+      'weight' => 131,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_budget_venture_budgeted'.
+  $field_instances['node-census-field_budget_venture_budgeted'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 179,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_budget_venture_budgeted',
+    'label' => 'Venture Amount Budgeted',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 159,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_budget_venture_earned'.
+  $field_instances['node-census-field_budget_venture_earned'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 178,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_budget_venture_earned',
+    'label' => 'Venture Amount Earned',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 158,
     ),
   );
 
@@ -3944,7 +3998,7 @@ function censusfeature_field_default_field_instances() {
         'module' => 'markup',
         'settings' => array(),
         'type' => 'markup_default',
-        'weight' => 287,
+        'weight' => 171,
       ),
     ),
     'entity_type' => 'node',
@@ -5040,11 +5094,11 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 143,
+        'weight' => 139,
       ),
       'full' => array(
         'label' => 'above',
@@ -5066,7 +5120,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 155,
+      'weight' => 141,
     ),
   );
 
@@ -5078,7 +5132,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -5087,7 +5141,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 153,
+        'weight' => 149,
       ),
       'full' => array(
         'label' => 'above',
@@ -5118,7 +5172,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 168,
+      'weight' => 150,
     ),
   );
 
@@ -5130,7 +5184,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -5139,7 +5193,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 152,
+        'weight' => 148,
       ),
       'full' => array(
         'label' => 'above',
@@ -5170,7 +5224,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 167,
+      'weight' => 149,
     ),
   );
 
@@ -5182,7 +5236,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -5191,7 +5245,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 149,
+        'weight' => 145,
       ),
       'full' => array(
         'label' => 'above',
@@ -5222,7 +5276,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 164,
+      'weight' => 146,
     ),
   );
 
@@ -5234,7 +5288,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -5243,7 +5297,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 148,
+        'weight' => 144,
       ),
       'full' => array(
         'label' => 'above',
@@ -5274,59 +5328,37 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 163,
+      'weight' => 145,
     ),
   );
 
-  // Exported field_instance: 'node-census-field_crja_duplicates'.
-  $field_instances['node-census-field_crja_duplicates'] = array(
+  // Exported field_instance: 'node-census-field_crja_female'.
+  $field_instances['node-census-field_crja_female'] = array(
     'bundle' => 'census',
-    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 157,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 222,
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_default',
+        'weight' => 208,
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_crja_duplicates',
-    'label' => 'Civil Rights & Justice Activities Duplicate',
+    'field_name' => 'field_crja_female',
+    'label' => 'Females',
     'required' => 0,
     'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 0,
-      'module' => 'number',
+      'module' => 'markup',
       'settings' => array(),
-      'type' => 'number',
-      'weight' => 157,
+      'type' => 'markup',
+      'weight' => 163,
     ),
   );
 
@@ -5338,7 +5370,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -5347,7 +5379,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 147,
+        'weight' => 143,
       ),
       'full' => array(
         'label' => 'above',
@@ -5378,7 +5410,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 162,
+      'weight' => 144,
     ),
   );
 
@@ -5390,7 +5422,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -5399,7 +5431,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 146,
+        'weight' => 142,
       ),
       'full' => array(
         'label' => 'above',
@@ -5430,7 +5462,37 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 161,
+      'weight' => 143,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_crja_male'.
+  $field_instances['node-census-field_crja_male'] = array(
+    'bundle' => 'census',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 207,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_crja_male',
+    'label' => 'Males',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 162,
     ),
   );
 
@@ -5442,7 +5504,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -5451,7 +5513,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 151,
+        'weight' => 147,
       ),
       'full' => array(
         'label' => 'above',
@@ -5482,7 +5544,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 166,
+      'weight' => 148,
     ),
   );
 
@@ -5494,7 +5556,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -5503,7 +5565,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 150,
+        'weight' => 146,
       ),
       'full' => array(
         'label' => 'above',
@@ -5534,7 +5596,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 165,
+      'weight' => 147,
     ),
   );
 
@@ -5546,7 +5608,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -5555,7 +5617,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 155,
+        'weight' => 151,
       ),
       'full' => array(
         'label' => 'above',
@@ -5586,7 +5648,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 170,
+      'weight' => 160,
     ),
   );
 
@@ -5598,7 +5660,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -5607,7 +5669,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 154,
+        'weight' => 150,
       ),
       'full' => array(
         'label' => 'above',
@@ -5638,7 +5700,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 169,
+      'weight' => 150,
     ),
   );
 
@@ -5650,7 +5712,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -5659,7 +5721,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 158,
+        'weight' => 214,
       ),
       'full' => array(
         'label' => 'above',
@@ -5690,59 +5752,37 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 158,
+      'weight' => 441,
     ),
   );
 
-  // Exported field_instance: 'node-census-field_crja_unduplicated'.
-  $field_instances['node-census-field_crja_unduplicated'] = array(
+  // Exported field_instance: 'node-census-field_crja_spacer'.
+  $field_instances['node-census-field_crja_spacer'] = array(
     'bundle' => 'census',
-    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 156,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 221,
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 213,
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_crja_unduplicated',
-    'label' => 'Civil Rights & Justice Activities Unduplicate',
+    'field_name' => 'field_crja_spacer',
+    'label' => 'CRJA Spacer',
     'required' => 0,
     'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 0,
-      'module' => 'number',
+      'module' => 'markup',
       'settings' => array(),
-      'type' => 'number',
-      'weight' => 156,
+      'type' => 'markup',
+      'weight' => 440,
     ),
   );
 
@@ -5754,7 +5794,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -5763,7 +5803,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 145,
+        'weight' => 140,
       ),
       'full' => array(
         'label' => 'above',
@@ -5794,7 +5834,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 160,
+      'weight' => 142,
     ),
   );
 
@@ -5806,7 +5846,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -5815,7 +5855,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 144,
+        'weight' => 139,
       ),
       'full' => array(
         'label' => 'above',
@@ -5846,7 +5886,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 159,
+      'weight' => 141,
     ),
   );
 
@@ -6173,7 +6213,7 @@ function censusfeature_field_default_field_instances() {
         'module' => 'markup',
         'settings' => array(),
         'type' => 'markup_default',
-        'weight' => 288,
+        'weight' => 172,
       ),
     ),
     'entity_type' => 'node',
@@ -6954,7 +6994,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
@@ -6980,7 +7020,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 119,
+      'weight' => 120,
     ),
   );
 
@@ -6992,7 +7032,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
@@ -7018,7 +7058,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 120,
+      'weight' => 121,
     ),
   );
 
@@ -7153,7 +7193,7 @@ function censusfeature_field_default_field_instances() {
         'module' => 'markup',
         'settings' => array(),
         'type' => 'markup_default',
-        'weight' => 286,
+        'weight' => 170,
       ),
     ),
     'entity_type' => 'node',
@@ -7168,7 +7208,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'markup',
       'settings' => array(),
       'type' => 'markup',
-      'weight' => 205,
+      'weight' => 141,
     ),
   );
 
@@ -8172,7 +8212,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -8212,7 +8252,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 116,
+      'weight' => 117,
     ),
   );
 
@@ -8279,7 +8319,7 @@ function censusfeature_field_default_field_instances() {
         'module' => 'markup',
         'settings' => array(),
         'type' => 'markup_view',
-        'weight' => 292,
+        'weight' => 173,
       ),
       'full' => array(
         'label' => 'above',
@@ -8301,7 +8341,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'markup',
       'settings' => array(),
       'type' => 'markup',
-      'weight' => 263,
+      'weight' => 154,
     ),
   );
 
@@ -9244,7 +9284,7 @@ function censusfeature_field_default_field_instances() {
         'module' => 'markup',
         'settings' => array(),
         'type' => 'markup_default',
-        'weight' => 339,
+        'weight' => 175,
       ),
     ),
     'entity_type' => 'node',
@@ -10065,7 +10105,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -10105,7 +10145,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 122,
+      'weight' => 123,
     ),
   );
 
@@ -10545,7 +10585,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -10585,7 +10625,97 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 117,
+      'weight' => 118,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_pb_female'.
+  $field_instances['node-census-field_pb_female'] = array(
+    'bundle' => 'census',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 204,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_pb_female',
+    'label' => 'Females',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 165,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_pb_male'.
+  $field_instances['node-census-field_pb_male'] = array(
+    'bundle' => 'census',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 203,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_pb_male',
+    'label' => 'Males',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 164,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_pb_spacer'.
+  $field_instances['node-census-field_pb_spacer'] = array(
+    'bundle' => 'census',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 207,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_pb_spacer',
+    'label' => 'PB Spacer',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 441,
     ),
   );
 
@@ -10651,7 +10781,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -10660,7 +10790,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 171,
+        'weight' => 155,
       ),
       'full' => array(
         'label' => 'above',
@@ -10691,7 +10821,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 184,
+      'weight' => 155,
     ),
   );
 
@@ -10703,7 +10833,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -10712,7 +10842,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 170,
+        'weight' => 154,
       ),
       'full' => array(
         'label' => 'above',
@@ -10743,7 +10873,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 183,
+      'weight' => 154,
     ),
   );
 
@@ -10755,7 +10885,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -10764,7 +10894,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 167,
+        'weight' => 148,
       ),
       'full' => array(
         'label' => 'above',
@@ -10795,7 +10925,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 180,
+      'weight' => 151,
     ),
   );
 
@@ -10807,7 +10937,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -10816,7 +10946,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 166,
+        'weight' => 147,
       ),
       'full' => array(
         'label' => 'above',
@@ -10847,7 +10977,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 179,
+      'weight' => 150,
     ),
   );
 
@@ -10859,11 +10989,11 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 159,
+        'weight' => 139,
       ),
       'full' => array(
         'label' => 'above',
@@ -10885,59 +11015,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 171,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_police_duplicates'.
-  $field_instances['node-census-field_police_duplicates'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 161,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 226,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_police_duplicates',
-    'label' => 'Police Brutality Duplicate',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 173,
+      'weight' => 142,
     ),
   );
 
@@ -10949,7 +11027,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -10958,7 +11036,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 165,
+        'weight' => 143,
       ),
       'full' => array(
         'label' => 'above',
@@ -10989,7 +11067,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 178,
+      'weight' => 149,
     ),
   );
 
@@ -11001,7 +11079,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -11010,7 +11088,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 164,
+        'weight' => 142,
       ),
       'full' => array(
         'label' => 'above',
@@ -11041,7 +11119,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 177,
+      'weight' => 148,
     ),
   );
 
@@ -11053,7 +11131,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -11062,7 +11140,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 169,
+        'weight' => 152,
       ),
       'full' => array(
         'label' => 'above',
@@ -11093,7 +11171,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 182,
+      'weight' => 153,
     ),
   );
 
@@ -11105,7 +11183,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -11114,7 +11192,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 168,
+        'weight' => 151,
       ),
       'full' => array(
         'label' => 'above',
@@ -11145,7 +11223,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 181,
+      'weight' => 152,
     ),
   );
 
@@ -11157,7 +11235,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -11166,7 +11244,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 173,
+        'weight' => 159,
       ),
       'full' => array(
         'label' => 'above',
@@ -11197,7 +11275,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 186,
+      'weight' => 157,
     ),
   );
 
@@ -11209,7 +11287,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -11218,7 +11296,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 172,
+        'weight' => 158,
       ),
       'full' => array(
         'label' => 'above',
@@ -11249,7 +11327,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 185,
+      'weight' => 156,
     ),
   );
 
@@ -11261,7 +11339,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -11270,7 +11348,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 191,
+        'weight' => 208,
       ),
       'full' => array(
         'label' => 'above',
@@ -11301,59 +11379,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 174,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_police_unduplicated'.
-  $field_instances['node-census-field_police_unduplicated'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 160,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 225,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_police_unduplicated',
-    'label' => 'Police Brutality Unduplicate',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 172,
+      'weight' => 442,
     ),
   );
 
@@ -11365,7 +11391,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -11374,7 +11400,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 163,
+        'weight' => 141,
       ),
       'full' => array(
         'label' => 'above',
@@ -11405,7 +11431,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 176,
+      'weight' => 147,
     ),
   );
 
@@ -11417,7 +11443,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -11426,7 +11452,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 162,
+        'weight' => 140,
       ),
       'full' => array(
         'label' => 'above',
@@ -11457,7 +11483,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 175,
+      'weight' => 146,
     ),
   );
 
@@ -11972,7 +11998,7 @@ function censusfeature_field_default_field_instances() {
         'module' => 'markup',
         'settings' => array(),
         'type' => 'markup_default',
-        'weight' => 340,
+        'weight' => 176,
       ),
     ),
     'entity_type' => 'node',
@@ -13937,7 +13963,7 @@ function censusfeature_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 190,
+        'weight' => 155,
       ),
       'full' => array(
         'label' => 'above',
@@ -13962,7 +13988,52 @@ function censusfeature_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 207,
+      'weight' => 143,
+    ),
+  );
+
+  // Exported field_instance: 'node-census-field_revenue_ventures'.
+  $field_instances['node-census-field_revenue_ventures'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'paragraphs',
+        'settings' => array(
+          'view_mode' => 'full',
+        ),
+        'type' => 'paragraphs_view',
+        'weight' => 395,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_revenue_ventures',
+    'label' => 'Ventures',
+    'required' => 0,
+    'settings' => array(
+      'add_mode' => 'button',
+      'allowed_bundles' => array(
+        'budget_ventures' => 'budget_ventures',
+        'service_area' => -1,
+      ),
+      'bundle_weights' => array(
+        'budget_ventures' => 2,
+        'service_area' => 3,
+      ),
+      'default_edit_mode' => 'open',
+      'title' => 'Paragraph',
+      'title_multiple' => 'Paragraphs',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'paragraphs',
+      'settings' => array(),
+      'type' => 'paragraphs_embed',
+      'weight' => 160,
     ),
   );
 
@@ -13974,7 +14045,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
@@ -14000,2275 +14071,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 121,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_10_african_am'.
-  $field_instances['node-census-field_service_area_10_african_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 319,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_10_african_am',
-    'label' => 'Service Area 10 African American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 327,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_10_asian_am'.
-  $field_instances['node-census-field_service_area_10_asian_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 291,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_10_asian_am',
-    'label' => 'Service Area 10 Asian American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 301,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_10_city'.
-  $field_instances['node-census-field_service_area_10_city'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 234,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 438,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_10_city',
-    'label' => 'Service Area 10 City/County',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 247,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_10_hispanic'.
-  $field_instances['node-census-field_service_area_10_hispanic'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 273,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 400,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_10_hispanic',
-    'label' => 'Service Area 10 Hispanic/Latino',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 288,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_10_name'.
-  $field_instances['node-census-field_service_area_10_name'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 221,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 446,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_10_name',
-    'label' => 'Service Area 10 Name',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 234,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_10_native_am'.
-  $field_instances['node-census-field_service_area_10_native_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 306,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_10_native_am',
-    'label' => 'Service Area 10 Native American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 314,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_10_other'.
-  $field_instances['node-census-field_service_area_10_other'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 332,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_10_other',
-    'label' => 'Service Area 10 Other',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 340,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_10_population'.
-  $field_instances['node-census-field_service_area_10_population'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 247,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 387,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_10_population',
-    'label' => 'Service Area 10 Population',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 260,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_10_white'.
-  $field_instances['node-census-field_service_area_10_white'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 260,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 374,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_10_white',
-    'label' => 'Service Area 10 White',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 275,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_11_african_am'.
-  $field_instances['node-census-field_service_area_11_african_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 320,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_11_african_am',
-    'label' => 'Service Area 11 African American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 328,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_11_asian_am'.
-  $field_instances['node-census-field_service_area_11_asian_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 293,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_11_asian_am',
-    'label' => 'Service Area 11 Asian American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 302,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_11_city'.
-  $field_instances['node-census-field_service_area_11_city'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 235,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 439,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_11_city',
-    'label' => 'Service Area 11 City/County',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 248,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_11_hispanic'.
-  $field_instances['node-census-field_service_area_11_hispanic'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 274,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 399,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_11_hispanic',
-    'label' => 'Service Area 11 Hispanic/Latino',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 289,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_11_name'.
-  $field_instances['node-census-field_service_area_11_name'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 222,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 445,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_11_name',
-    'label' => 'Service Area 11 Name',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 235,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_11_native_am'.
-  $field_instances['node-census-field_service_area_11_native_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 307,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_11_native_am',
-    'label' => 'Service Area 11 Native American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 315,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_11_other'.
-  $field_instances['node-census-field_service_area_11_other'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 333,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_11_other',
-    'label' => 'Service Area 11 Other',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 341,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_11_population'.
-  $field_instances['node-census-field_service_area_11_population'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 248,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 386,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_11_population',
-    'label' => 'Service Area 11 Population',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 261,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_11_white'.
-  $field_instances['node-census-field_service_area_11_white'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 261,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 373,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_11_white',
-    'label' => 'Service Area 11 White',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 276,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_12_african_am'.
-  $field_instances['node-census-field_service_area_12_african_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 321,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_12_african_am',
-    'label' => 'Service Area 12 African American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 329,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_12_asian_am'.
-  $field_instances['node-census-field_service_area_12_asian_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 295,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_12_asian_am',
-    'label' => 'Service Area 12 Asian American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 303,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_12_city'.
-  $field_instances['node-census-field_service_area_12_city'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 236,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 442,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_12_city',
-    'label' => 'Service Area 12 City/County',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 249,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_12_hispanic'.
-  $field_instances['node-census-field_service_area_12_hispanic'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 275,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 393,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_12_hispanic',
-    'label' => 'Service Area 12 Hispanic/Latino',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 290,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_12_name'.
-  $field_instances['node-census-field_service_area_12_name'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 223,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 449,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_12_name',
-    'label' => 'Service Area 12 Name',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 236,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_12_native_am'.
-  $field_instances['node-census-field_service_area_12_native_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 308,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_12_native_am',
-    'label' => 'Service Area 12 Native American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 316,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_12_other'.
-  $field_instances['node-census-field_service_area_12_other'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 334,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_12_other',
-    'label' => 'Service Area 12 Other',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 342,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_12_population'.
-  $field_instances['node-census-field_service_area_12_population'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 249,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 385,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_12_population',
-    'label' => 'Service Area 12 Population',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 262,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_12_white'.
-  $field_instances['node-census-field_service_area_12_white'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 262,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 388,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_12_white',
-    'label' => 'Service Area 12 White',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 277,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_13_african_am'.
-  $field_instances['node-census-field_service_area_13_african_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 322,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_13_african_am',
-    'label' => 'Service Area 13 African American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 330,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_13_asian_am'.
-  $field_instances['node-census-field_service_area_13_asian_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 296,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_13_asian_am',
-    'label' => 'Service Area 13 Asian American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 304,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_13_city'.
-  $field_instances['node-census-field_service_area_13_city'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 237,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 441,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_13_city',
-    'label' => 'Service Area 13 City/County',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 250,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_13_hispanic'.
-  $field_instances['node-census-field_service_area_13_hispanic'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 276,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 392,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_13_hispanic',
-    'label' => 'Service Area 13 Hispanic/Latino',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 291,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_13_name'.
-  $field_instances['node-census-field_service_area_13_name'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 224,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 450,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_13_name',
-    'label' => 'Service Area 13 Name',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 237,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_13_native_am'.
-  $field_instances['node-census-field_service_area_13_native_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 309,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_13_native_am',
-    'label' => 'Service Area 13 Native American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 317,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_13_other'.
-  $field_instances['node-census-field_service_area_13_other'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 335,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_13_other',
-    'label' => 'Service Area 13 Other',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 343,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_13_population'.
-  $field_instances['node-census-field_service_area_13_population'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 250,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 378,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_13_population',
-    'label' => 'Service Area 13 Population',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 265,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_13_white'.
-  $field_instances['node-census-field_service_area_13_white'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 263,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 389,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_13_white',
-    'label' => 'Service Area 13 White',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 278,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_14_african_am'.
-  $field_instances['node-census-field_service_area_14_african_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 323,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_14_african_am',
-    'label' => 'Service Area 14 African American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 331,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_14_asian_am'.
-  $field_instances['node-census-field_service_area_14_asian_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 297,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_14_asian_am',
-    'label' => 'Service Area 14 Asian American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 305,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_14_city'.
-  $field_instances['node-census-field_service_area_14_city'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 238,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 440,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_14_city',
-    'label' => 'Service Area 14 City/County',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 251,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_14_hispanic'.
-  $field_instances['node-census-field_service_area_14_hispanic'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 278,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 391,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_14_hispanic',
-    'label' => 'Service Area 14 Hispanic/Latino',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 292,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_14_name'.
-  $field_instances['node-census-field_service_area_14_name'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 225,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 453,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_14_name',
-    'label' => 'Service Area 14 Name',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 238,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_14_native_am'.
-  $field_instances['node-census-field_service_area_14_native_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 310,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_14_native_am',
-    'label' => 'Service Area 14 Native American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 318,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_14_other'.
-  $field_instances['node-census-field_service_area_14_other'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 336,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_14_other',
-    'label' => 'Service Area 14 Other',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 344,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_14_population'.
-  $field_instances['node-census-field_service_area_14_population'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 251,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 377,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_14_population',
-    'label' => 'Service Area 14 Population',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 266,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_14_white'.
-  $field_instances['node-census-field_service_area_14_white'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 264,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 404,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_14_white',
-    'label' => 'Service Area 14 White',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 279,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_15_african_am'.
-  $field_instances['node-census-field_service_area_15_african_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 324,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_15_african_am',
-    'label' => 'Service Area 15 African American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 332,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_15_asian_am'.
-  $field_instances['node-census-field_service_area_15_asian_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 298,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_15_asian_am',
-    'label' => 'Service Area 15 Asian American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 306,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_15_city'.
-  $field_instances['node-census-field_service_area_15_city'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 239,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 411,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_15_city',
-    'label' => 'Service Area 15 City/County',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 252,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_15_hispanic'.
-  $field_instances['node-census-field_service_area_15_hispanic'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 279,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 390,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_15_hispanic',
-    'label' => 'Service Area 15 Hispanic/Latino',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 293,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_15_name'.
-  $field_instances['node-census-field_service_area_15_name'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 226,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 452,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_15_name',
-    'label' => 'Service Area 15 Name',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 239,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_15_native_am'.
-  $field_instances['node-census-field_service_area_15_native_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 311,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_15_native_am',
-    'label' => 'Service Area 15 Native American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 319,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_15_other'.
-  $field_instances['node-census-field_service_area_15_other'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 337,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_15_other',
-    'label' => 'Service Area 15 Other',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 345,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_15_population'.
-  $field_instances['node-census-field_service_area_15_population'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 252,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 370,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_15_population',
-    'label' => 'Service Area 15 Population',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 267,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_15_white'.
-  $field_instances['node-census-field_service_area_15_white'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 265,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 403,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_15_white',
-    'label' => 'Service Area 15 White',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 280,
+      'weight' => 122,
     ),
   );
 
@@ -16289,7 +14092,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 211,
+        'weight' => 167,
       ),
       'full' => array(
         'label' => 'above',
@@ -16314,7 +14117,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 216,
+      'weight' => 152,
     ),
   );
 
@@ -16335,7 +14138,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 200,
+        'weight' => 164,
       ),
       'full' => array(
         'label' => 'above',
@@ -16360,7 +14163,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 214,
+      'weight' => 150,
     ),
   );
 
@@ -16372,11 +14175,11 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 196,
+        'weight' => 160,
       ),
       'full' => array(
         'label' => 'above',
@@ -16400,7 +14203,7 @@ function censusfeature_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 210,
+      'weight' => 146,
     ),
   );
 
@@ -16412,7 +14215,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -16421,7 +14224,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 199,
+        'weight' => 163,
       ),
       'full' => array(
         'label' => 'above',
@@ -16446,7 +14249,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 213,
+      'weight' => 149,
     ),
   );
 
@@ -16458,11 +14261,10 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'text',
+        'label' => 'hidden',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 202,
+        'type' => 'hidden',
+        'weight' => 180,
       ),
       'full' => array(
         'label' => 'above',
@@ -16486,7 +14288,7 @@ function censusfeature_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 209,
+      'weight' => 145,
     ),
   );
 
@@ -16507,7 +14309,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 201,
+        'weight' => 165,
       ),
       'full' => array(
         'label' => 'above',
@@ -16532,7 +14334,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 215,
+      'weight' => 151,
     ),
   );
 
@@ -16553,7 +14355,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 203,
+        'weight' => 166,
       ),
       'full' => array(
         'label' => 'above',
@@ -16578,7 +14380,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 217,
+      'weight' => 153,
     ),
   );
 
@@ -16590,7 +14392,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -16599,7 +14401,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 197,
+        'weight' => 161,
       ),
       'full' => array(
         'label' => 'above',
@@ -16624,7 +14426,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 211,
+      'weight' => 147,
     ),
   );
 
@@ -16636,7 +14438,7 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -16645,7 +14447,7 @@ function censusfeature_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 198,
+        'weight' => 162,
       ),
       'full' => array(
         'label' => 'above',
@@ -16670,3085 +14472,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 212,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_2_african_am'.
-  $field_instances['node-census-field_service_area_2_african_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 212,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 416,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_2_african_am',
-    'label' => 'Service Area 2 African American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 225,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_2_asian_am'.
-  $field_instances['node-census-field_service_area_2_asian_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 209,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 414,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_2_asian_am',
-    'label' => 'Service Area 2 Asian American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 223,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_2_city'.
-  $field_instances['node-census-field_service_area_2_city'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 205,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 429,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_2_city',
-    'label' => 'Service Area 2 City/County',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 219,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_2_hispanic'.
-  $field_instances['node-census-field_service_area_2_hispanic'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 207,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 421,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_2_hispanic',
-    'label' => 'Service Area 2 Hispanic/Latino',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 222,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_2_name'.
-  $field_instances['node-census-field_service_area_2_name'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 204,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 430,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_2_name',
-    'label' => 'Service Area 2 Name',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 218,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_2_native_am'.
-  $field_instances['node-census-field_service_area_2_native_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 210,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 413,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_2_native_am',
-    'label' => 'Service Area 2 Native American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 224,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_2_other'.
-  $field_instances['node-census-field_service_area_2_other'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 213,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 417,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_2_other',
-    'label' => 'Service Area 2 Other',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 226,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_2_population'.
-  $field_instances['node-census-field_service_area_2_population'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 208,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 415,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_2_population',
-    'label' => 'Service Area 2 Population',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 220,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_2_white'.
-  $field_instances['node-census-field_service_area_2_white'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 206,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 422,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_2_white',
-    'label' => 'Service Area 2 White',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 221,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_3_african_ame'.
-  $field_instances['node-census-field_service_area_3_african_ame'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 312,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_3_african_ame',
-    'label' => 'Service Area 3 African American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 320,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_3_asian_am'.
-  $field_instances['node-census-field_service_area_3_asian_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 280,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 394,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_3_asian_am',
-    'label' => 'Service Area 3 Asian American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 294,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_3_city'.
-  $field_instances['node-census-field_service_area_3_city'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 227,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 451,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_3_city',
-    'label' => 'Service Area 3 City/County',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 240,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_3_hispanic'.
-  $field_instances['node-census-field_service_area_3_hispanic'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 266,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 402,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_3_hispanic',
-    'label' => 'Service Area 3 Hispanic/Latino',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 281,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_3_name'.
-  $field_instances['node-census-field_service_area_3_name'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 214,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 420,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_3_name',
-    'label' => 'Service Area 3 Name',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 227,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_3_native_am'.
-  $field_instances['node-census-field_service_area_3_native_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 299,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_3_native_am',
-    'label' => 'Service Area 3 Native American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 307,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_3_other'.
-  $field_instances['node-census-field_service_area_3_other'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 325,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_3_other',
-    'label' => 'Service Area 3 Other',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 333,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_3_population'.
-  $field_instances['node-census-field_service_area_3_population'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 240,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 410,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_3_population',
-    'label' => 'Service Area 3 Population',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 253,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_3_white'.
-  $field_instances['node-census-field_service_area_3_white'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 253,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 369,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_3_white',
-    'label' => 'Service Area 3 White',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 268,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_4_african_am'.
-  $field_instances['node-census-field_service_area_4_african_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 313,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_4_african_am',
-    'label' => 'Service Area 4 African American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 321,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_4_asian_am'.
-  $field_instances['node-census-field_service_area_4_asian_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 281,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 395,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_4_asian_am',
-    'label' => 'Service Area 4 Asian American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 295,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_4_city'.
-  $field_instances['node-census-field_service_area_4_city'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 228,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 444,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_4_city',
-    'label' => 'Service Area 4 City/County',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 241,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_4_hispanic'.
-  $field_instances['node-census-field_service_area_4_hispanic'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 267,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 401,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_4_hispanic',
-    'label' => 'Service Area 4 Hispanic/Latino',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 282,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_4_name'.
-  $field_instances['node-census-field_service_area_4_name'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 215,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 419,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_4_name',
-    'label' => 'Service Area 4 Name',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 228,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_4_native_am'.
-  $field_instances['node-census-field_service_area_4_native_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 300,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_4_native_am',
-    'label' => 'Service Area 4 Native American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 308,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_4_other'.
-  $field_instances['node-census-field_service_area_4_other'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 326,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_4_other',
-    'label' => 'Service Area 4 Other',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 334,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_4_population'.
-  $field_instances['node-census-field_service_area_4_population'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 241,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 382,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_4_population',
-    'label' => 'Service Area 4 Population',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 254,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_4_white'.
-  $field_instances['node-census-field_service_area_4_white'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 254,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 368,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_4_white',
-    'label' => 'Service Area 4 White',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 269,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_5_african_am'.
-  $field_instances['node-census-field_service_area_5_african_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 314,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_5_african_am',
-    'label' => 'Service Area 5 African American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 322,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_5_asian_am'.
-  $field_instances['node-census-field_service_area_5_asian_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 282,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 398,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_5_asian_am',
-    'label' => 'Service Area 5 Asian American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 296,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_5_city'.
-  $field_instances['node-census-field_service_area_5_city'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 229,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 443,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_5_city',
-    'label' => 'Service Area 5 City/County',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 242,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_5_hispanic'.
-  $field_instances['node-census-field_service_area_5_hispanic'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 268,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 405,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_5_hispanic',
-    'label' => 'Service Area 5 Hispanic/Latino',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 283,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_5_name'.
-  $field_instances['node-census-field_service_area_5_name'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 216,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 418,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_5_name',
-    'label' => 'Service Area 5 Name',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 229,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_5_native_am'.
-  $field_instances['node-census-field_service_area_5_native_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 301,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_5_native_am',
-    'label' => 'Service Area 5 Native American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 309,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_5_other'.
-  $field_instances['node-census-field_service_area_5_other'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 327,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_5_other',
-    'label' => 'Service Area 5 Other',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 335,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_5_population'.
-  $field_instances['node-census-field_service_area_5_population'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 242,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 381,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_5_population',
-    'label' => 'Service Area 5 Population',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 255,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_5_white'.
-  $field_instances['node-census-field_service_area_5_white'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 255,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 367,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_5_white',
-    'label' => 'Service Area 5 White',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 270,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_6_african_am'.
-  $field_instances['node-census-field_service_area_6_african_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 315,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_6_african_am',
-    'label' => 'Service Area 6 African American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 323,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_6_asian_am'.
-  $field_instances['node-census-field_service_area_6_asian_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 283,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 397,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_6_asian_am',
-    'label' => 'Service Area 6 Asian American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 297,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_6_city'.
-  $field_instances['node-census-field_service_area_6_city'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 230,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 437,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_6_city',
-    'label' => 'Service Area 6 City/County',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 243,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_6_hispanic'.
-  $field_instances['node-census-field_service_area_6_hispanic'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 269,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 406,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_6_hispanic',
-    'label' => 'Service Area 6 Hispanic/Latino',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 284,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_6_name'.
-  $field_instances['node-census-field_service_area_6_name'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 217,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 432,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_6_name',
-    'label' => 'Service Area 6 Name',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 230,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_6_native_am'.
-  $field_instances['node-census-field_service_area_6_native_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 302,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_6_native_am',
-    'label' => 'Service Area 6 Native American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 310,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_6_other'.
-  $field_instances['node-census-field_service_area_6_other'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 328,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_6_other',
-    'label' => 'Service Area 6 Other',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 336,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_6_population'.
-  $field_instances['node-census-field_service_area_6_population'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 243,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 380,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_6_population',
-    'label' => 'Service Area 6 Population',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 256,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_6_white'.
-  $field_instances['node-census-field_service_area_6_white'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 256,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 371,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_6_white',
-    'label' => 'Service Area 6 White',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 271,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_7_african_am'.
-  $field_instances['node-census-field_service_area_7_african_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 316,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_7_african_am',
-    'label' => 'Service Area 7 African American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 324,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_7_asian_ameri'.
-  $field_instances['node-census-field_service_area_7_asian_ameri'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 284,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 396,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_7_asian_ameri',
-    'label' => 'Service Area 7 Asian American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 298,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_7_city'.
-  $field_instances['node-census-field_service_area_7_city'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 231,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 436,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_7_city',
-    'label' => 'Service Area 7 City/County',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 244,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_7_hispanic'.
-  $field_instances['node-census-field_service_area_7_hispanic'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 270,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 409,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_7_hispanic',
-    'label' => 'Service Area 7 Hispanic/Latino',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 285,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_7_name'.
-  $field_instances['node-census-field_service_area_7_name'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 218,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 433,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_7_name',
-    'label' => 'Service Area 7 Name',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 231,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_7_native_am'.
-  $field_instances['node-census-field_service_area_7_native_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 303,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_7_native_am',
-    'label' => 'Service Area 7 Native American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 311,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_7_other'.
-  $field_instances['node-census-field_service_area_7_other'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 329,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_7_other',
-    'label' => 'Service Area 7 Other',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 337,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_7_population'.
-  $field_instances['node-census-field_service_area_7_population'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 244,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 379,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_7_population',
-    'label' => 'Service Area 7 Population',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 257,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_7_white'.
-  $field_instances['node-census-field_service_area_7_white'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 257,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 372,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_7_white',
-    'label' => 'Service Area 7 White',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 272,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_8_african_am'.
-  $field_instances['node-census-field_service_area_8_african_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 317,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_8_african_am',
-    'label' => 'Service Area 8 African American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 325,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_8_asian_am'.
-  $field_instances['node-census-field_service_area_8_asian_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 289,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_8_asian_am',
-    'label' => 'Service Area 8 Asian American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 299,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_8_city'.
-  $field_instances['node-census-field_service_area_8_city'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 232,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 435,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_8_city',
-    'label' => 'Service Area 8 City/County',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 245,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_8_hispanic'.
-  $field_instances['node-census-field_service_area_8_hispanic'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 271,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 408,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_8_hispanic',
-    'label' => 'Service Area 8 Hispanic/Latino',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 286,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_8_name'.
-  $field_instances['node-census-field_service_area_8_name'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 219,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 448,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_8_name',
-    'label' => 'Service Area 8 Name',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 232,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_8_native_am'.
-  $field_instances['node-census-field_service_area_8_native_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 304,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_8_native_am',
-    'label' => 'Service Area 8 Native American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 312,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_8_other'.
-  $field_instances['node-census-field_service_area_8_other'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 330,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_8_other',
-    'label' => 'Service Area 8 Other',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 338,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_8_population'.
-  $field_instances['node-census-field_service_area_8_population'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 245,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 383,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_8_population',
-    'label' => 'Service Area 8 Population',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 258,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_8_white'.
-  $field_instances['node-census-field_service_area_8_white'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 258,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 376,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_8_white',
-    'label' => 'Service Area 8 White',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 273,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_9_african_am'.
-  $field_instances['node-census-field_service_area_9_african_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 318,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_9_african_am',
-    'label' => 'Service Area 9 African American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 326,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_9_asian_am'.
-  $field_instances['node-census-field_service_area_9_asian_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 290,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_9_asian_am',
-    'label' => 'Service Area 9 Asian American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 300,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_9_city'.
-  $field_instances['node-census-field_service_area_9_city'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 233,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 434,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_9_city',
-    'label' => 'Service Area 9 City/County',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 246,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_9_hispanic'.
-  $field_instances['node-census-field_service_area_9_hispanic'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 272,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 407,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_9_hispanic',
-    'label' => 'Service Area 9 Hispanic/Latino',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 287,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_9_name'.
-  $field_instances['node-census-field_service_area_9_name'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 220,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 447,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_9_name',
-    'label' => 'Service Area 9 Name',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 233,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_9_native_am'.
-  $field_instances['node-census-field_service_area_9_native_am'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 305,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_9_native_am',
-    'label' => 'Service Area 9 Native American',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 313,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_9_other'.
-  $field_instances['node-census-field_service_area_9_other'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 331,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_9_other',
-    'label' => 'Service Area 9 Other',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 339,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_9_population'.
-  $field_instances['node-census-field_service_area_9_population'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 246,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 384,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_9_population',
-    'label' => 'Service Area 9 Population',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 259,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_service_area_9_white'.
-  $field_instances['node-census-field_service_area_9_white'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 259,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 375,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_area_9_white',
-    'label' => 'Service Area 9 White',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 274,
+      'weight' => 148,
     ),
   );
 
@@ -19766,7 +14490,7 @@ function censusfeature_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'paragraphs_view',
-        'weight' => 338,
+        'weight' => 159,
       ),
     ),
     'entity_type' => 'node',
@@ -19791,7 +14515,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'paragraphs',
       'settings' => array(),
       'type' => 'paragraphs_embed',
-      'weight' => 346,
+      'weight' => 156,
     ),
   );
 
@@ -20316,7 +15040,7 @@ function censusfeature_field_default_field_instances() {
         'module' => 'markup',
         'settings' => array(),
         'type' => 'markup_view',
-        'weight' => 294,
+        'weight' => 174,
       ),
       'full' => array(
         'label' => 'above',
@@ -20338,7 +15062,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'markup',
       'settings' => array(),
       'type' => 'markup',
-      'weight' => 264,
+      'weight' => 155,
     ),
   );
 
@@ -20565,11 +15289,10 @@ function censusfeature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
+        'label' => 'hidden',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 341,
+        'type' => 'hidden',
+        'weight' => 177,
       ),
     ),
     'entity_type' => 'node',
@@ -20584,7 +15307,7 @@ function censusfeature_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 347,
+      'weight' => 157,
     ),
   );
 
@@ -22194,7 +16917,6 @@ function censusfeature_field_default_field_instances() {
   t('Advocacy Efforts African American Males');
   t('Advocacy Efforts Asian American Females');
   t('Advocacy Efforts Asian American Males');
-  t('Advocacy Efforts Duplicate');
   t('Advocacy Efforts Hispanic/Latino Females');
   t('Advocacy Efforts Hispanic/Latino Males');
   t('Advocacy Efforts Native American Females');
@@ -22202,9 +16924,9 @@ function censusfeature_field_default_field_instances() {
   t('Advocacy Efforts Other Females');
   t('Advocacy Efforts Other Males');
   t('Advocacy Efforts Societal Impact');
-  t('Advocacy Efforts Unduplicate');
   t('Advocacy Efforts White Females');
   t('Advocacy Efforts White Males');
+  t('Advocacy Spacer');
   t('Affiliate Name');
   t('African American female board members');
   t('African American male board members');
@@ -22229,6 +16951,7 @@ function censusfeature_field_default_field_instances() {
   t('Budget - State / Local');
   t('Budget - United Way');
   t('C. Professional/Contract/Consulting Fees');
+  t('CRJA Spacer');
   t('Cellular Number');
   t('City');
   t('Civic Engagement');
@@ -22238,7 +16961,6 @@ function censusfeature_field_default_field_instances() {
   t('Civil Rights & Justice Activities African American Males');
   t('Civil Rights & Justice Activities Asian American Females');
   t('Civil Rights & Justice Activities Asian American Males');
-  t('Civil Rights & Justice Activities Duplicate');
   t('Civil Rights & Justice Activities Hispanic/Latino Females');
   t('Civil Rights & Justice Activities Hispanic/Latino Males');
   t('Civil Rights & Justice Activities Native American Females');
@@ -22246,7 +16968,6 @@ function censusfeature_field_default_field_instances() {
   t('Civil Rights & Justice Activities Other Females');
   t('Civil Rights & Justice Activities Other Males');
   t('Civil Rights & Justice Activities Societal Impact');
-  t('Civil Rights & Justice Activities Unduplicate');
   t('Civil Rights & Justice Activities White Females');
   t('Civil Rights & Justice Activities White Males');
   t('Community Forums');
@@ -22359,6 +17080,7 @@ function censusfeature_field_default_field_instances() {
   t('Other male board members');
   t('Other total board members');
   t('Own');
+  t('PB Spacer');
   t('Phone Number');
   t('Photo');
   t('Police Brutality');
@@ -22366,7 +17088,6 @@ function censusfeature_field_default_field_instances() {
   t('Police Brutality African American Males');
   t('Police Brutality Asian American Females');
   t('Police Brutality Asian American Males');
-  t('Police Brutality Duplicate');
   t('Police Brutality Hispanic/Latino Females');
   t('Police Brutality Hispanic/Latino Males');
   t('Police Brutality Native American Females');
@@ -22374,7 +17095,6 @@ function censusfeature_field_default_field_instances() {
   t('Police Brutality Other Females');
   t('Police Brutality Other Males');
   t('Police Brutality Societal Impact');
-  t('Police Brutality Unduplicate');
   t('Police Brutality White Females');
   t('Police Brutality White Males');
   t('President/CEO First Name');
@@ -22433,132 +17153,6 @@ function censusfeature_field_default_field_instances() {
   t('Service Area 1 Other');
   t('Service Area 1 Population');
   t('Service Area 1 White');
-  t('Service Area 10 African American');
-  t('Service Area 10 Asian American');
-  t('Service Area 10 City/County');
-  t('Service Area 10 Hispanic/Latino');
-  t('Service Area 10 Name');
-  t('Service Area 10 Native American');
-  t('Service Area 10 Other');
-  t('Service Area 10 Population');
-  t('Service Area 10 White');
-  t('Service Area 11 African American');
-  t('Service Area 11 Asian American');
-  t('Service Area 11 City/County');
-  t('Service Area 11 Hispanic/Latino');
-  t('Service Area 11 Name');
-  t('Service Area 11 Native American');
-  t('Service Area 11 Other');
-  t('Service Area 11 Population');
-  t('Service Area 11 White');
-  t('Service Area 12 African American');
-  t('Service Area 12 Asian American');
-  t('Service Area 12 City/County');
-  t('Service Area 12 Hispanic/Latino');
-  t('Service Area 12 Name');
-  t('Service Area 12 Native American');
-  t('Service Area 12 Other');
-  t('Service Area 12 Population');
-  t('Service Area 12 White');
-  t('Service Area 13 African American');
-  t('Service Area 13 Asian American');
-  t('Service Area 13 City/County');
-  t('Service Area 13 Hispanic/Latino');
-  t('Service Area 13 Name');
-  t('Service Area 13 Native American');
-  t('Service Area 13 Other');
-  t('Service Area 13 Population');
-  t('Service Area 13 White');
-  t('Service Area 14 African American');
-  t('Service Area 14 Asian American');
-  t('Service Area 14 City/County');
-  t('Service Area 14 Hispanic/Latino');
-  t('Service Area 14 Name');
-  t('Service Area 14 Native American');
-  t('Service Area 14 Other');
-  t('Service Area 14 Population');
-  t('Service Area 14 White');
-  t('Service Area 15 African American');
-  t('Service Area 15 Asian American');
-  t('Service Area 15 City/County');
-  t('Service Area 15 Hispanic/Latino');
-  t('Service Area 15 Name');
-  t('Service Area 15 Native American');
-  t('Service Area 15 Other');
-  t('Service Area 15 Population');
-  t('Service Area 15 White');
-  t('Service Area 2 African American');
-  t('Service Area 2 Asian American');
-  t('Service Area 2 City/County');
-  t('Service Area 2 Hispanic/Latino');
-  t('Service Area 2 Name');
-  t('Service Area 2 Native American');
-  t('Service Area 2 Other');
-  t('Service Area 2 Population');
-  t('Service Area 2 White');
-  t('Service Area 3 African American');
-  t('Service Area 3 Asian American');
-  t('Service Area 3 City/County');
-  t('Service Area 3 Hispanic/Latino');
-  t('Service Area 3 Name');
-  t('Service Area 3 Native American');
-  t('Service Area 3 Other');
-  t('Service Area 3 Population');
-  t('Service Area 3 White');
-  t('Service Area 4 African American');
-  t('Service Area 4 Asian American');
-  t('Service Area 4 City/County');
-  t('Service Area 4 Hispanic/Latino');
-  t('Service Area 4 Name');
-  t('Service Area 4 Native American');
-  t('Service Area 4 Other');
-  t('Service Area 4 Population');
-  t('Service Area 4 White');
-  t('Service Area 5 African American');
-  t('Service Area 5 Asian American');
-  t('Service Area 5 City/County');
-  t('Service Area 5 Hispanic/Latino');
-  t('Service Area 5 Name');
-  t('Service Area 5 Native American');
-  t('Service Area 5 Other');
-  t('Service Area 5 Population');
-  t('Service Area 5 White');
-  t('Service Area 6 African American');
-  t('Service Area 6 Asian American');
-  t('Service Area 6 City/County');
-  t('Service Area 6 Hispanic/Latino');
-  t('Service Area 6 Name');
-  t('Service Area 6 Native American');
-  t('Service Area 6 Other');
-  t('Service Area 6 Population');
-  t('Service Area 6 White');
-  t('Service Area 7 African American');
-  t('Service Area 7 Asian American');
-  t('Service Area 7 City/County');
-  t('Service Area 7 Hispanic/Latino');
-  t('Service Area 7 Name');
-  t('Service Area 7 Native American');
-  t('Service Area 7 Other');
-  t('Service Area 7 Population');
-  t('Service Area 7 White');
-  t('Service Area 8 African American');
-  t('Service Area 8 Asian American');
-  t('Service Area 8 City/County');
-  t('Service Area 8 Hispanic/Latino');
-  t('Service Area 8 Name');
-  t('Service Area 8 Native American');
-  t('Service Area 8 Other');
-  t('Service Area 8 Population');
-  t('Service Area 8 White');
-  t('Service Area 9 African American');
-  t('Service Area 9 Asian American');
-  t('Service Area 9 City/County');
-  t('Service Area 9 Hispanic/Latino');
-  t('Service Area 9 Name');
-  t('Service Area 9 Native American');
-  t('Service Area 9 Other');
-  t('Service Area 9 Population');
-  t('Service Area 9 White');
   t('Service Areas');
   t('Societal Impact');
   t('State/Province');
@@ -22577,6 +17171,9 @@ function censusfeature_field_default_field_instances() {
   t('Total white board members');
   t('Type of Venture');
   t('UnDuplicate');
+  t('Venture Amount Budgeted');
+  t('Venture Amount Earned');
+  t('Ventures');
   t('Voter African American Female');
   t('Voter African American Male');
   t('Voter Asian American Female');
