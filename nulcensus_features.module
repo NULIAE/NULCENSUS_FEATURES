@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the NULCENSUS FEATURES feature.
+ */
+
+include_once 'nulcensus_features.features.inc';
