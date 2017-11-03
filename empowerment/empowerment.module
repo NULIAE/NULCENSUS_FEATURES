@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Empowerment feature.
+ */
+
+include_once 'empowerment.features.inc';

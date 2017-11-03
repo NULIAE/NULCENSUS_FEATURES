@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Contact Data feature.
+ */
+
+include_once 'contact_data.features.inc';
