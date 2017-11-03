@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Health and Quality of Life Program Details feature.
+ */
+
+include_once 'health_and_quality_of_life_program_details.features.inc';

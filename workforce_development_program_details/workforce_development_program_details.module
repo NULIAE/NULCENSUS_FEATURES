@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Workforce Development Program Details feature.
+ */
+
+include_once 'workforce_development_program_details.features.inc';

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Census Views feature.
+ */
+
+include_once 'census_views.features.inc';
