@@ -339,7 +339,7 @@ function census_views_views_default_views() {
   $handler->display->display_options['empty']['area']['table'] = 'views';
   $handler->display->display_options['empty']['area']['field'] = 'area';
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
-  $handler->display->display_options['empty']['area']['content'] = '<a href ="http://nuldemo.aghstrategies.net/node/add/civic-engagement/!1">Civic Engagement</a>
+  $handler->display->display_options['empty']['area']['content'] = '<a href ="/node/add/civic-engagement/!1">Civic Engagement</a>
 <p>Not Started</p>';
   $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
   $handler->display->display_options['empty']['area']['tokenize'] = TRUE;
@@ -398,7 +398,7 @@ function census_views_views_default_views() {
     t('Sort by'),
     t('Asc'),
     t('Desc'),
-    t('<a href ="http://nuldemo.aghstrategies.net/node/add/civic-engagement/!1">Civic Engagement</a>
+    t('<a href ="/node/add/civic-engagement/!1">Civic Engagement</a>
 <p>Not Started</p>'),
     t('All'),
     t('Block'),
@@ -688,7 +688,7 @@ function census_views_views_default_views() {
   $handler->display->display_options['empty']['area']['table'] = 'views';
   $handler->display->display_options['empty']['area']['field'] = 'area';
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
-  $handler->display->display_options['empty']['area']['content'] = '<a href="http://nuldemo.aghstrategies.net/node/add/community-relations/!1">Community Relations</a>
+  $handler->display->display_options['empty']['area']['content'] = '<a href="/node/add/community-relations/!1">Community Relations</a>
 <p>Not Started</p>';
   $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
   $handler->display->display_options['empty']['area']['tokenize'] = TRUE;
@@ -747,7 +747,7 @@ function census_views_views_default_views() {
     t('Sort by'),
     t('Asc'),
     t('Desc'),
-    t('<a href="http://nuldemo.aghstrategies.net/node/add/community-relations/!1">Community Relations</a>
+    t('<a href="/node/add/community-relations/!1">Community Relations</a>
 <p>Not Started</p>'),
     t('All'),
     t('Block'),
@@ -781,7 +781,7 @@ function census_views_views_default_views() {
   $handler->display->display_options['empty']['area']['table'] = 'views';
   $handler->display->display_options['empty']['area']['field'] = 'area';
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
-  $handler->display->display_options['empty']['area']['content'] = '<a href="http://nuldemo.aghstrategies.net/node/add/contact-data-direct-indirect-pub/!1">Create Contact Data (Direct, Indirect & Public)</a>
+  $handler->display->display_options['empty']['area']['content'] = '<a href="/node/add/contact-data-direct-indirect-pub/!1">Create Contact Data (Direct, Indirect & Public)</a>
 <p>Not Started</p>
 ';
   $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
@@ -841,7 +841,7 @@ function census_views_views_default_views() {
     t('Sort by'),
     t('Asc'),
     t('Desc'),
-    t('<a href="http://nuldemo.aghstrategies.net/node/add/contact-data-direct-indirect-pub/!1">Create Contact Data (Direct, Indirect & Public)</a>
+    t('<a href="/node/add/contact-data-direct-indirect-pub/!1">Create Contact Data (Direct, Indirect & Public)</a>
 <p>Not Started</p>
 '),
     t('All'),
@@ -876,7 +876,7 @@ function census_views_views_default_views() {
   $handler->display->display_options['empty']['area']['table'] = 'views';
   $handler->display->display_options['empty']['area']['field'] = 'area';
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
-  $handler->display->display_options['empty']['area']['content'] = '  <a href="http://nuldemo.aghstrategies.net/node/add/contact-information/!1">Contact Information</a>
+  $handler->display->display_options['empty']['area']['content'] = '  <a href="/node/add/contact-information/!1">Contact Information</a>
 <p>Not Started</p>';
   $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
   $handler->display->display_options['empty']['area']['tokenize'] = TRUE;
@@ -935,7 +935,7 @@ function census_views_views_default_views() {
     t('Sort by'),
     t('Asc'),
     t('Desc'),
-    t('  <a href="http://nuldemo.aghstrategies.net/node/add/contact-information/!1">Contact Information</a>
+    t('  <a href="/node/add/contact-information/!1">Contact Information</a>
 <p>Not Started</p>'),
     t('All'),
     t('Block'),
@@ -969,7 +969,7 @@ function census_views_views_default_views() {
   $handler->display->display_options['empty']['area']['table'] = 'views';
   $handler->display->display_options['empty']['area']['field'] = 'area';
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
-  $handler->display->display_options['empty']['area']['content'] = '<a href="http://nuldemo.aghstrategies.net/node/add/program-education/!1">Education Program Details</a>
+  $handler->display->display_options['empty']['area']['content'] = '<a href="/node/add/program-education/!1">Education Program Details</a>
 <p>Not Started</p>';
   $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
   $handler->display->display_options['empty']['area']['tokenize'] = TRUE;
@@ -1048,7 +1048,7 @@ function census_views_views_default_views() {
     t('Sort by'),
     t('Asc'),
     t('Desc'),
-    t('<a href="http://nuldemo.aghstrategies.net/node/add/program-education/!1">Education Program Details</a>
+    t('<a href="/node/add/program-education/!1">Education Program Details</a>
 <p>Not Started</p>'),
     t('parent census'),
     t('<a href="/node/[nid]/!1">Education Details Program</a>'),
@@ -1084,7 +1084,7 @@ function census_views_views_default_views() {
   $handler->display->display_options['empty']['area']['table'] = 'views';
   $handler->display->display_options['empty']['area']['field'] = 'area';
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
-  $handler->display->display_options['empty']['area']['content'] = '<a href="http://nuldemo.aghstrategies.net/node/add/emergency_relief_activities/!1">Emergency Relief Activities</a>
+  $handler->display->display_options['empty']['area']['content'] = '<a href="/node/add/emergency_relief_activities/!1">Emergency Relief Activities</a>
 <p>Not Started</p>';
   $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
   $handler->display->display_options['empty']['area']['tokenize'] = TRUE;
@@ -1143,7 +1143,7 @@ function census_views_views_default_views() {
     t('Sort by'),
     t('Asc'),
     t('Desc'),
-    t('<a href="http://nuldemo.aghstrategies.net/node/add/emergency_relief_activities/!1">Emergency Relief Activities</a>
+    t('<a href="/node/add/emergency_relief_activities/!1">Emergency Relief Activities</a>
 <p>Not Started</p>'),
     t('All'),
     t('Block'),

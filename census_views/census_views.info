@@ -1,6 +1,7 @@
 name = Census Views
 core = 7.x
 package = Features
+dependencies[] = ctools
 dependencies[] = ds
 dependencies[] = entityreference
 dependencies[] = views
@@ -21,5 +22,4 @@ features[views_view][] = entity_reference_test
 features[views_view][] = go_to_census_in_status_mode
 features[views_view][] = program_areas_entity_reference_filter
 features[views_view][] = programs_for_program_area
-features_exclude[dependencies][ctools] = ctools
 project path = sites/all/modules/census_config
