@@ -1,0 +1,11 @@
+name = Census Tabs Taxonomy
+core = 7.x
+package = Features
+dependencies[] = features
+dependencies[] = taxonomy
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = field_content_type_machine_name
+features[field_instance][] = taxonomy_term-census_tabs-field_content_type_machine_name
+features[taxonomy][] = census_tabs
+project path = sites/all/modules/census_config
