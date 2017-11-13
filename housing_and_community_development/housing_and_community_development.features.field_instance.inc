@@ -10,6 +10,46 @@
 function housing_and_community_development_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'node-program_housing-field_parent_census'.
+  $field_instances['node-program_housing-field_parent_census'] = array(
+    'bundle' => 'program_housing',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'bypass_access' => FALSE,
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 14,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_parent_census',
+    'label' => 'parent census',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 10,
+    ),
+  );
+
   // Exported field_instance:
   // 'node-program_housing-field_program_housing_adjustable'.
   $field_instances['node-program_housing-field_program_housing_adjustable'] = array(
@@ -668,6 +708,43 @@ function housing_and_community_development_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-program_housing-field_tab_status'.
+  $field_instances['node-program_housing-field_tab_status'] = array(
+    'bundle' => 'program_housing',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 15,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_tab_status',
+    'label' => 'Tab Status',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 12,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Average price of homes purchased');
@@ -684,6 +761,8 @@ function housing_and_community_development_field_default_field_instances() {
   t('Number of units of affordable housing your affiliate has developed');
   t('Percent of adjustable rate mortgages');
   t('Percent of fixed rate mortgages');
+  t('Tab Status');
+  t('parent census');
 
   return $field_instances;
 }
