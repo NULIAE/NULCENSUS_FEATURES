@@ -11,6 +11,47 @@ function entreuprenuership_and_business_development_program_details_field_defaul
   $field_instances = array();
 
   // Exported field_instance:
+  // 'node-program_entrepreneurship-field_parent_census'.
+  $field_instances['node-program_entrepreneurship-field_parent_census'] = array(
+    'bundle' => 'program_entrepreneurship',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'bypass_access' => FALSE,
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 12,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_parent_census',
+    'label' => 'parent census',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 9,
+    ),
+  );
+
+  // Exported field_instance:
   // 'node-program_entrepreneurship-field_program_entpr_certs'.
   $field_instances['node-program_entrepreneurship-field_program_entpr_certs'] = array(
     'bundle' => 'program_entrepreneurship',
@@ -574,6 +615,43 @@ function entreuprenuership_and_business_development_program_details_field_defaul
     ),
   );
 
+  // Exported field_instance: 'node-program_entrepreneurship-field_tab_status'.
+  $field_instances['node-program_entrepreneurship-field_tab_status'] = array(
+    'bundle' => 'program_entrepreneurship',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 13,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_tab_status',
+    'label' => 'Tab Status',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 11,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('0-2 years');
@@ -587,7 +665,9 @@ function entreuprenuership_and_business_development_program_details_field_defaul
   t('Number of new businesses created');
   t('Other (i.e. consultants)');
   t('Part time');
+  t('Tab Status');
   t('Total sales of businesses started by participants in entrepreneurship programs (i.e. Small Business Matters)');
+  t('parent census');
 
   return $field_instances;
 }
