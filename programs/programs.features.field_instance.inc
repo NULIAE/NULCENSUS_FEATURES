@@ -754,6 +754,80 @@ function programs_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-programs-field_program_types'.
+  $field_instances['node-programs-field_program_types'] = array(
+    'bundle' => 'programs',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 20,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_program_types',
+    'label' => 'Program Types',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 24,
+    ),
+  );
+
+  // Exported field_instance: 'node-programs-field_service_provided'.
+  $field_instances['node-programs-field_service_provided'] = array(
+    'bundle' => 'programs',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 21,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_provided',
+    'label' => 'Service Provided',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 25,
+    ),
+  );
+
   // Exported field_instance: 'taxonomy_term-program_areas-field_content_type'.
   $field_instances['taxonomy_term-program_areas-field_content_type'] = array(
     'bundle' => 'program_areas',
@@ -785,6 +859,69 @@ function programs_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'taxonomy_term-program_types-field_program_area'.
+  $field_instances['taxonomy_term-program_types-field_program_area'] = array(
+    'bundle' => 'program_types',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_program_area',
+    'label' => 'Program Area',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'taxonomy_term-services_provided-field_program_area'.
+  $field_instances['taxonomy_term-services_provided-field_program_area'] = array(
+    'bundle' => 'services_provided',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_program_area',
+    'label' => 'Program Area',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 2,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('% Asian American');
@@ -803,7 +940,9 @@ function programs_field_default_field_instances() {
   t('Name of Program');
   t('Number of People Served Annually');
   t('Program Area');
+  t('Program Types');
   t('Purpose of Program');
+  t('Service Provided');
   t('parent census');
 
   return $field_instances;
