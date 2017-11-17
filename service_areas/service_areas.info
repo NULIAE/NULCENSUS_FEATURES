@@ -1,13 +1,16 @@
 name = Service Areas
 core = 7.x
 package = Features
+dependencies[] = entityreference
 dependencies[] = features
 dependencies[] = options
 dependencies[] = paragraphs
 dependencies[] = taxonomy
 features[features_api][] = api:2
+features[field_base][] = field_parent_census
 features[field_base][] = field_service_areas
 features[field_base][] = field_tab_status
+features[field_instance][] = node-service_areas-field_parent_census
 features[field_instance][] = node-service_areas-field_service_areas
 features[field_instance][] = node-service_areas-field_tab_status
 features[node][] = service_areas

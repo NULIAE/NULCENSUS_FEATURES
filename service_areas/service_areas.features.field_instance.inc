@@ -10,6 +10,52 @@
 function service_areas_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'node-service_areas-field_parent_census'.
+  $field_instances['node-service_areas-field_parent_census'] = array(
+    'bundle' => 'service_areas',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'bypass_access' => FALSE,
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 3,
+      ),
+      'status_info' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_parent_census',
+    'label' => 'parent census',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 2,
+    ),
+  );
+
   // Exported field_instance: 'node-service_areas-field_service_areas'.
   $field_instances['node-service_areas-field_service_areas'] = array(
     'bundle' => 'service_areas',
@@ -119,6 +165,7 @@ function service_areas_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Service Areas');
   t('Tab Status');
+  t('parent census');
 
   return $field_instances;
 }
