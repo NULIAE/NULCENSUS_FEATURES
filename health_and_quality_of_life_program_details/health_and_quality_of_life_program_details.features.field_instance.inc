@@ -10,6 +10,46 @@
 function health_and_quality_of_life_program_details_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'node-program_health-field_parent_census'.
+  $field_instances['node-program_health-field_parent_census'] = array(
+    'bundle' => 'program_health',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'bypass_access' => FALSE,
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 6,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_parent_census',
+    'label' => 'parent census',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 9,
+    ),
+  );
+
   // Exported field_instance:
   // 'node-program_health-field_program_health_advocacy'.
   $field_instances['node-program_health-field_program_health_advocacy'] = array(
@@ -284,6 +324,43 @@ function health_and_quality_of_life_program_details_field_default_field_instance
     ),
   );
 
+  // Exported field_instance: 'node-program_health-field_tab_status'.
+  $field_instances['node-program_health-field_tab_status'] = array(
+    'bundle' => 'program_health',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 7,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_tab_status',
+    'label' => 'Tab Status',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 11,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Average number of participants at Education Classes/Events/Seminars');
@@ -292,6 +369,8 @@ function health_and_quality_of_life_program_details_field_default_field_instance
   t('Number of individuals assisted with using their health insurance by Community Health Worker or Navigator');
   t('Number of individuals enrolled in health insurance by Community Health Worker or Navigator');
   t('Services Provided');
+  t('Tab Status');
+  t('parent census');
 
   return $field_instances;
 }
