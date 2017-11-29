@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the civic engagement feature.
+ */
+
+include_once 'civic_engagement.features.inc';

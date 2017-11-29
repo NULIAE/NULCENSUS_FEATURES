@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Housing and Community Development feature.
+ */
+
+include_once 'housing_and_community_development.features.inc';

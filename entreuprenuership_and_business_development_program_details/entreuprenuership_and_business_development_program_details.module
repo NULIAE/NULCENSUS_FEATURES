@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Entreuprenuership and Business Development Program Details feature.
+ */
+
+include_once 'entreuprenuership_and_business_development_program_details.features.inc';

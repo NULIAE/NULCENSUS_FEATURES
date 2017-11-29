@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Employees and Board Members feature.
+ */
+
+include_once 'employees_and_board_members.features.inc';

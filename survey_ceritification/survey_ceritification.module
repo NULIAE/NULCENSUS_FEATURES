@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Survey Ceritification feature.
+ */
+
+include_once 'survey_ceritification.features.inc';

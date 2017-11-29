@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Expenditures feature.
+ */
+
+include_once 'expenditures.features.inc';

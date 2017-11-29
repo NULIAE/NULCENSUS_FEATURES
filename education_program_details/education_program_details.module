@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Education Program Details feature.
+ */
+
+include_once 'education_program_details.features.inc';
