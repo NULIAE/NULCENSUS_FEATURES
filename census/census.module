@@ -1,7 +1,5 @@
 <?php
 /**
  * @file
- * Code for the census feature.
+ * Drupal needs this blank file.
  */
-
-include_once 'census.features.inc';

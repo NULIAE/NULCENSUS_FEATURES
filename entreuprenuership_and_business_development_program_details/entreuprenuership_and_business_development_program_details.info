@@ -4,6 +4,7 @@ package = Features
 dependencies[] = entityreference
 dependencies[] = features
 dependencies[] = number
+dependencies[] = options
 dependencies[] = taxonomy
 features[features_api][] = api:2
 features[field_base][] = field_parent_census

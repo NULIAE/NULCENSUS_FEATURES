@@ -39,7 +39,7 @@ function entreuprenuership_and_business_development_program_details_field_defaul
           'type' => 'none',
         ),
         'target_bundles' => array(
-          'test_clean_census' => 'test_clean_census',
+          'census' => 'census',
         ),
       ),
       'target_type' => 'node',

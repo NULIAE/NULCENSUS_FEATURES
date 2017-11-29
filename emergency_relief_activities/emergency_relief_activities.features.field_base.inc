@@ -223,7 +223,7 @@ function emergency_relief_activities_field_default_field_bases() {
           'type' => 'none',
         ),
         'target_bundles' => array(
-          'test_clean_census' => 'test_clean_census',
+          'census' => 'census',
         ),
       ),
       'target_type' => 'node',

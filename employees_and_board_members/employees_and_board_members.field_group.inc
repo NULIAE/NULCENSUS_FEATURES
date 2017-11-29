@@ -58,12 +58,9 @@ function employees_and_board_members_field_group_info() {
     'label' => 'African American',
     'weight' => '15',
     'children' => array(
-      0 => 'field_board_african_amer_males',
-      1 => 'field_board_african_amer_females',
-      2 => 'field_board_african_amer_total',
-      3 => 'field_board_african_am_males',
-      4 => 'field_board_african_am_females',
-      5 => 'field_board_african_am_total',
+      0 => 'field_board_african_am_males',
+      1 => 'field_board_african_am_females',
+      2 => 'field_board_african_am_total',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -131,10 +128,9 @@ function employees_and_board_members_field_group_info() {
     'label' => 'Asian American',
     'weight' => '13',
     'children' => array(
-      0 => 'field_board_asian_total',
-      1 => 'field_board_asian_am_males',
-      2 => 'field_board_asian_am_females',
-      3 => 'field_board_asian_am_total',
+      0 => 'field_board_asian_am_males',
+      1 => 'field_board_asian_am_females',
+      2 => 'field_board_asian_am_total',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -272,12 +268,9 @@ function employees_and_board_members_field_group_info() {
     'label' => 'Native American',
     'weight' => '14',
     'children' => array(
-      0 => 'field_board_native_males',
-      1 => 'field_board_native_females',
-      2 => 'field_board_native_total',
-      3 => 'field_board_native_am_males',
-      4 => 'field_board_native_am_females',
-      5 => 'field_board_native_am_total',
+      0 => 'field_board_native_am_males',
+      1 => 'field_board_native_am_females',
+      2 => 'field_board_native_am_total',
     ),
     'format_type' => 'div',
     'format_settings' => array(

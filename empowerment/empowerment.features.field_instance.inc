@@ -389,6 +389,52 @@ function empowerment_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-empowerment-field_parent_census'.
+  $field_instances['node-empowerment-field_parent_census'] = array(
+    'bundle' => 'empowerment',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'bypass_access' => 0,
+          'link' => 1,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 10,
+      ),
+      'status_info' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_parent_census',
+    'label' => 'parent census',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 12,
+    ),
+  );
+
   // Exported field_instance: 'node-empowerment-field_tab_status'.
   $field_instances['node-empowerment-field_tab_status'] = array(
     'bundle' => 'empowerment',
@@ -400,7 +446,7 @@ function empowerment_field_default_field_instances() {
         'label' => 'above',
         'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'taxonomy_term_reference_plain',
         'weight' => 9,
       ),
       'status_info' => array(
@@ -443,6 +489,7 @@ function empowerment_field_default_field_instances() {
   t('Other');
   t('Other description');
   t('Tab Status');
+  t('parent census');
 
   return $field_instances;
 }

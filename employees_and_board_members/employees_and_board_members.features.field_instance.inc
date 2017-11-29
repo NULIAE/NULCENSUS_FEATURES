@@ -1523,6 +1523,53 @@ function employees_and_board_members_field_default_field_instances() {
   );
 
   // Exported field_instance:
+  // 'node-employees_and_board_members-field_parent_census'.
+  $field_instances['node-employees_and_board_members-field_parent_census'] = array(
+    'bundle' => 'employees_and_board_members',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'bypass_access' => 0,
+          'link' => 1,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 36,
+      ),
+      'status_info' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_parent_census',
+    'label' => 'parent census',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 46,
+    ),
+  );
+
+  // Exported field_instance:
   // 'node-employees_and_board_members-field_part_time_employees'.
   $field_instances['node-employees_and_board_members-field_part_time_employees'] = array(
     'bundle' => 'employees_and_board_members',
@@ -1635,7 +1682,7 @@ function employees_and_board_members_field_default_field_instances() {
         'label' => 'above',
         'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'taxonomy_term_reference_plain',
         'weight' => 28,
       ),
       'status_info' => array(
@@ -1704,6 +1751,7 @@ function employees_and_board_members_field_default_field_instances() {
   t('board_native_am_females');
   t('board_native_am_males');
   t('board_native_am_total');
+  t('parent census');
 
   return $field_instances;
 }

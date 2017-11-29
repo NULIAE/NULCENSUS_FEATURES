@@ -3223,6 +3223,52 @@ function volunteers_members_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-volunteers_members-field_parent_census'.
+  $field_instances['node-volunteers_members-field_parent_census'] = array(
+    'bundle' => 'volunteers_members',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'bypass_access' => 0,
+          'link' => 1,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 69,
+      ),
+      'status_info' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_parent_census',
+    'label' => 'parent census',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 108,
+    ),
+  );
+
   // Exported field_instance: 'node-volunteers_members-field_tab_status'.
   $field_instances['node-volunteers_members-field_tab_status'] = array(
     'bundle' => 'volunteers_members',
@@ -3238,7 +3284,7 @@ function volunteers_members_field_default_field_instances() {
         'label' => 'above',
         'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'taxonomy_term_reference_plain',
         'weight' => 3,
       ),
       'status_info' => array(
@@ -4889,6 +4935,7 @@ function volunteers_members_field_default_field_instances() {
   t('guild other female');
   t('guild other male');
   t('guild white female');
+  t('parent census');
   t('ypc african female');
   t('ypc african male');
   t('ypc asian female');
