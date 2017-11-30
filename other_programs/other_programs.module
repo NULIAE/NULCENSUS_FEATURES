@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Other Programs feature.
+ */
+
+include_once 'other_programs.features.inc';
