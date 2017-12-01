@@ -10,9 +10,9 @@
 function census_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-test_clean_census-field_affiliate_'.
-  $field_instances['node-test_clean_census-field_affiliate_'] = array(
-    'bundle' => 'test_clean_census',
+  // Exported field_instance: 'node-census-field_affiliate_'.
+  $field_instances['node-census-field_affiliate_'] = array(
+    'bundle' => 'census',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => 'This field should be the id of the organization the logged in drupal user has a relationship of something like "affliate rep to" to in civicrm
@@ -58,9 +58,9 @@ function census_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-test_clean_census-field_census_status'.
-  $field_instances['node-test_clean_census-field_census_status'] = array(
-    'bundle' => 'test_clean_census',
+  // Exported field_instance: 'node-census-field_census_status'.
+  $field_instances['node-census-field_census_status'] = array(
+    'bundle' => 'census',
     'default_value' => array(
       0 => array(
         'tid' => 16,
@@ -105,9 +105,9 @@ function census_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-test_clean_census-field_year'.
-  $field_instances['node-test_clean_census-field_year'] = array(
-    'bundle' => 'test_clean_census',
+  // Exported field_instance: 'node-census-field_year'.
+  $field_instances['node-census-field_year'] = array(
+    'bundle' => 'census',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => 'This field should be autopopulated by the code to be the current year',

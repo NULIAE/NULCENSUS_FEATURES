@@ -1,16 +1,16 @@
 <?php
 /**
  * @file
- * census.features.inc
+ * other_programs.features.inc
  */
 
 /**
  * Implements hook_node_info().
  */
-function census_node_info() {
+function other_programs_node_info() {
   $items = array(
-    'census' => array(
-      'name' => t('Census'),
+    'program_other' => array(
+      'name' => t('Other Programs'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
