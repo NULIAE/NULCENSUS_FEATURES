@@ -330,9 +330,12 @@ Not Started';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['relationship'] = 'reverse_field_parent_census_node';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['text'] = '<a href=/node/!1/!4>%2</a>';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Content: Tab Status */
   $handler->display->display_options['fields']['field_tab_status']['id'] = 'field_tab_status';
   $handler->display->display_options['fields']['field_tab_status']['table'] = 'field_data_field_tab_status';
@@ -406,14 +409,23 @@ Not Started
   $handler->display->display_options['empty']['area']['tokenize'] = TRUE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['text'] = '<a href=/node/[nid]/!1>%2</a>
+';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Content: Tab Status */
   $handler->display->display_options['fields']['field_tab_status']['id'] = 'field_tab_status';
   $handler->display->display_options['fields']['field_tab_status']['table'] = 'field_data_field_tab_status';
@@ -479,12 +491,16 @@ Not Started
     t('Census Tabs (on Tab)'),
     t('<a href=/node/add/!3/!4>%2</a>
 Not Started'),
+    t('<a href=/node/!1/!4>%2</a>'),
     t('[field_tab_status] 
 <p></p>'),
     t('Census Tabs (on Census)'),
     t('<a href=/node/add/!3/!1>%2</a>
 Not Started
 </br>'),
+    t('Nid'),
+    t('<a href=/node/[nid]/!1>%2</a>
+'),
     t('[field_tab_status]
 <p></p>'),
   );
