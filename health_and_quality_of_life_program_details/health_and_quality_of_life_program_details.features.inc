@@ -30,3 +30,17 @@ function health_and_quality_of_life_program_details_node_info() {
   drupal_alter('node_info', $items);
   return $items;
 }
+
+/**
+ * Implements hook_paragraphs_info().
+ */
+function health_and_quality_of_life_program_details_paragraphs_info() {
+  $items = array(
+    'health_services' => array(
+      'name' => 'Health Services Provided',
+      'bundle' => 'health_services',
+      'locked' => '1',
+    ),
+  );
+  return $items;
+}
