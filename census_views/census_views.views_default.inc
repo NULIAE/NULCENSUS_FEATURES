@@ -202,6 +202,123 @@ function census_views_views_default_views() {
   $export['button_to_add_new_program'] = $view;
 
   $view = new view();
+  $view->name = 'census_s_by_affiliate';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'Censuss By Affiliate';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Censuss By Affiliate';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '10';
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: census status */
+  $handler->display->display_options['fields']['field_census_status']['id'] = 'field_census_status';
+  $handler->display->display_options['fields']['field_census_status']['table'] = 'field_data_field_census_status';
+  $handler->display->display_options['fields']['field_census_status']['field'] = 'field_census_status';
+  $handler->display->display_options['fields']['field_census_status']['label'] = '';
+  $handler->display->display_options['fields']['field_census_status']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_census_status']['type'] = 'taxonomy_term_reference_plain';
+  /* Sort criterion: Content: Post date */
+  $handler->display->display_options['sorts']['created']['id'] = 'created';
+  $handler->display->display_options['sorts']['created']['table'] = 'node';
+  $handler->display->display_options['sorts']['created']['field'] = 'created';
+  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'census' => 'census',
+  );
+  /* Filter criterion: Content: Affiliate  (field_affiliate_) */
+  $handler->display->display_options['filters']['field_affiliate__value']['id'] = 'field_affiliate__value';
+  $handler->display->display_options['filters']['field_affiliate__value']['table'] = 'field_data_field_affiliate_';
+  $handler->display->display_options['filters']['field_affiliate__value']['field'] = 'field_affiliate__value';
+  $handler->display->display_options['filters']['field_affiliate__value']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_affiliate__value']['expose']['operator_id'] = 'field_affiliate__value_op';
+  $handler->display->display_options['filters']['field_affiliate__value']['expose']['label'] = 'Affiliate';
+  $handler->display->display_options['filters']['field_affiliate__value']['expose']['operator'] = 'field_affiliate__value_op';
+  $handler->display->display_options['filters']['field_affiliate__value']['expose']['identifier'] = 'field_affiliate__value';
+  $handler->display->display_options['filters']['field_affiliate__value']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+    4 => 0,
+    5 => 0,
+    6 => 0,
+    7 => 0,
+  );
+  /* Filter criterion: Content: Year (field_year) */
+  $handler->display->display_options['filters']['field_year_value']['id'] = 'field_year_value';
+  $handler->display->display_options['filters']['field_year_value']['table'] = 'field_data_field_year';
+  $handler->display->display_options['filters']['field_year_value']['field'] = 'field_year_value';
+  $handler->display->display_options['filters']['field_year_value']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_year_value']['expose']['operator_id'] = 'field_year_value_op';
+  $handler->display->display_options['filters']['field_year_value']['expose']['label'] = 'Year';
+  $handler->display->display_options['filters']['field_year_value']['expose']['operator'] = 'field_year_value_op';
+  $handler->display->display_options['filters']['field_year_value']['expose']['identifier'] = 'field_year_value';
+  $handler->display->display_options['filters']['field_year_value']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+    4 => 0,
+    5 => 0,
+    6 => 0,
+    7 => 0,
+  );
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['path'] = 'census-s-by-affiliate';
+  $translatables['census_s_by_affiliate'] = array(
+    t('Master'),
+    t('Censuss By Affiliate'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('Affiliate'),
+    t('Year'),
+    t('Page'),
+  );
+  $export['census_s_by_affiliate'] = $view;
+
+  $view = new view();
   $view->name = 'census_tab_menu';
   $view->description = '';
   $view->tag = 'default';
