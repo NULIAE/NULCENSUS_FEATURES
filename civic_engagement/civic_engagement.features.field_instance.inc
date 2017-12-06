@@ -854,58 +854,6 @@ function civic_engagement_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-civic_engagement-field_advocacy_total'.
-  $field_instances['node-civic_engagement-field_advocacy_total'] = array(
-    'bundle' => 'civic_engagement',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 20,
-      ),
-      'status_info' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_advocacy_total',
-    'label' => 'advocacy total',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 10,
-    ),
-  );
-
   // Exported field_instance:
   // 'node-civic_engagement-field_advocacy_white_female'.
   $field_instances['node-civic_engagement-field_advocacy_white_female'] = array(
@@ -1854,58 +1802,6 @@ function civic_engagement_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-civic_engagement-field_comm_org_total'.
-  $field_instances['node-civic_engagement-field_comm_org_total'] = array(
-    'bundle' => 'civic_engagement',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 31,
-      ),
-      'status_info' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_comm_org_total',
-    'label' => 'comm org total',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 93,
-    ),
-  );
-
   // Exported field_instance:
   // 'node-civic_engagement-field_comm_org_white_female'.
   $field_instances['node-civic_engagement-field_comm_org_white_female'] = array(
@@ -2845,58 +2741,6 @@ function civic_engagement_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-civic_engagement-field_crja_total'.
-  $field_instances['node-civic_engagement-field_crja_total'] = array(
-    'bundle' => 'civic_engagement',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 10,
-      ),
-      'status_info' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_crja_total',
-    'label' => 'crja total',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 23,
-    ),
-  );
-
   // Exported field_instance: 'node-civic_engagement-field_crja_white_female'.
   $field_instances['node-civic_engagement-field_crja_white_female'] = array(
     'bundle' => 'civic_engagement',
@@ -3663,58 +3507,6 @@ function civic_engagement_field_default_field_instances() {
       'settings' => array(),
       'type' => 'markup',
       'weight' => 96,
-    ),
-  );
-
-  // Exported field_instance: 'node-civic_engagement-field_forums_total'.
-  $field_instances['node-civic_engagement-field_forums_total'] = array(
-    'bundle' => 'civic_engagement',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 32,
-      ),
-      'status_info' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_forums_total',
-    'label' => 'forums total',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 97,
     ),
   );
 
@@ -4660,58 +4452,6 @@ function civic_engagement_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-civic_engagement-field_police_total'.
-  $field_instances['node-civic_engagement-field_police_total'] = array(
-    'bundle' => 'civic_engagement',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 14,
-      ),
-      'status_info' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_police_total',
-    'label' => 'police total',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 33,
-    ),
-  );
-
   // Exported field_instance: 'node-civic_engagement-field_police_white_female'.
   $field_instances['node-civic_engagement-field_police_white_female'] = array(
     'bundle' => 'civic_engagement',
@@ -5570,58 +5310,6 @@ function civic_engagement_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-civic_engagement-field_voter_total'.
-  $field_instances['node-civic_engagement-field_voter_total'] = array(
-    'bundle' => 'civic_engagement',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 155,
-      ),
-      'status_info' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_voter_total',
-    'label' => 'voter total',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 95,
-    ),
-  );
-
   // Exported field_instance: 'node-civic_engagement-field_voter_white_female'.
   $field_instances['node-civic_engagement-field_voter_white_female'] = array(
     'bundle' => 'civic_engagement',
@@ -5815,22 +5503,16 @@ function civic_engagement_field_default_field_instances() {
   t('Voter Spacer');
   t('Voter White Female');
   t('Voter White Male');
-  t('advocacy total');
   t('ce voter help');
-  t('comm org total');
   t('comm_org_asian_am_female');
   t('comm_org_asian_am_male');
   t('comm_org_native_am_female');
   t('comm_org_native_am_male');
-  t('crja total');
   t('female');
   t('female_ce_voter');
-  t('forums total');
   t('org spacer impact');
   t('parent census');
-  t('police total');
   t('voter male');
-  t('voter total');
   t('voter_african_am_female');
   t('voter_african_am_male');
   t('voter_asian_am_female');

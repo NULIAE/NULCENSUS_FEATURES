@@ -349,24 +349,6 @@ function civic_engagement_field_default_field_bases() {
     'type' => 'markup',
   );
 
-  // Exported field_base: 'field_advocacy_total'.
-  $field_bases['field_advocacy_total'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_advocacy_total',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'number',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'number_integer',
-  );
-
   // Exported field_base: 'field_advocacy_white_female'.
   $field_bases['field_advocacy_white_female'] = array(
     'active' => 1,
@@ -723,24 +705,6 @@ function civic_engagement_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_comm_org_societal_impact',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'number',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'number_integer',
-  );
-
-  // Exported field_base: 'field_comm_org_total'.
-  $field_bases['field_comm_org_total'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_comm_org_total',
     'field_permissions' => array(
       'type' => 0,
     ),
@@ -1139,24 +1103,6 @@ function civic_engagement_field_default_field_bases() {
     'type' => 'markup',
   );
 
-  // Exported field_base: 'field_crja_total'.
-  $field_bases['field_crja_total'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_crja_total',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'number',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'number_integer',
-  );
-
   // Exported field_base: 'field_crja_white_female'.
   $field_bases['field_crja_white_female'] = array(
     'active' => 1,
@@ -1435,24 +1381,6 @@ function civic_engagement_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'markup',
-  );
-
-  // Exported field_base: 'field_forums_total'.
-  $field_bases['field_forums_total'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_forums_total',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'number',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'number_integer',
   );
 
   // Exported field_base: 'field_forums_white_female'.
@@ -1847,24 +1775,6 @@ function civic_engagement_field_default_field_bases() {
     'type' => 'number_integer',
   );
 
-  // Exported field_base: 'field_police_total'.
-  $field_bases['field_police_total'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_police_total',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'number',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'number_integer',
-  );
-
   // Exported field_base: 'field_police_white_female'.
   $field_bases['field_police_white_female'] = array(
     'active' => 1,
@@ -2201,24 +2111,6 @@ function civic_engagement_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'markup',
-  );
-
-  // Exported field_base: 'field_voter_total'.
-  $field_bases['field_voter_total'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_voter_total',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'number',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'number_integer',
   );
 
   // Exported field_base: 'field_voter_white_female'.
