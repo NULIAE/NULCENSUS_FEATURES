@@ -242,53 +242,6 @@ function survey_ceritification_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-survey_certification-field_survey_name_of_certifier'.
-  $field_instances['node-survey_certification-field_survey_name_of_certifier'] = array(
-    'bundle' => 'survey_certification',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'inline',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 4,
-      ),
-      'status_info' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 4,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_survey_name_of_certifier',
-    'label' => ' This information has been reviewed and certified as accurate. (Enter name of certifier.): ',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 7,
-    ),
-  );
-
-  // Exported field_instance:
   // 'node-survey_certification-field_survey_phone_number'.
   $field_instances['node-survey_certification-field_survey_phone_number'] = array(
     'bundle' => 'survey_certification',
@@ -429,7 +382,6 @@ function survey_ceritification_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t(' This information has been reviewed and certified as accurate. (Enter name of certifier.): ');
   t('Best Time to Call');
   t('Email address');
   t('Phone Number');

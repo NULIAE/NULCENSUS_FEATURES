@@ -22,7 +22,6 @@ features[field_instance][] = node-survey_certification-field_survey_best_time_to
 features[field_instance][] = node-survey_certification-field_survey_contact_first_name
 features[field_instance][] = node-survey_certification-field_survey_contact_last_name
 features[field_instance][] = node-survey_certification-field_survey_email_address
-features[field_instance][] = node-survey_certification-field_survey_name_of_certifier
 features[field_instance][] = node-survey_certification-field_survey_phone_number
 features[field_instance][] = node-survey_certification-field_survey_time_zone
 features[field_instance][] = node-survey_certification-field_tab_status
