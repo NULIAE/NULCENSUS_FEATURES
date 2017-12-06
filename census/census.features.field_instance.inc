@@ -111,6 +111,52 @@ function census_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-census-field_survey_name_of_certifier'.
+  $field_instances['node-census-field_survey_name_of_certifier'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 3,
+      ),
+      'status_info' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_survey_name_of_certifier',
+    'label' => 'This information has been reviewed and certified as accurate. (Enter name of certifier.):',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 5,
+    ),
+  );
+
   // Exported field_instance: 'node-census-field_year'.
   $field_instances['node-census-field_year'] = array(
     'bundle' => 'census',
@@ -170,6 +216,7 @@ function census_field_default_field_instances() {
   t('This field should be the id of the organization the logged in drupal user has a relationship of something like "affliate rep to" to in civicrm
 
 ');
+  t('This information has been reviewed and certified as accurate. (Enter name of certifier.):');
   t('Year');
   t('census status');
 
