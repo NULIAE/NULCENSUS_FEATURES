@@ -10,29 +10,25 @@
 function census_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-census-field_affiliate_'.
-  $field_instances['node-census-field_affiliate_'] = array(
+  // Exported field_instance: 'node-census-field_affiliate'.
+  $field_instances['node-census-field_affiliate'] = array(
     'bundle' => 'census',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'This field should be the id of the organization the logged in drupal user has a relationship of something like "affliate rep to" to in civicrm
-
-',
+    'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
-        'module' => 'number',
+        'label' => 'above',
+        'module' => 'entityreference',
         'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
+          'bypass_access' => FALSE,
+          'link' => FALSE,
         ),
-        'type' => 'number_integer',
-        'weight' => 0,
+        'type' => 'entityreference_label',
+        'weight' => 4,
       ),
       'status_info' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -45,21 +41,17 @@ function census_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_affiliate_',
-    'label' => 'Affiliate ',
-    'required' => 0,
+    'field_name' => 'field_affiliate',
+    'label' => 'Affiliate',
+    'required' => 1,
     'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 0,
-      'module' => 'number',
+      'active' => 1,
+      'module' => 'options',
       'settings' => array(),
-      'type' => 'number',
+      'type' => 'options_select',
       'weight' => 1,
     ),
   );
@@ -97,7 +89,7 @@ function census_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_census_status',
-    'label' => 'census status',
+    'label' => 'Census Status',
     'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -211,14 +203,11 @@ function census_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Affiliate ');
+  t('Affiliate');
+  t('Census Status');
   t('This field should be autopopulated by the code to be the current year');
-  t('This field should be the id of the organization the logged in drupal user has a relationship of something like "affliate rep to" to in civicrm
-
-');
   t('This information has been reviewed and certified as accurate. (Enter name of certifier.):');
   t('Year');
-  t('census status');
 
   return $field_instances;
 }
