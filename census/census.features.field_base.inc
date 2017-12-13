@@ -10,22 +10,40 @@
 function census_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_affiliate_'.
-  $field_bases['field_affiliate_'] = array(
+  // Exported field_base: 'field_affiliate'.
+  $field_bases['field_affiliate'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_affiliate_',
+    'field_name' => 'field_affiliate',
     'field_permissions' => array(
       'type' => 0,
     ),
-    'indexes' => array(),
+    'indexes' => array(
+      'target_id' => array(
+        0 => 'target_id',
+      ),
+    ),
     'locked' => 0,
-    'module' => 'number',
-    'settings' => array(),
+    'module' => 'entityreference',
+    'settings' => array(
+      'handler' => 'base',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
+        'target_bundles' => array(),
+      ),
+      'target_type' => 'civicrm_contact',
+    ),
     'translatable' => 0,
-    'type' => 'number_integer',
+    'type' => 'entityreference',
   );
 
   // Exported field_base: 'field_census_status'.
