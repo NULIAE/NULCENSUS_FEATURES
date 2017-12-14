@@ -114,7 +114,7 @@ function programs_field_default_field_instances() {
         'label' => 'above',
         'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'taxonomy_term_reference_plain',
         'weight' => 15,
       ),
       'teaser' => array(
@@ -177,46 +177,6 @@ function programs_field_default_field_instances() {
       ),
       'type' => 'text_textfield',
       'weight' => 12,
-    ),
-  );
-
-  // Exported field_instance: 'node-programs-field_program_name'.
-  $field_instances['node-programs-field_program_name'] = array(
-    'bundle' => 'programs',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_program_name',
-    'label' => 'Name of Program',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 2,
     ),
   );
 
@@ -823,7 +783,7 @@ function programs_field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(),
-      'type' => 'options_select',
+      'type' => 'options_buttons',
       'weight' => 25,
     ),
   );
@@ -1251,7 +1211,6 @@ function programs_field_default_field_instances() {
   t('Funding Sources');
   t('Funding Type');
   t('Name');
-  t('Name of Program');
   t('Number of People Served Annually');
   t('Program Area');
   t('Program Types');

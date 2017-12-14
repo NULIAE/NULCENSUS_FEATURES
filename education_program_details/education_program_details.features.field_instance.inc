@@ -37,7 +37,7 @@ function education_program_details_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_parent_census',
     'label' => 'parent census',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -116,7 +116,7 @@ function education_program_details_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_program_ed_advocacy',
     'label' => 'Does the affiliate provide any Education advocacy in your community?',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -154,7 +154,7 @@ function education_program_details_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_program_ed_charter_board',
     'label' => 'Does the affiliate or CEO sit on a charter authorizing board?',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -192,7 +192,7 @@ function education_program_details_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_program_ed_charter_mngmt',
     'label' => 'Does the affiliate operate a charter school management organization?',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -230,7 +230,7 @@ function education_program_details_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_program_ed_charter_school',
     'label' => 'Does the affiliate operate a charter school?',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -268,7 +268,7 @@ function education_program_details_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_program_ed_charter_service',
     'label' => 'Does the affiliate provide any contracted services to a charter school, charter network or charter authorizing board?',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -484,7 +484,7 @@ function education_program_details_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_program_ed_homeless_youth',
     'label' => 'Do you serve homeless youth (birth -18 years old)?',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -785,7 +785,7 @@ function education_program_details_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_program_ed_school_building',
     'label' => 'Do you provide any services or operate programs in school buildings?',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -860,7 +860,7 @@ function education_program_details_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_program_ed_title1',
     'label' => 'Do you provide any services funded by Title 1 dollars?',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -901,7 +901,7 @@ function education_program_details_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_tab_status',
     'label' => 'Tab Status',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),

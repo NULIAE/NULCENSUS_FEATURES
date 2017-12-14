@@ -327,66 +327,6 @@ function workforce_development_program_details_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-program_workforce-field_program_work_services'.
-  $field_instances['node-program_workforce-field_program_work_services'] = array(
-    'bundle' => 'program_workforce',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'paragraphs',
-        'settings' => array(
-          'view_mode' => 'full',
-        ),
-        'type' => 'paragraphs_view',
-        'weight' => 11,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_program_work_services',
-    'label' => 'Services Provided',
-    'required' => 0,
-    'settings' => array(
-      'add_mode' => 'select',
-      'allowed_bundles' => array(
-        'budget_ventures' => -1,
-        'education_services' => -1,
-        'funding_source' => -1,
-        'health_services' => -1,
-        'service_area' => -1,
-        'workforce_services' => 'workforce_services',
-      ),
-      'bundle_weights' => array(
-        'budget_ventures' => 2,
-        'education_services' => 3,
-        'funding_source' => 4,
-        'health_services' => 5,
-        'service_area' => 6,
-        'workforce_services' => 7,
-      ),
-      'default_edit_mode' => 'open',
-      'title' => 'Paragraph',
-      'title_multiple' => 'Paragraphs',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'paragraphs',
-      'settings' => array(),
-      'type' => 'paragraphs_embed',
-      'weight' => 12,
-    ),
-  );
-
-  // Exported field_instance:
   // 'node-program_workforce-field_program_work_welfare'.
   $field_instances['node-program_workforce-field_program_work_welfare'] = array(
     'bundle' => 'program_workforce',
@@ -607,7 +547,7 @@ function workforce_development_program_details_field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(
-        'display_label' => 0,
+        'display_label' => 1,
       ),
       'type' => 'options_onoff',
       'weight' => 11,
@@ -651,7 +591,7 @@ function workforce_development_program_details_field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(
-        'display_label' => 0,
+        'display_label' => 1,
       ),
       'type' => 'options_onoff',
       'weight' => 12,
@@ -708,7 +648,6 @@ function workforce_development_program_details_field_default_field_instances() {
   t('Number of placed participants who retained jobs for 90 days');
   t('Number of welfare participants in federal/state funded programs');
   t('Number of welfare program participants placed in jobs');
-  t('Services Provided');
   t('Tab Status');
   t('This fields needs to show up if "Technical training in specific sectors" service is selected');
   t('or Hourly wage rate');

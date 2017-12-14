@@ -10,7 +10,6 @@ features[features_api][] = api:2
 features[field_base][] = body
 features[field_base][] = field_parent_census
 features[field_base][] = field_tab_status
-features[field_instance][] = node-program_other-body
 features[field_instance][] = node-program_other-field_parent_census
 features[field_instance][] = node-program_other-field_tab_status
 features[node][] = program_other

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the nul_custom_census_views feature.
+ */
+
+include_once 'nul_custom_census_views.features.inc';

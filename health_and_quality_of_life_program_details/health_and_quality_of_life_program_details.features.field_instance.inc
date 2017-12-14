@@ -75,7 +75,7 @@ function health_and_quality_of_life_program_details_field_default_field_instance
     'entity_type' => 'node',
     'field_name' => 'field_program_health_advocacy',
     'label' => 'Do you provide any Health advocacy in your community?',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -159,7 +159,7 @@ function health_and_quality_of_life_program_details_field_default_field_instance
     'entity_type' => 'node',
     'field_name' => 'field_program_health_chw',
     'label' => 'Does your current staffing include Community Health Workers?',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -348,7 +348,7 @@ function health_and_quality_of_life_program_details_field_default_field_instance
     'entity_type' => 'node',
     'field_name' => 'field_tab_status',
     'label' => 'Tab Status',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
