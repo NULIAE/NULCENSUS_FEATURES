@@ -1215,7 +1215,7 @@ function census_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_year',
     'label' => 'Year',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'max' => '',
       'min' => '',
