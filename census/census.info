@@ -1,9 +1,6 @@
 name = census
 core = 7.x
 package = Features
-dependencies[] = civicrm
-dependencies[] = civicrm_entity
-dependencies[] = civicrm_entity_reference_field
 dependencies[] = ctools
 dependencies[] = entityreference
 dependencies[] = features
