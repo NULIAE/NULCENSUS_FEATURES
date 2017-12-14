@@ -15,7 +15,7 @@ function empowerment_node_info() {
       'description' => '',
       'has_title' => '1',
       'title_label' => t('Title'),
-      'help' => '',
+      'help' => t(' What percentage of your previous budget was devoted to the following empowerment areas '),
     ),
   );
   drupal_alter('node_info', $items);

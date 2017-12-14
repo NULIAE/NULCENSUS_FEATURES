@@ -334,53 +334,6 @@ function entreuprenuership_and_business_development_program_details_field_defaul
   );
 
   // Exported field_instance:
-  // 'node-program_entrepreneurship-field_program_entpr_staff_aff'.
-  $field_instances['node-program_entrepreneurship-field_program_entpr_staff_aff'] = array(
-    'bundle' => 'program_entrepreneurship',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_program_entpr_staff_aff',
-    'label' => 'Affiliate',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => -4,
-    ),
-  );
-
-  // Exported field_instance:
   // 'node-program_entrepreneurship-field_program_entpr_staff_entpr'.
   $field_instances['node-program_entrepreneurship-field_program_entpr_staff_entpr'] = array(
     'bundle' => 'program_entrepreneurship',
@@ -657,7 +610,6 @@ function entreuprenuership_and_business_development_program_details_field_defaul
   t('0-2 years');
   t('3-5 years');
   t('5-10 years');
-  t('Affiliate');
   t('Dollar amount of new financing or contracts acquired by new');
   t('Entrepreneurship');
   t('Full Time');

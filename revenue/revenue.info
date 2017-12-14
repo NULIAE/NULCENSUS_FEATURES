@@ -66,4 +66,4 @@ features[paragraphs][] = budget_ventures
 features[taxonomy][] = census_tab_status
 features[taxonomy][] = type_of_venture
 features_exclude[dependencies][ctools] = ctools
-project path = sites/all/modules/census_config
+project path = sites/all/modules/NULCENSUS_FEATURES

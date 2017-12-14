@@ -111,4 +111,4 @@ features[field_instance][] = node-emergency_relief_activities-field_tab_status
 features[node][] = emergency_relief_activities
 features[taxonomy][] = census_tab_status
 features_exclude[dependencies][ctools] = ctools
-project path = sites/all/modules/census_config
+project path = sites/all/modules/NULCENSUS_FEATURES

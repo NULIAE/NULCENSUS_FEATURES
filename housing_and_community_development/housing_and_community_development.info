@@ -48,4 +48,4 @@ features[field_instance][] = node-program_housing-field_tab_status
 features[node][] = program_housing
 features[taxonomy][] = census_tab_status
 features_exclude[dependencies][ctools] = ctools
-project path = sites/all/modules/census_config
+project path = sites/all/modules/NULCENSUS_FEATURES

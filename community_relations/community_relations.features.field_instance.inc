@@ -10,58 +10,6 @@
 function community_relations_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-community_relations-field_affiliate_'.
-  $field_instances['node-community_relations-field_affiliate_'] = array(
-    'bundle' => 'community_relations',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 14,
-      ),
-      'status_info' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_affiliate_',
-    'label' => 'Affiliate ',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 17,
-    ),
-  );
-
   // Exported field_instance:
   // 'node-community_relations-field_affiliate_website_address'.
   $field_instances['node-community_relations-field_affiliate_website_address'] = array(
@@ -550,7 +498,7 @@ function community_relations_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_produces_annual_report',
     'label' => 'Does the affiliate produce an annual report?',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -701,7 +649,6 @@ function community_relations_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Affiliate ');
   t('Does affiliate do a marketing kit and/or pamphlet?');
   t('Does affiliate have an advertising or marketing campaign?');
   t('Does affiliate produce a "State of Black (Affiliate Name)" Report?');

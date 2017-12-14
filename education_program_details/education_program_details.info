@@ -55,4 +55,4 @@ features[field_instance][] = node-program_education-field_program_ed_title1
 features[field_instance][] = node-program_education-field_tab_status
 features[node][] = program_education
 features[taxonomy][] = census_tab_status
-project path = sites/all/modules/census_config
+project path = sites/all/modules/NULCENSUS_FEATURES

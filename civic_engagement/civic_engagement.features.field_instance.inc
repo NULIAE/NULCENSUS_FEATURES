@@ -959,57 +959,6 @@ function civic_engagement_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-civic_engagement-field_affiliate_'.
-  $field_instances['node-civic_engagement-field_affiliate_'] = array(
-    'bundle' => 'civic_engagement',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 172,
-      ),
-      'status_info' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_affiliate_',
-    'label' => 'Affiliate ',
-    'required' => FALSE,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 115,
-    ),
-  );
-
   // Exported field_instance: 'node-civic_engagement-field_ce_voter_help'.
   $field_instances['node-civic_engagement-field_ce_voter_help'] = array(
     'bundle' => 'civic_engagement',
@@ -5434,7 +5383,6 @@ function civic_engagement_field_default_field_instances() {
   t('Advocacy Efforts White Females');
   t('Advocacy Efforts White Males');
   t('Advocacy Spacer');
-  t('Affiliate ');
   t('CRJA Spacer');
   t('Civil Rights & Justice Activities');
   t('Civil Rights & Justice Activities African American Females');

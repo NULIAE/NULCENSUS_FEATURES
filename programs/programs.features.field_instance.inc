@@ -90,7 +90,7 @@ function programs_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_parent_census',
     'label' => 'parent census',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -846,7 +846,7 @@ function programs_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
@@ -887,7 +887,7 @@ function programs_field_default_field_instances() {
         'module' => 'markup',
         'settings' => array(),
         'type' => 'markup_default',
-        'weight' => 7,
+        'weight' => 8,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
@@ -925,7 +925,7 @@ function programs_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
@@ -963,7 +963,7 @@ function programs_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
@@ -1000,7 +1000,7 @@ function programs_field_default_field_instances() {
         'module' => 'markup',
         'settings' => array(),
         'type' => 'markup_default',
-        'weight' => 5,
+        'weight' => 7,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
@@ -1037,7 +1037,7 @@ function programs_field_default_field_instances() {
         'module' => 'markup',
         'settings' => array(),
         'type' => 'markup_default',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
@@ -1075,7 +1075,7 @@ function programs_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',

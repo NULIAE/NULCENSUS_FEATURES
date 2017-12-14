@@ -58,4 +58,4 @@ features[field_instance][] = node-expenditures-field_tab_status
 features[field_instance][] = node-expenditures-field_total_expenditures
 features[node][] = expenditures
 features[taxonomy][] = census_tab_status
-project path = sites/all/modules/census_config
+project path = sites/all/modules/NULCENSUS_FEATURES

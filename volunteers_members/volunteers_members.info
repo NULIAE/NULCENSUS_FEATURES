@@ -128,4 +128,4 @@ features[field_instance][] = node-volunteers_members-field_ypc_white
 features[node][] = volunteers_members
 features[taxonomy][] = census_tab_status
 features_exclude[dependencies][ctools] = ctools
-project path = sites/all/modules/census_config
+project path = sites/all/modules/NULCENSUS_FEATURES

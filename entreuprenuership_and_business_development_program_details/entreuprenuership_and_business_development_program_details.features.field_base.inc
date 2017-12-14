@@ -164,24 +164,6 @@ function entreuprenuership_and_business_development_program_details_field_defaul
     'type' => 'number_decimal',
   );
 
-  // Exported field_base: 'field_program_entpr_staff_aff'.
-  $field_bases['field_program_entpr_staff_aff'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_program_entpr_staff_aff',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'number',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'number_integer',
-  );
-
   // Exported field_base: 'field_program_entpr_staff_entpr'.
   $field_bases['field_program_entpr_staff_entpr'] = array(
     'active' => 1,

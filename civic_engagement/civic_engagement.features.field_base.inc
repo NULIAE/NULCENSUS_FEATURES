@@ -385,24 +385,6 @@ function civic_engagement_field_default_field_bases() {
     'type' => 'number_integer',
   );
 
-  // Exported field_base: 'field_affiliate_'.
-  $field_bases['field_affiliate_'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_affiliate_',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'number',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'number_integer',
-  );
-
   // Exported field_base: 'field_ce_voter_help'.
   $field_bases['field_ce_voter_help'] = array(
     'active' => 1,
