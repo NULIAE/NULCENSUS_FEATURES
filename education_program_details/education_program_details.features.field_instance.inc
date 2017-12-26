@@ -38,8 +38,8 @@ function education_program_details_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_do_you_offer_programs_of_t',
-    'label' => 'Do you offer Programs of this type?',
-    'required' => 1,
+    'label' => 'Our Affiliate offers programs of this type',
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -1077,7 +1077,6 @@ function education_program_details_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Do you offer Programs of this type?');
   t('Do you provide Foster care services for children?');
   t('Do you provide any mentoring programs for children and youth (1st - 12th grade)?');
   t('Do you provide any services funded by Title 1 dollars?');
@@ -1096,6 +1095,7 @@ function education_program_details_field_default_field_instances() {
   t('If so, who are your closest partners?');
   t('Name');
   t('Number of participants promoted to the next grade');
+  t('Our Affiliate offers programs of this type');
   t('Percentage of participants who graduated from High School');
   t('Percentage of participants who submitted college application(s)');
   t('Tab Status');
