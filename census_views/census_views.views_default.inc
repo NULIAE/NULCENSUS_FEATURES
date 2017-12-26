@@ -1473,7 +1473,6 @@ Not Started
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_type'] = 'h4';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Field: Program Area */
   $handler->display->display_options['fields']['field_program_area']['id'] = 'field_program_area';
   $handler->display->display_options['fields']['field_program_area']['table'] = 'field_data_field_program_area';
@@ -1498,6 +1497,7 @@ Not Started
   $handler->display->display_options['fields']['nid']['table'] = 'node';
   $handler->display->display_options['fields']['nid']['field'] = 'nid';
   $handler->display->display_options['fields']['nid']['label'] = '';
+  $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
   $handler->display->display_options['fields']['nid']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['nid']['alter']['text'] = '<a href="/node/[nid]">View</a>  <a href="/node/[nid]/edit">Edit</a>  <a href="/node/[nid]/delete">Delete</a>';
   $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;

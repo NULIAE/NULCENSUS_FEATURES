@@ -10,6 +10,130 @@
 function education_program_details_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance:
+  // 'node-program_education-field_do_you_offer_programs_of_t'.
+  $field_instances['node-program_education-field_do_you_offer_programs_of_t'] = array(
+    'bundle' => 'program_education',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_do_you_offer_programs_of_t',
+    'label' => 'Do you offer Programs of this type?',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 1,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance: 'node-program_education-field_ed_overseer_email'.
+  $field_instances['node-program_education-field_ed_overseer_email'] = array(
+    'bundle' => 'program_education',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 31,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ed_overseer_email',
+    'label' => 'Email',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 25,
+    ),
+  );
+
+  // Exported field_instance: 'node-program_education-field_ed_overseer_name'.
+  $field_instances['node-program_education-field_ed_overseer_name'] = array(
+    'bundle' => 'program_education',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 30,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ed_overseer_name',
+    'label' => 'Name',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 24,
+    ),
+  );
+
   // Exported field_instance: 'node-program_education-field_parent_census'.
   $field_instances['node-program_education-field_parent_census'] = array(
     'bundle' => 'program_education',
@@ -18,14 +142,14 @@ function education_program_details_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'entityreference',
         'settings' => array(
           'bypass_access' => 0,
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 20,
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -46,7 +170,7 @@ function education_program_details_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 17,
+      'weight' => 10,
     ),
   );
 
@@ -59,11 +183,11 @@ function education_program_details_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 13,
+        'weight' => 21,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -87,7 +211,7 @@ function education_program_details_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 9,
+      'weight' => 8,
     ),
   );
 
@@ -100,11 +224,11 @@ function education_program_details_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 12,
+        'weight' => 20,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -125,7 +249,7 @@ function education_program_details_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 8,
+      'weight' => 7,
     ),
   );
 
@@ -138,11 +262,11 @@ function education_program_details_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 10,
+        'weight' => 17,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -163,7 +287,7 @@ function education_program_details_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 6,
+      'weight' => 8,
     ),
   );
 
@@ -176,11 +300,11 @@ function education_program_details_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 9,
+        'weight' => 16,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -201,7 +325,7 @@ function education_program_details_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 5,
+      'weight' => 7,
     ),
   );
 
@@ -214,11 +338,11 @@ function education_program_details_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 8,
+        'weight' => 15,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -239,7 +363,7 @@ function education_program_details_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 4,
+      'weight' => 6,
     ),
   );
 
@@ -252,11 +376,11 @@ function education_program_details_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 11,
+        'weight' => 18,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -277,7 +401,7 @@ function education_program_details_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 7,
+      'weight' => 9,
     ),
   );
 
@@ -290,7 +414,7 @@ function education_program_details_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -299,7 +423,7 @@ function education_program_details_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 17,
+        'weight' => 26,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -324,7 +448,7 @@ function education_program_details_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 13,
+      'weight' => 11,
     ),
   );
 
@@ -336,11 +460,11 @@ function education_program_details_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 18,
+        'weight' => 26,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -361,7 +485,7 @@ function education_program_details_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 14,
+      'weight' => 9,
     ),
   );
 
@@ -374,7 +498,7 @@ function education_program_details_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -383,7 +507,7 @@ function education_program_details_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 19,
+        'weight' => 27,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -408,7 +532,7 @@ function education_program_details_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 15,
+      'weight' => 10,
     ),
   );
 
@@ -421,7 +545,7 @@ function education_program_details_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -430,7 +554,7 @@ function education_program_details_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 16,
+        'weight' => 25,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -455,7 +579,7 @@ function education_program_details_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 12,
+      'weight' => 10,
     ),
   );
 
@@ -468,11 +592,11 @@ function education_program_details_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -493,7 +617,44 @@ function education_program_details_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => -4,
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-program_education-field_program_ed_mentor_funding'.
+  $field_instances['node-program_education-field_program_ed_mentor_funding'] = array(
+    'bundle' => 'program_education',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_plain',
+        'weight' => 6,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_program_ed_mentor_funding',
+    'label' => 'How is the program funded?',
+    'required' => FALSE,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 6,
     ),
   );
 
@@ -506,7 +667,7 @@ function education_program_details_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
@@ -531,7 +692,7 @@ function education_program_details_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 0,
+      'weight' => 4,
     ),
   );
 
@@ -544,7 +705,7 @@ function education_program_details_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -578,7 +739,7 @@ function education_program_details_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 1,
+      'weight' => 5,
     ),
   );
 
@@ -590,11 +751,11 @@ function education_program_details_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 14,
+        'weight' => 22,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -615,7 +776,7 @@ function education_program_details_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 10,
+      'weight' => 8,
     ),
   );
 
@@ -628,7 +789,7 @@ function education_program_details_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -637,7 +798,7 @@ function education_program_details_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 15,
+        'weight' => 24,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -662,7 +823,7 @@ function education_program_details_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 11,
+      'weight' => 9,
     ),
   );
 
@@ -675,7 +836,7 @@ function education_program_details_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -684,7 +845,7 @@ function education_program_details_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 7,
+        'weight' => 11,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -709,7 +870,7 @@ function education_program_details_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 3,
+      'weight' => 6,
     ),
   );
 
@@ -722,7 +883,7 @@ function education_program_details_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -731,7 +892,7 @@ function education_program_details_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 6,
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -756,7 +917,7 @@ function education_program_details_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 2,
+      'weight' => 5,
     ),
   );
 
@@ -769,11 +930,11 @@ function education_program_details_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -794,7 +955,7 @@ function education_program_details_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => -2,
+      'weight' => 4,
     ),
   );
 
@@ -807,11 +968,11 @@ function education_program_details_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -832,7 +993,7 @@ function education_program_details_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => -1,
+      'weight' => 5,
     ),
   );
 
@@ -844,11 +1005,11 @@ function education_program_details_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -869,7 +1030,7 @@ function education_program_details_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => -3,
+      'weight' => 3,
     ),
   );
 
@@ -885,11 +1046,11 @@ function education_program_details_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
-        'weight' => 21,
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -910,12 +1071,13 @@ function education_program_details_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 19,
+      'weight' => 11,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Do you offer Programs of this type?');
   t('Do you provide Foster care services for children?');
   t('Do you provide any mentoring programs for children and youth (1st - 12th grade)?');
   t('Do you provide any services funded by Title 1 dollars?');
@@ -927,9 +1089,12 @@ function education_program_details_field_default_field_instances() {
   t('Does the affiliate provide any Education advocacy in your community?');
   t('Does the affiliate provide any contracted services to a charter school, charter network or charter authorizing board?');
   t('During the school day?');
+  t('Email');
+  t('How is the program funded?');
   t('How many mentors do you recruit and retain annually?');
   t('If so, how many placements/recommendations for services do you make per year?');
   t('If so, who are your closest partners?');
+  t('Name');
   t('Number of participants promoted to the next grade');
   t('Percentage of participants who graduated from High School');
   t('Percentage of participants who submitted college application(s)');
