@@ -59,7 +59,7 @@ function programs_field_default_field_instances() {
       'module' => 'paragraphs',
       'settings' => array(),
       'type' => 'paragraphs_embed',
-      'weight' => 4,
+      'weight' => 1,
     ),
   );
 
@@ -99,7 +99,7 @@ function programs_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 20,
+      'weight' => 11,
     ),
   );
 
@@ -136,7 +136,7 @@ function programs_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 23,
+      'weight' => 10,
     ),
   );
 
@@ -176,87 +176,7 @@ function programs_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 12,
-    ),
-  );
-
-  // Exported field_instance: 'node-programs-field_program_overseer_email'.
-  $field_instances['node-programs-field_program_overseer_email'] = array(
-    'bundle' => 'programs',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 14,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_program_overseer_email',
-    'label' => 'Email',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 17,
-    ),
-  );
-
-  // Exported field_instance: 'node-programs-field_program_overseer_name'.
-  $field_instances['node-programs-field_program_overseer_name'] = array(
-    'bundle' => 'programs',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 13,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_program_overseer_name',
-    'label' => 'Name',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 16,
+      'weight' => 7,
     ),
   );
 
@@ -664,7 +584,7 @@ function programs_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 5,
+      'weight' => 2,
     ),
   );
 
@@ -710,7 +630,7 @@ function programs_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 6,
+      'weight' => 3,
     ),
   );
 
@@ -747,7 +667,7 @@ function programs_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 24,
+      'weight' => 8,
     ),
   );
 
@@ -784,7 +704,7 @@ function programs_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 25,
+      'weight' => 9,
     ),
   );
 
@@ -1204,13 +1124,11 @@ function programs_field_default_field_instances() {
   t('Amount Funded');
   t('Content Type');
   t('Duration of the program');
-  t('Email');
   t('Funding Funding Type Label');
   t('Funding Source');
   t('Funding Source Label');
   t('Funding Sources');
   t('Funding Type');
-  t('Name');
   t('Number of People Served Annually');
   t('Program Area');
   t('Program Types');
