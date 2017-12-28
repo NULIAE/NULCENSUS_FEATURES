@@ -39,17 +39,15 @@ function education_program_details_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_do_you_offer_programs_of_t',
     'label' => 'Our Affiliate offers programs of this type',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(
-        'display_label' => 1,
-      ),
-      'type' => 'options_onoff',
+      'settings' => array(),
+      'type' => 'options_buttons',
       'weight' => 1,
     ),
   );
