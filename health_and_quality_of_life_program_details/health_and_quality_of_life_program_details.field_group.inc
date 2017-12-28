@@ -13,6 +13,72 @@ function health_and_quality_of_life_program_details_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_health_overseer|node|program_health|default';
+  $field_group->group_name = 'group_health_overseer';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'program_health';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Person Who Oversees Health Programs',
+    'weight' => '0',
+    'children' => array(
+      0 => 'field_health_overseer_name',
+      1 => 'field_health_overseer_email',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'formatter' => 'open',
+      'instance_settings' => array(
+        'description' => '',
+        'show_label' => 1,
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+        'classes' => 'group-health-overseer field-group-div',
+        'required_fields' => 1,
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups['group_health_overseer|node|program_health|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_health_overseer|node|program_health|form';
+  $field_group->group_name = 'group_health_overseer';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'program_health';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Person Who Oversees Health Programs',
+    'weight' => '2',
+    'children' => array(
+      0 => 'field_health_overseer_name',
+      1 => 'field_health_overseer_email',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'formatter' => 'open',
+      'instance_settings' => array(
+        'description' => '',
+        'show_label' => 1,
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+        'classes' => 'group-health-overseer field-group-div',
+        'required_fields' => 1,
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups['group_health_overseer|node|program_health|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_health_services_header|paragraphs_item|health_services|form';
   $field_group->group_name = 'group_health_services_header';
   $field_group->entity_type = 'paragraphs_item';
@@ -119,6 +185,40 @@ function health_and_quality_of_life_program_details_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_program_health_impacts|node|program_health|default';
+  $field_group->group_name = 'group_program_health_impacts';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'program_health';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Program Impacts',
+    'weight' => '3',
+    'children' => array(
+      0 => 'field_program_health_participant',
+      1 => 'field_program_health_enrolled',
+      2 => 'field_program_health_assisted',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'formatter' => 'open',
+      'instance_settings' => array(
+        'description' => '',
+        'show_label' => 1,
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+        'classes' => 'group-program-health-impacts field-group-div',
+        'required_fields' => 1,
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups['group_program_health_impacts|node|program_health|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_program_health_impacts|node|program_health|form';
   $field_group->group_name = 'group_program_health_impacts';
   $field_group->entity_type = 'node';
@@ -127,7 +227,7 @@ function health_and_quality_of_life_program_details_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Program Impacts',
-    'weight' => '4',
+    'weight' => '5',
     'children' => array(
       0 => 'field_program_health_participant',
       1 => 'field_program_health_enrolled',
@@ -155,6 +255,7 @@ function health_and_quality_of_life_program_details_field_group_info() {
   t('Health Header');
   t('Health Row');
   t('Health Services Table');
+  t('Person Who Oversees Health Programs');
   t('Program Impacts');
 
   return $field_groups;

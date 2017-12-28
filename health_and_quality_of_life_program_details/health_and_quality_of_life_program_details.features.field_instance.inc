@@ -10,6 +10,124 @@
 function health_and_quality_of_life_program_details_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance:
+  // 'node-program_health-field_do_you_offer_programs_of_t'.
+  $field_instances['node-program_health-field_do_you_offer_programs_of_t'] = array(
+    'bundle' => 'program_health',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 10,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_do_you_offer_programs_of_t',
+    'label' => 'Our Affiliate offers programs of this type',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance: 'node-program_health-field_health_overseer_email'.
+  $field_instances['node-program_health-field_health_overseer_email'] = array(
+    'bundle' => 'program_health',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 9,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_health_overseer_email',
+    'label' => 'Email',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance: 'node-program_health-field_health_overseer_name'.
+  $field_instances['node-program_health-field_health_overseer_name'] = array(
+    'bundle' => 'program_health',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 8,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_health_overseer_name',
+    'label' => 'Name',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 7,
+    ),
+  );
+
   // Exported field_instance: 'node-program_health-field_parent_census'.
   $field_instances['node-program_health-field_parent_census'] = array(
     'bundle' => 'program_health',
@@ -25,7 +143,7 @@ function health_and_quality_of_life_program_details_field_default_field_instance
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 6,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -37,7 +155,7 @@ function health_and_quality_of_life_program_details_field_default_field_instance
     'entity_type' => 'node',
     'field_name' => 'field_parent_census',
     'label' => 'parent census',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -46,7 +164,7 @@ function health_and_quality_of_life_program_details_field_default_field_instance
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 9,
+      'weight' => 6,
     ),
   );
 
@@ -59,7 +177,7 @@ function health_and_quality_of_life_program_details_field_default_field_instance
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
@@ -84,7 +202,7 @@ function health_and_quality_of_life_program_details_field_default_field_instance
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -97,7 +215,7 @@ function health_and_quality_of_life_program_details_field_default_field_instance
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -143,7 +261,7 @@ function health_and_quality_of_life_program_details_field_default_field_instance
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
@@ -168,7 +286,7 @@ function health_and_quality_of_life_program_details_field_default_field_instance
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -181,7 +299,7 @@ function health_and_quality_of_life_program_details_field_default_field_instance
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -228,7 +346,7 @@ function health_and_quality_of_life_program_details_field_default_field_instance
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -266,64 +384,6 @@ function health_and_quality_of_life_program_details_field_default_field_instance
     ),
   );
 
-  // Exported field_instance:
-  // 'node-program_health-field_program_health_services'.
-  $field_instances['node-program_health-field_program_health_services'] = array(
-    'bundle' => 'program_health',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'paragraphs',
-        'settings' => array(
-          'view_mode' => 'full',
-        ),
-        'type' => 'paragraphs_view',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_program_health_services',
-    'label' => 'Services Provided',
-    'required' => 0,
-    'settings' => array(
-      'add_mode' => 'select',
-      'allowed_bundles' => array(
-        'budget_ventures' => -1,
-        'education_services' => -1,
-        'funding_source' => -1,
-        'health_services' => 'health_services',
-        'service_area' => -1,
-      ),
-      'bundle_weights' => array(
-        'budget_ventures' => 2,
-        'education_services' => 3,
-        'funding_source' => 4,
-        'health_services' => 5,
-        'service_area' => 6,
-      ),
-      'default_edit_mode' => 'open',
-      'title' => 'Service Provided',
-      'title_multiple' => 'Services Provided',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'paragraphs',
-      'settings' => array(),
-      'type' => 'paragraphs_embed',
-      'weight' => 1,
-    ),
-  );
-
   // Exported field_instance: 'node-program_health-field_tab_status'.
   $field_instances['node-program_health-field_tab_status'] = array(
     'bundle' => 'program_health',
@@ -336,7 +396,7 @@ function health_and_quality_of_life_program_details_field_default_field_instance
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
-        'weight' => 7,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -357,7 +417,7 @@ function health_and_quality_of_life_program_details_field_default_field_instance
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 11,
+      'weight' => 7,
     ),
   );
 
@@ -693,9 +753,11 @@ function health_and_quality_of_life_program_details_field_default_field_instance
   t('Average number of participants at Education Classes/Events/Seminars');
   t('Do you provide any Health advocacy in your community?');
   t('Does your current staffing include Community Health Workers?');
+  t('Email');
+  t('Name');
   t('Number of individuals assisted with using their health insurance by Community Health Worker or Navigator');
   t('Number of individuals enrolled in health insurance by Community Health Worker or Navigator');
-  t('Services Provided');
+  t('Our Affiliate offers programs of this type');
   t('Tab Status');
   t('health dollars');
   t('health dollars header');
