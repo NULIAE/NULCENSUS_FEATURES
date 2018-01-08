@@ -92,7 +92,11 @@ function workforce_development_program_details_field_default_field_instances() {
   // 'node-program_workforce-field_program_work_aff_profit'.
   $field_instances['node-program_workforce-field_program_work_aff_profit'] = array(
     'bundle' => 'program_workforce',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -553,7 +557,11 @@ function workforce_development_program_details_field_default_field_instances() {
   // 'node-program_workforce-field_program_work_sub_ownership'.
   $field_instances['node-program_workforce-field_program_work_sub_ownership'] = array(
     'bundle' => 'program_workforce',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(

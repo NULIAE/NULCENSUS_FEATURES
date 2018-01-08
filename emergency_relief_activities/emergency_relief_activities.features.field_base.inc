@@ -974,6 +974,24 @@ function emergency_relief_activities_field_default_field_bases() {
     'type' => 'text_long',
   );
 
+  // Exported field_base: 'field_relief_total_served'.
+  $field_bases['field_relief_total_served'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_relief_total_served',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'number',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'number_integer',
+  );
+
   // Exported field_base: 'field_tab_status'.
   $field_bases['field_tab_status'] = array(
     'active' => 1,

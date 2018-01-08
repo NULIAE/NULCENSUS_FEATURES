@@ -387,7 +387,7 @@ function emergency_relief_activities_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_parent_census',
     'label' => 'parent census',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -444,7 +444,7 @@ function emergency_relief_activities_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'size' => 60,
+        'size' => 40,
       ),
       'type' => 'text_textfield',
       'weight' => 18,
@@ -751,7 +751,7 @@ function emergency_relief_activities_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'size' => 60,
+        'size' => 40,
       ),
       'type' => 'text_textfield',
       'weight' => 3,
@@ -1058,7 +1058,7 @@ function emergency_relief_activities_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'size' => 60,
+        'size' => 40,
       ),
       'type' => 'text_textfield',
       'weight' => 44,
@@ -1365,7 +1365,7 @@ function emergency_relief_activities_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'size' => 60,
+        'size' => 40,
       ),
       'type' => 'text_textfield',
       'weight' => 45,
@@ -1672,7 +1672,7 @@ function emergency_relief_activities_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'size' => 60,
+        'size' => 40,
       ),
       'type' => 'text_textfield',
       'weight' => 6,
@@ -1983,6 +1983,59 @@ function emergency_relief_activities_field_default_field_instances() {
   );
 
   // Exported field_instance:
+  // 'node-emergency_relief_activities-field_relief_total_served'.
+  $field_instances['node-emergency_relief_activities-field_relief_total_served'] = array(
+    'bundle' => 'emergency_relief_activities',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 45,
+      ),
+      'status_info' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_relief_total_served',
+    'label' => 'Total Served',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 60,
+    ),
+  );
+
+  // Exported field_instance:
   // 'node-emergency_relief_activities-field_tab_status'.
   $field_instances['node-emergency_relief_activities-field_tab_status'] = array(
     'bundle' => 'emergency_relief_activities',
@@ -2018,7 +2071,7 @@ function emergency_relief_activities_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_tab_status',
     'label' => 'Tab Status',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -2072,6 +2125,7 @@ function emergency_relief_activities_field_default_field_instances() {
   t('Relief Racial Justice Societal Impact');
   t('Societal Impact');
   t('Tab Status');
+  t('Total Served');
   t('era help');
   t('parent census');
 

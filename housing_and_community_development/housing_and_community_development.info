@@ -8,6 +8,7 @@ dependencies[] = list
 dependencies[] = number
 dependencies[] = options
 dependencies[] = taxonomy
+dependencies[] = text
 features[ctools][] = field_group:field_group:1
 features[features_api][] = api:2
 features[field_base][] = field_do_you_offer_programs_of_t

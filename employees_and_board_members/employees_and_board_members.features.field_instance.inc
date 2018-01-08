@@ -67,7 +67,11 @@ function employees_and_board_members_field_default_field_instances() {
   // 'node-employees_and_board_members-field_board_african_am_females'.
   $field_instances['node-employees_and_board_members-field_board_african_am_females'] = array(
     'bundle' => 'employees_and_board_members',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -120,7 +124,11 @@ function employees_and_board_members_field_default_field_instances() {
   // 'node-employees_and_board_members-field_board_african_am_males'.
   $field_instances['node-employees_and_board_members-field_board_african_am_males'] = array(
     'bundle' => 'employees_and_board_members',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -226,7 +234,11 @@ function employees_and_board_members_field_default_field_instances() {
   // 'node-employees_and_board_members-field_board_asian_am_females'.
   $field_instances['node-employees_and_board_members-field_board_asian_am_females'] = array(
     'bundle' => 'employees_and_board_members',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -279,7 +291,11 @@ function employees_and_board_members_field_default_field_instances() {
   // 'node-employees_and_board_members-field_board_asian_am_males'.
   $field_instances['node-employees_and_board_members-field_board_asian_am_males'] = array(
     'bundle' => 'employees_and_board_members',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -471,7 +487,11 @@ function employees_and_board_members_field_default_field_instances() {
   // 'node-employees_and_board_members-field_board_hispanic_females'.
   $field_instances['node-employees_and_board_members-field_board_hispanic_females'] = array(
     'bundle' => 'employees_and_board_members',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -524,7 +544,11 @@ function employees_and_board_members_field_default_field_instances() {
   // 'node-employees_and_board_members-field_board_hispanic_males'.
   $field_instances['node-employees_and_board_members-field_board_hispanic_males'] = array(
     'bundle' => 'employees_and_board_members',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -682,7 +706,7 @@ function employees_and_board_members_field_default_field_instances() {
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
+          'prefix_suffix' => 1,
           'scale' => 0,
           'thousand_separator' => '',
         ),
@@ -726,7 +750,11 @@ function employees_and_board_members_field_default_field_instances() {
   // 'node-employees_and_board_members-field_board_native_am_females'.
   $field_instances['node-employees_and_board_members-field_board_native_am_females'] = array(
     'bundle' => 'employees_and_board_members',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -779,7 +807,11 @@ function employees_and_board_members_field_default_field_instances() {
   // 'node-employees_and_board_members-field_board_native_am_males'.
   $field_instances['node-employees_and_board_members-field_board_native_am_males'] = array(
     'bundle' => 'employees_and_board_members',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -885,7 +917,11 @@ function employees_and_board_members_field_default_field_instances() {
   // 'node-employees_and_board_members-field_board_other_females'.
   $field_instances['node-employees_and_board_members-field_board_other_females'] = array(
     'bundle' => 'employees_and_board_members',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -938,7 +974,11 @@ function employees_and_board_members_field_default_field_instances() {
   // 'node-employees_and_board_members-field_board_other_males'.
   $field_instances['node-employees_and_board_members-field_board_other_males'] = array(
     'bundle' => 'employees_and_board_members',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -1173,7 +1213,11 @@ function employees_and_board_members_field_default_field_instances() {
   // 'node-employees_and_board_members-field_board_white_females'.
   $field_instances['node-employees_and_board_members-field_board_white_females'] = array(
     'bundle' => 'employees_and_board_members',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -1226,7 +1270,11 @@ function employees_and_board_members_field_default_field_instances() {
   // 'node-employees_and_board_members-field_board_white_males'.
   $field_instances['node-employees_and_board_members-field_board_white_males'] = array(
     'bundle' => 'employees_and_board_members',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -1556,7 +1604,7 @@ function employees_and_board_members_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_parent_census',
     'label' => 'parent census',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -1702,7 +1750,7 @@ function employees_and_board_members_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_tab_status',
     'label' => 'Tab Status',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),

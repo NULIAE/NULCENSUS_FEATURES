@@ -467,11 +467,7 @@ function community_relations_field_default_field_instances() {
   // 'node-community_relations-field_produces_annual_report'.
   $field_instances['node-community_relations-field_produces_annual_report'] = array(
     'bundle' => 'community_relations',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -634,7 +630,7 @@ function community_relations_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_tab_status',
     'label' => 'Tab Status',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),

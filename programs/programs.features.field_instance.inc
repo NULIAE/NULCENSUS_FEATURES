@@ -717,7 +717,7 @@ function programs_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -763,10 +763,10 @@ function programs_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'markup',
         'settings' => array(),
-        'type' => 'markup_default',
+        'type' => 'markup_view',
         'weight' => 8,
       ),
       'paragraphs_editor_preview' => array(
@@ -801,7 +801,7 @@ function programs_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
@@ -839,7 +839,7 @@ function programs_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
@@ -876,10 +876,10 @@ function programs_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'markup',
         'settings' => array(),
-        'type' => 'markup_default',
+        'type' => 'markup_view',
         'weight' => 7,
       ),
       'paragraphs_editor_preview' => array(
@@ -913,10 +913,10 @@ function programs_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'markup',
         'settings' => array(),
-        'type' => 'markup_default',
+        'type' => 'markup_view',
         'weight' => 5,
       ),
       'paragraphs_editor_preview' => array(
@@ -951,7 +951,7 @@ function programs_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
@@ -988,10 +988,10 @@ function programs_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'markup',
         'settings' => array(),
-        'type' => 'markup_default',
+        'type' => 'markup_view',
         'weight' => 6,
       ),
       'paragraphs_editor_preview' => array(

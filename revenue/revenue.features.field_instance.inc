@@ -43,7 +43,7 @@ function revenue_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_parent_census',
     'label' => 'parent census',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -492,7 +492,7 @@ function revenue_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_revenue_purpose_of_funding',
-    'label' => 'Purpose of Funding',
+    'label' => 'Purpose of NUL Funding',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -610,6 +610,58 @@ function revenue_field_default_field_instances() {
       'settings' => array(),
       'type' => 'number',
       'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance: 'node-revenue-field_revenue_total_budget'.
+  $field_instances['node-revenue-field_revenue_total_budget'] = array(
+    'bundle' => 'revenue',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => 1,
+          'scale' => 0,
+          'thousand_separator' => ',',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 15,
+      ),
+      'status_info' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_revenue_total_budget',
+    'label' => 'What is the total budget of your affiliate?',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '$',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 17,
     ),
   );
 
@@ -757,7 +809,7 @@ function revenue_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_tab_status',
     'label' => 'Tab Status',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -782,10 +834,10 @@ function revenue_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
-          'decimal_separator' => ',',
+          'decimal_separator' => '.',
           'prefix_suffix' => 1,
           'scale' => 2,
-          'thousand_separator' => '',
+          'thousand_separator' => ',',
         ),
         'type' => 'number_decimal',
         'weight' => 5,
@@ -1026,13 +1078,14 @@ function revenue_field_default_field_instances() {
   t('If so, what is the present amount?');
   t('Individual Memberships');
   t('NUL');
-  t('Purpose of Funding');
+  t('Purpose of NUL Funding');
   t('Special Events');
   t('State/Local');
   t('Tab Status');
   t('Type of Venture');
   t('United Way');
   t('Venture type header');
+  t('What is the total budget of your affiliate?');
   t('parent census');
   t('venture budgeted header');
   t('venture earned header');

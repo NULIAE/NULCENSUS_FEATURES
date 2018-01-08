@@ -237,7 +237,11 @@ function empowerment_field_default_field_instances() {
   // Exported field_instance: 'node-empowerment-field_empower_health'.
   $field_instances['node-empowerment-field_empower_health'] = array(
     'bundle' => 'empowerment',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -422,7 +426,7 @@ function empowerment_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_parent_census',
     'label' => 'parent census',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -466,7 +470,7 @@ function empowerment_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_tab_status',
     'label' => 'Tab Status',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),

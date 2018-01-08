@@ -229,7 +229,6 @@ function civic_engagement_field_group_info() {
     'children' => array(
       0 => 'field_advocacy_societal_impact',
       1 => 'field_advocacy_spacer',
-      2 => 'field_advocacy_total',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -926,7 +925,6 @@ function civic_engagement_field_group_info() {
     'children' => array(
       0 => 'field_crja_spacer',
       1 => 'field_crja_societal_impact',
-      2 => 'field_crja_total',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -1626,7 +1624,6 @@ function civic_engagement_field_group_info() {
     'children' => array(
       0 => 'field_forums_societal_impact',
       1 => 'field_forums_spacer',
-      2 => 'field_forums_total',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -2253,7 +2250,6 @@ function civic_engagement_field_group_info() {
     'children' => array(
       0 => 'field_comm_org_societal_impact',
       1 => 'field_org_spacer_impact',
-      2 => 'field_comm_org_total',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -2880,7 +2876,6 @@ function civic_engagement_field_group_info() {
     'children' => array(
       0 => 'field_pb_spacer',
       1 => 'field_police_societal_impact',
-      2 => 'field_police_total',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -3507,7 +3502,6 @@ function civic_engagement_field_group_info() {
     'children' => array(
       0 => 'field_voter_spacer',
       1 => 'field_voter_societal_impact',
-      2 => 'field_voter_total',
     ),
     'format_type' => 'div',
     'format_settings' => array(

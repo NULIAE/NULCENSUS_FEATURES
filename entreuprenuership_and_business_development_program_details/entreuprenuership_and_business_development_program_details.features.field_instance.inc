@@ -23,7 +23,7 @@ function entreuprenuership_and_business_development_program_details_field_defaul
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 19,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -146,7 +146,7 @@ function entreuprenuership_and_business_development_program_details_field_defaul
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 17,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -955,7 +955,7 @@ function entreuprenuership_and_business_development_program_details_field_defaul
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
-        'weight' => 18,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',

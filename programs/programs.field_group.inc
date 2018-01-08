@@ -20,7 +20,7 @@ function programs_field_group_info() {
   $field_group->mode = 'default';
   $field_group->parent_name = 'group_funding_table';
   $field_group->data = array(
-    'label' => 'Funding Header',
+    'label' => '',
     'weight' => '9',
     'children' => array(
       0 => 'field_funding_source_label',
@@ -30,9 +30,8 @@ function programs_field_group_info() {
     ),
     'format_type' => 'div',
     'format_settings' => array(
-      'label' => 'Funding Header',
+      'label' => '',
       'instance_settings' => array(
-        'required_fields' => 1,
         'id' => '',
         'classes' => 'group-funding-header field-group-div nulTableHeader',
         'description' => '',
@@ -56,7 +55,7 @@ function programs_field_group_info() {
   $field_group->mode = 'form';
   $field_group->parent_name = 'group_funding_table';
   $field_group->data = array(
-    'label' => 'Funding Header',
+    'label' => ' ',
     'weight' => '9',
     'children' => array(
       0 => 'field_funding_source_label',
@@ -66,7 +65,7 @@ function programs_field_group_info() {
     ),
     'format_type' => 'div',
     'format_settings' => array(
-      'label' => 'Funding Header',
+      'label' => ' ',
       'instance_settings' => array(
         'required_fields' => 1,
         'id' => '',
@@ -92,7 +91,7 @@ function programs_field_group_info() {
   $field_group->mode = 'default';
   $field_group->parent_name = 'group_funding_table';
   $field_group->data = array(
-    'label' => 'Funding Row',
+    'label' => '',
     'weight' => '10',
     'children' => array(
       0 => 'field_funding_funding_source',
@@ -102,9 +101,8 @@ function programs_field_group_info() {
     ),
     'format_type' => 'div',
     'format_settings' => array(
-      'label' => 'Funding Row',
+      'label' => '',
       'instance_settings' => array(
-        'required_fields' => 1,
         'id' => '',
         'classes' => 'group-funding-row field-group-div nulTableRow',
         'description' => '',
@@ -128,7 +126,7 @@ function programs_field_group_info() {
   $field_group->mode = 'form';
   $field_group->parent_name = 'group_funding_table';
   $field_group->data = array(
-    'label' => 'Funding Row',
+    'label' => ' ',
     'weight' => '11',
     'children' => array(
       0 => 'field_funding_funding_source',
@@ -138,7 +136,7 @@ function programs_field_group_info() {
     ),
     'format_type' => 'div',
     'format_settings' => array(
-      'label' => 'Funding Row',
+      'label' => ' ',
       'instance_settings' => array(
         'required_fields' => 1,
         'id' => '',
@@ -325,11 +323,10 @@ function programs_field_group_info() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t(' ');
   t('Demographics');
   t('Ethnicity');
   t('Funding');
-  t('Funding Header');
-  t('Funding Row');
   t('Gender');
 
   return $field_groups;

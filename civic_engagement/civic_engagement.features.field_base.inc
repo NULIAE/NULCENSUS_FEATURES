@@ -400,8 +400,8 @@ function civic_engagement_field_default_field_bases() {
     'module' => 'markup',
     'settings' => array(
       'markup' => array(
-        'format' => 'filtered_html',
-        'value' => 'Voter registration help text',
+        'format' => 'full_html',
+        'value' => '<div> </div>',
       ),
     ),
     'translatable' => 0,

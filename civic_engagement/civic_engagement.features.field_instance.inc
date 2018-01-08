@@ -24,6 +24,20 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 14,
       ),
+      'full' => array(
+        'label' => 'inline',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 14,
+      ),
+      'full_census_' => array(
+        'label' => 'inline',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 14,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -65,6 +79,30 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 11,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 11,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -129,6 +167,30 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 10,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 10,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 10,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -171,6 +233,30 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 7,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 7,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -235,6 +321,30 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 6,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 6,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 6,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -277,6 +387,20 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'inline',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 15,
+      ),
+      'full' => array(
+        'label' => 'inline',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 15,
+      ),
+      'full_census_' => array(
         'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
@@ -329,6 +453,20 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 85,
       ),
+      'full' => array(
+        'label' => 'inline',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 85,
+      ),
+      'full_census_' => array(
+        'label' => 'inline',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 85,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -365,6 +503,20 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 19,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 19,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'markup',
         'settings' => array(),
@@ -409,6 +561,30 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 9,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 9,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -473,6 +649,30 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 8,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 8,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 8,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -519,6 +719,20 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'markup_view',
         'weight' => 18,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 18,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 18,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -557,6 +771,30 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 11,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 11,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -621,6 +859,30 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 10,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 10,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 10,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -674,6 +936,30 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 13,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 13,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 13,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -715,6 +1001,30 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 12,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 12,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -779,6 +1089,30 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 21,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 21,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 21,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -825,6 +1159,20 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'markup_view',
         'weight' => 19,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 19,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 19,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -863,6 +1211,30 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 15,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 15,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -926,6 +1298,30 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 14,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 14,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 14,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -966,6 +1362,20 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_default',
+        'weight' => 20,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_default',
+        'weight' => 20,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'markup',
         'settings' => array(),
@@ -1014,6 +1424,20 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'markup_view',
         'weight' => 7,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 7,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 7,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1050,6 +1474,20 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 6,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 6,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'markup',
         'settings' => array(),
@@ -1098,6 +1536,20 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'markup_view',
         'weight' => 96,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 96,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 96,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1134,6 +1586,20 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 95,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 95,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'markup',
         'settings' => array(),
@@ -1178,6 +1644,30 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 19,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 19,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -1242,6 +1732,30 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 17,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 17,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 17,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1284,6 +1798,30 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 169,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 169,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -1348,6 +1886,30 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 168,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 168,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 168,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1390,6 +1952,30 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 22,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 22,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -1454,6 +2040,30 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 21,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 21,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 21,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1496,6 +2106,30 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 171,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 171,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -1560,6 +2194,30 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 170,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 170,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 170,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1613,6 +2271,30 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 26,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 26,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 26,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1654,6 +2336,30 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 25,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 25,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -1718,6 +2424,30 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 32,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 32,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 32,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1760,6 +2490,30 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 29,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 29,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -1823,6 +2577,30 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 28,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 28,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 28,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1864,6 +2642,20 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 86,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 86,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'list',
         'settings' => array(),
@@ -1914,6 +2706,20 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 93,
       ),
+      'full' => array(
+        'label' => 'inline',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 93,
+      ),
+      'full_census_' => array(
+        'label' => 'inline',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 93,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1951,6 +2757,20 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'inline',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 10,
+      ),
+      'full' => array(
+        'label' => 'inline',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 10,
+      ),
+      'full_census_' => array(
         'label' => 'inline',
         'module' => 'list',
         'settings' => array(),
@@ -1995,6 +2815,30 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 17,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 17,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -2059,6 +2903,30 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 16,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 16,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 16,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2101,6 +2969,30 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 19,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 19,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -2164,6 +3056,30 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 18,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 18,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 18,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2210,6 +3126,20 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'markup_view',
         'weight' => 9,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 9,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 9,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2248,6 +3178,30 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 21,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 21,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -2311,6 +3265,30 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 20,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 20,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 20,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2357,6 +3335,20 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'markup_view',
         'weight' => 8,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 8,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 8,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2395,6 +3387,30 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 23,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 23,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -2458,6 +3474,30 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 22,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 22,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 22,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2510,6 +3550,30 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 25,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 25,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 25,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2551,6 +3615,30 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 24,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 24,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -2615,6 +3703,30 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 11,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 11,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 11,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2661,6 +3773,20 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'markup_view',
         'weight' => 9,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 9,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 9,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2698,6 +3824,30 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 28,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 28,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -2761,6 +3911,30 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 27,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 27,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 27,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2807,6 +3981,20 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'markup_view',
         'weight' => 156,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 156,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 156,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2845,6 +4033,30 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 29,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 29,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -2909,6 +4121,30 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 28,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 28,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 28,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2951,6 +4187,30 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 31,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 31,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -3015,6 +4275,30 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 30,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 30,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 30,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -3057,6 +4341,30 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 33,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 33,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -3121,6 +4429,30 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 32,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 32,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 32,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -3163,6 +4495,30 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 35,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 35,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -3227,6 +4583,30 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 34,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 34,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 34,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -3279,6 +4659,30 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 37,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 37,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 37,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -3320,6 +4724,30 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 36,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 36,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -3384,6 +4812,30 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 33,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 33,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 33,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -3430,6 +4882,20 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'markup_view',
         'weight' => 31,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 31,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 31,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -3467,6 +4933,30 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 41,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 41,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -3530,6 +5020,30 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 40,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 40,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 40,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -3576,6 +5090,20 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'markup_view',
         'weight' => 30,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 30,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 30,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -3613,6 +5141,22 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 173,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'bypass_access' => 0,
+          'link' => 1,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 173,
+      ),
+      'full_census_' => array(
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
@@ -3664,6 +5208,20 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'markup_view',
         'weight' => 12,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 12,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 12,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -3700,6 +5258,20 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 11,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 11,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'markup',
         'settings' => array(),
@@ -3748,6 +5320,20 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'markup_view',
         'weight' => 13,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 13,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 13,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -3786,6 +5372,30 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 31,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 31,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -3850,6 +5460,30 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 30,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 30,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 30,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -3892,6 +5526,30 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 30,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 30,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -3956,6 +5614,30 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 29,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 29,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 29,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -4003,6 +5685,20 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 99,
       ),
+      'full' => array(
+        'label' => 'inline',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 99,
+      ),
+      'full_census_' => array(
+        'label' => 'inline',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 99,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -4041,6 +5737,30 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 34,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 34,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -4105,6 +5825,30 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 33,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 33,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 33,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -4147,6 +5891,30 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 36,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 36,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -4211,6 +5979,30 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 35,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 35,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 35,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -4263,6 +6055,30 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 37,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 37,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 37,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -4304,6 +6120,30 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 36,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 36,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -4368,6 +6208,30 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 15,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 15,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 15,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -4409,6 +6273,30 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 38,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 38,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -4472,6 +6360,30 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 37,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 37,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 37,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -4517,6 +6429,19 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 4,
+      ),
+      'full_census_' => array(
         'label' => 'above',
         'module' => 'taxonomy',
         'settings' => array(),
@@ -4557,11 +6482,39 @@ function civic_engagement_field_default_field_instances() {
   // 'node-civic_engagement-field_voter_african_am_female'.
   $field_instances['node-civic_engagement-field_voter_african_am_female'] = array(
     'bundle' => 'civic_engagement',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 167,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 167,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -4610,11 +6563,39 @@ function civic_engagement_field_default_field_instances() {
   // 'node-civic_engagement-field_voter_african_am_male'.
   $field_instances['node-civic_engagement-field_voter_african_am_male'] = array(
     'bundle' => 'civic_engagement',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 166,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 166,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -4663,11 +6644,39 @@ function civic_engagement_field_default_field_instances() {
   // 'node-civic_engagement-field_voter_asian_am_female'.
   $field_instances['node-civic_engagement-field_voter_asian_am_female'] = array(
     'bundle' => 'civic_engagement',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 163,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 163,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -4715,11 +6724,39 @@ function civic_engagement_field_default_field_instances() {
   // Exported field_instance: 'node-civic_engagement-field_voter_asian_am_male'.
   $field_instances['node-civic_engagement-field_voter_asian_am_male'] = array(
     'bundle' => 'civic_engagement',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 162,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 162,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -4768,11 +6805,39 @@ function civic_engagement_field_default_field_instances() {
   // 'node-civic_engagement-field_voter_hispanic_female'.
   $field_instances['node-civic_engagement-field_voter_hispanic_female'] = array(
     'bundle' => 'civic_engagement',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 99,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 99,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -4820,11 +6885,39 @@ function civic_engagement_field_default_field_instances() {
   // Exported field_instance: 'node-civic_engagement-field_voter_hispanic_male'.
   $field_instances['node-civic_engagement-field_voter_hispanic_male'] = array(
     'bundle' => 'civic_engagement',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 98,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 98,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -4882,6 +6975,20 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'markup_view',
         'weight' => 155,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 155,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 155,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -4915,11 +7022,39 @@ function civic_engagement_field_default_field_instances() {
   // 'node-civic_engagement-field_voter_native_am_female'.
   $field_instances['node-civic_engagement-field_voter_native_am_female'] = array(
     'bundle' => 'civic_engagement',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 165,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 165,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -4968,11 +7103,39 @@ function civic_engagement_field_default_field_instances() {
   // 'node-civic_engagement-field_voter_native_am_male'.
   $field_instances['node-civic_engagement-field_voter_native_am_male'] = array(
     'bundle' => 'civic_engagement',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 164,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 164,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -5020,11 +7183,39 @@ function civic_engagement_field_default_field_instances() {
   // Exported field_instance: 'node-civic_engagement-field_voter_other_female'.
   $field_instances['node-civic_engagement-field_voter_other_female'] = array(
     'bundle' => 'civic_engagement',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 161,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 161,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -5072,11 +7263,39 @@ function civic_engagement_field_default_field_instances() {
   // Exported field_instance: 'node-civic_engagement-field_voter_other_male'.
   $field_instances['node-civic_engagement-field_voter_other_male'] = array(
     'bundle' => 'civic_engagement',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 160,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 160,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -5135,6 +7354,20 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 21,
       ),
+      'full' => array(
+        'label' => 'inline',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 21,
+      ),
+      'full_census_' => array(
+        'label' => 'inline',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 21,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -5173,6 +7406,30 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 156,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 156,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -5230,6 +7487,20 @@ function civic_engagement_field_default_field_instances() {
         'type' => 'markup_view',
         'weight' => 154,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 154,
+      ),
+      'full_census_' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 154,
+      ),
       'status_info' => array(
         'label' => 'above',
         'settings' => array(),
@@ -5262,11 +7533,39 @@ function civic_engagement_field_default_field_instances() {
   // Exported field_instance: 'node-civic_engagement-field_voter_white_female'.
   $field_instances['node-civic_engagement-field_voter_white_female'] = array(
     'bundle' => 'civic_engagement',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 157,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 157,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
@@ -5314,11 +7613,39 @@ function civic_engagement_field_default_field_instances() {
   // Exported field_instance: 'node-civic_engagement-field_voter_white_male'.
   $field_instances['node-civic_engagement-field_voter_white_male'] = array(
     'bundle' => 'civic_engagement',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 156,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 156,
+      ),
+      'full_census_' => array(
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
