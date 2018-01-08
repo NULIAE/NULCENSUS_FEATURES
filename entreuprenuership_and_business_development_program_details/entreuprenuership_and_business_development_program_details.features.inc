@@ -30,3 +30,17 @@ function entreuprenuership_and_business_development_program_details_node_info() 
   drupal_alter('node_info', $items);
   return $items;
 }
+
+/**
+ * Implements hook_paragraphs_info().
+ */
+function entreuprenuership_and_business_development_program_details_paragraphs_info() {
+  $items = array(
+    'entpr_businesses' => array(
+      'name' => 'Entrepreneurship and Business Development Businesses',
+      'bundle' => 'entpr_businesses',
+      'locked' => '1',
+    ),
+  );
+  return $items;
+}

@@ -10,6 +10,70 @@
 function entreuprenuership_and_business_development_program_details_field_default_field_bases() {
   $field_bases = array();
 
+  // Exported field_base: 'field_business_sales'.
+  $field_bases['field_business_sales'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_business_sales',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'number',
+    'settings' => array(
+      'decimal_separator' => '.',
+      'precision' => 10,
+      'scale' => 2,
+    ),
+    'translatable' => 0,
+    'type' => 'number_decimal',
+  );
+
+  // Exported field_base: 'field_business_served'.
+  $field_bases['field_business_served'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_business_served',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'number',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'number_integer',
+  );
+
+  // Exported field_base: 'field_business_type'.
+  $field_bases['field_business_type'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_business_type',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
   // Exported field_base: 'field_do_you_offer_programs_of_t'.
   $field_bases['field_do_you_offer_programs_of_t'] = array(
     'active' => 1,
