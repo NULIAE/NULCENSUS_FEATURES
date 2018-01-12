@@ -1,6 +1,7 @@
 name = Census Views
 core = 7.x
 package = Features
+dependencies[] = ctools
 dependencies[] = ds
 dependencies[] = entityreference
 dependencies[] = views

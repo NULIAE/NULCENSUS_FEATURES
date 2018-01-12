@@ -500,7 +500,7 @@ function census_views_views_default_views() {
     'nid' => 'nid',
     'field_census_status' => 'field_census_status',
   );
-  $handler->display->display_options['style_options']['default'] = '-1';
+  $handler->display->display_options['style_options']['default'] = 'field_year';
   $handler->display->display_options['style_options']['info'] = array(
     'field_first_name' => array(
       'sortable' => 0,
@@ -511,7 +511,7 @@ function census_views_views_default_views() {
     ),
     'field_year' => array(
       'sortable' => 1,
-      'default_sort_order' => 'asc',
+      'default_sort_order' => 'desc',
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
@@ -600,9 +600,18 @@ function census_views_views_default_views() {
   $handler->display->display_options['filters']['field_year_value']['field'] = 'field_year_value';
   $handler->display->display_options['filters']['field_year_value']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_year_value']['expose']['operator_id'] = 'field_year_value_op';
-  $handler->display->display_options['filters']['field_year_value']['expose']['label'] = 'Year (field_year)';
+  $handler->display->display_options['filters']['field_year_value']['expose']['label'] = 'Year';
   $handler->display->display_options['filters']['field_year_value']['expose']['operator'] = 'field_year_value_op';
   $handler->display->display_options['filters']['field_year_value']['expose']['identifier'] = 'field_year_value';
+  $handler->display->display_options['filters']['field_year_value']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+    4 => 0,
+    5 => 0,
+    6 => 0,
+    7 => 0,
+  );
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
@@ -707,7 +716,6 @@ function census_views_views_default_views() {
     t('<a href=/full-census/[nid]>Full Version</a><br>
 <a href=/node/[nid]>Census Summary</a>'),
     t('Census Status'),
-    t('Year (field_year)'),
     t('Page'),
     t('All'),
     t('Block'),
@@ -929,8 +937,7 @@ function census_views_views_default_views() {
   $handler->display->display_options['empty']['area']['table'] = 'views';
   $handler->display->display_options['empty']['area']['field'] = 'area';
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
-  $handler->display->display_options['empty']['area']['content'] = '<a href=/node/add/!3/!4>%2</a>
-Not Started';
+  $handler->display->display_options['empty']['area']['content'] = '<a href="/node/add/!3/!4"><div class="tab"><div class="tabType">%2</div><div class="tabStatus notStarted">Not Started</div></div></a>';
   $handler->display->display_options['empty']['area']['format'] = 'full_html';
   $handler->display->display_options['empty']['area']['tokenize'] = TRUE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
@@ -946,7 +953,7 @@ Not Started';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['relationship'] = 'reverse_field_parent_census_node';
   $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['text'] = '<a href=/node/[nid]/!4>%2</a>';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
@@ -959,8 +966,12 @@ Not Started';
   $handler->display->display_options['fields']['field_tab_status']['relationship'] = 'reverse_field_parent_census_node';
   $handler->display->display_options['fields']['field_tab_status']['label'] = '';
   $handler->display->display_options['fields']['field_tab_status']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_tab_status']['alter']['text'] = '[field_tab_status] 
-<p></p>';
+  $handler->display->display_options['fields']['field_tab_status']['alter']['text'] = '<div class="tab">
+<div class="tabType">[title]</div>
+<div class="tabStatus [field_tab_status]">[field_tab_status] </div>
+</div>';
+  $handler->display->display_options['fields']['field_tab_status']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_tab_status']['alter']['path'] = '/node/[nid]/!4';
   $handler->display->display_options['fields']['field_tab_status']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_tab_status']['type'] = 'taxonomy_term_reference_plain';
   /* Field: Content: parent census */
@@ -1042,9 +1053,13 @@ Not Started';
   $handler->display->display_options['empty']['area']['table'] = 'views';
   $handler->display->display_options['empty']['area']['field'] = 'area';
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
-  $handler->display->display_options['empty']['area']['content'] = '<a href=/node/add/!3/!1>%2</a>
-Not Started
-</br>';
+  $handler->display->display_options['empty']['area']['content'] = '<a href=/node/add/!3/!1><div class="tab">
+<div class="tabType">%2</div>
+<div class="tabStatus notStarted">Not Started</div>
+</div></a>
+
+
+';
   $handler->display->display_options['empty']['area']['format'] = 'full_html';
   $handler->display->display_options['empty']['area']['tokenize'] = TRUE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
@@ -1059,7 +1074,7 @@ Not Started
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['text'] = '<a href=/node/[nid]/!1>%2</a>
 ';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
@@ -1072,8 +1087,13 @@ Not Started
   $handler->display->display_options['fields']['field_tab_status']['field'] = 'field_tab_status';
   $handler->display->display_options['fields']['field_tab_status']['label'] = '';
   $handler->display->display_options['fields']['field_tab_status']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_tab_status']['alter']['text'] = '[field_tab_status]
-<p></p>';
+  $handler->display->display_options['fields']['field_tab_status']['alter']['text'] = '<div class="tab">
+<div class="tabType">[title]</div>
+<div class="tabStatus [field_tab_status]">[field_tab_status] </div>
+</div>
+';
+  $handler->display->display_options['fields']['field_tab_status']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_tab_status']['alter']['path'] = '/node/[nid]/!1';
   $handler->display->display_options['fields']['field_tab_status']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_tab_status']['type'] = 'taxonomy_term_reference_plain';
   /* Field: Content: parent census */
@@ -1134,20 +1154,28 @@ Not Started
     t('parent census'),
     t('All'),
     t('Census Tabs (on Tab)'),
-    t('<a href=/node/add/!3/!4>%2</a>
-Not Started'),
+    t('<a href="/node/add/!3/!4"><div class="tab"><div class="tabType">%2</div><div class="tabStatus notStarted">Not Started</div></div></a>'),
     t('Nid'),
     t('<a href=/node/[nid]/!4>%2</a>'),
-    t('[field_tab_status] 
-<p></p>'),
+    t('<div class="tab">
+<div class="tabType">[title]</div>
+<div class="tabStatus [field_tab_status]">[field_tab_status] </div>
+</div>'),
     t('Census Tabs (on Census)'),
-    t('<a href=/node/add/!3/!1>%2</a>
-Not Started
-</br>'),
+    t('<a href=/node/add/!3/!1><div class="tab">
+<div class="tabType">%2</div>
+<div class="tabStatus notStarted">Not Started</div>
+</div></a>
+
+
+'),
     t('<a href=/node/[nid]/!1>%2</a>
 '),
-    t('[field_tab_status]
-<p></p>'),
+    t('<div class="tab">
+<div class="tabType">[title]</div>
+<div class="tabStatus [field_tab_status]">[field_tab_status] </div>
+</div>
+'),
   );
   $export['census_tab_menu'] = $view;
 
