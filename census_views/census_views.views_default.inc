@@ -612,6 +612,118 @@ function census_views_views_default_views() {
     6 => 0,
     7 => 0,
   );
+  $handler->display->display_options['filters']['field_year_value']['is_grouped'] = TRUE;
+  $handler->display->display_options['filters']['field_year_value']['group_info']['label'] = 'Year';
+  $handler->display->display_options['filters']['field_year_value']['group_info']['identifier'] = 'field_year_value';
+  $handler->display->display_options['filters']['field_year_value']['group_info']['group_items'] = array(
+    1 => array(
+      'title' => '2010',
+      'operator' => '=',
+      'value' => array(
+        'value' => '2010',
+        'min' => '',
+        'max' => '',
+      ),
+    ),
+    2 => array(
+      'title' => '2011',
+      'operator' => '=',
+      'value' => array(
+        'value' => '2011',
+        'min' => '',
+        'max' => '',
+      ),
+    ),
+    3 => array(
+      'title' => '2012',
+      'operator' => '=',
+      'value' => array(
+        'value' => '2012',
+        'min' => '',
+        'max' => '',
+      ),
+    ),
+    4 => array(
+      'title' => '2013',
+      'operator' => '=',
+      'value' => array(
+        'value' => '2013',
+        'min' => '',
+        'max' => '',
+      ),
+    ),
+    5 => array(
+      'title' => '2014',
+      'operator' => '=',
+      'value' => array(
+        'value' => '2014',
+        'min' => '',
+        'max' => '',
+      ),
+    ),
+    6 => array(
+      'title' => '2015',
+      'operator' => '=',
+      'value' => array(
+        'value' => '2015',
+        'min' => '',
+        'max' => '',
+      ),
+    ),
+    7 => array(
+      'title' => '2016',
+      'operator' => '=',
+      'value' => array(
+        'value' => '2016',
+        'min' => '',
+        'max' => '',
+      ),
+    ),
+    8 => array(
+      'title' => '2017',
+      'operator' => '=',
+      'value' => array(
+        'value' => '2017',
+        'min' => '',
+        'max' => '',
+      ),
+    ),
+    9 => array(
+      'title' => '2018',
+      'operator' => '=',
+      'value' => array(
+        'value' => '2018',
+        'min' => '',
+        'max' => '',
+      ),
+    ),
+  );
+  /* Filter criterion: Content: Census Status (field_census_status) */
+  $handler->display->display_options['filters']['field_census_status_tid']['id'] = 'field_census_status_tid';
+  $handler->display->display_options['filters']['field_census_status_tid']['table'] = 'field_data_field_census_status';
+  $handler->display->display_options['filters']['field_census_status_tid']['field'] = 'field_census_status_tid';
+  $handler->display->display_options['filters']['field_census_status_tid']['value'] = array(
+    100 => '100',
+    16 => '16',
+    19 => '19',
+    18 => '18',
+  );
+  $handler->display->display_options['filters']['field_census_status_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_census_status_tid']['expose']['operator_id'] = 'field_census_status_tid_op';
+  $handler->display->display_options['filters']['field_census_status_tid']['expose']['label'] = 'Status';
+  $handler->display->display_options['filters']['field_census_status_tid']['expose']['operator'] = 'field_census_status_tid_op';
+  $handler->display->display_options['filters']['field_census_status_tid']['expose']['identifier'] = 'field_census_status_tid';
+  $handler->display->display_options['filters']['field_census_status_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+    4 => 0,
+    5 => 0,
+    6 => 0,
+    7 => 0,
+  );
+  $handler->display->display_options['filters']['field_census_status_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_census_status_tid']['vocabulary'] = 'status_type_for_census';
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
@@ -716,6 +828,7 @@ function census_views_views_default_views() {
     t('<a href=/full-census/[nid]>Full Version</a><br>
 <a href=/node/[nid]>Census Summary</a>'),
     t('Census Status'),
+    t('Status'),
     t('Page'),
     t('All'),
     t('Block'),
@@ -2788,11 +2901,12 @@ return false;';
   $handler->display->display_options['fields']['field_capital_budget']['group_type'] = 'sum';
   $handler->display->display_options['fields']['field_capital_budget']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_capital_budget']['empty_zero'] = TRUE;
-  /* Field: SUM(Content: What is the total budget of your affiliate?) */
+  /* Field: SUM(Content: What is the total revenue of your affiliate?) */
   $handler->display->display_options['fields']['field_revenue_total_budget']['id'] = 'field_revenue_total_budget';
   $handler->display->display_options['fields']['field_revenue_total_budget']['table'] = 'field_data_field_revenue_total_budget';
   $handler->display->display_options['fields']['field_revenue_total_budget']['field'] = 'field_revenue_total_budget';
   $handler->display->display_options['fields']['field_revenue_total_budget']['group_type'] = 'sum';
+  $handler->display->display_options['fields']['field_revenue_total_budget']['label'] = 'What is the total budget of your affiliate?';
   $handler->display->display_options['fields']['field_revenue_total_budget']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_revenue_total_budget']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_revenue_total_budget']['settings'] = array(
@@ -3203,6 +3317,14 @@ return false;';
   $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['style_options']['provide_file'] = 0;
+  $handler->display->display_options['style_options']['parent_sort'] = 0;
+  $handler->display->display_options['style_options']['quote'] = 1;
+  $handler->display->display_options['style_options']['trim'] = 0;
+  $handler->display->display_options['style_options']['replace_newlines'] = 0;
+  $handler->display->display_options['style_options']['newline_token'] = '1';
+  $handler->display->display_options['style_options']['header'] = 1;
+  $handler->display->display_options['style_options']['keep_html'] = 0;
   $handler->display->display_options['path'] = 'census-summary/export';
   $handler->display->display_options['displays'] = array(
     'page' => 'page',
