@@ -23,7 +23,7 @@ function health_and_quality_of_life_program_details_field_default_field_instance
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 10,
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -137,13 +137,9 @@ function health_and_quality_of_life_program_details_field_default_field_instance
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'bypass_access' => 0,
-          'link' => 1,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 4,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -181,7 +177,7 @@ function health_and_quality_of_life_program_details_field_default_field_instance
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -265,7 +261,7 @@ function health_and_quality_of_life_program_details_field_default_field_instance
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -393,10 +389,9 @@ function health_and_quality_of_life_program_details_field_default_field_instance
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_plain',
-        'weight' => 5,
+        'type' => 'hidden',
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',

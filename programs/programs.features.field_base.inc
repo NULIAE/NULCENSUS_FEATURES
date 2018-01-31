@@ -753,6 +753,24 @@ function programs_field_default_field_bases() {
     'type' => 'paragraphs',
   );
 
+  // Exported field_base: 'field_legacy_program_id'.
+  $field_bases['field_legacy_program_id'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_legacy_program_id',
+    'field_permissions' => array(
+      'type' => 1,
+    ),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'number',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'number_integer',
+  );
+
   // Exported field_base: 'field_parent_census'.
   $field_bases['field_parent_census'] = array(
     'active' => 1,
@@ -1089,33 +1107,22 @@ function programs_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_service_provided'.
-  $field_bases['field_service_provided'] = array(
+  // Exported field_base: 'field_services_provided'.
+  $field_bases['field_services_provided'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_service_provided',
+    'field_name' => 'field_services_provided',
     'field_permissions' => array(
       'type' => 0,
     ),
-    'indexes' => array(
-      'tid' => array(
-        0 => 'tid',
-      ),
-    ),
+    'indexes' => array(),
     'locked' => 0,
-    'module' => 'taxonomy',
-    'settings' => array(
-      'allowed_values' => array(
-        0 => array(
-          'vocabulary' => 'services_provided',
-          'parent' => 0,
-        ),
-      ),
-    ),
+    'module' => 'paragraphs',
+    'settings' => array(),
     'translatable' => 0,
-    'type' => 'taxonomy_term_reference',
+    'type' => 'paragraphs',
   );
 
   return $field_bases;

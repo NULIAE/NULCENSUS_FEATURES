@@ -21,7 +21,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_advocacy_info';
   $field_group->data = array(
     'label' => 'African American',
-    'weight' => '91',
+    'weight' => '92',
     'children' => array(
       0 => 'field_advocacy_african_am_male',
       1 => 'field_advocacy_african_am_female',
@@ -55,7 +55,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_advocacy_info';
   $field_group->data = array(
     'label' => 'African American',
-    'weight' => '105',
+    'weight' => '106',
     'children' => array(
       0 => 'field_advocacy_african_am_male',
       1 => 'field_advocacy_african_am_female',
@@ -89,7 +89,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_advocacy_info';
   $field_group->data = array(
     'label' => 'Asian American',
-    'weight' => '89',
+    'weight' => '90',
     'children' => array(
       0 => 'field_advocacy_asian_am_female',
       1 => 'field_advocacy_asian_am_male',
@@ -123,7 +123,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_advocacy_info';
   $field_group->data = array(
     'label' => 'Asian American',
-    'weight' => '103',
+    'weight' => '104',
     'children' => array(
       0 => 'field_advocacy_asian_am_female',
       1 => 'field_advocacy_asian_am_male',
@@ -157,7 +157,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_advocacy_info';
   $field_group->data = array(
     'label' => 'Hispanic/Latino',
-    'weight' => '88',
+    'weight' => '89',
     'children' => array(
       0 => 'field_advocacy_hispanic_female',
       1 => 'field_advocacy_hispanic_male',
@@ -191,7 +191,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_advocacy_info';
   $field_group->data = array(
     'label' => 'Hispanic/Latino',
-    'weight' => '102',
+    'weight' => '103',
     'children' => array(
       0 => 'field_advocacy_hispanic_female',
       1 => 'field_advocacy_hispanic_male',
@@ -224,17 +224,16 @@ function civic_engagement_field_group_info() {
   $field_group->mode = 'default';
   $field_group->parent_name = 'group_advocacy_info';
   $field_group->data = array(
-    'label' => 'Total Number Served or Registered (Male and Female)',
-    'weight' => '93',
+    'label' => ' ',
+    'weight' => '94',
     'children' => array(
       0 => 'field_advocacy_societal_impact',
       1 => 'field_advocacy_spacer',
     ),
     'format_type' => 'div',
     'format_settings' => array(
-      'label' => 'Total Number Served or Registered (Male and Female)',
+      'label' => ' ',
       'instance_settings' => array(
-        'required_fields' => 1,
         'id' => '',
         'classes' => 'group-advocacy-impact field-group-div nulTableRow',
         'description' => '',
@@ -259,11 +258,10 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_advocacy_info';
   $field_group->data = array(
     'label' => 'Total Number Served or Registered (Male and Female)',
-    'weight' => '107',
+    'weight' => '108',
     'children' => array(
       0 => 'field_advocacy_societal_impact',
       1 => 'field_advocacy_spacer',
-      2 => 'field_advocacy_total',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -297,14 +295,15 @@ function civic_engagement_field_group_info() {
     'weight' => '13',
     'children' => array(
       0 => 'field_advocacy_efforts',
-      1 => 'group_advocacy_race',
-      2 => 'group_advocacy_white',
-      3 => 'group_advocacy_hispanic',
-      4 => 'group_advocacy_asian_am',
-      5 => 'group_advocacy_native_am',
-      6 => 'group_advocacy_african_am',
-      7 => 'group_advocacy_other',
-      8 => 'group_advocacy_impact',
+      1 => 'field_advocacy_total',
+      2 => 'group_advocacy_race',
+      3 => 'group_advocacy_white',
+      4 => 'group_advocacy_hispanic',
+      5 => 'group_advocacy_asian_am',
+      6 => 'group_advocacy_native_am',
+      7 => 'group_advocacy_african_am',
+      8 => 'group_advocacy_other',
+      9 => 'group_advocacy_impact',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -337,14 +336,15 @@ function civic_engagement_field_group_info() {
     'weight' => '108',
     'children' => array(
       0 => 'field_advocacy_efforts',
-      1 => 'group_advocacy_race',
-      2 => 'group_advocacy_white',
-      3 => 'group_advocacy_hispanic',
-      4 => 'group_advocacy_asian_am',
-      5 => 'group_advocacy_native_am',
-      6 => 'group_advocacy_african_am',
-      7 => 'group_advocacy_other',
-      8 => 'group_advocacy_impact',
+      1 => 'field_advocacy_total',
+      2 => 'group_advocacy_race',
+      3 => 'group_advocacy_white',
+      4 => 'group_advocacy_hispanic',
+      5 => 'group_advocacy_asian_am',
+      6 => 'group_advocacy_native_am',
+      7 => 'group_advocacy_african_am',
+      8 => 'group_advocacy_other',
+      9 => 'group_advocacy_impact',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -375,7 +375,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_advocacy_info';
   $field_group->data = array(
     'label' => 'Native American',
-    'weight' => '90',
+    'weight' => '91',
     'children' => array(
       0 => 'field_advocacy_native_am_female',
       1 => 'field_advocacy_native_am_male',
@@ -409,7 +409,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_advocacy_info';
   $field_group->data = array(
     'label' => 'Native American',
-    'weight' => '104',
+    'weight' => '105',
     'children' => array(
       0 => 'field_advocacy_native_am_female',
       1 => 'field_advocacy_native_am_male',
@@ -443,7 +443,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_advocacy_info';
   $field_group->data = array(
     'label' => 'Other',
-    'weight' => '92',
+    'weight' => '93',
     'children' => array(
       0 => 'field_advocacy_other_female',
       1 => 'field_advocacy_other_male',
@@ -477,7 +477,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_advocacy_info';
   $field_group->data = array(
     'label' => 'Other',
-    'weight' => '106',
+    'weight' => '107',
     'children' => array(
       0 => 'field_advocacy_other_female',
       1 => 'field_advocacy_other_male',
@@ -511,7 +511,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_advocacy_info';
   $field_group->data = array(
     'label' => 'Race',
-    'weight' => '86',
+    'weight' => '87',
     'children' => array(
       0 => 'field_advocacy_female',
       1 => 'field_advocacy_male',
@@ -545,7 +545,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_advocacy_info';
   $field_group->data = array(
     'label' => 'Race',
-    'weight' => '100',
+    'weight' => '101',
     'children' => array(
       0 => 'field_advocacy_female',
       1 => 'field_advocacy_male',
@@ -579,7 +579,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_advocacy_info';
   $field_group->data = array(
     'label' => 'White',
-    'weight' => '87',
+    'weight' => '88',
     'children' => array(
       0 => 'field_advocacy_white_female',
       1 => 'field_advocacy_white_male',
@@ -613,7 +613,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_advocacy_info';
   $field_group->data = array(
     'label' => 'White',
-    'weight' => '101',
+    'weight' => '102',
     'children' => array(
       0 => 'field_advocacy_white_female',
       1 => 'field_advocacy_white_male',
@@ -717,7 +717,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_crja_info';
   $field_group->data = array(
     'label' => 'African American',
-    'weight' => '16',
+    'weight' => '17',
     'children' => array(
       0 => 'field_crja_african_am_female',
       1 => 'field_crja_african_am_male',
@@ -751,7 +751,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_crja_info';
   $field_group->data = array(
     'label' => 'African American',
-    'weight' => '111',
+    'weight' => '112',
     'children' => array(
       0 => 'field_crja_african_am_female',
       1 => 'field_crja_african_am_male',
@@ -785,7 +785,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_crja_info';
   $field_group->data = array(
     'label' => 'Asian American',
-    'weight' => '14',
+    'weight' => '15',
     'children' => array(
       0 => 'field_crja_asian_am_female',
       1 => 'field_crja_asian_am_male',
@@ -819,7 +819,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_crja_info';
   $field_group->data = array(
     'label' => 'Asian American',
-    'weight' => '109',
+    'weight' => '110',
     'children' => array(
       0 => 'field_crja_asian_am_female',
       1 => 'field_crja_asian_am_male',
@@ -853,7 +853,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_crja_info';
   $field_group->data = array(
     'label' => 'Hispanic/Latino',
-    'weight' => '13',
+    'weight' => '14',
     'children' => array(
       0 => 'field_crja_hispanic_female',
       1 => 'field_crja_hispanic_male',
@@ -887,7 +887,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_crja_info';
   $field_group->data = array(
     'label' => 'Hispanic/Latino',
-    'weight' => '108',
+    'weight' => '109',
     'children' => array(
       0 => 'field_crja_hispanic_female',
       1 => 'field_crja_hispanic_male',
@@ -920,17 +920,16 @@ function civic_engagement_field_group_info() {
   $field_group->mode = 'default';
   $field_group->parent_name = 'group_crja_info';
   $field_group->data = array(
-    'label' => 'Total Number Served or Registered (Male and Female)',
-    'weight' => '18',
+    'label' => ' ',
+    'weight' => '19',
     'children' => array(
       0 => 'field_crja_spacer',
       1 => 'field_crja_societal_impact',
     ),
     'format_type' => 'div',
     'format_settings' => array(
-      'label' => 'Total Number Served or Registered (Male and Female)',
+      'label' => ' ',
       'instance_settings' => array(
-        'required_fields' => 1,
         'id' => '',
         'classes' => 'group-crja-impact field-group-div nulTableRow',
         'description' => '',
@@ -955,11 +954,10 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_crja_info';
   $field_group->data = array(
     'label' => 'Total Number Served or Registered (Male and Female)',
-    'weight' => '113',
+    'weight' => '114',
     'children' => array(
       0 => 'field_crja_spacer',
       1 => 'field_crja_societal_impact',
-      2 => 'field_crja_total',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -993,14 +991,15 @@ function civic_engagement_field_group_info() {
     'weight' => '11',
     'children' => array(
       0 => 'field_crja',
-      1 => 'group_crja_race',
-      2 => 'group_crja_white',
-      3 => 'group_crja_hispanic',
-      4 => 'group_crja_asian_am',
-      5 => 'group_crja_native_am',
-      6 => 'group_crja_african_am',
-      7 => 'group_crja_other',
-      8 => 'group_crja_impact',
+      1 => 'field_crja_total',
+      2 => 'group_crja_race',
+      3 => 'group_crja_white',
+      4 => 'group_crja_hispanic',
+      5 => 'group_crja_asian_am',
+      6 => 'group_crja_native_am',
+      7 => 'group_crja_african_am',
+      8 => 'group_crja_other',
+      9 => 'group_crja_impact',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -1033,14 +1032,15 @@ function civic_engagement_field_group_info() {
     'weight' => '106',
     'children' => array(
       0 => 'field_crja',
-      1 => 'group_crja_race',
-      2 => 'group_crja_white',
-      3 => 'group_crja_hispanic',
-      4 => 'group_crja_asian_am',
-      5 => 'group_crja_native_am',
-      6 => 'group_crja_african_am',
-      7 => 'group_crja_other',
-      8 => 'group_crja_impact',
+      1 => 'field_crja_total',
+      2 => 'group_crja_race',
+      3 => 'group_crja_white',
+      4 => 'group_crja_hispanic',
+      5 => 'group_crja_asian_am',
+      6 => 'group_crja_native_am',
+      7 => 'group_crja_african_am',
+      8 => 'group_crja_other',
+      9 => 'group_crja_impact',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -1071,7 +1071,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_crja_info';
   $field_group->data = array(
     'label' => 'Native American',
-    'weight' => '15',
+    'weight' => '16',
     'children' => array(
       0 => 'field_crja_native_am_female',
       1 => 'field_crja_native_am_male',
@@ -1105,7 +1105,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_crja_info';
   $field_group->data = array(
     'label' => 'Native American',
-    'weight' => '110',
+    'weight' => '111',
     'children' => array(
       0 => 'field_crja_native_am_female',
       1 => 'field_crja_native_am_male',
@@ -1139,7 +1139,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_crja_info';
   $field_group->data = array(
     'label' => 'Other',
-    'weight' => '17',
+    'weight' => '18',
     'children' => array(
       0 => 'field_crja_other_female',
       1 => 'field_crja_other_male',
@@ -1173,7 +1173,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_crja_info';
   $field_group->data = array(
     'label' => 'Other',
-    'weight' => '112',
+    'weight' => '113',
     'children' => array(
       0 => 'field_crja_other_female',
       1 => 'field_crja_other_male',
@@ -1207,7 +1207,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_crja_info';
   $field_group->data = array(
     'label' => 'Race',
-    'weight' => '11',
+    'weight' => '12',
     'children' => array(
       0 => 'field_pb_female',
       1 => 'field_pb_male',
@@ -1241,7 +1241,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_crja_info';
   $field_group->data = array(
     'label' => 'Race',
-    'weight' => '106',
+    'weight' => '107',
     'children' => array(
       0 => 'field_crja_female',
       1 => 'field_crja_male',
@@ -1348,7 +1348,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_crja_info';
   $field_group->data = array(
     'label' => 'White',
-    'weight' => '12',
+    'weight' => '13',
     'children' => array(
       0 => 'field_crja_white_female',
       1 => 'field_crja_white_male',
@@ -1382,7 +1382,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_crja_info';
   $field_group->data = array(
     'label' => 'White',
-    'weight' => '107',
+    'weight' => '108',
     'children' => array(
       0 => 'field_crja_white_female',
       1 => 'field_crja_white_male',
@@ -1416,7 +1416,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_forum_info';
   $field_group->data = array(
     'label' => 'African American',
-    'weight' => '92',
+    'weight' => '93',
     'children' => array(
       0 => 'field_forums_african_am_female',
       1 => 'field_forums_african_am_male',
@@ -1450,7 +1450,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_forum_info';
   $field_group->data = array(
     'label' => 'African American',
-    'weight' => '107',
+    'weight' => '108',
     'children' => array(
       0 => 'field_forums_african_am_female',
       1 => 'field_forums_african_am_male',
@@ -1484,7 +1484,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_forum_info';
   $field_group->data = array(
     'label' => 'Asian American',
-    'weight' => '90',
+    'weight' => '91',
     'children' => array(
       0 => 'field_forums_asian_am_female',
       1 => 'field_forums_asian_am_male',
@@ -1518,7 +1518,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_forum_info';
   $field_group->data = array(
     'label' => 'Asian American',
-    'weight' => '105',
+    'weight' => '106',
     'children' => array(
       0 => 'field_forums_asian_am_female',
       1 => 'field_forums_asian_am_male',
@@ -1552,7 +1552,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_forum_info';
   $field_group->data = array(
     'label' => 'Hispanic/Latino',
-    'weight' => '89',
+    'weight' => '90',
     'children' => array(
       0 => 'field_forums_hispanic_female',
       1 => 'field_forums_hispanic_male',
@@ -1586,7 +1586,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_forum_info';
   $field_group->data = array(
     'label' => 'Hispanic/Latino',
-    'weight' => '104',
+    'weight' => '105',
     'children' => array(
       0 => 'field_forums_hispanic_female',
       1 => 'field_forums_hispanic_male',
@@ -1619,17 +1619,16 @@ function civic_engagement_field_group_info() {
   $field_group->mode = 'default';
   $field_group->parent_name = 'group_forum_info';
   $field_group->data = array(
-    'label' => 'Total Number Served or Registered (Male and Female)',
-    'weight' => '94',
+    'label' => ' ',
+    'weight' => '95',
     'children' => array(
       0 => 'field_forums_societal_impact',
       1 => 'field_forums_spacer',
     ),
     'format_type' => 'div',
     'format_settings' => array(
-      'label' => 'Total Number Served or Registered (Male and Female)',
+      'label' => ' ',
       'instance_settings' => array(
-        'required_fields' => 1,
         'id' => '',
         'classes' => 'group-forum-impact field-group-div nulTableRow',
         'description' => '',
@@ -1654,11 +1653,10 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_forum_info';
   $field_group->data = array(
     'label' => 'Total Number Served or Registered (Male and Female)',
-    'weight' => '109',
+    'weight' => '110',
     'children' => array(
       0 => 'field_forums_societal_impact',
       1 => 'field_forums_spacer',
-      2 => 'field_forums_total',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -1692,14 +1690,15 @@ function civic_engagement_field_group_info() {
     'weight' => '24',
     'children' => array(
       0 => 'field_community_forums',
-      1 => 'group_forum_race',
-      2 => 'group_forum_white',
-      3 => 'group_forum_hispanic',
-      4 => 'group_forum_asian_am',
-      5 => 'group_forum_native_am',
-      6 => 'group_forum_african_am',
-      7 => 'group_forum_other',
-      8 => 'group_forum_impact',
+      1 => 'field_forums_total',
+      2 => 'group_forum_race',
+      3 => 'group_forum_white',
+      4 => 'group_forum_hispanic',
+      5 => 'group_forum_asian_am',
+      6 => 'group_forum_native_am',
+      7 => 'group_forum_african_am',
+      8 => 'group_forum_other',
+      9 => 'group_forum_impact',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -1729,17 +1728,18 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_ce';
   $field_group->data = array(
     'label' => 'Community Forums',
-    'weight' => '113',
+    'weight' => '120',
     'children' => array(
       0 => 'field_community_forums',
-      1 => 'group_forum_race',
-      2 => 'group_forum_white',
-      3 => 'group_forum_hispanic',
-      4 => 'group_forum_asian_am',
-      5 => 'group_forum_native_am',
-      6 => 'group_forum_african_am',
-      7 => 'group_forum_other',
-      8 => 'group_forum_impact',
+      1 => 'field_forums_total',
+      2 => 'group_forum_race',
+      3 => 'group_forum_white',
+      4 => 'group_forum_hispanic',
+      5 => 'group_forum_asian_am',
+      6 => 'group_forum_native_am',
+      7 => 'group_forum_african_am',
+      8 => 'group_forum_other',
+      9 => 'group_forum_impact',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -1770,7 +1770,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_forum_info';
   $field_group->data = array(
     'label' => 'Native American',
-    'weight' => '91',
+    'weight' => '92',
     'children' => array(
       0 => 'field_forums_native_am_female',
       1 => 'field_forums_native_am_male',
@@ -1804,7 +1804,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_forum_info';
   $field_group->data = array(
     'label' => 'Native American',
-    'weight' => '106',
+    'weight' => '107',
     'children' => array(
       0 => 'field_forums_native_am_female',
       1 => 'field_forums_native_am_male',
@@ -1838,7 +1838,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_forum_info';
   $field_group->data = array(
     'label' => 'Other',
-    'weight' => '93',
+    'weight' => '94',
     'children' => array(
       0 => 'field_forums_other_female',
       1 => 'field_forums_other_male',
@@ -1872,7 +1872,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_forum_info';
   $field_group->data = array(
     'label' => 'Other',
-    'weight' => '108',
+    'weight' => '109',
     'children' => array(
       0 => 'field_forums_other_female',
       1 => 'field_forums_other_male',
@@ -1906,7 +1906,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_forum_info';
   $field_group->data = array(
     'label' => 'Race',
-    'weight' => '87',
+    'weight' => '88',
     'children' => array(
       0 => 'field_co_female',
       1 => 'field_co_male',
@@ -1940,7 +1940,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_forum_info';
   $field_group->data = array(
     'label' => 'Race',
-    'weight' => '102',
+    'weight' => '103',
     'children' => array(
       0 => 'field_cf_female',
       1 => 'field_cf_male',
@@ -1974,7 +1974,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_forum_info';
   $field_group->data = array(
     'label' => 'White',
-    'weight' => '88',
+    'weight' => '89',
     'children' => array(
       0 => 'field_forums_white_female',
       1 => 'field_forums_white_male',
@@ -2008,7 +2008,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_forum_info';
   $field_group->data = array(
     'label' => 'White',
-    'weight' => '103',
+    'weight' => '104',
     'children' => array(
       0 => 'field_forums_white_female',
       1 => 'field_forums_white_male',
@@ -2042,7 +2042,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_org_info';
   $field_group->data = array(
     'label' => 'African American',
-    'weight' => '99',
+    'weight' => '100',
     'children' => array(
       0 => 'field_comm_org_african_am_female',
       1 => 'field_comm_org_african_am_male',
@@ -2076,7 +2076,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_org_info';
   $field_group->data = array(
     'label' => 'African American',
-    'weight' => '14',
+    'weight' => '15',
     'children' => array(
       0 => 'field_comm_org_african_am_female',
       1 => 'field_comm_org_african_am_male',
@@ -2110,7 +2110,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_org_info';
   $field_group->data = array(
     'label' => 'Asian American',
-    'weight' => '97',
+    'weight' => '98',
     'children' => array(
       0 => 'field_comm_org_asian_am_male',
       1 => 'field_comm_org_asian_am_female',
@@ -2144,7 +2144,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_org_info';
   $field_group->data = array(
     'label' => 'Asian American',
-    'weight' => '12',
+    'weight' => '13',
     'children' => array(
       0 => 'field_comm_org_asian_am_male',
       1 => 'field_comm_org_asian_am_female',
@@ -2178,7 +2178,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_org_info';
   $field_group->data = array(
     'label' => 'Hispanic/Latino',
-    'weight' => '96',
+    'weight' => '97',
     'children' => array(
       0 => 'field_comm_org_hispanic_female',
       1 => 'field_comm_org_hispanic_male',
@@ -2212,7 +2212,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_org_info';
   $field_group->data = array(
     'label' => 'Hispanic/Latino',
-    'weight' => '11',
+    'weight' => '12',
     'children' => array(
       0 => 'field_comm_org_hispanic_female',
       1 => 'field_comm_org_hispanic_male',
@@ -2245,17 +2245,16 @@ function civic_engagement_field_group_info() {
   $field_group->mode = 'default';
   $field_group->parent_name = 'group_org_info';
   $field_group->data = array(
-    'label' => 'Total Number Served or Registered (Male and Female)',
-    'weight' => '101',
+    'label' => ' ',
+    'weight' => '102',
     'children' => array(
       0 => 'field_comm_org_societal_impact',
       1 => 'field_org_spacer_impact',
     ),
     'format_type' => 'div',
     'format_settings' => array(
-      'label' => 'Total Number Served or Registered (Male and Female)',
+      'label' => ' ',
       'instance_settings' => array(
-        'required_fields' => 1,
         'id' => '',
         'classes' => 'group-org-impcat field-group-div nulTableRow',
         'description' => '',
@@ -2280,11 +2279,10 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_org_info';
   $field_group->data = array(
     'label' => 'Total Number Served or Registered (Male and Female)',
-    'weight' => '16',
+    'weight' => '17',
     'children' => array(
       0 => 'field_comm_org_societal_impact',
       1 => 'field_org_spacer_impact',
-      2 => 'field_comm_org_total',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -2318,14 +2316,15 @@ function civic_engagement_field_group_info() {
     'weight' => '23',
     'children' => array(
       0 => 'field_community_organizations',
-      1 => 'group_org_race',
-      2 => 'group_org_white',
-      3 => 'group_org_hispanic',
-      4 => 'group_org_asian_am',
-      5 => 'group_org_native_am',
-      6 => 'group_org_african_am',
-      7 => 'group_org_other',
-      8 => 'group_org_impcat',
+      1 => 'field_comm_org_total',
+      2 => 'group_org_race',
+      3 => 'group_org_white',
+      4 => 'group_org_hispanic',
+      5 => 'group_org_asian_am',
+      6 => 'group_org_native_am',
+      7 => 'group_org_african_am',
+      8 => 'group_org_other',
+      9 => 'group_org_impcat',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -2355,17 +2354,18 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_ce';
   $field_group->data = array(
     'label' => 'Community Organizations',
-    'weight' => '112',
+    'weight' => '119',
     'children' => array(
       0 => 'field_community_organizations',
-      1 => 'group_org_race',
-      2 => 'group_org_white',
-      3 => 'group_org_hispanic',
-      4 => 'group_org_asian_am',
-      5 => 'group_org_native_am',
-      6 => 'group_org_african_am',
-      7 => 'group_org_other',
-      8 => 'group_org_impcat',
+      1 => 'field_comm_org_total',
+      2 => 'group_org_race',
+      3 => 'group_org_white',
+      4 => 'group_org_hispanic',
+      5 => 'group_org_asian_am',
+      6 => 'group_org_native_am',
+      7 => 'group_org_african_am',
+      8 => 'group_org_other',
+      9 => 'group_org_impcat',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -2396,7 +2396,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_org_info';
   $field_group->data = array(
     'label' => 'Native American',
-    'weight' => '98',
+    'weight' => '99',
     'children' => array(
       0 => 'field_comm_org_native_am_male',
       1 => 'field_comm_org_native_am_female',
@@ -2430,7 +2430,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_org_info';
   $field_group->data = array(
     'label' => 'Native American',
-    'weight' => '13',
+    'weight' => '14',
     'children' => array(
       0 => 'field_comm_org_native_am_male',
       1 => 'field_comm_org_native_am_female',
@@ -2464,7 +2464,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_org_info';
   $field_group->data = array(
     'label' => 'Other',
-    'weight' => '100',
+    'weight' => '101',
     'children' => array(
       0 => 'field_comm_org_other_female',
       1 => 'field_comm_org_other_male',
@@ -2498,7 +2498,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_org_info';
   $field_group->data = array(
     'label' => 'Other',
-    'weight' => '15',
+    'weight' => '16',
     'children' => array(
       0 => 'field_comm_org_other_female',
       1 => 'field_comm_org_other_male',
@@ -2532,7 +2532,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_org_info';
   $field_group->data = array(
     'label' => 'Race',
-    'weight' => '94',
+    'weight' => '95',
     'children' => array(
       0 => 'field_cf_female',
       1 => 'field_cf_male',
@@ -2566,7 +2566,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_org_info';
   $field_group->data = array(
     'label' => 'Race',
-    'weight' => '9',
+    'weight' => '10',
     'children' => array(
       0 => 'field_co_female',
       1 => 'field_co_male',
@@ -2600,7 +2600,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_org_info';
   $field_group->data = array(
     'label' => 'White',
-    'weight' => '95',
+    'weight' => '96',
     'children' => array(
       0 => 'field_comm_org_white_female',
       1 => 'field_comm_org_white_male',
@@ -2634,7 +2634,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_org_info';
   $field_group->data = array(
     'label' => 'White',
-    'weight' => '10',
+    'weight' => '11',
     'children' => array(
       0 => 'field_comm_org_white_female',
       1 => 'field_comm_org_white_male',
@@ -2668,7 +2668,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_police_info';
   $field_group->data = array(
     'label' => 'African American',
-    'weight' => '105',
+    'weight' => '106',
     'children' => array(
       0 => 'field_police_african_am_female',
       1 => 'field_police_african_am_male',
@@ -2702,7 +2702,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_police_info';
   $field_group->data = array(
     'label' => 'African American',
-    'weight' => '112',
+    'weight' => '113',
     'children' => array(
       0 => 'field_police_african_am_female',
       1 => 'field_police_african_am_male',
@@ -2736,7 +2736,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_police_info';
   $field_group->data = array(
     'label' => 'Asian American',
-    'weight' => '103',
+    'weight' => '104',
     'children' => array(
       0 => 'field_police_asian_am_male',
       1 => 'field_police_asian_am_female',
@@ -2770,7 +2770,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_police_info';
   $field_group->data = array(
     'label' => 'Asian American',
-    'weight' => '111',
+    'weight' => '112',
     'children' => array(
       0 => 'field_police_asian_am_male',
       1 => 'field_police_asian_am_female',
@@ -2804,7 +2804,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_police_info';
   $field_group->data = array(
     'label' => 'Hispanic/Latino',
-    'weight' => '102',
+    'weight' => '103',
     'children' => array(
       0 => 'field_police_hispanic_female',
       1 => 'field_police_hispanic_male',
@@ -2838,7 +2838,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_police_info';
   $field_group->data = array(
     'label' => 'Hispanic/Latino',
-    'weight' => '110',
+    'weight' => '111',
     'children' => array(
       0 => 'field_police_hispanic_female',
       1 => 'field_police_hispanic_male',
@@ -2871,17 +2871,16 @@ function civic_engagement_field_group_info() {
   $field_group->mode = 'default';
   $field_group->parent_name = 'group_police_info';
   $field_group->data = array(
-    'label' => 'Total Number Served or Registered (Male and Female)',
-    'weight' => '107',
+    'label' => ' ',
+    'weight' => '108',
     'children' => array(
       0 => 'field_pb_spacer',
       1 => 'field_police_societal_impact',
     ),
     'format_type' => 'div',
     'format_settings' => array(
-      'label' => 'Total Number Served or Registered (Male and Female)',
+      'label' => ' ',
       'instance_settings' => array(
-        'required_fields' => 1,
         'id' => '',
         'classes' => 'group-police-impact field-group-div nulTableRow',
         'description' => '',
@@ -2906,11 +2905,10 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_police_info';
   $field_group->data = array(
     'label' => 'Total Number Served or Registered (Male and Female)',
-    'weight' => '115',
+    'weight' => '116',
     'children' => array(
       0 => 'field_pb_spacer',
       1 => 'field_police_societal_impact',
-      2 => 'field_police_total',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -2944,14 +2942,15 @@ function civic_engagement_field_group_info() {
     'weight' => '12',
     'children' => array(
       0 => 'field_police_brutality',
-      1 => 'group_police_race',
-      2 => 'group_police_white',
-      3 => 'group_police_hispanic',
-      4 => 'group_police_asian_am',
-      5 => 'group_police_native_am',
-      6 => 'group_police_african_am',
-      7 => 'group_police_other',
-      8 => 'group_police_impact',
+      1 => 'field_police_total',
+      2 => 'group_police_race',
+      3 => 'group_police_white',
+      4 => 'group_police_hispanic',
+      5 => 'group_police_asian_am',
+      6 => 'group_police_native_am',
+      7 => 'group_police_african_am',
+      8 => 'group_police_other',
+      9 => 'group_police_impact',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -2984,14 +2983,15 @@ function civic_engagement_field_group_info() {
     'weight' => '107',
     'children' => array(
       0 => 'field_police_brutality',
-      1 => 'group_police_race',
-      2 => 'group_police_white',
-      3 => 'group_police_hispanic',
-      4 => 'group_police_asian_am',
-      5 => 'group_police_native_am',
-      6 => 'group_police_african_am',
-      7 => 'group_police_other',
-      8 => 'group_police_impact',
+      1 => 'field_police_total',
+      2 => 'group_police_race',
+      3 => 'group_police_white',
+      4 => 'group_police_hispanic',
+      5 => 'group_police_asian_am',
+      6 => 'group_police_native_am',
+      7 => 'group_police_african_am',
+      8 => 'group_police_other',
+      9 => 'group_police_impact',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -3022,7 +3022,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_police_info';
   $field_group->data = array(
     'label' => 'Native American',
-    'weight' => '104',
+    'weight' => '105',
     'children' => array(
       0 => 'field_police_native_am_female',
       1 => 'field_police_native_am_male',
@@ -3056,7 +3056,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_police_info';
   $field_group->data = array(
     'label' => 'Native American',
-    'weight' => '113',
+    'weight' => '114',
     'children' => array(
       0 => 'field_police_native_am_female',
       1 => 'field_police_native_am_male',
@@ -3090,7 +3090,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_police_info';
   $field_group->data = array(
     'label' => 'Other',
-    'weight' => '106',
+    'weight' => '107',
     'children' => array(
       0 => 'field_police_other_male',
       1 => 'field_police_other_female',
@@ -3124,7 +3124,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_police_info';
   $field_group->data = array(
     'label' => 'Other',
-    'weight' => '114',
+    'weight' => '115',
     'children' => array(
       0 => 'field_police_other_male',
       1 => 'field_police_other_female',
@@ -3158,7 +3158,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_police_info';
   $field_group->data = array(
     'label' => 'Race',
-    'weight' => '100',
+    'weight' => '101',
     'children' => array(
       0 => 'field_crja_female',
       1 => 'field_crja_male',
@@ -3192,7 +3192,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_police_info';
   $field_group->data = array(
     'label' => 'Race',
-    'weight' => '108',
+    'weight' => '109',
     'children' => array(
       0 => 'field_pb_female',
       1 => 'field_pb_male',
@@ -3226,7 +3226,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_police_info';
   $field_group->data = array(
     'label' => 'White',
-    'weight' => '101',
+    'weight' => '102',
     'children' => array(
       0 => 'field_police_white_male',
       1 => 'field_police_white_female',
@@ -3260,7 +3260,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_police_info';
   $field_group->data = array(
     'label' => 'White',
-    'weight' => '109',
+    'weight' => '110',
     'children' => array(
       0 => 'field_police_white_male',
       1 => 'field_police_white_female',
@@ -3294,7 +3294,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_voter_info';
   $field_group->data = array(
     'label' => 'African American',
-    'weight' => '27',
+    'weight' => '28',
     'children' => array(
       0 => 'field_voter_african_am_male',
       1 => 'field_voter_african_am_female',
@@ -3328,7 +3328,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_voter_info';
   $field_group->data = array(
     'label' => 'African American',
-    'weight' => '117',
+    'weight' => '118',
     'children' => array(
       0 => 'field_voter_african_am_male',
       1 => 'field_voter_african_am_female',
@@ -3362,7 +3362,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_voter_info';
   $field_group->data = array(
     'label' => 'Asian American',
-    'weight' => '25',
+    'weight' => '26',
     'children' => array(
       0 => 'field_voter_asian_am_male',
       1 => 'field_voter_asian_am_female',
@@ -3396,7 +3396,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_voter_info';
   $field_group->data = array(
     'label' => 'Asian American',
-    'weight' => '115',
+    'weight' => '116',
     'children' => array(
       0 => 'field_voter_asian_am_male',
       1 => 'field_voter_asian_am_female',
@@ -3430,7 +3430,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_voter_info';
   $field_group->data = array(
     'label' => 'Hispanic/Latino',
-    'weight' => '24',
+    'weight' => '25',
     'children' => array(
       0 => 'field_voter_hispanic_female',
       1 => 'field_voter_hispanic_male',
@@ -3464,7 +3464,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_voter_info';
   $field_group->data = array(
     'label' => 'Hispanic/Latino',
-    'weight' => '114',
+    'weight' => '115',
     'children' => array(
       0 => 'field_voter_hispanic_female',
       1 => 'field_voter_hispanic_male',
@@ -3497,17 +3497,16 @@ function civic_engagement_field_group_info() {
   $field_group->mode = 'default';
   $field_group->parent_name = 'group_voter_info';
   $field_group->data = array(
-    'label' => 'Total Number Served or Registered (Male and Female)',
-    'weight' => '29',
+    'label' => ' ',
+    'weight' => '30',
     'children' => array(
       0 => 'field_voter_spacer',
       1 => 'field_voter_societal_impact',
     ),
     'format_type' => 'div',
     'format_settings' => array(
-      'label' => 'Total Number Served or Registered (Male and Female)',
+      'label' => ' ',
       'instance_settings' => array(
-        'required_fields' => 1,
         'id' => '',
         'classes' => 'group-voter-impact field-group-div nulTableRow',
         'description' => '',
@@ -3531,16 +3530,15 @@ function civic_engagement_field_group_info() {
   $field_group->mode = 'form';
   $field_group->parent_name = 'group_voter_info';
   $field_group->data = array(
-    'label' => 'Total Number Served or Registered (Male and Female)',
-    'weight' => '119',
+    'label' => ' ',
+    'weight' => '120',
     'children' => array(
       0 => 'field_voter_spacer',
       1 => 'field_voter_societal_impact',
-      2 => 'field_voter_total',
     ),
     'format_type' => 'div',
     'format_settings' => array(
-      'label' => 'Total Number Served or Registered (Male and Female)',
+      'label' => ' ',
       'instance_settings' => array(
         'required_fields' => 1,
         'id' => '',
@@ -3571,14 +3569,15 @@ function civic_engagement_field_group_info() {
     'children' => array(
       0 => 'field_ce_voter_help',
       1 => 'field_voter_registration',
-      2 => 'group_voter_race',
-      3 => 'group_voter_white',
-      4 => 'group_voter_hispanic',
-      5 => 'group_voter_asian_am',
-      6 => 'group_voter_native_am',
-      7 => 'group_voter_african_am',
-      8 => 'group_voter_other',
-      9 => 'group_voter_impact',
+      2 => 'field_voter_total',
+      3 => 'group_voter_race',
+      4 => 'group_voter_white',
+      5 => 'group_voter_hispanic',
+      6 => 'group_voter_asian_am',
+      7 => 'group_voter_native_am',
+      8 => 'group_voter_african_am',
+      9 => 'group_voter_other',
+      10 => 'group_voter_impact',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -3608,18 +3607,19 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_ce';
   $field_group->data = array(
     'label' => 'Voter Registration',
-    'weight' => '111',
+    'weight' => '118',
     'children' => array(
       0 => 'field_ce_voter_help',
       1 => 'field_voter_registration',
-      2 => 'group_voter_race',
-      3 => 'group_voter_white',
-      4 => 'group_voter_hispanic',
-      5 => 'group_voter_asian_am',
-      6 => 'group_voter_native_am',
-      7 => 'group_voter_african_am',
-      8 => 'group_voter_other',
-      9 => 'group_voter_impact',
+      2 => 'field_voter_total',
+      3 => 'group_voter_race',
+      4 => 'group_voter_white',
+      5 => 'group_voter_hispanic',
+      6 => 'group_voter_asian_am',
+      7 => 'group_voter_native_am',
+      8 => 'group_voter_african_am',
+      9 => 'group_voter_other',
+      10 => 'group_voter_impact',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -3650,7 +3650,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_voter_info';
   $field_group->data = array(
     'label' => 'Native American',
-    'weight' => '26',
+    'weight' => '27',
     'children' => array(
       0 => 'field_voter_native_am_male',
       1 => 'field_voter_native_am_female',
@@ -3684,7 +3684,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_voter_info';
   $field_group->data = array(
     'label' => 'Native American',
-    'weight' => '116',
+    'weight' => '117',
     'children' => array(
       0 => 'field_voter_native_am_male',
       1 => 'field_voter_native_am_female',
@@ -3718,7 +3718,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_voter_info';
   $field_group->data = array(
     'label' => 'Other',
-    'weight' => '28',
+    'weight' => '29',
     'children' => array(
       0 => 'field_voter_other_male',
       1 => 'field_voter_other_female',
@@ -3752,7 +3752,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_voter_info';
   $field_group->data = array(
     'label' => 'Other',
-    'weight' => '118',
+    'weight' => '119',
     'children' => array(
       0 => 'field_voter_other_male',
       1 => 'field_voter_other_female',
@@ -3786,7 +3786,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_voter_info';
   $field_group->data = array(
     'label' => 'Race',
-    'weight' => '22',
+    'weight' => '23',
     'children' => array(
       0 => 'field_female_ce_voter',
       1 => 'field_voter_male',
@@ -3820,7 +3820,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_voter_info';
   $field_group->data = array(
     'label' => 'Race',
-    'weight' => '112',
+    'weight' => '113',
     'children' => array(
       0 => 'field_female_ce_voter',
       1 => 'field_voter_male',
@@ -3854,7 +3854,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_voter_info';
   $field_group->data = array(
     'label' => 'White',
-    'weight' => '23',
+    'weight' => '24',
     'children' => array(
       0 => 'field_voter_white_male',
       1 => 'field_voter_white_female',
@@ -3888,7 +3888,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_voter_info';
   $field_group->data = array(
     'label' => 'White',
-    'weight' => '113',
+    'weight' => '114',
     'children' => array(
       0 => 'field_voter_white_male',
       1 => 'field_voter_white_female',
@@ -3913,6 +3913,7 @@ function civic_engagement_field_group_info() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t(' ');
   t('Advocacy');
   t('Advocacy Efforts');
   t('African American');

@@ -18,7 +18,7 @@ function programs_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'paragraphs',
         'settings' => array(
           'view_mode' => 'full',
@@ -59,7 +59,47 @@ function programs_field_default_field_instances() {
       'module' => 'paragraphs',
       'settings' => array(),
       'type' => 'paragraphs_embed',
-      'weight' => 1,
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'node-programs-field_legacy_program_id'.
+  $field_instances['node-programs-field_legacy_program_id'] = array(
+    'bundle' => 'programs',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 15,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_legacy_program_id',
+    'label' => 'legacy program id',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 12,
     ),
   );
 
@@ -72,13 +112,9 @@ function programs_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'bypass_access' => 0,
-          'link' => 1,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 18,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 16,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -111,11 +147,11 @@ function programs_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
-        'weight' => 15,
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -136,7 +172,7 @@ function programs_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 10,
+      'weight' => 0,
     ),
   );
 
@@ -148,7 +184,7 @@ function programs_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -176,7 +212,7 @@ function programs_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 7,
+      'weight' => 9,
     ),
   );
 
@@ -188,7 +224,7 @@ function programs_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -234,7 +270,7 @@ function programs_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -280,7 +316,7 @@ function programs_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -326,7 +362,7 @@ function programs_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -372,7 +408,7 @@ function programs_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -418,7 +454,7 @@ function programs_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -464,7 +500,7 @@ function programs_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -510,7 +546,7 @@ function programs_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -556,7 +592,7 @@ function programs_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -584,7 +620,7 @@ function programs_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 2,
+      'weight' => 4,
     ),
   );
 
@@ -596,7 +632,7 @@ function programs_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -630,7 +666,7 @@ function programs_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 3,
+      'weight' => 5,
     ),
   );
 
@@ -642,11 +678,11 @@ function programs_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 16,
+        'weight' => 13,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -667,12 +703,12 @@ function programs_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 8,
+      'weight' => 10,
     ),
   );
 
-  // Exported field_instance: 'node-programs-field_service_provided'.
-  $field_instances['node-programs-field_service_provided'] = array(
+  // Exported field_instance: 'node-programs-field_services_provided'.
+  $field_instances['node-programs-field_services_provided'] = array(
     'bundle' => 'programs',
     'default_value' => NULL,
     'deleted' => 0,
@@ -680,9 +716,11 @@ function programs_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'module' => 'paragraphs',
+        'settings' => array(
+          'view_mode' => 'full',
+        ),
+        'type' => 'paragraphs_view',
         'weight' => 17,
       ),
       'teaser' => array(
@@ -693,18 +731,40 @@ function programs_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_service_provided',
-    'label' => 'Service Provided',
+    'field_name' => 'field_services_provided',
+    'label' => 'Services Provided',
     'required' => 0,
     'settings' => array(
+      'add_mode' => 'button',
+      'allowed_bundles' => array(
+        'budget_ventures' => -1,
+        'education_services' => -1,
+        'entpr_businesses' => -1,
+        'funding_source' => -1,
+        'health_services' => -1,
+        'program_services' => 'program_services',
+        'service_area' => -1,
+      ),
+      'bundle_weights' => array(
+        'budget_ventures' => 2,
+        'education_services' => 3,
+        'entpr_businesses' => 4,
+        'funding_source' => 5,
+        'health_services' => 6,
+        'program_services' => 14,
+        'service_area' => 7,
+      ),
+      'default_edit_mode' => 'open',
+      'title' => 'Service Provided',
+      'title_multiple' => 'Services Provided',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 1,
-      'module' => 'options',
+      'active' => 0,
+      'module' => 'paragraphs',
       'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 9,
+      'type' => 'paragraphs_embed',
+      'weight' => 3,
     ),
   );
 
@@ -1133,10 +1193,11 @@ function programs_field_default_field_instances() {
   t('Program Area');
   t('Program Types');
   t('Purpose of Program');
-  t('Service Provided');
+  t('Services Provided');
   t('Source type');
   t('funding amount label');
   t('funding source type label');
+  t('legacy program id');
   t('parent census');
 
   return $field_instances;

@@ -61,17 +61,22 @@ function entreuprenuership_and_business_development_program_details_field_defaul
       'type' => 0,
     ),
     'indexes' => array(
-      'format' => array(
-        0 => 'format',
+      'tid' => array(
+        0 => 'tid',
       ),
     ),
     'locked' => 0,
-    'module' => 'text',
+    'module' => 'taxonomy',
     'settings' => array(
-      'max_length' => 255,
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'type_of_venture',
+          'parent' => 0,
+        ),
+      ),
     ),
     'translatable' => 0,
-    'type' => 'text',
+    'type' => 'taxonomy_term_reference',
   );
 
   // Exported field_base: 'field_do_you_offer_programs_of_t'.
@@ -239,8 +244,8 @@ function entreuprenuership_and_business_development_program_details_field_defaul
     'module' => 'markup',
     'settings' => array(
       'markup' => array(
-        'format' => 'filtered_html',
-        'value' => 'Sales',
+        'format' => 'full_html',
+        'value' => '<div class="nulTableCell"><h3>Sales</h3></div>',
       ),
     ),
     'translatable' => 0,
@@ -262,8 +267,8 @@ function entreuprenuership_and_business_development_program_details_field_defaul
     'module' => 'markup',
     'settings' => array(
       'markup' => array(
-        'format' => 'filtered_html',
-        'value' => '# Served',
+        'format' => 'full_html',
+        'value' => '<div class="nulTableCell"><h3># Served</h3></div>',
       ),
     ),
     'translatable' => 0,
@@ -285,8 +290,8 @@ function entreuprenuership_and_business_development_program_details_field_defaul
     'module' => 'markup',
     'settings' => array(
       'markup' => array(
-        'format' => 'filtered_html',
-        'value' => 'Type of Business',
+        'format' => 'full_html',
+        'value' => '<div class="nulTableCell"><h3>Type of Business</h3></div>',
       ),
     ),
     'translatable' => 0,

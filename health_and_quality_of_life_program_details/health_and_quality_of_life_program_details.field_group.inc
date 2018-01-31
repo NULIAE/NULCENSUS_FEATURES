@@ -21,7 +21,7 @@ function health_and_quality_of_life_program_details_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Person Who Oversees Health Programs',
-    'weight' => '0',
+    'weight' => '1',
     'children' => array(
       0 => 'field_health_overseer_name',
       1 => 'field_health_overseer_email',
@@ -193,7 +193,7 @@ function health_and_quality_of_life_program_details_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Program Impacts',
-    'weight' => '3',
+    'weight' => '4',
     'children' => array(
       0 => 'field_program_health_participant',
       1 => 'field_program_health_enrolled',

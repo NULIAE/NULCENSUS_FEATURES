@@ -385,6 +385,7 @@ function census_views_views_default_views() {
   $handler->display->display_options['fields']['field_year']['label'] = '';
   $handler->display->display_options['fields']['field_year']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_year']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_year']['type'] = 'number_integer';
   $handler->display->display_options['fields']['field_year']['settings'] = array(
     'thousand_separator' => '',
     'prefix_suffix' => 1,
@@ -538,14 +539,16 @@ function census_views_views_default_views() {
       'empty_column' => 0,
     ),
   );
-  /* Field: Content: Affiliate Name */
-  $handler->display->display_options['fields']['field_first_name']['id'] = 'field_first_name';
-  $handler->display->display_options['fields']['field_first_name']['table'] = 'field_data_field_first_name';
-  $handler->display->display_options['fields']['field_first_name']['field'] = 'field_first_name';
+  /* Field: Content: affiliate select */
+  $handler->display->display_options['fields']['field_affiliate_select']['id'] = 'field_affiliate_select';
+  $handler->display->display_options['fields']['field_affiliate_select']['table'] = 'field_data_field_affiliate_select';
+  $handler->display->display_options['fields']['field_affiliate_select']['field'] = 'field_affiliate_select';
+  $handler->display->display_options['fields']['field_affiliate_select']['label'] = 'Affiliate';
   /* Field: Content: Year */
   $handler->display->display_options['fields']['field_year']['id'] = 'field_year';
   $handler->display->display_options['fields']['field_year']['table'] = 'field_data_field_year';
   $handler->display->display_options['fields']['field_year']['field'] = 'field_year';
+  $handler->display->display_options['fields']['field_year']['type'] = 'number_integer';
   $handler->display->display_options['fields']['field_year']['settings'] = array(
     'thousand_separator' => '',
     'prefix_suffix' => 1,
@@ -612,7 +615,6 @@ function census_views_views_default_views() {
     6 => 0,
     7 => 0,
   );
-  $handler->display->display_options['filters']['field_year_value']['is_grouped'] = TRUE;
   $handler->display->display_options['filters']['field_year_value']['group_info']['label'] = 'Year';
   $handler->display->display_options['filters']['field_year_value']['group_info']['identifier'] = 'field_year_value';
   $handler->display->display_options['filters']['field_year_value']['group_info']['group_items'] = array(
@@ -724,22 +726,28 @@ function census_views_views_default_views() {
   );
   $handler->display->display_options['filters']['field_census_status_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_census_status_tid']['vocabulary'] = 'status_type_for_census';
+  /* Filter criterion: Content: affiliate select (field_affiliate_select) */
+  $handler->display->display_options['filters']['field_affiliate_select_value']['id'] = 'field_affiliate_select_value';
+  $handler->display->display_options['filters']['field_affiliate_select_value']['table'] = 'field_data_field_affiliate_select';
+  $handler->display->display_options['filters']['field_affiliate_select_value']['field'] = 'field_affiliate_select_value';
+  $handler->display->display_options['filters']['field_affiliate_select_value']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_affiliate_select_value']['expose']['operator_id'] = 'field_affiliate_select_value_op';
+  $handler->display->display_options['filters']['field_affiliate_select_value']['expose']['label'] = 'Affiliate';
+  $handler->display->display_options['filters']['field_affiliate_select_value']['expose']['operator'] = 'field_affiliate_select_value_op';
+  $handler->display->display_options['filters']['field_affiliate_select_value']['expose']['identifier'] = 'field_affiliate_select_value';
+  $handler->display->display_options['filters']['field_affiliate_select_value']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+    4 => 0,
+    5 => 0,
+    6 => 0,
+    7 => 0,
+  );
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Content: Affiliate ID (field_affiliate) */
-  $handler->display->display_options['arguments']['field_affiliate_value']['id'] = 'field_affiliate_value';
-  $handler->display->display_options['arguments']['field_affiliate_value']['table'] = 'field_data_field_affiliate';
-  $handler->display->display_options['arguments']['field_affiliate_value']['field'] = 'field_affiliate_value';
-  $handler->display->display_options['arguments']['field_affiliate_value']['default_action'] = 'default';
-  $handler->display->display_options['arguments']['field_affiliate_value']['default_argument_type'] = 'raw';
-  $handler->display->display_options['arguments']['field_affiliate_value']['default_argument_options']['index'] = '1';
-  $handler->display->display_options['arguments']['field_affiliate_value']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['field_affiliate_value']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['field_affiliate_value']['summary_options']['items_per_page'] = '25';
-  $handler->display->display_options['arguments']['field_affiliate_value']['specify_validation'] = TRUE;
-  $handler->display->display_options['arguments']['field_affiliate_value']['validate']['fail'] = 'ignore';
   $handler->display->display_options['path'] = 'census-s-by-affiliate';
 
   /* Display: Block */
@@ -749,6 +757,7 @@ function census_views_views_default_views() {
   $handler->display->display_options['fields']['field_year']['id'] = 'field_year';
   $handler->display->display_options['fields']['field_year']['table'] = 'field_data_field_year';
   $handler->display->display_options['fields']['field_year']['field'] = 'field_year';
+  $handler->display->display_options['fields']['field_year']['type'] = 'number_integer';
   $handler->display->display_options['fields']['field_year']['settings'] = array(
     'thousand_separator' => '',
     'prefix_suffix' => 1,
@@ -779,7 +788,7 @@ function census_views_views_default_views() {
   $handler->display->display_options['fields']['field_census_status']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_census_status']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Content: Affiliate ID (field_affiliate) */
+  /* Contextual filter: Broken/missing handler */
   $handler->display->display_options['arguments']['field_affiliate_value']['id'] = 'field_affiliate_value';
   $handler->display->display_options['arguments']['field_affiliate_value']['table'] = 'field_data_field_affiliate';
   $handler->display->display_options['arguments']['field_affiliate_value']['field'] = 'field_affiliate_value';
@@ -821,7 +830,7 @@ function census_views_views_default_views() {
     t('‹ previous'),
     t('next ›'),
     t('last »'),
-    t('Affiliate Name'),
+    t('Affiliate'),
     t('Year'),
     t('Census Title'),
     t('Links to Census'),
@@ -830,8 +839,8 @@ function census_views_views_default_views() {
     t('Census Status'),
     t('Status'),
     t('Page'),
-    t('All'),
     t('Block'),
+    t('All'),
   );
   $export['census_s_by_affiliate'] = $view;
 
@@ -1555,11 +1564,12 @@ function census_views_views_default_views() {
   $handler->display->display_options['relationships']['reverse_field_parent_census_node']['table'] = 'node';
   $handler->display->display_options['relationships']['reverse_field_parent_census_node']['field'] = 'reverse_field_parent_census_node';
   $handler->display->display_options['relationships']['reverse_field_parent_census_node']['relationship'] = 'field_parent_census_target_id';
-  /* Field: Content: Affiliate Name */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_first_name']['id'] = 'field_first_name';
   $handler->display->display_options['fields']['field_first_name']['table'] = 'field_data_field_first_name';
   $handler->display->display_options['fields']['field_first_name']['field'] = 'field_first_name';
   $handler->display->display_options['fields']['field_first_name']['relationship'] = 'field_parent_census_target_id';
+  $handler->display->display_options['fields']['field_first_name']['label'] = 'Affiliate Name';
   $handler->display->display_options['fields']['field_first_name']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_first_name']['element_label_colon'] = FALSE;
   /* Field: Content: Title */
@@ -1575,6 +1585,7 @@ function census_views_views_default_views() {
   $handler->display->display_options['fields']['field_year']['table'] = 'field_data_field_year';
   $handler->display->display_options['fields']['field_year']['field'] = 'field_year';
   $handler->display->display_options['fields']['field_year']['relationship'] = 'field_parent_census_target_id';
+  $handler->display->display_options['fields']['field_year']['type'] = 'number_integer';
   $handler->display->display_options['fields']['field_year']['settings'] = array(
     'thousand_separator' => '',
     'prefix_suffix' => 1,
@@ -1661,6 +1672,12 @@ function census_views_views_default_views() {
   $handler->display->display_options['filters']['field_year_value']['table'] = 'field_data_field_year';
   $handler->display->display_options['filters']['field_year_value']['field'] = 'field_year_value';
   $handler->display->display_options['filters']['field_year_value']['relationship'] = 'field_parent_census_target_id';
+  $handler->display->display_options['filters']['field_year_value']['operator'] = '=';
+  $handler->display->display_options['filters']['field_year_value']['value'] = array(
+    'min' => '',
+    'max' => '',
+    'value' => '',
+  );
   $handler->display->display_options['filters']['field_year_value']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_year_value']['expose']['operator_id'] = 'field_year_value_op';
   $handler->display->display_options['filters']['field_year_value']['expose']['label'] = 'Year';
@@ -1675,7 +1692,7 @@ function census_views_views_default_views() {
     6 => 0,
     7 => 0,
   );
-  /* Filter criterion: Content: Affiliate Name (field_first_name) */
+  /* Filter criterion: Broken/missing handler */
   $handler->display->display_options['filters']['field_first_name_value']['id'] = 'field_first_name_value';
   $handler->display->display_options['filters']['field_first_name_value']['table'] = 'field_data_field_first_name';
   $handler->display->display_options['filters']['field_first_name_value']['field'] = 'field_first_name_value';
@@ -1940,6 +1957,12 @@ function census_views_views_default_views() {
   $handler->display->display_options['filters']['field_year_value']['table'] = 'field_data_field_year';
   $handler->display->display_options['filters']['field_year_value']['field'] = 'field_year_value';
   $handler->display->display_options['filters']['field_year_value']['relationship'] = 'field_parent_census_target_id';
+  $handler->display->display_options['filters']['field_year_value']['operator'] = '=';
+  $handler->display->display_options['filters']['field_year_value']['value'] = array(
+    'min' => '',
+    'max' => '',
+    'value' => '',
+  );
   $handler->display->display_options['filters']['field_year_value']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_year_value']['expose']['operator_id'] = 'field_year_value_op';
   $handler->display->display_options['filters']['field_year_value']['expose']['label'] = 'Year';
@@ -2619,6 +2642,7 @@ return false;';
   $handler->display->display_options['fields']['field_year']['label'] = '';
   $handler->display->display_options['fields']['field_year']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_year']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_year']['type'] = 'number_integer';
   $handler->display->display_options['fields']['field_year']['settings'] = array(
     'thousand_separator' => '',
     'prefix_suffix' => 1,
@@ -3275,6 +3299,12 @@ return false;';
   $handler->display->display_options['filters']['field_year_value']['table'] = 'field_data_field_year';
   $handler->display->display_options['filters']['field_year_value']['field'] = 'field_year_value';
   $handler->display->display_options['filters']['field_year_value']['relationship'] = 'field_parent_census_target_id';
+  $handler->display->display_options['filters']['field_year_value']['operator'] = '=';
+  $handler->display->display_options['filters']['field_year_value']['value'] = array(
+    'min' => '',
+    'max' => '',
+    'value' => '',
+  );
   $handler->display->display_options['filters']['field_year_value']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_year_value']['expose']['operator_id'] = 'field_year_value_op';
   $handler->display->display_options['filters']['field_year_value']['expose']['label'] = 'Year';
@@ -3289,7 +3319,7 @@ return false;';
     6 => 0,
     7 => 0,
   );
-  /* Filter criterion: Content: Affiliate Name (field_first_name:format) */
+  /* Filter criterion: Broken/missing handler */
   $handler->display->display_options['filters']['field_first_name_format']['id'] = 'field_first_name_format';
   $handler->display->display_options['filters']['field_first_name_format']['table'] = 'field_data_field_first_name';
   $handler->display->display_options['filters']['field_first_name_format']['field'] = 'field_first_name_format';
@@ -3443,10 +3473,15 @@ return false;';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Affiliate ID (field_affiliate) */
+  /* Filter criterion: Broken/missing handler */
   $handler->display->display_options['filters']['field_affiliate_value']['id'] = 'field_affiliate_value';
   $handler->display->display_options['filters']['field_affiliate_value']['table'] = 'field_data_field_affiliate';
   $handler->display->display_options['filters']['field_affiliate_value']['field'] = 'field_affiliate_value';
+  $handler->display->display_options['filters']['field_affiliate_value']['value'] = array(
+    'min' => '',
+    'max' => '',
+    'value' => '',
+  );
   $handler->display->display_options['filters']['field_affiliate_value']['expose']['operator_id'] = 'field_affiliate_value_op';
   $handler->display->display_options['filters']['field_affiliate_value']['expose']['label'] = 'Affiliate ID (field_affiliate)';
   $handler->display->display_options['filters']['field_affiliate_value']['expose']['operator'] = 'field_affiliate_value_op';
@@ -3563,11 +3598,12 @@ return false;';
   $handler->display->display_options['fields']['nid']['label'] = '';
   $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
   $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
-  /* Field: Content: Affiliate Name */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_first_name']['id'] = 'field_first_name';
   $handler->display->display_options['fields']['field_first_name']['table'] = 'field_data_field_first_name';
   $handler->display->display_options['fields']['field_first_name']['field'] = 'field_first_name';
   $handler->display->display_options['fields']['field_first_name']['relationship'] = 'field_parent_census_target_id';
+  $handler->display->display_options['fields']['field_first_name']['label'] = 'Affiliate Name';
   $handler->display->display_options['fields']['field_first_name']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_first_name']['alter']['text'] = '[field_first_name]';
   $handler->display->display_options['fields']['field_first_name']['alter']['make_link'] = TRUE;

@@ -1580,13 +1580,9 @@ function employees_and_board_members_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'bypass_access' => 0,
-          'link' => 1,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 36,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
       ),
       'status_info' => array(
         'label' => 'above',
@@ -1728,10 +1724,9 @@ function employees_and_board_members_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_plain',
-        'weight' => 28,
+        'type' => 'hidden',
+        'weight' => 1,
       ),
       'status_info' => array(
         'label' => 'above',

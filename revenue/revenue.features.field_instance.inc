@@ -19,13 +19,9 @@ function revenue_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'bypass_access' => 0,
-          'link' => 1,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 14,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 17,
       ),
       'status_info' => array(
         'label' => 'above',
@@ -52,7 +48,7 @@ function revenue_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 16,
+      'weight' => 18,
     ),
   );
 
@@ -73,7 +69,7 @@ function revenue_field_default_field_instances() {
           'thousand_separator' => ',',
         ),
         'type' => 'number_decimal',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'status_info' => array(
         'label' => 'above',
@@ -125,7 +121,7 @@ function revenue_field_default_field_instances() {
           'thousand_separator' => ',',
         ),
         'type' => 'number_decimal',
-        'weight' => 12,
+        'weight' => 14,
       ),
       'status_info' => array(
         'label' => 'above',
@@ -156,7 +152,7 @@ function revenue_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 13,
+      'weight' => 16,
     ),
   );
 
@@ -177,7 +173,7 @@ function revenue_field_default_field_instances() {
           'thousand_separator' => ',',
         ),
         'type' => 'number_decimal',
-        'weight' => 6,
+        'weight' => 5,
       ),
       'status_info' => array(
         'label' => 'above',
@@ -229,7 +225,7 @@ function revenue_field_default_field_instances() {
           'thousand_separator' => ',',
         ),
         'type' => 'number_decimal',
-        'weight' => 2,
+        'weight' => 1,
       ),
       'status_info' => array(
         'label' => 'above',
@@ -276,7 +272,7 @@ function revenue_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 11,
+        'weight' => 13,
       ),
       'status_info' => array(
         'label' => 'above',
@@ -303,7 +299,7 @@ function revenue_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 12,
+      'weight' => 15,
     ),
   );
 
@@ -324,7 +320,7 @@ function revenue_field_default_field_instances() {
           'thousand_separator' => ',',
         ),
         'type' => 'number_decimal',
-        'weight' => 3,
+        'weight' => 2,
       ),
       'status_info' => array(
         'label' => 'above',
@@ -376,7 +372,7 @@ function revenue_field_default_field_instances() {
           'thousand_separator' => ',',
         ),
         'type' => 'number_decimal',
-        'weight' => 8,
+        'weight' => 11,
       ),
       'status_info' => array(
         'label' => 'above',
@@ -407,7 +403,7 @@ function revenue_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 9,
+      'weight' => 13,
     ),
   );
 
@@ -428,7 +424,7 @@ function revenue_field_default_field_instances() {
           'thousand_separator' => ',',
         ),
         'type' => 'number_decimal',
-        'weight' => 0,
+        'weight' => 7,
       ),
       'status_info' => array(
         'label' => 'above',
@@ -459,7 +455,105 @@ function revenue_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 1,
+      'weight' => 9,
+    ),
+  );
+
+  // Exported field_instance: 'node-revenue-field_revenue_other'.
+  $field_instances['node-revenue-field_revenue_other'] = array(
+    'bundle' => 'revenue',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 9,
+      ),
+      'status_info' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_revenue_other',
+    'label' => 'Other',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '$',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 11,
+    ),
+  );
+
+  // Exported field_instance: 'node-revenue-field_revenue_other_desc'.
+  $field_instances['node-revenue-field_revenue_other_desc'] = array(
+    'bundle' => 'revenue',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 10,
+      ),
+      'status_info' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_revenue_other_desc',
+    'label' => 'Other description',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 12,
     ),
   );
 
@@ -475,7 +569,7 @@ function revenue_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 9,
+        'weight' => 8,
       ),
       'status_info' => array(
         'label' => 'above',
@@ -526,7 +620,7 @@ function revenue_field_default_field_instances() {
           'thousand_separator' => ',',
         ),
         'type' => 'number_decimal',
-        'weight' => 4,
+        'weight' => 3,
       ),
       'status_info' => array(
         'label' => 'above',
@@ -578,7 +672,7 @@ function revenue_field_default_field_instances() {
           'thousand_separator' => ',',
         ),
         'type' => 'number_decimal',
-        'weight' => 7,
+        'weight' => 6,
       ),
       'status_info' => array(
         'label' => 'above',
@@ -647,7 +741,7 @@ function revenue_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_revenue_total_budget',
-    'label' => 'What is the total budget of your affiliate?',
+    'label' => 'What is the total revenue of your affiliate?',
     'required' => 0,
     'settings' => array(
       'max' => '',
@@ -661,7 +755,7 @@ function revenue_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 17,
+      'weight' => 1,
     ),
   );
 
@@ -682,7 +776,7 @@ function revenue_field_default_field_instances() {
           'thousand_separator' => ',',
         ),
         'type' => 'number_decimal',
-        'weight' => 5,
+        'weight' => 4,
       ),
       'status_info' => array(
         'label' => 'above',
@@ -725,13 +819,13 @@ function revenue_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'inline',
         'module' => 'paragraphs',
         'settings' => array(
           'view_mode' => 'full',
         ),
         'type' => 'paragraphs_view',
-        'weight' => 10,
+        'weight' => 12,
       ),
       'status_info' => array(
         'label' => 'above',
@@ -770,7 +864,7 @@ function revenue_field_default_field_instances() {
       'module' => 'paragraphs',
       'settings' => array(),
       'type' => 'paragraphs_embed',
-      'weight' => 11,
+      'weight' => 14,
     ),
   );
 
@@ -786,11 +880,10 @@ function revenue_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
+        'label' => 'inline',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_plain',
-        'weight' => 13,
+        'type' => 'hidden',
+        'weight' => 16,
       ),
       'status_info' => array(
         'label' => 'above',
@@ -818,7 +911,7 @@ function revenue_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 14,
+      'weight' => 17,
     ),
   );
 
@@ -1078,6 +1171,8 @@ function revenue_field_default_field_instances() {
   t('If so, what is the present amount?');
   t('Individual Memberships');
   t('NUL');
+  t('Other');
+  t('Other description');
   t('Purpose of NUL Funding');
   t('Special Events');
   t('State/Local');
@@ -1085,7 +1180,7 @@ function revenue_field_default_field_instances() {
   t('Type of Venture');
   t('United Way');
   t('Venture type header');
-  t('What is the total budget of your affiliate?');
+  t('What is the total revenue of your affiliate?');
   t('parent census');
   t('venture budgeted header');
   t('venture earned header');

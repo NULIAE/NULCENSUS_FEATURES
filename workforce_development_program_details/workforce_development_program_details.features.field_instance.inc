@@ -19,11 +19,11 @@ function workforce_development_program_details_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 25,
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -57,13 +57,9 @@ function workforce_development_program_details_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'bypass_access' => 0,
-          'link' => 1,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 16,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -640,6 +636,53 @@ function workforce_development_program_details_field_default_field_instances() {
   );
 
   // Exported field_instance:
+  // 'node-program_workforce-field_program_work_sub_workforce'.
+  $field_instances['node-program_workforce-field_program_work_sub_workforce'] = array(
+    'bundle' => 'program_workforce',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 5,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_program_work_sub_workforce',
+    'label' => 'Workforce Development',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 11,
+    ),
+  );
+
+  // Exported field_instance:
   // 'node-program_workforce-field_program_work_subsidiary'.
   $field_instances['node-program_workforce-field_program_work_subsidiary'] = array(
     'bundle' => 'program_workforce',
@@ -962,10 +1005,9 @@ function workforce_development_program_details_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_plain',
-        'weight' => 15,
+        'type' => 'hidden',
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1095,6 +1137,7 @@ function workforce_development_program_details_field_default_field_instances() {
   t('Number of welfare program participants placed in jobs');
   t('Our Affiliate offers programs of this type');
   t('Tab Status');
+  t('Workforce Development');
   t('or Hourly wage rate');
   t('parent census');
 

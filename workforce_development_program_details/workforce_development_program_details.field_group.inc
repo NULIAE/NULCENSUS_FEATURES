@@ -21,7 +21,7 @@ function workforce_development_program_details_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Program Impacts',
-    'weight' => '3',
+    'weight' => '2',
     'children' => array(
       0 => 'field_program_work_placed',
       1 => 'field_program_work_retained',
@@ -101,7 +101,7 @@ function workforce_development_program_details_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Subsidiary Information',
-    'weight' => '8',
+    'weight' => '4',
     'children' => array(
       0 => 'field_program_work_subsidiary',
       1 => 'field_program_work_sub_profit',
@@ -173,7 +173,7 @@ function workforce_development_program_details_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'WIA/WIOA Services',
-    'weight' => '7',
+    'weight' => '3',
     'children' => array(
       0 => 'field_program_work_wia',
       1 => 'field_program_work_wia_deliverer',
@@ -241,7 +241,7 @@ function workforce_development_program_details_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Person Who Oversees Workforce Programs',
-    'weight' => '0',
+    'weight' => '1',
     'children' => array(
       0 => 'field_work_overseer_name',
       1 => 'field_work_overseer_email',
@@ -346,6 +346,7 @@ function workforce_development_program_details_field_group_info() {
       0 => 'field_program_work_sub_housing',
       1 => 'field_program_work_sub_health',
       2 => 'field_program_work_sub_business',
+      3 => 'field_program_work_sub_workforce',
     ),
     'format_type' => 'div',
     'format_settings' => array(

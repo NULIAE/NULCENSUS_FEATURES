@@ -646,7 +646,7 @@ function contact_data_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => ' C. Indirect Contact (i.e. telephone hotlines, telephone referral services and literature distribution) ',
-    'weight' => '4',
+    'weight' => '2',
     'children' => array(
       0 => 'field_help_indirect_contact',
       1 => 'group_indirect_served',

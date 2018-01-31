@@ -760,7 +760,7 @@ function education_program_details_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_program_ed_model',
-    'label' => 'program_ed_model',
+    'label' => 'Program Model',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -1041,9 +1041,13 @@ function education_program_details_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'inline',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_plain',
+        'module' => 'entityreference',
+        'settings' => array(
+          'links' => TRUE,
+          'use_content_language' => TRUE,
+          'view_mode' => 'default',
+        ),
+        'type' => 'entityreference_entity_view',
         'weight' => 9,
       ),
       'teaser' => array(
@@ -1092,11 +1096,11 @@ function education_program_details_field_default_field_instances() {
   t('Our Affiliate offers programs of this type');
   t('Percentage of participants who graduated from High School');
   t('Percentage of participants who submitted college application(s)');
+  t('Program Model');
   t('Tab Status');
   t('What is the average value of the individual scholarships provided annually?');
   t('What is the overall value of the scholarships provided annually?');
   t('parent census');
-  t('program_ed_model');
 
   return $field_instances;
 }

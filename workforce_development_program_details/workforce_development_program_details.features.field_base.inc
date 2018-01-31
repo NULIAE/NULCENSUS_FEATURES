@@ -334,6 +334,24 @@ function workforce_development_program_details_field_default_field_bases() {
     'type' => 'list_boolean',
   );
 
+  // Exported field_base: 'field_program_work_sub_workforce'.
+  $field_bases['field_program_work_sub_workforce'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_program_work_sub_workforce',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'number',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'number_integer',
+  );
+
   // Exported field_base: 'field_program_work_subsidiary'.
   $field_bases['field_program_work_subsidiary'] = array(
     'active' => 1,

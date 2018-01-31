@@ -19,11 +19,11 @@ function entreuprenuership_and_business_development_program_details_field_defaul
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 7,
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -57,7 +57,7 @@ function entreuprenuership_and_business_development_program_details_field_defaul
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -98,7 +98,7 @@ function entreuprenuership_and_business_development_program_details_field_defaul
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -140,13 +140,9 @@ function entreuprenuership_and_business_development_program_details_field_defaul
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'bypass_access' => 0,
-          'link' => 1,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 5,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -180,13 +176,13 @@ function entreuprenuership_and_business_development_program_details_field_defaul
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'module' => 'paragraphs',
         'settings' => array(
           'view_mode' => 'full',
         ),
         'type' => 'paragraphs_view',
-        'weight' => 12,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -207,6 +203,7 @@ function entreuprenuership_and_business_development_program_details_field_defaul
         'entpr_businesses' => 'entpr_businesses',
         'funding_source' => -1,
         'health_services' => -1,
+        'program_services' => -1,
         'service_area' => -1,
       ),
       'bundle_weights' => array(
@@ -215,6 +212,7 @@ function entreuprenuership_and_business_development_program_details_field_defaul
         'entpr_businesses' => 4,
         'funding_source' => 5,
         'health_services' => 6,
+        'program_services' => 14,
         'service_area' => 7,
       ),
       'default_edit_mode' => 'open',
@@ -240,7 +238,7 @@ function entreuprenuership_and_business_development_program_details_field_defaul
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -279,117 +277,6 @@ function entreuprenuership_and_business_development_program_details_field_defaul
   );
 
   // Exported field_instance:
-  // 'node-program_entrepreneurship-field_program_entpr_header_sales'.
-  $field_instances['node-program_entrepreneurship-field_program_entpr_header_sales'] = array(
-    'bundle' => 'program_entrepreneurship',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'markup',
-        'settings' => array(),
-        'type' => 'markup_view',
-        'weight' => 15,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_program_entpr_header_sales',
-    'label' => 'Sales',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(),
-      'type' => 'markup',
-      'weight' => 8,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'node-program_entrepreneurship-field_program_entpr_header_serve'.
-  $field_instances['node-program_entrepreneurship-field_program_entpr_header_serve'] = array(
-    'bundle' => 'program_entrepreneurship',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'markup',
-        'settings' => array(),
-        'type' => 'markup_view',
-        'weight' => 16,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_program_entpr_header_serve',
-    'label' => 'Served',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(),
-      'type' => 'markup',
-      'weight' => 9,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'node-program_entrepreneurship-field_program_entpr_header_type'.
-  $field_instances['node-program_entrepreneurship-field_program_entpr_header_type'] = array(
-    'bundle' => 'program_entrepreneurship',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'markup',
-        'settings' => array(),
-        'type' => 'markup_view',
-        'weight' => 14,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_program_entpr_header_type',
-    'label' => 'Type of Business',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(),
-      'type' => 'markup',
-      'weight' => 7,
-    ),
-  );
-
-  // Exported field_instance:
   // 'node-program_entrepreneurship-field_program_entpr_jobs_ft'.
   $field_instances['node-program_entrepreneurship-field_program_entpr_jobs_ft'] = array(
     'bundle' => 'program_entrepreneurship',
@@ -398,7 +285,7 @@ function entreuprenuership_and_business_development_program_details_field_defaul
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -445,7 +332,7 @@ function entreuprenuership_and_business_development_program_details_field_defaul
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -492,7 +379,7 @@ function entreuprenuership_and_business_development_program_details_field_defaul
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -539,7 +426,7 @@ function entreuprenuership_and_business_development_program_details_field_defaul
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -600,7 +487,7 @@ function entreuprenuership_and_business_development_program_details_field_defaul
     ),
     'entity_type' => 'node',
     'field_name' => 'field_program_entpr_new_jobs',
-    'label' => 'Number of new jobs created',
+    'label' => 'Number of new jobs created (label)',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -623,7 +510,7 @@ function entreuprenuership_and_business_development_program_details_field_defaul
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -670,7 +557,7 @@ function entreuprenuership_and_business_development_program_details_field_defaul
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -717,7 +604,7 @@ function entreuprenuership_and_business_development_program_details_field_defaul
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -764,7 +651,7 @@ function entreuprenuership_and_business_development_program_details_field_defaul
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -811,7 +698,7 @@ function entreuprenuership_and_business_development_program_details_field_defaul
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -858,7 +745,7 @@ function entreuprenuership_and_business_development_program_details_field_defaul
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -905,7 +792,7 @@ function entreuprenuership_and_business_development_program_details_field_defaul
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -952,10 +839,9 @@ function entreuprenuership_and_business_development_program_details_field_defaul
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_plain',
-        'weight' => 6,
+        'type' => 'hidden',
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -998,7 +884,7 @@ function entreuprenuership_and_business_development_program_details_field_defaul
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 1,
+        'weight' => 7,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
@@ -1023,7 +909,7 @@ function entreuprenuership_and_business_development_program_details_field_defaul
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 2,
+      'weight' => 6,
     ),
   );
 
@@ -1045,7 +931,7 @@ function entreuprenuership_and_business_development_program_details_field_defaul
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 2,
+        'weight' => 8,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
@@ -1070,7 +956,7 @@ function entreuprenuership_and_business_development_program_details_field_defaul
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 3,
+      'weight' => 7,
     ),
   );
 
@@ -1084,10 +970,10 @@ function entreuprenuership_and_business_development_program_details_field_defaul
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'text',
+        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 0,
+        'type' => 'taxonomy_term_reference_plain',
+        'weight' => 6,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
@@ -1101,17 +987,125 @@ function entreuprenuership_and_business_development_program_details_field_defaul
     'label' => 'Type of Business',
     'required' => 0,
     'settings' => array(
-      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'paragraphs_item-entpr_businesses-field_program_entpr_header_sales'.
+  $field_instances['paragraphs_item-entpr_businesses-field_program_entpr_header_sales'] = array(
+    'bundle' => 'entpr_businesses',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 3,
       ),
-      'type' => 'text_textfield',
-      'weight' => 1,
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_program_entpr_header_sales',
+    'label' => 'Sales',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'paragraphs_item-entpr_businesses-field_program_entpr_header_serve'.
+  $field_instances['paragraphs_item-entpr_businesses-field_program_entpr_header_serve'] = array(
+    'bundle' => 'entpr_businesses',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 4,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_program_entpr_header_serve',
+    'label' => 'Served',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'paragraphs_item-entpr_businesses-field_program_entpr_header_type'.
+  $field_instances['paragraphs_item-entpr_businesses-field_program_entpr_header_type'] = array(
+    'bundle' => 'entpr_businesses',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 2,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_program_entpr_header_type',
+    'label' => 'Type of Business',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 2,
     ),
   );
 
@@ -1130,7 +1124,7 @@ function entreuprenuership_and_business_development_program_details_field_defaul
   t('Name');
   t('Number of certifications obtained (i.e. MBE, WMBE, etc.)');
   t('Number of new businesses created');
-  t('Number of new jobs created');
+  t('Number of new jobs created (label)');
   t('Other (i.e. consultants)');
   t('Our Affiliate offers programs of this type');
   t('Part time');

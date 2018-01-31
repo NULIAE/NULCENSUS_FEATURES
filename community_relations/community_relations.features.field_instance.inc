@@ -23,7 +23,7 @@ function community_relations_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 6,
+        'weight' => 5,
       ),
       'status_info' => array(
         'label' => 'above',
@@ -70,7 +70,7 @@ function community_relations_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 10,
+        'weight' => 9,
       ),
       'status_info' => array(
         'label' => 'above',
@@ -114,7 +114,7 @@ function community_relations_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 7,
+        'weight' => 6,
       ),
       'status_info' => array(
         'label' => 'above',
@@ -158,7 +158,7 @@ function community_relations_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 4,
+        'weight' => 3,
       ),
       'status_info' => array(
         'label' => 'above',
@@ -202,7 +202,7 @@ function community_relations_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 12,
+        'weight' => 11,
       ),
       'status_info' => array(
         'label' => 'above',
@@ -246,7 +246,7 @@ function community_relations_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 11,
+        'weight' => 10,
       ),
       'status_info' => array(
         'label' => 'above',
@@ -295,7 +295,7 @@ function community_relations_field_default_field_instances() {
           'thousand_separator' => ',',
         ),
         'type' => 'number_integer',
-        'weight' => 5,
+        'weight' => 4,
       ),
       'status_info' => array(
         'label' => 'above',
@@ -342,7 +342,7 @@ function community_relations_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 2,
+        'weight' => 1,
       ),
       'status_info' => array(
         'label' => 'above',
@@ -382,13 +382,9 @@ function community_relations_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'bypass_access' => 0,
-          'link' => 1,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 15,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 13,
       ),
       'status_info' => array(
         'label' => 'above',
@@ -432,7 +428,7 @@ function community_relations_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 9,
+        'weight' => 8,
       ),
       'status_info' => array(
         'label' => 'above',
@@ -476,7 +472,7 @@ function community_relations_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'status_info' => array(
         'label' => 'above',
@@ -520,7 +516,7 @@ function community_relations_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 8,
+        'weight' => 7,
       ),
       'status_info' => array(
         'label' => 'above',
@@ -564,7 +560,7 @@ function community_relations_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 3,
+        'weight' => 2,
       ),
       'status_info' => array(
         'label' => 'above',
@@ -608,10 +604,9 @@ function community_relations_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 13,
+        'type' => 'hidden',
+        'weight' => 12,
       ),
       'status_info' => array(
         'label' => 'above',
