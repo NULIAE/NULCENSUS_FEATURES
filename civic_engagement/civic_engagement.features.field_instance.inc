@@ -66,7 +66,7 @@ function civic_engagement_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 109,
+      'weight' => 5,
     ),
   );
 
@@ -435,7 +435,7 @@ function civic_engagement_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 110,
+      'weight' => 6,
     ),
   );
 
@@ -5423,7 +5423,7 @@ function civic_engagement_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 116,
+      'weight' => 7,
     ),
   );
 
@@ -6764,7 +6764,7 @@ function civic_engagement_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 5,
+      'weight' => 8,
     ),
   );
 

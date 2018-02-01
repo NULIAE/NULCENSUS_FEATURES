@@ -162,7 +162,6 @@ features[field_group][] = group_crja_other|node|civic_engagement|form
 features[field_group][] = group_crja_race|node|civic_engagement|default
 features[field_group][] = group_crja_race|node|civic_engagement|form
 features[field_group][] = group_crja_sub|node|civic_engagement|default
-features[field_group][] = group_crja_sub|node|civic_engagement|form
 features[field_group][] = group_crja_white|node|civic_engagement|default
 features[field_group][] = group_crja_white|node|civic_engagement|form
 features[field_group][] = group_forum_african_am|node|civic_engagement|default

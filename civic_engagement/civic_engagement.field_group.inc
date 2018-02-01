@@ -330,10 +330,10 @@ function civic_engagement_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'civic_engagement';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_crja_sub';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Advocacy',
-    'weight' => '108',
+    'weight' => '4',
     'children' => array(
       0 => 'field_advocacy_efforts',
       1 => 'field_advocacy_total',
@@ -1026,10 +1026,10 @@ function civic_engagement_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'civic_engagement';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_crja_sub';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Civil Rights and Racial Justice Activities',
-    'weight' => '106',
+    'weight' => '2',
     'children' => array(
       0 => 'field_crja',
       1 => 'field_crja_total',
@@ -1299,43 +1299,6 @@ function civic_engagement_field_group_info() {
     ),
   );
   $field_groups['group_crja_sub|node|civic_engagement|default'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_crja_sub|node|civic_engagement|form';
-  $field_group->group_name = 'group_crja_sub';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'civic_engagement';
-  $field_group->mode = 'form';
-  $field_group->parent_name = '';
-  $field_group->data = array(
-    'label' => 'Civil Rights and Racial Justice Activities',
-    'weight' => '2',
-    'children' => array(
-      0 => 'field_advoacy_research',
-      1 => 'field_advocacy_description',
-      2 => 'group_advocacy_info',
-      3 => 'group_crja_info',
-      4 => 'group_police_info',
-    ),
-    'format_type' => 'div',
-    'format_settings' => array(
-      'label' => 'Civil Rights and Racial Justice Activities',
-      'instance_settings' => array(
-        'required_fields' => 1,
-        'id' => '',
-        'classes' => 'group-crja-sub field-group-div',
-        'description' => '',
-        'show_label' => '1',
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
-      ),
-      'formatter' => 'open',
-    ),
-  );
-  $field_groups['group_crja_sub|node|civic_engagement|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -2977,10 +2940,10 @@ function civic_engagement_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'civic_engagement';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_crja_sub';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Police Brutality',
-    'weight' => '107',
+    'weight' => '3',
     'children' => array(
       0 => 'field_police_brutality',
       1 => 'field_police_total',
