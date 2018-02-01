@@ -2431,6 +2431,9 @@ function census_views_views_default_views() {
   $handler->display->display_options['fields']['field_parent_census']['id'] = 'field_parent_census';
   $handler->display->display_options['fields']['field_parent_census']['table'] = 'field_data_field_parent_census';
   $handler->display->display_options['fields']['field_parent_census']['field'] = 'field_parent_census';
+  $handler->display->display_options['fields']['field_parent_census']['label'] = '';
+  $handler->display->display_options['fields']['field_parent_census']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_parent_census']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_parent_census']['settings'] = array(
     'bypass_access' => 0,
     'link' => 0,
