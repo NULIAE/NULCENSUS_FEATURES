@@ -704,12 +704,6 @@ function census_views_views_default_views() {
   $handler->display->display_options['filters']['field_census_status_tid']['id'] = 'field_census_status_tid';
   $handler->display->display_options['filters']['field_census_status_tid']['table'] = 'field_data_field_census_status';
   $handler->display->display_options['filters']['field_census_status_tid']['field'] = 'field_census_status_tid';
-  $handler->display->display_options['filters']['field_census_status_tid']['value'] = array(
-    100 => '100',
-    16 => '16',
-    19 => '19',
-    18 => '18',
-  );
   $handler->display->display_options['filters']['field_census_status_tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_census_status_tid']['expose']['operator_id'] = 'field_census_status_tid_op';
   $handler->display->display_options['filters']['field_census_status_tid']['expose']['label'] = 'Status';
@@ -726,6 +720,7 @@ function census_views_views_default_views() {
   );
   $handler->display->display_options['filters']['field_census_status_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_census_status_tid']['vocabulary'] = 'status_type_for_census';
+  $handler->display->display_options['filters']['field_census_status_tid']['error_message'] = FALSE;
   /* Filter criterion: Content: affiliate select (field_affiliate_select) */
   $handler->display->display_options['filters']['field_affiliate_select_value']['id'] = 'field_affiliate_select_value';
   $handler->display->display_options['filters']['field_affiliate_select_value']['table'] = 'field_data_field_affiliate_select';
@@ -748,6 +743,19 @@ function census_views_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: affiliate select (field_affiliate_select) */
+  $handler->display->display_options['arguments']['field_affiliate_select_value']['id'] = 'field_affiliate_select_value';
+  $handler->display->display_options['arguments']['field_affiliate_select_value']['table'] = 'field_data_field_affiliate_select';
+  $handler->display->display_options['arguments']['field_affiliate_select_value']['field'] = 'field_affiliate_select_value';
+  $handler->display->display_options['arguments']['field_affiliate_select_value']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['field_affiliate_select_value']['default_argument_type'] = 'raw';
+  $handler->display->display_options['arguments']['field_affiliate_select_value']['default_argument_options']['index'] = '1';
+  $handler->display->display_options['arguments']['field_affiliate_select_value']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_affiliate_select_value']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_affiliate_select_value']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['field_affiliate_select_value']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['field_affiliate_select_value']['validate']['fail'] = 'ignore';
+  $handler->display->display_options['arguments']['field_affiliate_select_value']['limit'] = '0';
   $handler->display->display_options['path'] = 'census-s-by-affiliate';
 
   /* Display: Block */
@@ -839,8 +847,8 @@ function census_views_views_default_views() {
     t('Census Status'),
     t('Status'),
     t('Page'),
-    t('Block'),
     t('All'),
+    t('Block'),
   );
   $export['census_s_by_affiliate'] = $view;
 
