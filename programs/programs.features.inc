@@ -41,6 +41,11 @@ function programs_paragraphs_info() {
       'bundle' => 'funding_source',
       'locked' => '1',
     ),
+    'program_services' => array(
+      'name' => 'Program Services',
+      'bundle' => 'program_services',
+      'locked' => '1',
+    ),
   );
   return $items;
 }

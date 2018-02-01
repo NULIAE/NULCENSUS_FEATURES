@@ -1077,6 +1077,333 @@ function programs_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance:
+  // 'paragraphs_item-program_services-field_education_dollars_header'.
+  $field_instances['paragraphs_item-program_services-field_education_dollars_header'] = array(
+    'bundle' => 'program_services',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 8,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_education_dollars_header',
+    'label' => 'education dollars header',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 11,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'paragraphs_item-program_services-field_education_hours_header'.
+  $field_instances['paragraphs_item-program_services-field_education_hours_header'] = array(
+    'bundle' => 'program_services',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 7,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_education_hours_header',
+    'label' => 'education hours header',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 10,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'paragraphs_item-program_services-field_education_people_header'.
+  $field_instances['paragraphs_item-program_services-field_education_people_header'] = array(
+    'bundle' => 'program_services',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 6,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_education_people_header',
+    'label' => 'education people header',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 9,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'paragraphs_item-program_services-field_education_service_header'.
+  $field_instances['paragraphs_item-program_services-field_education_service_header'] = array(
+    'bundle' => 'program_services',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_view',
+        'weight' => 5,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_education_service_header',
+    'label' => 'education service header',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'paragraphs_item-program_services-field_program_service_dollars'.
+  $field_instances['paragraphs_item-program_services-field_program_service_dollars'] = array(
+    'bundle' => 'program_services',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 10,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_program_service_dollars',
+    'label' => 'Dollars',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '$',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'paragraphs_item-program_services-field_program_service_hours'.
+  $field_instances['paragraphs_item-program_services-field_program_service_hours'] = array(
+    'bundle' => 'program_services',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 9,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_program_service_hours',
+    'label' => 'Hours',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 7,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'paragraphs_item-program_services-field_program_service_provided'.
+  $field_instances['paragraphs_item-program_services-field_program_service_provided'] = array(
+    'bundle' => 'program_services',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_plain',
+        'weight' => 7,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_program_service_provided',
+    'label' => 'Service Provided',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'paragraphs_item-program_services-field_program_service_served'.
+  $field_instances['paragraphs_item-program_services-field_program_service_served'] = array(
+    'bundle' => 'program_services',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 8,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_program_service_served',
+    'label' => 'People Served',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 6,
+    ),
+  );
+
   // Exported field_instance: 'taxonomy_term-program_areas-field_content_type'.
   $field_instances['taxonomy_term-program_areas-field_content_type'] = array(
     'bundle' => 'program_areas',
@@ -1183,18 +1510,26 @@ function programs_field_default_field_instances() {
   t('% White');
   t('Amount Funded');
   t('Content Type');
+  t('Dollars');
   t('Duration of the program');
   t('Funding Funding Type Label');
   t('Funding Source');
   t('Funding Source Label');
   t('Funding Sources');
   t('Funding Type');
+  t('Hours');
   t('Number of People Served Annually');
+  t('People Served');
   t('Program Area');
   t('Program Types');
   t('Purpose of Program');
+  t('Service Provided');
   t('Services Provided');
   t('Source type');
+  t('education dollars header');
+  t('education hours header');
+  t('education people header');
+  t('education service header');
   t('funding amount label');
   t('funding source type label');
   t('legacy program id');
