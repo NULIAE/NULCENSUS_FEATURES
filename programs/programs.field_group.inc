@@ -231,7 +231,7 @@ function programs_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Demographics',
-    'weight' => '6',
+    'weight' => '7',
     'children' => array(
       0 => 'field_program_percent_black',
       1 => 'field_program_percent_white',
@@ -266,7 +266,7 @@ function programs_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Ethnicity',
-    'weight' => '7',
+    'weight' => '8',
     'children' => array(
       0 => 'field_program_percent_hispanic',
       1 => 'field_program_percent_non_hispan',
@@ -299,7 +299,7 @@ function programs_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Gender',
-    'weight' => '8',
+    'weight' => '9',
     'children' => array(
       0 => 'field_program_percent_male',
       1 => 'field_program_percent_female',
@@ -484,7 +484,7 @@ function programs_field_group_info() {
       'label' => 'Services Table',
       'instance_settings' => array(
         'id' => '',
-        'classes' => 'group-program-service-table field-group-div nuTable',
+        'classes' => 'group-program-service-table field-group-div nulTable',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',

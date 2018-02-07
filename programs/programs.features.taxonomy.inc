@@ -78,5 +78,28 @@ function programs_taxonomy_default_vocabularies() {
         ),
       ),
     ),
+    'target_group_served' => array(
+      'name' => 'Target Group Served',
+      'machine_name' => 'target_group_served',
+      'description' => 'Used on Programs content type',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+    ),
   );
 }
