@@ -18,6 +18,7 @@ features[views_view][] = census_s_by_affiliate
 features[views_view][] = census_status
 features[views_view][] = census_tab_menu
 features[views_view][] = censuses_for_my_affiliate
+features[views_view][] = clone_of_other_programs_required_report_2_
 features[views_view][] = education_programs_view
 features[views_view][] = full_census
 features[views_view][] = full_parent_census
