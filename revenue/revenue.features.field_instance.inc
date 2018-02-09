@@ -100,7 +100,7 @@ function revenue_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 3,
+      'weight' => 2,
     ),
   );
 
@@ -204,7 +204,7 @@ function revenue_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 8,
+      'weight' => 7,
     ),
   );
 
@@ -256,7 +256,7 @@ function revenue_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 4,
+      'weight' => 3,
     ),
   );
 
@@ -351,7 +351,7 @@ function revenue_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 5,
+      'weight' => 4,
     ),
   );
 
@@ -403,7 +403,7 @@ function revenue_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 2,
+      'weight' => 1,
     ),
   );
 
@@ -455,7 +455,7 @@ function revenue_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 10,
+      'weight' => 9,
     ),
   );
 
@@ -553,7 +553,7 @@ function revenue_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 11,
+      'weight' => 10,
     ),
   );
 
@@ -605,7 +605,7 @@ function revenue_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 6,
+      'weight' => 5,
     ),
   );
 
@@ -657,7 +657,7 @@ function revenue_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 9,
+      'weight' => 8,
     ),
   );
 
@@ -666,7 +666,7 @@ function revenue_field_default_field_instances() {
     'bundle' => 'revenue',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This is calculated from the answers provided above',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -695,7 +695,7 @@ function revenue_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_revenue_total_budget',
-    'label' => 'What is the total revenue of your affiliate?',
+    'label' => 'Total revenue for your affiliate:',
     'required' => 0,
     'settings' => array(
       'max' => '',
@@ -709,7 +709,7 @@ function revenue_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 1,
+      'weight' => 11,
     ),
   );
 
@@ -761,7 +761,7 @@ function revenue_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 7,
+      'weight' => 6,
     ),
   );
 
@@ -912,7 +912,7 @@ function revenue_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 3,
+      'weight' => 11,
     ),
   );
 
@@ -959,24 +959,24 @@ function revenue_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 2,
+      'weight' => 10,
     ),
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-budget_ventures-field_type_of_venture'.
-  $field_instances['paragraphs_item-budget_ventures-field_type_of_venture'] = array(
+  // 'paragraphs_item-budget_ventures-field_budget_venture_type'.
+  $field_instances['paragraphs_item-budget_ventures-field_budget_venture_type'] = array(
     'bundle' => 'budget_ventures',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
-        'module' => 'taxonomy',
+        'label' => 'above',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_plain',
-        'weight' => 3,
+        'type' => 'text_default',
+        'weight' => 6,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
@@ -986,21 +986,21 @@ function revenue_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'paragraphs_item',
-    'field_name' => 'field_type_of_venture',
+    'field_name' => 'field_budget_venture_type',
     'label' => 'Type of Venture',
     'required' => 0,
     'settings' => array(
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'taxonomy',
+      'module' => 'text',
       'settings' => array(
-        'autocomplete_path' => 'taxonomy/autocomplete',
         'size' => 60,
       ),
-      'type' => 'taxonomy_autocomplete',
-      'weight' => 1,
+      'type' => 'text_textfield',
+      'weight' => 8,
     ),
   );
 
@@ -1133,10 +1133,11 @@ function revenue_field_default_field_instances() {
   t('Special Events');
   t('State/Local');
   t('Tab Status');
+  t('This is calculated from the answers provided above');
+  t('Total revenue for your affiliate:');
   t('Type of Venture');
   t('United Way');
   t('Venture type header');
-  t('What is the total revenue of your affiliate?');
   t('parent census');
   t('venture budgeted header');
   t('venture earned header');

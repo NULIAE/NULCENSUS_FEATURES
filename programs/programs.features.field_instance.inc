@@ -24,7 +24,7 @@ function programs_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'paragraphs_view',
-        'weight' => 10,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -59,7 +59,7 @@ function programs_field_default_field_instances() {
       'module' => 'paragraphs',
       'settings' => array(),
       'type' => 'paragraphs_embed',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -99,7 +99,7 @@ function programs_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 11,
+      'weight' => 16,
     ),
   );
 
@@ -135,7 +135,7 @@ function programs_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 10,
+      'weight' => 17,
     ),
   );
 
@@ -193,7 +193,7 @@ function programs_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 19,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -204,7 +204,7 @@ function programs_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_program_budget',
-    'label' => 'Program Budget',
+    'label' => 'Total Program Budget Funded',
     'required' => 0,
     'settings' => array(
       'max' => '',
@@ -218,7 +218,7 @@ function programs_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 12,
+      'weight' => 7,
     ),
   );
 
@@ -239,7 +239,7 @@ function programs_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 21,
+        'weight' => 14,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -264,7 +264,7 @@ function programs_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 14,
+      'weight' => 13,
     ),
   );
 
@@ -280,7 +280,7 @@ function programs_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 20,
+        'weight' => 13,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -301,7 +301,50 @@ function programs_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 13,
+      'weight' => 12,
+    ),
+  );
+
+  // Exported field_instance: 'node-programs-field_program_nul_funded'.
+  $field_instances['node-programs-field_program_nul_funded'] = array(
+    'bundle' => 'programs',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_program_nul_funded',
+    'label' => 'Is this program funded by NUL?',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 1,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 2,
     ),
   );
 
@@ -322,7 +365,7 @@ function programs_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 5,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -368,7 +411,7 @@ function programs_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -414,7 +457,7 @@ function programs_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 12,
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -460,7 +503,7 @@ function programs_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 7,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -489,6 +532,52 @@ function programs_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-programs-field_program_percent_immigrant'.
+  $field_instances['node-programs-field_program_percent_immigrant'] = array(
+    'bundle' => 'programs',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 8,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_program_percent_immigrant',
+    'label' => 'Immigrant Population %',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '%',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 12,
+    ),
+  );
+
   // Exported field_instance: 'node-programs-field_program_percent_male'.
   $field_instances['node-programs-field_program_percent_male'] = array(
     'bundle' => 'programs',
@@ -506,7 +595,7 @@ function programs_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 11,
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -552,7 +641,7 @@ function programs_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 6,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -581,6 +670,52 @@ function programs_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-programs-field_program_percent_newcomer'.
+  $field_instances['node-programs-field_program_percent_newcomer'] = array(
+    'bundle' => 'programs',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 9,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_program_percent_newcomer',
+    'label' => 'Newcomer Population %',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '%',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 13,
+    ),
+  );
+
   // Exported field_instance: 'node-programs-field_program_percent_non_hispan'.
   $field_instances['node-programs-field_program_percent_non_hispan'] = array(
     'bundle' => 'programs',
@@ -598,7 +733,7 @@ function programs_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 8,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -644,7 +779,7 @@ function programs_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -709,7 +844,7 @@ function programs_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -730,7 +865,7 @@ function programs_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -755,7 +890,47 @@ function programs_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 6,
+      'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance: 'node-programs-field_program_target_age'.
+  $field_instances['node-programs-field_program_target_age'] = array(
+    'bundle' => 'programs',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 12,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_program_target_age',
+    'label' => 'Target age range',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 14,
     ),
   );
 
@@ -774,7 +949,7 @@ function programs_field_default_field_instances() {
           'taxonomy_term_separator' => ', ',
         ),
         'type' => 'ds_taxonomy_separator',
-        'weight' => 18,
+        'weight' => 11,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -811,7 +986,7 @@ function programs_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
-        'weight' => 13,
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -832,7 +1007,7 @@ function programs_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -850,7 +1025,7 @@ function programs_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'paragraphs_view',
-        'weight' => 17,
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -893,7 +1068,7 @@ function programs_field_default_field_instances() {
       'module' => 'paragraphs',
       'settings' => array(),
       'type' => 'paragraphs_embed',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -915,7 +1090,7 @@ function programs_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 4,
+        'weight' => 14,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
@@ -982,82 +1157,6 @@ function programs_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-funding_source-field_funding_funding_source'.
-  $field_instances['paragraphs_item-funding_source-field_funding_funding_source'] = array(
-    'bundle' => 'funding_source',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 1,
-      ),
-      'paragraphs_editor_preview' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'paragraphs_item',
-    'field_name' => 'field_funding_funding_source',
-    'label' => 'Funding Source',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 1,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'paragraphs_item-funding_source-field_funding_funding_type'.
-  $field_instances['paragraphs_item-funding_source-field_funding_funding_type'] = array(
-    'bundle' => 'funding_source',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 3,
-      ),
-      'paragraphs_editor_preview' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'paragraphs_item',
-    'field_name' => 'field_funding_funding_type',
-    'label' => 'Funding Type',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 3,
-    ),
-  );
-
-  // Exported field_instance:
   // 'paragraphs_item-funding_source-field_funding_funding_type_label'.
   $field_instances['paragraphs_item-funding_source-field_funding_funding_type_label'] = array(
     'bundle' => 'funding_source',
@@ -1091,6 +1190,82 @@ function programs_field_default_field_instances() {
       'settings' => array(),
       'type' => 'markup',
       'weight' => 12,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'paragraphs_item-funding_source-field_funding_organization'.
+  $field_instances['paragraphs_item-funding_source-field_funding_organization'] = array(
+    'bundle' => 'funding_source',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_plain',
+        'weight' => 11,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_funding_organization',
+    'label' => 'Organization Name',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'paragraphs_item-funding_source-field_funding_sector'.
+  $field_instances['paragraphs_item-funding_source-field_funding_sector'] = array(
+    'bundle' => 'funding_source',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_plain',
+        'weight' => 12,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_funding_sector',
+    'label' => 'Sector',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 2,
     ),
   );
 
@@ -1132,44 +1307,6 @@ function programs_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-funding_source-field_funding_source_type'.
-  $field_instances['paragraphs_item-funding_source-field_funding_source_type'] = array(
-    'bundle' => 'funding_source',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 2,
-      ),
-      'paragraphs_editor_preview' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'paragraphs_item',
-    'field_name' => 'field_funding_source_type',
-    'label' => 'Source type',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 2,
-    ),
-  );
-
-  // Exported field_instance:
   // 'paragraphs_item-funding_source-field_funding_source_type_label'.
   $field_instances['paragraphs_item-funding_source-field_funding_source_type_label'] = array(
     'bundle' => 'funding_source',
@@ -1203,6 +1340,44 @@ function programs_field_default_field_instances() {
       'settings' => array(),
       'type' => 'markup',
       'weight' => 11,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'paragraphs_item-funding_source-field_funding_vehicle'.
+  $field_instances['paragraphs_item-funding_source-field_funding_vehicle'] = array(
+    'bundle' => 'funding_source',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_plain',
+        'weight' => 13,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_funding_vehicle',
+    'label' => 'Funding Vehicle',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 3,
     ),
   );
 
@@ -1672,23 +1847,27 @@ function programs_field_default_field_instances() {
   t('Content Type');
   t('Dollars');
   t('Funding Funding Type Label');
-  t('Funding Source');
   t('Funding Source Label');
   t('Funding Sources');
-  t('Funding Type');
+  t('Funding Vehicle');
   t('Hours');
+  t('Immigrant Population %');
+  t('Is this program funded by NUL?');
+  t('Newcomer Population %');
   t('Number of People Served Annually');
+  t('Organization Name');
   t('People Served');
   t('Program Area');
-  t('Program Budget');
   t('Program Length Amount');
   t('Program Length Type');
   t('Program Target Group');
   t('Program Types');
   t('Purpose of Program');
+  t('Sector');
   t('Service Provided');
   t('Services Provided');
-  t('Source type');
+  t('Target age range');
+  t('Total Program Budget Funded');
   t('education dollars header');
   t('education hours header');
   t('education people header');

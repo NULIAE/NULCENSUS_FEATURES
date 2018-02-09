@@ -19,7 +19,7 @@ function housing_and_community_development_ctools_plugin_api($module = NULL, $ap
 function housing_and_community_development_node_info() {
   $items = array(
     'program_housing' => array(
-      'name' => t('Housing and Community Development Program Details'),
+      'name' => t('Housing and Community Development Programs'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',

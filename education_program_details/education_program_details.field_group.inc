@@ -21,7 +21,7 @@ function education_program_details_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Advocacy',
-    'weight' => '6',
+    'weight' => '7',
     'children' => array(
       0 => 'field_program_ed_advocacy',
       1 => 'field_program_ed_adv_partners',
@@ -87,7 +87,7 @@ function education_program_details_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Charter Schools',
-    'weight' => '5',
+    'weight' => '6',
     'children' => array(
       0 => 'field_program_ed_charter_school',
       1 => 'field_program_ed_charter_mngmt',
@@ -157,7 +157,7 @@ function education_program_details_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Foster Care',
-    'weight' => '8',
+    'weight' => '9',
     'children' => array(
       0 => 'field_program_ed_foster',
       1 => 'field_program_ed_foster_total',
@@ -223,7 +223,7 @@ function education_program_details_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Homeless Youth',
-    'weight' => '2',
+    'weight' => '3',
     'children' => array(
       0 => 'field_program_ed_homeless_youth',
       1 => 'field_program_ed_title1',
@@ -332,6 +332,7 @@ function education_program_details_field_group_info() {
       0 => 'field_program_ed_promoted',
       1 => 'field_program_ed_graduated',
       2 => 'field_program_ed_college_app',
+      3 => 'field_program_ed_total_participa',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -361,7 +362,7 @@ function education_program_details_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Mentoring',
-    'weight' => '3',
+    'weight' => '4',
     'children' => array(
       0 => 'field_program_ed_mentoring',
       1 => 'field_program_ed_mentors_annual',
@@ -495,7 +496,7 @@ function education_program_details_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Education Programs (Middle School, High School)',
-    'weight' => '7',
+    'weight' => '8',
     'children' => array(
       0 => 'field_program_ed_model',
       1 => 'group_ed_impacts',
@@ -561,7 +562,7 @@ function education_program_details_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Scholarship',
-    'weight' => '4',
+    'weight' => '5',
     'children' => array(
       0 => 'field_program_ed_scholar_total',
       1 => 'field_program_ed_scholar_avg',

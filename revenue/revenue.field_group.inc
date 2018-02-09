@@ -195,7 +195,7 @@ function revenue_field_group_info() {
     'children' => array(
       0 => 'field_budget_venture_earned',
       1 => 'field_budget_venture_budgeted',
-      2 => 'field_type_of_venture',
+      2 => 'field_budget_venture_type',
     ),
     'format_type' => 'div',
     'format_settings' => array(

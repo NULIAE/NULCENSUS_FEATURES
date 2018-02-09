@@ -142,7 +142,7 @@ function entreuprenuership_and_business_development_program_details_field_defaul
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -163,7 +163,7 @@ function entreuprenuership_and_business_development_program_details_field_defaul
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -182,7 +182,7 @@ function entreuprenuership_and_business_development_program_details_field_defaul
           'view_mode' => 'full',
         ),
         'type' => 'paragraphs_view',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -830,6 +830,53 @@ function entreuprenuership_and_business_development_program_details_field_defaul
     ),
   );
 
+  // Exported field_instance:
+  // 'node-program_entrepreneurship-field_program_entpr_total_partic'.
+  $field_instances['node-program_entrepreneurship-field_program_entpr_total_partic'] = array(
+    'bundle' => 'program_entrepreneurship',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_program_entpr_total_partic',
+    'label' => 'Total Participants in Entrepreneurship Programs',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 3,
+    ),
+  );
+
   // Exported field_instance: 'node-program_entrepreneurship-field_tab_status'.
   $field_instances['node-program_entrepreneurship-field_tab_status'] = array(
     'bundle' => 'program_entrepreneurship',
@@ -841,7 +888,7 @@ function entreuprenuership_and_business_development_program_details_field_defaul
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 7,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -862,7 +909,7 @@ function entreuprenuership_and_business_development_program_details_field_defaul
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 6,
+      'weight' => 7,
     ),
   );
 
@@ -1131,6 +1178,7 @@ function entreuprenuership_and_business_development_program_details_field_defaul
   t('Sales');
   t('Served');
   t('Tab Status');
+  t('Total Participants in Entrepreneurship Programs');
   t('Total sales of businesses started by participants in entrepreneurship programs (i.e. Small Business Matters)');
   t('Type of Business');
   t('parent census');

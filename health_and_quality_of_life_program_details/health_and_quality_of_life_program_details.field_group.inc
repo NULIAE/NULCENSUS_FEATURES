@@ -193,7 +193,7 @@ function health_and_quality_of_life_program_details_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Program Impacts',
-    'weight' => '4',
+    'weight' => '5',
     'children' => array(
       0 => 'field_program_health_participant',
       1 => 'field_program_health_enrolled',
@@ -227,7 +227,7 @@ function health_and_quality_of_life_program_details_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Program Impacts',
-    'weight' => '5',
+    'weight' => '6',
     'children' => array(
       0 => 'field_program_health_participant',
       1 => 'field_program_health_enrolled',

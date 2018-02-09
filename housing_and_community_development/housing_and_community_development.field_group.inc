@@ -153,7 +153,7 @@ function housing_and_community_development_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Community Development',
-    'weight' => '5',
+    'weight' => '6',
     'children' => array(
       0 => 'field_program_housing_projects',
       1 => 'field_program_housing_value',
@@ -188,7 +188,7 @@ function housing_and_community_development_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Community Development',
-    'weight' => '6',
+    'weight' => '7',
     'children' => array(
       0 => 'field_program_housing_projects',
       1 => 'field_program_housing_value',
@@ -223,7 +223,7 @@ function housing_and_community_development_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Foreclosure Assistance',
-    'weight' => '4',
+    'weight' => '5',
     'children' => array(
       0 => 'field_program_housing_not4closed',
       1 => 'field_program_housing_month_late',
@@ -258,7 +258,7 @@ function housing_and_community_development_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Foreclosure Assistance',
-    'weight' => '5',
+    'weight' => '6',
     'children' => array(
       0 => 'field_program_housing_not4closed',
       1 => 'field_program_housing_month_late',
@@ -293,7 +293,7 @@ function housing_and_community_development_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Home Purchased',
-    'weight' => '3',
+    'weight' => '4',
     'children' => array(
       0 => 'field_program_housing_attended',
       1 => 'field_program_housing_purchased',
@@ -328,7 +328,7 @@ function housing_and_community_development_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Home Purchased',
-    'weight' => '4',
+    'weight' => '5',
     'children' => array(
       0 => 'field_program_housing_attended',
       1 => 'field_program_housing_purchased',
@@ -363,7 +363,7 @@ function housing_and_community_development_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Program Impacts',
-    'weight' => '2',
+    'weight' => '3',
     'children' => array(
       0 => 'field_program_housing_improved',
     ),
@@ -395,7 +395,7 @@ function housing_and_community_development_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Program Impacts',
-    'weight' => '3',
+    'weight' => '4',
     'children' => array(
       0 => 'field_program_housing_improved',
     ),

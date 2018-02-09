@@ -19,7 +19,7 @@ function health_and_quality_of_life_program_details_ctools_plugin_api($module = 
 function health_and_quality_of_life_program_details_node_info() {
   $items = array(
     'program_health' => array(
-      'name' => t('Health and Quality of Life Program Details'),
+      'name' => t('Health and Quality of Life Programs'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',

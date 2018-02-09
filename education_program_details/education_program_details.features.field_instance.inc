@@ -143,7 +143,7 @@ function education_program_details_field_default_field_instances() {
         'label' => 'inline',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 10,
+        'weight' => 11,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -164,7 +164,7 @@ function education_program_details_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 10,
+      'weight' => 11,
     ),
   );
 
@@ -1028,6 +1028,53 @@ function education_program_details_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance:
+  // 'node-program_education-field_program_ed_total_participa'.
+  $field_instances['node-program_education-field_program_ed_total_participa'] = array(
+    'bundle' => 'program_education',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_program_ed_total_participa',
+    'label' => 'Total Participants in Education Programs',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 12,
+    ),
+  );
+
   // Exported field_instance: 'node-program_education-field_tab_status'.
   $field_instances['node-program_education-field_tab_status'] = array(
     'bundle' => 'program_education',
@@ -1043,7 +1090,7 @@ function education_program_details_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 9,
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1064,7 +1111,7 @@ function education_program_details_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 11,
+      'weight' => 12,
     ),
   );
 
@@ -1093,6 +1140,7 @@ function education_program_details_field_default_field_instances() {
   t('Percentage of participants who submitted college application(s)');
   t('Program Model');
   t('Tab Status');
+  t('Total Participants in Education Programs');
   t('What is the average value of the individual scholarships provided annually?');
   t('What is the overall value of the scholarships provided annually?');
   t('parent census');

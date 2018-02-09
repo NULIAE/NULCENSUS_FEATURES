@@ -19,7 +19,7 @@ function workforce_development_program_details_ctools_plugin_api($module = NULL,
 function workforce_development_program_details_node_info() {
   $items = array(
     'program_workforce' => array(
-      'name' => t('Workforce Development Program Details'),
+      'name' => t('Workforce Development Programs'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',

@@ -422,6 +422,24 @@ function health_and_quality_of_life_program_details_field_default_field_bases() 
     'type' => 'number_integer',
   );
 
+  // Exported field_base: 'field_program_health_total_parti'.
+  $field_bases['field_program_health_total_parti'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_program_health_total_parti',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'number',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'number_integer',
+  );
+
   // Exported field_base: 'field_tab_status'.
   $field_bases['field_tab_status'] = array(
     'active' => 1,

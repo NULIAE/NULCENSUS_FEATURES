@@ -19,7 +19,7 @@ function entreuprenuership_and_business_development_program_details_ctools_plugi
 function entreuprenuership_and_business_development_program_details_node_info() {
   $items = array(
     'program_entrepreneurship' => array(
-      'name' => t('Entrepreneurship and Business Development Program Details'),
+      'name' => t('Entrepreneurship and Business Development Programs'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',

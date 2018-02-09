@@ -54,6 +54,30 @@ function revenue_field_default_field_bases() {
     'type' => 'number_decimal',
   );
 
+  // Exported field_base: 'field_budget_venture_type'.
+  $field_bases['field_budget_venture_type'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_budget_venture_type',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
   // Exported field_base: 'field_parent_census'.
   $field_bases['field_parent_census'] = array(
     'active' => 1,
@@ -445,35 +469,6 @@ function revenue_field_default_field_bases() {
       'allowed_values' => array(
         0 => array(
           'vocabulary' => 'census_tab_status',
-          'parent' => 0,
-        ),
-      ),
-    ),
-    'translatable' => 0,
-    'type' => 'taxonomy_term_reference',
-  );
-
-  // Exported field_base: 'field_type_of_venture'.
-  $field_bases['field_type_of_venture'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_type_of_venture',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(
-      'tid' => array(
-        0 => 'tid',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'taxonomy',
-    'settings' => array(
-      'allowed_values' => array(
-        0 => array(
-          'vocabulary' => 'type_of_venture',
           'parent' => 0,
         ),
       ),

@@ -104,26 +104,22 @@ function workforce_development_program_details_field_default_field_bases() {
     'type' => 'list_boolean',
   );
 
-  // Exported field_base: 'field_program_work_avg_salary'.
-  $field_bases['field_program_work_avg_salary'] = array(
+  // Exported field_base: 'field_program_work_counseling'.
+  $field_bases['field_program_work_counseling'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_program_work_avg_salary',
+    'field_name' => 'field_program_work_counseling',
     'field_permissions' => array(
       'type' => 0,
     ),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'number',
-    'settings' => array(
-      'decimal_separator' => '.',
-      'precision' => 10,
-      'scale' => 2,
-    ),
+    'settings' => array(),
     'translatable' => 0,
-    'type' => 'number_decimal',
+    'type' => 'number_integer',
   );
 
   // Exported field_base: 'field_program_work_credentials'.
@@ -164,6 +160,24 @@ function workforce_development_program_details_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'number_decimal',
+  );
+
+  // Exported field_base: 'field_program_work_participants'.
+  $field_bases['field_program_work_participants'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_program_work_participants',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'number',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'number_integer',
   );
 
   // Exported field_base: 'field_program_work_placed'.
@@ -380,6 +394,39 @@ function workforce_development_program_details_field_default_field_bases() {
     'type' => 'list_boolean',
   );
 
+  // Exported field_base: 'field_program_work_total'.
+  $field_bases['field_program_work_total'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_program_work_total',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'number',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'number_integer',
+  );
+
+  // Exported field_base: 'field_program_work_total_partici'.
+  $field_bases['field_program_work_total_partici'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_program_work_total_partici',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'number',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'number_integer',
+  );
+
   // Exported field_base: 'field_program_work_welfare'.
   $field_bases['field_program_work_welfare'] = array(
     'active' => 1,
@@ -396,6 +443,28 @@ function workforce_development_program_details_field_default_field_bases() {
     'settings' => array(),
     'translatable' => 0,
     'type' => 'number_integer',
+  );
+
+  // Exported field_base: 'field_program_work_welfare_hour'.
+  $field_bases['field_program_work_welfare_hour'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_program_work_welfare_hour',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'number',
+    'settings' => array(
+      'decimal_separator' => '.',
+      'precision' => 10,
+      'scale' => 2,
+    ),
+    'translatable' => 0,
+    'type' => 'number_decimal',
   );
 
   // Exported field_base: 'field_program_work_welfare_place'.
@@ -429,9 +498,13 @@ function workforce_development_program_details_field_default_field_bases() {
     'indexes' => array(),
     'locked' => 0,
     'module' => 'number',
-    'settings' => array(),
+    'settings' => array(
+      'decimal_separator' => '.',
+      'precision' => 10,
+      'scale' => 2,
+    ),
     'translatable' => 0,
-    'type' => 'number_integer',
+    'type' => 'number_decimal',
   );
 
   // Exported field_base: 'field_program_work_wia'.

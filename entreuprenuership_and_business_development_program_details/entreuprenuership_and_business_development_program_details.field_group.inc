@@ -226,7 +226,7 @@ function entreuprenuership_and_business_development_program_details_field_group_
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Program Impacts',
-    'weight' => '3',
+    'weight' => '4',
     'children' => array(
       0 => 'field_program_entpr_new',
       1 => 'field_program_entpr_jobs_ft',
@@ -264,7 +264,7 @@ function entreuprenuership_and_business_development_program_details_field_group_
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Program Impacts',
-    'weight' => '4',
+    'weight' => '5',
     'children' => array(
       0 => 'field_program_entpr_new',
       1 => 'field_program_entpr_jobs_ft',
@@ -275,7 +275,6 @@ function entreuprenuership_and_business_development_program_details_field_group_
       6 => 'field_program_entpr_new_jobs',
       7 => 'field_program_entpr_businesses',
       8 => 'group_entpr_stage',
-      9 => 'group_entpr_business_header',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -371,7 +370,7 @@ function entreuprenuership_and_business_development_program_details_field_group_
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Business Stage',
-    'weight' => '5',
+    'weight' => '6',
     'children' => array(
       0 => 'field_program_entpr_stage_0_2',
       1 => 'field_program_entpr_stage_3_5',
@@ -439,7 +438,7 @@ function entreuprenuership_and_business_development_program_details_field_group_
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'How many staff are engaged in these entrepreneurship activities?',
-    'weight' => '2',
+    'weight' => '3',
     'children' => array(
       0 => 'field_program_entpr_staff_entpr',
       1 => 'field_program_entpr_staff_other',
@@ -473,7 +472,7 @@ function entreuprenuership_and_business_development_program_details_field_group_
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'How many staff are engaged in these entrepreneurship activities?',
-    'weight' => '3',
+    'weight' => '4',
     'children' => array(
       0 => 'field_program_entpr_staff_entpr',
       1 => 'field_program_entpr_staff_other',

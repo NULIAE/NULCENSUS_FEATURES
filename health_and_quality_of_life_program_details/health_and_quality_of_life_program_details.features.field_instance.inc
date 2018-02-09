@@ -139,7 +139,7 @@ function health_and_quality_of_life_program_details_field_default_field_instance
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 5,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -160,7 +160,7 @@ function health_and_quality_of_life_program_details_field_default_field_instance
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 6,
+      'weight' => 7,
     ),
   );
 
@@ -177,7 +177,7 @@ function health_and_quality_of_life_program_details_field_default_field_instance
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -198,7 +198,7 @@ function health_and_quality_of_life_program_details_field_default_field_instance
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -261,7 +261,7 @@ function health_and_quality_of_life_program_details_field_default_field_instance
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -282,7 +282,7 @@ function health_and_quality_of_life_program_details_field_default_field_instance
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -380,6 +380,53 @@ function health_and_quality_of_life_program_details_field_default_field_instance
     ),
   );
 
+  // Exported field_instance:
+  // 'node-program_health-field_program_health_total_parti'.
+  $field_instances['node-program_health-field_program_health_total_parti'] = array(
+    'bundle' => 'program_health',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_program_health_total_parti',
+    'label' => 'Total Participants in Health Programs',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 3,
+    ),
+  );
+
   // Exported field_instance: 'node-program_health-field_tab_status'.
   $field_instances['node-program_health-field_tab_status'] = array(
     'bundle' => 'program_health',
@@ -391,7 +438,7 @@ function health_and_quality_of_life_program_details_field_default_field_instance
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -412,7 +459,7 @@ function health_and_quality_of_life_program_details_field_default_field_instance
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 7,
+      'weight' => 8,
     ),
   );
 
@@ -754,6 +801,7 @@ function health_and_quality_of_life_program_details_field_default_field_instance
   t('Number of individuals enrolled in health insurance by Community Health Worker or Navigator');
   t('Our Affiliate offers programs of this type');
   t('Tab Status');
+  t('Total Participants in Health Programs');
   t('health dollars');
   t('health dollars header');
   t('health hours');

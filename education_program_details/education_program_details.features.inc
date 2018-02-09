@@ -19,7 +19,7 @@ function education_program_details_ctools_plugin_api($module = NULL, $api = NULL
 function education_program_details_node_info() {
   $items = array(
     'program_education' => array(
-      'name' => t('Education Program Details'),
+      'name' => t('Education Programs'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
