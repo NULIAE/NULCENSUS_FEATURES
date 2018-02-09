@@ -1400,363 +1400,6 @@ function census_views_views_default_views() {
   $export['censuses_for_my_affiliate'] = $view;
 
   $view = new view();
-  $view->name = 'clone_of_other_programs_required_report_2_';
-  $view->description = '';
-  $view->tag = 'default';
-  $view->base_table = 'node';
-  $view->human_name = 'Required Report 2 (Other Programs)';
-  $view->core = 7;
-  $view->api_version = '3.0';
-  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
-
-  /* Display: Master */
-  $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Other Programs (Required Report 2)';
-  $handler->display->display_options['use_more_always'] = FALSE;
-  $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'none';
-  $handler->display->display_options['query']['type'] = 'views_query';
-  $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['pager']['type'] = 'none';
-  $handler->display->display_options['style_plugin'] = 'views_aggregator';
-  $handler->display->display_options['style_options']['columns'] = array(
-    'field_first_name' => 'field_first_name',
-    'title_1' => 'title_1',
-    'field_year' => 'field_year',
-    'field_parent_census' => 'field_parent_census',
-    'field_program_area' => 'field_program_area',
-    'title' => 'title',
-    'title_2' => 'title_2',
-    'field_program_served_total' => 'field_program_served_total',
-  );
-  $handler->display->display_options['style_options']['default'] = '-1';
-  $handler->display->display_options['style_options']['info'] = array(
-    'field_first_name' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-      'has_aggr' => 0,
-      'aggr' => array(
-        'views_aggregator_group_and_compress' => 'views_aggregator_group_and_compress',
-      ),
-      'aggr_par' => '',
-      'has_aggr_column' => 0,
-      'aggr_column' => 'views_aggregator_sum',
-      'aggr_par_column' => '',
-    ),
-    'title_1' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-      'has_aggr' => 0,
-      'aggr' => array(
-        'views_aggregator_first' => 'views_aggregator_first',
-      ),
-      'aggr_par' => '',
-      'has_aggr_column' => 0,
-      'aggr_column' => 'views_aggregator_sum',
-      'aggr_par_column' => '',
-    ),
-    'field_year' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-      'has_aggr' => 0,
-      'aggr' => array(
-        'views_aggregator_first' => 'views_aggregator_first',
-      ),
-      'aggr_par' => '',
-      'has_aggr_column' => 0,
-      'aggr_column' => 'views_aggregator_sum',
-      'aggr_par_column' => '',
-    ),
-    'field_parent_census' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-      'has_aggr' => 0,
-      'aggr' => array(
-        'views_aggregator_first' => 'views_aggregator_first',
-      ),
-      'aggr_par' => '',
-      'has_aggr_column' => 0,
-      'aggr_column' => 'views_aggregator_sum',
-      'aggr_par_column' => '',
-    ),
-    'field_program_area' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-      'has_aggr' => 0,
-      'aggr' => array(
-        'views_aggregator_first' => 'views_aggregator_first',
-      ),
-      'aggr_par' => '',
-      'has_aggr_column' => 0,
-      'aggr_column' => 'views_aggregator_sum',
-      'aggr_par_column' => '',
-    ),
-    'title' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-      'has_aggr' => 0,
-      'aggr' => array(
-        'views_aggregator_first' => 'views_aggregator_first',
-      ),
-      'aggr_par' => '',
-      'has_aggr_column' => 0,
-      'aggr_column' => 'views_aggregator_sum',
-      'aggr_par_column' => '',
-    ),
-    'title_2' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-      'has_aggr' => 1,
-      'aggr' => array(
-        'views_aggregator_group_and_compress' => 'views_aggregator_group_and_compress',
-      ),
-      'aggr_par' => '',
-      'has_aggr_column' => 0,
-      'aggr_column' => 'views_aggregator_sum',
-      'aggr_par_column' => '',
-    ),
-    'field_program_served_total' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-      'has_aggr' => 1,
-      'aggr' => array(
-        'views_aggregator_sum' => 'views_aggregator_sum',
-      ),
-      'aggr_par' => '',
-      'has_aggr_column' => 1,
-      'aggr_column' => 'views_aggregator_sum',
-      'aggr_par_column' => 'Total',
-    ),
-  );
-  $handler->display->display_options['style_options']['group_aggregation']['grouping_field_class'] = 'a';
-  $handler->display->display_options['style_options']['column_aggregation']['totals_per_page'] = '0';
-  $handler->display->display_options['style_options']['column_aggregation']['totals_row_position'] = array(
-    1 => 0,
-    2 => '2',
-  );
-  $handler->display->display_options['style_options']['column_aggregation']['precision'] = '2';
-  /* Relationship: Field: Program Area (field_program_area) */
-  $handler->display->display_options['relationships']['field_program_area_tid']['id'] = 'field_program_area_tid';
-  $handler->display->display_options['relationships']['field_program_area_tid']['table'] = 'field_data_field_program_area';
-  $handler->display->display_options['relationships']['field_program_area_tid']['field'] = 'field_program_area_tid';
-  /* Relationship: Entity Reference: Referenced Entity */
-  $handler->display->display_options['relationships']['field_parent_census_target_id']['id'] = 'field_parent_census_target_id';
-  $handler->display->display_options['relationships']['field_parent_census_target_id']['table'] = 'field_data_field_parent_census';
-  $handler->display->display_options['relationships']['field_parent_census_target_id']['field'] = 'field_parent_census_target_id';
-  /* Relationship: Entity Reference: Referencing entity */
-  $handler->display->display_options['relationships']['reverse_field_parent_census_node']['id'] = 'reverse_field_parent_census_node';
-  $handler->display->display_options['relationships']['reverse_field_parent_census_node']['table'] = 'node';
-  $handler->display->display_options['relationships']['reverse_field_parent_census_node']['field'] = 'reverse_field_parent_census_node';
-  $handler->display->display_options['relationships']['reverse_field_parent_census_node']['relationship'] = 'field_parent_census_target_id';
-  /* Field: Broken/missing handler */
-  $handler->display->display_options['fields']['field_first_name']['id'] = 'field_first_name';
-  $handler->display->display_options['fields']['field_first_name']['table'] = 'field_data_field_first_name';
-  $handler->display->display_options['fields']['field_first_name']['field'] = 'field_first_name';
-  $handler->display->display_options['fields']['field_first_name']['relationship'] = 'field_parent_census_target_id';
-  $handler->display->display_options['fields']['field_first_name']['label'] = 'Affiliate Name';
-  $handler->display->display_options['fields']['field_first_name']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_first_name']['element_label_colon'] = FALSE;
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
-  $handler->display->display_options['fields']['title_1']['table'] = 'node';
-  $handler->display->display_options['fields']['title_1']['field'] = 'title';
-  $handler->display->display_options['fields']['title_1']['relationship'] = 'reverse_field_parent_census_node';
-  $handler->display->display_options['fields']['title_1']['label'] = 'Affiliate Name (linked to Other Programs Tab)';
-  $handler->display->display_options['fields']['title_1']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['title_1']['alter']['text'] = '[field_first_name]';
-  /* Field: Content: Year */
-  $handler->display->display_options['fields']['field_year']['id'] = 'field_year';
-  $handler->display->display_options['fields']['field_year']['table'] = 'field_data_field_year';
-  $handler->display->display_options['fields']['field_year']['field'] = 'field_year';
-  $handler->display->display_options['fields']['field_year']['relationship'] = 'field_parent_census_target_id';
-  $handler->display->display_options['fields']['field_year']['type'] = 'number_integer';
-  $handler->display->display_options['fields']['field_year']['settings'] = array(
-    'thousand_separator' => '',
-    'prefix_suffix' => 1,
-  );
-  /* Field: Content: parent census */
-  $handler->display->display_options['fields']['field_parent_census']['id'] = 'field_parent_census';
-  $handler->display->display_options['fields']['field_parent_census']['table'] = 'field_data_field_parent_census';
-  $handler->display->display_options['fields']['field_parent_census']['field'] = 'field_parent_census';
-  $handler->display->display_options['fields']['field_parent_census']['label'] = '';
-  $handler->display->display_options['fields']['field_parent_census']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_parent_census']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_parent_census']['settings'] = array(
-    'bypass_access' => 0,
-    'link' => 0,
-  );
-  /* Field: Field: Program Area */
-  $handler->display->display_options['fields']['field_program_area']['id'] = 'field_program_area';
-  $handler->display->display_options['fields']['field_program_area']['table'] = 'field_data_field_program_area';
-  $handler->display->display_options['fields']['field_program_area']['field'] = 'field_program_area';
-  $handler->display->display_options['fields']['field_program_area']['label'] = '';
-  $handler->display->display_options['fields']['field_program_area']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_program_area']['element_label_colon'] = FALSE;
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title_2']['id'] = 'title_2';
-  $handler->display->display_options['fields']['title_2']['table'] = 'node';
-  $handler->display->display_options['fields']['title_2']['field'] = 'title';
-  $handler->display->display_options['fields']['title_2']['relationship'] = 'field_parent_census_target_id';
-  $handler->display->display_options['fields']['title_2']['label'] = 'Link to Full Census for this Affiliate for this Year';
-  /* Field: Content: Number of People Served Annually */
-  $handler->display->display_options['fields']['field_program_served_total']['id'] = 'field_program_served_total';
-  $handler->display->display_options['fields']['field_program_served_total']['table'] = 'field_data_field_program_served_total';
-  $handler->display->display_options['fields']['field_program_served_total']['field'] = 'field_program_served_total';
-  $handler->display->display_options['fields']['field_program_served_total']['settings'] = array(
-    'thousand_separator' => '',
-    'prefix_suffix' => 1,
-  );
-  /* Sort criterion: Content: Post date */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'node';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
-  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'programs' => 'programs',
-  );
-  /* Filter criterion: Field: Program Area (field_program_area) */
-  $handler->display->display_options['filters']['field_program_area_tid']['id'] = 'field_program_area_tid';
-  $handler->display->display_options['filters']['field_program_area_tid']['table'] = 'field_data_field_program_area';
-  $handler->display->display_options['filters']['field_program_area_tid']['field'] = 'field_program_area_tid';
-  $handler->display->display_options['filters']['field_program_area_tid']['value'] = array(
-    109 => '109',
-  );
-  $handler->display->display_options['filters']['field_program_area_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_program_area_tid']['vocabulary'] = 'program_areas';
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type_1']['id'] = 'type_1';
-  $handler->display->display_options['filters']['type_1']['table'] = 'node';
-  $handler->display->display_options['filters']['type_1']['field'] = 'type';
-  $handler->display->display_options['filters']['type_1']['relationship'] = 'reverse_field_parent_census_node';
-  $handler->display->display_options['filters']['type_1']['value'] = array(
-    'program_other' => 'program_other',
-  );
-  /* Filter criterion: Content: Year (field_year) */
-  $handler->display->display_options['filters']['field_year_value']['id'] = 'field_year_value';
-  $handler->display->display_options['filters']['field_year_value']['table'] = 'field_data_field_year';
-  $handler->display->display_options['filters']['field_year_value']['field'] = 'field_year_value';
-  $handler->display->display_options['filters']['field_year_value']['relationship'] = 'field_parent_census_target_id';
-  $handler->display->display_options['filters']['field_year_value']['operator'] = '=';
-  $handler->display->display_options['filters']['field_year_value']['value'] = array(
-    'min' => '',
-    'max' => '',
-    'value' => '',
-  );
-  $handler->display->display_options['filters']['field_year_value']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_year_value']['expose']['operator_id'] = 'field_year_value_op';
-  $handler->display->display_options['filters']['field_year_value']['expose']['label'] = 'Year';
-  $handler->display->display_options['filters']['field_year_value']['expose']['operator'] = 'field_year_value_op';
-  $handler->display->display_options['filters']['field_year_value']['expose']['identifier'] = 'field_year_value';
-  $handler->display->display_options['filters']['field_year_value']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-    3 => 0,
-    4 => 0,
-    5 => 0,
-    6 => 0,
-    7 => 0,
-  );
-  /* Filter criterion: Broken/missing handler */
-  $handler->display->display_options['filters']['field_first_name_value']['id'] = 'field_first_name_value';
-  $handler->display->display_options['filters']['field_first_name_value']['table'] = 'field_data_field_first_name';
-  $handler->display->display_options['filters']['field_first_name_value']['field'] = 'field_first_name_value';
-  $handler->display->display_options['filters']['field_first_name_value']['relationship'] = 'field_parent_census_target_id';
-  $handler->display->display_options['filters']['field_first_name_value']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_first_name_value']['expose']['operator_id'] = 'field_first_name_value_op';
-  $handler->display->display_options['filters']['field_first_name_value']['expose']['label'] = 'Affiliate Name';
-  $handler->display->display_options['filters']['field_first_name_value']['expose']['operator'] = 'field_first_name_value_op';
-  $handler->display->display_options['filters']['field_first_name_value']['expose']['identifier'] = 'field_first_name_value';
-  $handler->display->display_options['filters']['field_first_name_value']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-    3 => 0,
-    4 => 0,
-    5 => 0,
-    6 => 0,
-    7 => 0,
-  );
-
-  /* Display: Page */
-  $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['path'] = 'required-report-2-other-programs';
-
-  /* Display: Data export */
-  $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
-  $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
-  $handler->display->display_options['path'] = 'other-programs-required-report-2/data-export';
-  $handler->display->display_options['displays'] = array(
-    'page' => 'page',
-    'default' => 0,
-  );
-  $translatables['clone_of_other_programs_required_report_2_'] = array(
-    t('Master'),
-    t('Other Programs (Required Report 2)'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('term from field_program_area'),
-    t('Content entity referenced from field_parent_census'),
-    t('Content referencing Content from field_parent_census'),
-    t('Affiliate Name'),
-    t('Affiliate Name (linked to Other Programs Tab)'),
-    t('[field_first_name]'),
-    t('Year'),
-    t('Link to Full Census for this Affiliate for this Year'),
-    t('Number of People Served Annually'),
-    t('Page'),
-    t('Data export'),
-  );
-  $export['clone_of_other_programs_required_report_2_'] = $view;
-
-  $view = new view();
   $view->name = 'education_programs_view';
   $view->description = '';
   $view->tag = 'default';
@@ -2376,6 +2019,201 @@ function census_views_views_default_views() {
   $export['link_to_full_census'] = $view;
 
   $view = new view();
+  $view->name = 'other_programs_required_report_2_';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'Other Programs (Required Report 2)';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Other Programs (Required Report 2)';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['style_plugin'] = 'views_calc';
+  $handler->display->display_options['style_options']['grouping'] = array(
+    0 => array(
+      'field' => 'field_first_name',
+      'rendered' => 1,
+      'rendered_strip' => 0,
+    ),
+  );
+  $handler->display->display_options['style_options']['columns'] = array(
+    'field_first_name' => 'field_first_name',
+    'field_parent_census' => 'field_parent_census',
+    'field_program_area' => 'field_program_area',
+    'title' => 'title',
+    'field_program_served_total' => 'field_program_served_total',
+  );
+  $handler->display->display_options['style_options']['default'] = '-1';
+  $handler->display->display_options['style_options']['info'] = array(
+    'field_first_name' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+      'has_calc' => 0,
+      'calc' => array(),
+    ),
+    'field_parent_census' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+      'has_calc' => 0,
+      'calc' => array(),
+    ),
+    'field_program_area' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+      'has_calc' => 0,
+      'calc' => array(),
+    ),
+    'title' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+      'has_calc' => 0,
+      'calc' => array(),
+    ),
+    'field_program_served_total' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+      'has_calc' => 1,
+      'calc' => array(
+        'SUM' => 'SUM',
+      ),
+    ),
+  );
+  $handler->display->display_options['style_options']['detailed_values'] = '0';
+  $handler->display->display_options['style_options']['precision'] = '0';
+  /* Relationship: Field: Program Area (field_program_area) */
+  $handler->display->display_options['relationships']['field_program_area_tid']['id'] = 'field_program_area_tid';
+  $handler->display->display_options['relationships']['field_program_area_tid']['table'] = 'field_data_field_program_area';
+  $handler->display->display_options['relationships']['field_program_area_tid']['field'] = 'field_program_area_tid';
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_parent_census_target_id']['id'] = 'field_parent_census_target_id';
+  $handler->display->display_options['relationships']['field_parent_census_target_id']['table'] = 'field_data_field_parent_census';
+  $handler->display->display_options['relationships']['field_parent_census_target_id']['field'] = 'field_parent_census_target_id';
+  /* Field: Content: parent census */
+  $handler->display->display_options['fields']['field_parent_census']['id'] = 'field_parent_census';
+  $handler->display->display_options['fields']['field_parent_census']['table'] = 'field_data_field_parent_census';
+  $handler->display->display_options['fields']['field_parent_census']['field'] = 'field_parent_census';
+  $handler->display->display_options['fields']['field_parent_census']['label'] = '';
+  $handler->display->display_options['fields']['field_parent_census']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_parent_census']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_parent_census']['settings'] = array(
+    'bypass_access' => 0,
+    'link' => 0,
+  );
+  /* Field: Field: Program Area */
+  $handler->display->display_options['fields']['field_program_area']['id'] = 'field_program_area';
+  $handler->display->display_options['fields']['field_program_area']['table'] = 'field_data_field_program_area';
+  $handler->display->display_options['fields']['field_program_area']['field'] = 'field_program_area';
+  $handler->display->display_options['fields']['field_program_area']['label'] = '';
+  $handler->display->display_options['fields']['field_program_area']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_program_area']['element_label_colon'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Number of People Served Annually */
+  $handler->display->display_options['fields']['field_program_served_total']['id'] = 'field_program_served_total';
+  $handler->display->display_options['fields']['field_program_served_total']['table'] = 'field_data_field_program_served_total';
+  $handler->display->display_options['fields']['field_program_served_total']['field'] = 'field_program_served_total';
+  $handler->display->display_options['fields']['field_program_served_total']['settings'] = array(
+    'thousand_separator' => '',
+    'prefix_suffix' => 1,
+  );
+  /* Field: Content: parent census */
+  $handler->display->display_options['fields']['field_parent_census_1']['id'] = 'field_parent_census_1';
+  $handler->display->display_options['fields']['field_parent_census_1']['table'] = 'field_data_field_parent_census';
+  $handler->display->display_options['fields']['field_parent_census_1']['field'] = 'field_parent_census';
+  $handler->display->display_options['fields']['field_parent_census_1']['settings'] = array(
+    'bypass_access' => 0,
+    'link' => 0,
+  );
+  /* Sort criterion: Content: Post date */
+  $handler->display->display_options['sorts']['created']['id'] = 'created';
+  $handler->display->display_options['sorts']['created']['table'] = 'node';
+  $handler->display->display_options['sorts']['created']['field'] = 'created';
+  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'programs' => 'programs',
+  );
+  /* Filter criterion: Field: Program Area (field_program_area) */
+  $handler->display->display_options['filters']['field_program_area_tid']['id'] = 'field_program_area_tid';
+  $handler->display->display_options['filters']['field_program_area_tid']['table'] = 'field_data_field_program_area';
+  $handler->display->display_options['filters']['field_program_area_tid']['field'] = 'field_program_area_tid';
+  $handler->display->display_options['filters']['field_program_area_tid']['value'] = array(
+    109 => '109',
+  );
+  $handler->display->display_options['filters']['field_program_area_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_program_area_tid']['vocabulary'] = 'program_areas';
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['path'] = 'other-programs-required-report-2';
+
+  /* Display: Data export */
+  $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['path'] = 'other-programs-required-report-2/data-export';
+  $handler->display->display_options['displays'] = array(
+    'page' => 'page',
+    'default' => 0,
+  );
+  $translatables['other_programs_required_report_2_'] = array(
+    t('Master'),
+    t('Other Programs (Required Report 2)'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('term from field_program_area'),
+    t('Content entity referenced from field_parent_census'),
+    t('Number of People Served Annually'),
+    t('parent census'),
+    t('Page'),
+    t('Data export'),
+  );
+  $export['other_programs_required_report_2_'] = $view;
+
+  $view = new view();
   $view->name = 'programs_for_program_area';
   $view->description = '';
   $view->tag = 'default';
@@ -2936,7 +2774,7 @@ return false;';
   $handler->display->display_options['fields']['field_capital_budget']['group_type'] = 'sum';
   $handler->display->display_options['fields']['field_capital_budget']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_capital_budget']['empty_zero'] = TRUE;
-  /* Field: SUM(Content: What is the total revenue of your affiliate?) */
+  /* Field: SUM(Content: Total revenue for your affiliate:) */
   $handler->display->display_options['fields']['field_revenue_total_budget']['id'] = 'field_revenue_total_budget';
   $handler->display->display_options['fields']['field_revenue_total_budget']['table'] = 'field_data_field_revenue_total_budget';
   $handler->display->display_options['fields']['field_revenue_total_budget']['field'] = 'field_revenue_total_budget';
@@ -3168,26 +3006,23 @@ return false;';
     'scale' => '2',
     'prefix_suffix' => 1,
   );
-  /* Field: SUM(Content: Average salary for participants placed in jobs) */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_program_work_avg_salary']['id'] = 'field_program_work_avg_salary';
   $handler->display->display_options['fields']['field_program_work_avg_salary']['table'] = 'field_data_field_program_work_avg_salary';
   $handler->display->display_options['fields']['field_program_work_avg_salary']['field'] = 'field_program_work_avg_salary';
   $handler->display->display_options['fields']['field_program_work_avg_salary']['group_type'] = 'sum';
+  $handler->display->display_options['fields']['field_program_work_avg_salary']['label'] = 'Average salary for participants placed in jobs';
   $handler->display->display_options['fields']['field_program_work_avg_salary']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_program_work_avg_salary']['empty_zero'] = TRUE;
-  $handler->display->display_options['fields']['field_program_work_avg_salary']['settings'] = array(
-    'thousand_separator' => '',
-    'decimal_separator' => '.',
-    'scale' => '2',
-    'prefix_suffix' => 1,
-  );
-  /* Field: SUM(Content: Average salary of welfare recipieints placed in jobs) */
+  /* Field: SUM(Content: Annual welfare salary (if applicable)) */
   $handler->display->display_options['fields']['field_program_work_welfare_salar']['id'] = 'field_program_work_welfare_salar';
   $handler->display->display_options['fields']['field_program_work_welfare_salar']['table'] = 'field_data_field_program_work_welfare_salar';
   $handler->display->display_options['fields']['field_program_work_welfare_salar']['field'] = 'field_program_work_welfare_salar';
   $handler->display->display_options['fields']['field_program_work_welfare_salar']['group_type'] = 'sum';
+  $handler->display->display_options['fields']['field_program_work_welfare_salar']['label'] = 'Average salary of welfare recipieints placed in jobs';
   $handler->display->display_options['fields']['field_program_work_welfare_salar']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_program_work_welfare_salar']['empty_zero'] = TRUE;
+  $handler->display->display_options['fields']['field_program_work_welfare_salar']['type'] = 'number_integer';
   $handler->display->display_options['fields']['field_program_work_welfare_salar']['settings'] = array(
     'thousand_separator' => '',
     'prefix_suffix' => 1,
@@ -3602,6 +3437,16 @@ return false;';
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['relationship'] = 'field_parent_census_target_id';
+  /* Field: Content: affiliate select */
+  $handler->display->display_options['fields']['field_affiliate_select']['id'] = 'field_affiliate_select';
+  $handler->display->display_options['fields']['field_affiliate_select']['table'] = 'field_data_field_affiliate_select';
+  $handler->display->display_options['fields']['field_affiliate_select']['field'] = 'field_affiliate_select';
+  $handler->display->display_options['fields']['field_affiliate_select']['relationship'] = 'field_parent_census_target_id';
   /* Field: Content: Nid */
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'node';
@@ -3609,50 +3454,22 @@ return false;';
   $handler->display->display_options['fields']['nid']['label'] = '';
   $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
   $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
-  /* Field: Broken/missing handler */
-  $handler->display->display_options['fields']['field_first_name']['id'] = 'field_first_name';
-  $handler->display->display_options['fields']['field_first_name']['table'] = 'field_data_field_first_name';
-  $handler->display->display_options['fields']['field_first_name']['field'] = 'field_first_name';
-  $handler->display->display_options['fields']['field_first_name']['relationship'] = 'field_parent_census_target_id';
-  $handler->display->display_options['fields']['field_first_name']['label'] = 'Affiliate Name';
-  $handler->display->display_options['fields']['field_first_name']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_first_name']['alter']['text'] = '[field_first_name]';
-  $handler->display->display_options['fields']['field_first_name']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['field_first_name']['alter']['path'] = '/node/[nid]';
-  /* Field: Content: Annual salary (if applicable) */
-  $handler->display->display_options['fields']['field_program_work_salary']['id'] = 'field_program_work_salary';
-  $handler->display->display_options['fields']['field_program_work_salary']['table'] = 'field_data_field_program_work_salary';
-  $handler->display->display_options['fields']['field_program_work_salary']['field'] = 'field_program_work_salary';
-  $handler->display->display_options['fields']['field_program_work_salary']['settings'] = array(
-    'thousand_separator' => '',
-    'decimal_separator' => '.',
-    'scale' => '2',
+  /* Field: Content:  Number of clients who received workforce development/job placement counseling from your affiliate last year? */
+  $handler->display->display_options['fields']['field_program_work_counseling']['id'] = 'field_program_work_counseling';
+  $handler->display->display_options['fields']['field_program_work_counseling']['table'] = 'field_data_field_program_work_counseling';
+  $handler->display->display_options['fields']['field_program_work_counseling']['field'] = 'field_program_work_counseling';
+  $handler->display->display_options['fields']['field_program_work_counseling']['label'] = '# clients who received counseling';
+  $handler->display->display_options['fields']['field_program_work_counseling']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_program_work_counseling']['settings'] = array(
+    'thousand_separator' => ',',
     'prefix_suffix' => 1,
   );
-  /* Field: Content: Average salary for participants placed in jobs */
-  $handler->display->display_options['fields']['field_program_work_avg_salary']['id'] = 'field_program_work_avg_salary';
-  $handler->display->display_options['fields']['field_program_work_avg_salary']['table'] = 'field_data_field_program_work_avg_salary';
-  $handler->display->display_options['fields']['field_program_work_avg_salary']['field'] = 'field_program_work_avg_salary';
-  $handler->display->display_options['fields']['field_program_work_avg_salary']['settings'] = array(
-    'thousand_separator' => '',
-    'decimal_separator' => '.',
-    'scale' => '2',
-    'prefix_suffix' => 1,
-  );
-  /* Field: Content: Average salary of welfare recipieints placed in jobs */
-  $handler->display->display_options['fields']['field_program_work_welfare_salar']['id'] = 'field_program_work_welfare_salar';
-  $handler->display->display_options['fields']['field_program_work_welfare_salar']['table'] = 'field_data_field_program_work_welfare_salar';
-  $handler->display->display_options['fields']['field_program_work_welfare_salar']['field'] = 'field_program_work_welfare_salar';
-  $handler->display->display_options['fields']['field_program_work_welfare_salar']['settings'] = array(
-    'thousand_separator' => '',
-    'prefix_suffix' => 1,
-  );
-  /* Field: Content: Number of participants obtaining industry-recognized credentials */
-  $handler->display->display_options['fields']['field_program_work_credentials']['id'] = 'field_program_work_credentials';
-  $handler->display->display_options['fields']['field_program_work_credentials']['table'] = 'field_data_field_program_work_credentials';
-  $handler->display->display_options['fields']['field_program_work_credentials']['field'] = 'field_program_work_credentials';
-  $handler->display->display_options['fields']['field_program_work_credentials']['settings'] = array(
-    'thousand_separator' => '',
+  /* Field: Content: Number of participants in employment/workforce development programs (exclude welfare recipients)? */
+  $handler->display->display_options['fields']['field_program_work_participants']['id'] = 'field_program_work_participants';
+  $handler->display->display_options['fields']['field_program_work_participants']['table'] = 'field_data_field_program_work_participants';
+  $handler->display->display_options['fields']['field_program_work_participants']['field'] = 'field_program_work_participants';
+  $handler->display->display_options['fields']['field_program_work_participants']['settings'] = array(
+    'thousand_separator' => ',',
     'prefix_suffix' => 1,
   );
   /* Field: Content: Number of participants placed in jobs */
@@ -3663,12 +3480,24 @@ return false;';
     'thousand_separator' => '',
     'prefix_suffix' => 1,
   );
-  /* Field: Content: Number of placed participants who retained jobs for 90 days */
-  $handler->display->display_options['fields']['field_program_work_retained']['id'] = 'field_program_work_retained';
-  $handler->display->display_options['fields']['field_program_work_retained']['table'] = 'field_data_field_program_work_retained';
-  $handler->display->display_options['fields']['field_program_work_retained']['field'] = 'field_program_work_retained';
-  $handler->display->display_options['fields']['field_program_work_retained']['settings'] = array(
+  /* Field: Content: Annual salary (if applicable) */
+  $handler->display->display_options['fields']['field_program_work_salary']['id'] = 'field_program_work_salary';
+  $handler->display->display_options['fields']['field_program_work_salary']['table'] = 'field_data_field_program_work_salary';
+  $handler->display->display_options['fields']['field_program_work_salary']['field'] = 'field_program_work_salary';
+  $handler->display->display_options['fields']['field_program_work_salary']['settings'] = array(
     'thousand_separator' => '',
+    'decimal_separator' => '.',
+    'scale' => '2',
+    'prefix_suffix' => 1,
+  );
+  /* Field: Content: or Hourly wage rate */
+  $handler->display->display_options['fields']['field_program_work_hourly']['id'] = 'field_program_work_hourly';
+  $handler->display->display_options['fields']['field_program_work_hourly']['table'] = 'field_data_field_program_work_hourly';
+  $handler->display->display_options['fields']['field_program_work_hourly']['field'] = 'field_program_work_hourly';
+  $handler->display->display_options['fields']['field_program_work_hourly']['settings'] = array(
+    'thousand_separator' => '',
+    'decimal_separator' => '.',
+    'scale' => '2',
     'prefix_suffix' => 1,
   );
   /* Field: Content: Number of welfare participants in federal/state funded programs */
@@ -3687,11 +3516,21 @@ return false;';
     'thousand_separator' => '',
     'prefix_suffix' => 1,
   );
-  /* Field: Content: or Hourly wage rate */
-  $handler->display->display_options['fields']['field_program_work_hourly']['id'] = 'field_program_work_hourly';
-  $handler->display->display_options['fields']['field_program_work_hourly']['table'] = 'field_data_field_program_work_hourly';
-  $handler->display->display_options['fields']['field_program_work_hourly']['field'] = 'field_program_work_hourly';
-  $handler->display->display_options['fields']['field_program_work_hourly']['settings'] = array(
+  /* Field: Content: Annual welfare salary (if applicable) */
+  $handler->display->display_options['fields']['field_program_work_welfare_salar']['id'] = 'field_program_work_welfare_salar';
+  $handler->display->display_options['fields']['field_program_work_welfare_salar']['table'] = 'field_data_field_program_work_welfare_salar';
+  $handler->display->display_options['fields']['field_program_work_welfare_salar']['field'] = 'field_program_work_welfare_salar';
+  $handler->display->display_options['fields']['field_program_work_welfare_salar']['settings'] = array(
+    'thousand_separator' => ',',
+    'decimal_separator' => '.',
+    'scale' => '2',
+    'prefix_suffix' => 1,
+  );
+  /* Field: Content: or Hourly wage rate (welfare) */
+  $handler->display->display_options['fields']['field_program_work_welfare_hour']['id'] = 'field_program_work_welfare_hour';
+  $handler->display->display_options['fields']['field_program_work_welfare_hour']['table'] = 'field_data_field_program_work_welfare_hour';
+  $handler->display->display_options['fields']['field_program_work_welfare_hour']['field'] = 'field_program_work_welfare_hour';
+  $handler->display->display_options['fields']['field_program_work_welfare_hour']['settings'] = array(
     'thousand_separator' => '',
     'decimal_separator' => '.',
     'scale' => '2',
@@ -3732,17 +3571,17 @@ return false;';
     t('Content entity referenced from field_parent_census'),
     t('Affiliate ID (field_affiliate)'),
     t('Page'),
-    t('Affiliate Name'),
-    t('[field_first_name]'),
-    t('Annual salary (if applicable)'),
-    t('Average salary for participants placed in jobs'),
-    t('Average salary of welfare recipieints placed in jobs'),
-    t('Number of participants obtaining industry-recognized credentials'),
+    t('Title'),
+    t('affiliate select'),
+    t('# clients who received counseling'),
+    t('Number of participants in employment/workforce development programs (exclude welfare recipients)?'),
     t('Number of participants placed in jobs'),
-    t('Number of placed participants who retained jobs for 90 days'),
+    t('Annual salary (if applicable)'),
+    t('or Hourly wage rate'),
     t('Number of welfare participants in federal/state funded programs'),
     t('Number of welfare program participants placed in jobs'),
-    t('or Hourly wage rate'),
+    t('Annual welfare salary (if applicable)'),
+    t('or Hourly wage rate (welfare)'),
     t('Data export'),
   );
   $export['workforce_development_report'] = $view;
