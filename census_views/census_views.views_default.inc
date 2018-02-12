@@ -2602,8 +2602,52 @@ function census_views_views_default_views() {
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '5';
-  $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'title' => 'title',
+    'field_program_area' => 'field_program_area',
+    'field_program_purpose' => 'field_program_purpose',
+    'field_parent_census' => 'field_parent_census',
+    'nid' => 'nid',
+  );
+  $handler->display->display_options['style_options']['default'] = '-1';
+  $handler->display->display_options['style_options']['info'] = array(
+    'title' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_program_area' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_program_purpose' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_parent_census' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'nid' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+  );
   /* Relationship: Field: Program Area (field_program_area) */
   $handler->display->display_options['relationships']['field_program_area_tid']['id'] = 'field_program_area_tid';
   $handler->display->display_options['relationships']['field_program_area_tid']['table'] = 'field_data_field_program_area';
@@ -2626,7 +2670,7 @@ function census_views_views_default_views() {
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['label'] = 'Program Title';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_type'] = 'h4';
@@ -2636,12 +2680,6 @@ function census_views_views_default_views() {
   $handler->display->display_options['fields']['field_program_area']['table'] = 'field_data_field_program_area';
   $handler->display->display_options['fields']['field_program_area']['field'] = 'field_program_area';
   $handler->display->display_options['fields']['field_program_area']['exclude'] = TRUE;
-  /* Field: Content: Purpose of Program */
-  $handler->display->display_options['fields']['field_program_purpose']['id'] = 'field_program_purpose';
-  $handler->display->display_options['fields']['field_program_purpose']['table'] = 'field_data_field_program_purpose';
-  $handler->display->display_options['fields']['field_program_purpose']['field'] = 'field_program_purpose';
-  $handler->display->display_options['fields']['field_program_purpose']['label'] = '';
-  $handler->display->display_options['fields']['field_program_purpose']['element_label_colon'] = FALSE;
   /* Field: Content: parent census */
   $handler->display->display_options['fields']['field_parent_census']['id'] = 'field_parent_census';
   $handler->display->display_options['fields']['field_parent_census']['table'] = 'field_data_field_parent_census';
@@ -2662,6 +2700,24 @@ function census_views_views_default_views() {
   $handler->display->display_options['fields']['nid']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['nid']['alter']['text'] = '<a href="/node/[nid]">View</a>  <a href="/node/[nid]/edit">Edit</a>  <a href="/node/[nid]/delete">Delete</a>';
   $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
+  /* Field: Content: Number of People Served Annually */
+  $handler->display->display_options['fields']['field_program_served_total']['id'] = 'field_program_served_total';
+  $handler->display->display_options['fields']['field_program_served_total']['table'] = 'field_data_field_program_served_total';
+  $handler->display->display_options['fields']['field_program_served_total']['field'] = 'field_program_served_total';
+  $handler->display->display_options['fields']['field_program_served_total']['settings'] = array(
+    'thousand_separator' => '',
+    'prefix_suffix' => 1,
+  );
+  /* Field: Content: Total Program Budget Funded */
+  $handler->display->display_options['fields']['field_program_budget']['id'] = 'field_program_budget';
+  $handler->display->display_options['fields']['field_program_budget']['table'] = 'field_data_field_program_budget';
+  $handler->display->display_options['fields']['field_program_budget']['field'] = 'field_program_budget';
+  $handler->display->display_options['fields']['field_program_budget']['settings'] = array(
+    'thousand_separator' => '',
+    'decimal_separator' => '.',
+    'scale' => '2',
+    'prefix_suffix' => 1,
+  );
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -2733,8 +2789,11 @@ return false;';
     t('term from field_program_area'),
     t('parent census'),
     t('program details tab'),
+    t('Program Title'),
     t('Program Area'),
     t('<a href="/node/[nid]">View</a>  <a href="/node/[nid]/edit">Edit</a>  <a href="/node/[nid]/delete">Delete</a>'),
+    t('Number of People Served Annually'),
+    t('Total Program Budget Funded'),
     t('All'),
     t('Block'),
   );
