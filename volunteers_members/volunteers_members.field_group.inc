@@ -137,7 +137,7 @@ function volunteers_members_field_group_info() {
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Volunteer or Auxiliary Groups',
+    'label' => 'Volunteer or Member Groups',
     'weight' => '3',
     'children' => array(
       0 => 'field_other_volunteer_aux_groups',
@@ -154,7 +154,7 @@ function volunteers_members_field_group_info() {
     ),
     'format_type' => 'div',
     'format_settings' => array(
-      'label' => 'Volunteer or Auxiliary Groups',
+      'label' => 'Volunteer or Member Groups',
       'instance_settings' => array(
         'required_fields' => 1,
         'id' => '',
@@ -497,6 +497,7 @@ function volunteers_members_field_group_info() {
   t('AGE GROUPINGS: How many members in the following age groups? ');
   t('Guild');
   t('Volunteer or Auxiliary Groups');
+  t('Volunteer or Member Groups');
   t('Young Professionals Chapter');
 
   return $field_groups;

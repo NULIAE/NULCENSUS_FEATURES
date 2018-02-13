@@ -44,7 +44,7 @@ function volunteers_members_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_aux_16_20',
-    'label' => '# of Auxillary Group age 16-20',
+    'label' => '# of Member Group age 16-20',
     'required' => 0,
     'settings' => array(
       'max' => '',
@@ -96,7 +96,7 @@ function volunteers_members_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_aux_21_30',
-    'label' => '# of Auxillary Group age 21-30',
+    'label' => '# of Member Group age 21-30',
     'required' => 0,
     'settings' => array(
       'max' => '',
@@ -148,7 +148,7 @@ function volunteers_members_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_aux_31_40',
-    'label' => '# of Auxillary Group age 31-40',
+    'label' => '# of Member Group age 31-40',
     'required' => 0,
     'settings' => array(
       'max' => '',
@@ -200,7 +200,7 @@ function volunteers_members_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_aux_41_65',
-    'label' => '# of Auxillary Group age 41-65',
+    'label' => '# of Member Group age 41-65',
     'required' => 0,
     'settings' => array(
       'max' => '',
@@ -252,7 +252,7 @@ function volunteers_members_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_aux_66_81',
-    'label' => '# of Auxillary Group age 66-81',
+    'label' => '# of Member Group age 66-81',
     'required' => 0,
     'settings' => array(
       'max' => '',
@@ -304,7 +304,7 @@ function volunteers_members_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_aux_82_and_above',
-    'label' => '# of Auxillary Group age 82 and above',
+    'label' => '# of Member Group age 82 and above',
     'required' => 0,
     'settings' => array(
       'max' => '',
@@ -357,7 +357,7 @@ function volunteers_members_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_aux_african_american',
-    'label' => '# of Auxillary Group African American',
+    'label' => '# of Member Group African American',
     'required' => 0,
     'settings' => array(
       'max' => '',
@@ -410,7 +410,7 @@ function volunteers_members_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_aux_asian_american',
-    'label' => '# of Auxillary Group Asian American',
+    'label' => '# of Member Group Asian American',
     'required' => 0,
     'settings' => array(
       'max' => '',
@@ -462,7 +462,7 @@ function volunteers_members_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_aux_female',
-    'label' => '# of Auxillary Group Females',
+    'label' => '# of Member Group Females',
     'required' => 0,
     'settings' => array(
       'max' => '',
@@ -515,7 +515,7 @@ function volunteers_members_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_aux_hispanic_latino',
-    'label' => '# of Auxillary Group Hispanic/Latino',
+    'label' => '# of Member Group Hispanic/Latino',
     'required' => 0,
     'settings' => array(
       'max' => '',
@@ -567,7 +567,7 @@ function volunteers_members_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_aux_male',
-    'label' => '# of Auxillary Group Males',
+    'label' => '# of Member Group Males',
     'required' => 0,
     'settings' => array(
       'max' => '',
@@ -619,7 +619,7 @@ function volunteers_members_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_aux_members',
-    'label' => '# of Auxillary Group Members',
+    'label' => '# of Group Members',
     'required' => 0,
     'settings' => array(
       'max' => '',
@@ -672,7 +672,7 @@ function volunteers_members_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_aux_native_american',
-    'label' => '# of Auxillary Group Native American',
+    'label' => '# of Member Group Native American',
     'required' => 0,
     'settings' => array(
       'max' => '',
@@ -725,7 +725,7 @@ function volunteers_members_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_aux_other_heritage',
-    'label' => '# of Auxillary Group Other Heritage',
+    'label' => '# of Member Group Other Heritage',
     'required' => 0,
     'settings' => array(
       'max' => '',
@@ -777,7 +777,7 @@ function volunteers_members_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_aux_white',
-    'label' => '# of Auxillary Group White',
+    'label' => '# of Member Group White',
     'required' => 0,
     'settings' => array(
       'max' => '',
@@ -1697,7 +1697,7 @@ function volunteers_members_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_other_volunteer_aux_groups',
-    'label' => 'Are there any other volunteer or auxiliary groups?',
+    'label' => 'Are there any other volunteer or member groups?',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -2643,21 +2643,7 @@ function volunteers_members_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('# of Auxillary Group African American');
-  t('# of Auxillary Group Asian American');
-  t('# of Auxillary Group Females');
-  t('# of Auxillary Group Hispanic/Latino');
-  t('# of Auxillary Group Males');
-  t('# of Auxillary Group Members');
-  t('# of Auxillary Group Native American');
-  t('# of Auxillary Group Other Heritage');
-  t('# of Auxillary Group White');
-  t('# of Auxillary Group age 16-20');
-  t('# of Auxillary Group age 21-30');
-  t('# of Auxillary Group age 31-40');
-  t('# of Auxillary Group age 41-65');
-  t('# of Auxillary Group age 66-81');
-  t('# of Auxillary Group age 82 and above');
+  t('# of Group Members');
   t('# of Guild African American');
   t('# of Guild Asian American');
   t('# of Guild Females');
@@ -2672,6 +2658,20 @@ function volunteers_members_field_default_field_instances() {
   t('# of Guild age 41-65');
   t('# of Guild age 66-81');
   t('# of Guild age 82 and above');
+  t('# of Member Group African American');
+  t('# of Member Group Asian American');
+  t('# of Member Group Females');
+  t('# of Member Group Hispanic/Latino');
+  t('# of Member Group Males');
+  t('# of Member Group Native American');
+  t('# of Member Group Other Heritage');
+  t('# of Member Group White');
+  t('# of Member Group age 16-20');
+  t('# of Member Group age 21-30');
+  t('# of Member Group age 31-40');
+  t('# of Member Group age 41-65');
+  t('# of Member Group age 66-81');
+  t('# of Member Group age 82 and above');
   t('# of Members in guild');
   t('# of Young Professionals Chapter African American');
   t('# of Young Professionals Chapter Asian American');
@@ -2688,7 +2688,7 @@ function volunteers_members_field_default_field_instances() {
   t('# of Young Professionals Chapter age 41-65');
   t('# of Young Professionals Chapter age 66-81');
   t('# of Young Professionals Chapter age 82 and above');
-  t('Are there any other volunteer or auxiliary groups?');
+  t('Are there any other volunteer or member groups?');
   t('Is there a Guild?');
   t('Is there a Young Professionals Chapter?');
   t('Tab Status');
