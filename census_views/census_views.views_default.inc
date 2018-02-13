@@ -3747,120 +3747,214 @@ return false;';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Broken/missing handler */
-  $handler->display->display_options['filters']['field_affiliate_value']['id'] = 'field_affiliate_value';
-  $handler->display->display_options['filters']['field_affiliate_value']['table'] = 'field_data_field_affiliate';
-  $handler->display->display_options['filters']['field_affiliate_value']['field'] = 'field_affiliate_value';
-  $handler->display->display_options['filters']['field_affiliate_value']['value'] = array(
-    'min' => '',
-    'max' => '',
-    'value' => '',
-  );
-  $handler->display->display_options['filters']['field_affiliate_value']['expose']['operator_id'] = 'field_affiliate_value_op';
-  $handler->display->display_options['filters']['field_affiliate_value']['expose']['label'] = 'Affiliate ID (field_affiliate)';
-  $handler->display->display_options['filters']['field_affiliate_value']['expose']['operator'] = 'field_affiliate_value_op';
-  $handler->display->display_options['filters']['field_affiliate_value']['expose']['identifier'] = 'field_affiliate_value';
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'table';
-  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'views_aggregator';
   $handler->display->display_options['style_options']['columns'] = array(
     'title' => 'title',
-    'field_first_name' => 'field_first_name',
-    'field_program_work_salary' => 'field_program_work_salary',
-    'field_program_work_avg_salary' => 'field_program_work_avg_salary',
-    'field_program_work_welfare_salar' => 'field_program_work_welfare_salar',
-    'field_program_work_credentials' => 'field_program_work_credentials',
+    'field_affiliate_select' => 'field_affiliate_select',
+    'nid' => 'nid',
+    'field_program_work_counseling' => 'field_program_work_counseling',
+    'field_program_work_participants' => 'field_program_work_participants',
     'field_program_work_placed' => 'field_program_work_placed',
-    'field_program_work_retained' => 'field_program_work_retained',
+    'field_program_work_salary' => 'field_program_work_salary',
+    'field_program_work_hourly' => 'field_program_work_hourly',
     'field_program_work_welfare' => 'field_program_work_welfare',
     'field_program_work_welfare_place' => 'field_program_work_welfare_place',
-    'field_program_work_hourly' => 'field_program_work_hourly',
+    'field_program_work_welfare_salar' => 'field_program_work_welfare_salar',
+    'field_program_work_welfare_hour' => 'field_program_work_welfare_hour',
   );
   $handler->display->display_options['style_options']['default'] = '-1';
   $handler->display->display_options['style_options']['info'] = array(
     'title' => array(
-      'sortable' => 1,
+      'sortable' => 0,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
+      'has_aggr' => 0,
+      'aggr' => array(
+        'views_aggregator_first' => 'views_aggregator_first',
+      ),
+      'aggr_par' => '',
+      'has_aggr_column' => 0,
+      'aggr_column' => 'views_aggregator_sum',
+      'aggr_par_column' => '',
     ),
-    'field_first_name' => array(
-      'sortable' => 1,
+    'field_affiliate_select' => array(
+      'sortable' => 0,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
+      'has_aggr' => 0,
+      'aggr' => array(
+        'views_aggregator_first' => 'views_aggregator_first',
+      ),
+      'aggr_par' => '',
+      'has_aggr_column' => 0,
+      'aggr_column' => 'views_aggregator_sum',
+      'aggr_par_column' => '',
     ),
-    'field_program_work_salary' => array(
-      'sortable' => 1,
+    'nid' => array(
+      'sortable' => 0,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
+      'has_aggr' => 0,
+      'aggr' => array(
+        'views_aggregator_first' => 'views_aggregator_first',
+      ),
+      'aggr_par' => '',
+      'has_aggr_column' => 0,
+      'aggr_column' => 'views_aggregator_sum',
+      'aggr_par_column' => '',
     ),
-    'field_program_work_avg_salary' => array(
-      'sortable' => 1,
+    'field_program_work_counseling' => array(
+      'sortable' => 0,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
+      'has_aggr' => 0,
+      'aggr' => array(
+        'views_aggregator_first' => 'views_aggregator_first',
+      ),
+      'aggr_par' => '',
+      'has_aggr_column' => 1,
+      'aggr_column' => 'views_aggregator_sum',
+      'aggr_par_column' => '',
     ),
-    'field_program_work_welfare_salar' => array(
-      'sortable' => 1,
+    'field_program_work_participants' => array(
+      'sortable' => 0,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
-    ),
-    'field_program_work_credentials' => array(
-      'sortable' => 1,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
+      'has_aggr' => 0,
+      'aggr' => array(
+        'views_aggregator_first' => 'views_aggregator_first',
+      ),
+      'aggr_par' => '',
+      'has_aggr_column' => 1,
+      'aggr_column' => 'views_aggregator_sum',
+      'aggr_par_column' => '',
     ),
     'field_program_work_placed' => array(
-      'sortable' => 1,
+      'sortable' => 0,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
+      'has_aggr' => 0,
+      'aggr' => array(
+        'views_aggregator_first' => 'views_aggregator_first',
+      ),
+      'aggr_par' => '',
+      'has_aggr_column' => 1,
+      'aggr_column' => 'views_aggregator_sum',
+      'aggr_par_column' => '',
     ),
-    'field_program_work_retained' => array(
-      'sortable' => 1,
+    'field_program_work_salary' => array(
+      'sortable' => 0,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
-    ),
-    'field_program_work_welfare' => array(
-      'sortable' => 1,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'field_program_work_welfare_place' => array(
-      'sortable' => 1,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
+      'has_aggr' => 0,
+      'aggr' => array(
+        'views_aggregator_first' => 'views_aggregator_first',
+      ),
+      'aggr_par' => '',
+      'has_aggr_column' => 1,
+      'aggr_column' => 'views_aggregator_sum',
+      'aggr_par_column' => '',
     ),
     'field_program_work_hourly' => array(
-      'sortable' => 1,
+      'sortable' => 0,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
+      'has_aggr' => 0,
+      'aggr' => array(
+        'views_aggregator_first' => 'views_aggregator_first',
+      ),
+      'aggr_par' => '',
+      'has_aggr_column' => 1,
+      'aggr_column' => 'views_aggregator_sum',
+      'aggr_par_column' => '',
+    ),
+    'field_program_work_welfare' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+      'has_aggr' => 0,
+      'aggr' => array(
+        'views_aggregator_first' => 'views_aggregator_first',
+      ),
+      'aggr_par' => '',
+      'has_aggr_column' => 1,
+      'aggr_column' => 'views_aggregator_sum',
+      'aggr_par_column' => '',
+    ),
+    'field_program_work_welfare_place' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+      'has_aggr' => 0,
+      'aggr' => array(
+        'views_aggregator_first' => 'views_aggregator_first',
+      ),
+      'aggr_par' => '',
+      'has_aggr_column' => 1,
+      'aggr_column' => 'views_aggregator_sum',
+      'aggr_par_column' => '',
+    ),
+    'field_program_work_welfare_salar' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+      'has_aggr' => 0,
+      'aggr' => array(
+        'views_aggregator_first' => 'views_aggregator_first',
+      ),
+      'aggr_par' => '',
+      'has_aggr_column' => 1,
+      'aggr_column' => 'views_aggregator_sum',
+      'aggr_par_column' => '',
+    ),
+    'field_program_work_welfare_hour' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+      'has_aggr' => 0,
+      'aggr' => array(
+        'views_aggregator_first' => 'views_aggregator_first',
+      ),
+      'aggr_par' => '',
+      'has_aggr_column' => 1,
+      'aggr_column' => 'views_aggregator_sum',
+      'aggr_par_column' => '',
     ),
   );
-  $handler->display->display_options['style_options']['sticky'] = TRUE;
-  $handler->display->display_options['style_options']['empty_table'] = TRUE;
+  $handler->display->display_options['style_options']['column_aggregation']['totals_per_page'] = '1';
+  $handler->display->display_options['style_options']['column_aggregation']['totals_row_position'] = array(
+    1 => 0,
+    2 => '2',
+  );
+  $handler->display->display_options['style_options']['column_aggregation']['precision'] = '2';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
@@ -3875,6 +3969,12 @@ return false;';
   $handler->display->display_options['fields']['field_affiliate_select']['table'] = 'field_data_field_affiliate_select';
   $handler->display->display_options['fields']['field_affiliate_select']['field'] = 'field_affiliate_select';
   $handler->display->display_options['fields']['field_affiliate_select']['relationship'] = 'field_parent_census_target_id';
+  $handler->display->display_options['fields']['field_affiliate_select']['label'] = 'Affiliate';
+  /* Field: Content: Year */
+  $handler->display->display_options['fields']['field_year']['id'] = 'field_year';
+  $handler->display->display_options['fields']['field_year']['table'] = 'field_data_field_year';
+  $handler->display->display_options['fields']['field_year']['field'] = 'field_year';
+  $handler->display->display_options['fields']['field_year']['relationship'] = 'field_parent_census_target_id';
   /* Field: Content: Nid */
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'node';
@@ -3980,13 +4080,26 @@ return false;';
   $handler->display->display_options['filters']['type']['value'] = array(
     'program_workforce' => 'program_workforce',
   );
+  /* Filter criterion: Content: Year (field_year) */
+  $handler->display->display_options['filters']['field_year_value']['id'] = 'field_year_value';
+  $handler->display->display_options['filters']['field_year_value']['table'] = 'field_data_field_year';
+  $handler->display->display_options['filters']['field_year_value']['field'] = 'field_year_value';
+  $handler->display->display_options['filters']['field_year_value']['relationship'] = 'field_parent_census_target_id';
+  $handler->display->display_options['filters']['field_year_value']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_year_value']['expose']['operator_id'] = 'field_year_value_op';
+  $handler->display->display_options['filters']['field_year_value']['expose']['label'] = 'Year (field_year)';
+  $handler->display->display_options['filters']['field_year_value']['expose']['operator'] = 'field_year_value_op';
+  $handler->display->display_options['filters']['field_year_value']['expose']['identifier'] = 'field_year_value';
+  $handler->display->display_options['filters']['field_year_value']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+    4 => 0,
+    5 => 0,
+    6 => 0,
+    7 => 0,
+  );
   $handler->display->display_options['path'] = 'workforce-development-report-required-report-3';
-
-  /* Display: Data export */
-  $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
-  $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
-  $handler->display->display_options['path'] = 'export3';
   $translatables['workforce_development_report'] = array(
     t('Master'),
     t('Workforce Development Report (Required Report 3)'),
@@ -3997,10 +4110,10 @@ return false;';
     t('Asc'),
     t('Desc'),
     t('Content entity referenced from field_parent_census'),
-    t('Affiliate ID (field_affiliate)'),
     t('Page'),
     t('Title'),
-    t('affiliate select'),
+    t('Affiliate'),
+    t('Year'),
     t('# clients who received counseling'),
     t('Number of participants in employment/workforce development programs (exclude welfare recipients)?'),
     t('Number of participants placed in jobs'),
@@ -4010,7 +4123,7 @@ return false;';
     t('Number of welfare program participants placed in jobs'),
     t('Annual welfare salary (if applicable)'),
     t('or Hourly wage rate (welfare)'),
-    t('Data export'),
+    t('Year (field_year)'),
   );
   $export['workforce_development_report'] = $view;
 
