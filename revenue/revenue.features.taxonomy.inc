@@ -32,9 +32,9 @@ function revenue_taxonomy_default_vocabularies() {
         ),
       ),
     ),
-    'type_of_venture' => array(
-      'name' => 'Type of Venture',
-      'machine_name' => 'type_of_venture',
+    'venture_type' => array(
+      'name' => 'Venture Type',
+      'machine_name' => 'venture_type',
       'description' => '',
       'hierarchy' => 0,
       'module' => 'taxonomy',

@@ -48,6 +48,47 @@ function workforce_development_program_details_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance:
+  // 'node-program_workforce-field_legacy_work_sub_budget'.
+  $field_instances['node-program_workforce-field_legacy_work_sub_budget'] = array(
+    'bundle' => 'program_workforce',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 27,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_legacy_work_sub_budget',
+    'label' => 'Subsidiary\'s annual budget last year',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '$',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 16,
+    ),
+  );
+
   // Exported field_instance: 'node-program_workforce-field_parent_census'.
   $field_instances['node-program_workforce-field_parent_census'] = array(
     'bundle' => 'program_workforce',
@@ -80,7 +121,7 @@ function workforce_development_program_details_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 7,
+      'weight' => 6,
     ),
   );
 
@@ -97,10 +138,9 @@ function workforce_development_program_details_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
-        'module' => 'list',
+        'label' => 'hidden',
         'settings' => array(),
-        'type' => 'list_default',
+        'type' => 'hidden',
         'weight' => 23,
       ),
       'teaser' => array(
@@ -122,7 +162,7 @@ function workforce_development_program_details_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 23,
+      'weight' => 15,
     ),
   );
 
@@ -464,15 +504,9 @@ function workforce_development_program_details_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 24,
       ),
       'teaser' => array(
@@ -511,15 +545,9 @@ function workforce_development_program_details_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 23,
       ),
       'teaser' => array(
@@ -558,15 +586,9 @@ function workforce_development_program_details_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 22,
       ),
       'teaser' => array(
@@ -609,10 +631,9 @@ function workforce_development_program_details_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
-        'module' => 'list',
+        'label' => 'hidden',
         'settings' => array(),
-        'type' => 'list_default',
+        'type' => 'hidden',
         'weight' => 22,
       ),
       'teaser' => array(
@@ -634,7 +655,7 @@ function workforce_development_program_details_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 22,
+      'weight' => 14,
     ),
   );
 
@@ -651,10 +672,9 @@ function workforce_development_program_details_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
-        'module' => 'list',
+        'label' => 'hidden',
         'settings' => array(),
-        'type' => 'list_default',
+        'type' => 'hidden',
         'weight' => 21,
       ),
       'teaser' => array(
@@ -678,7 +698,7 @@ function workforce_development_program_details_field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_buttons',
-      'weight' => 21,
+      'weight' => 13,
     ),
   );
 
@@ -691,15 +711,9 @@ function workforce_development_program_details_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 25,
       ),
       'teaser' => array(
@@ -742,10 +756,9 @@ function workforce_development_program_details_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
-        'module' => 'list',
+        'label' => 'hidden',
         'settings' => array(),
-        'type' => 'list_default',
+        'type' => 'hidden',
         'weight' => 20,
       ),
       'teaser' => array(
@@ -769,7 +782,7 @@ function workforce_development_program_details_field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_buttons',
-      'weight' => 20,
+      'weight' => 12,
     ),
   );
 
@@ -1214,7 +1227,7 @@ function workforce_development_program_details_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 8,
+      'weight' => 7,
     ),
   );
 
@@ -1323,6 +1336,7 @@ function workforce_development_program_details_field_default_field_instances() {
   t('Number of welfare participants in federal/state funded programs');
   t('Number of welfare program participants placed in jobs');
   t('Our Affiliate offers programs of this type');
+  t('Subsidiary\'s annual budget last year');
   t('Tab Status');
   t('Total Participants in Workforce Programs');
   t('Total for number of participants in employment/workforce development programs and number of welfare participants in federal/stat');

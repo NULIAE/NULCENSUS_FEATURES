@@ -351,6 +351,28 @@ function census_field_default_field_bases() {
     'type' => 'number_integer',
   );
 
+  // Exported field_base: 'field_legacy_comments_contact'.
+  $field_bases['field_legacy_comments_contact'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_legacy_comments_contact',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'text_long',
+  );
+
   // Exported field_base: 'field_number_of_years_as_ceo'.
   $field_bases['field_number_of_years_as_ceo'] = array(
     'active' => 1,
@@ -585,119 +607,6 @@ function census_field_default_field_bases() {
     'type' => 'list_text',
   );
 
-  // Exported field_base: 'field_survey_best_time_to_call'.
-  $field_bases['field_survey_best_time_to_call'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_survey_best_time_to_call',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(
-      'value' => array(
-        0 => 'value',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'list',
-    'settings' => array(
-      'allowed_values' => array(
-        '8 AM' => '8 AM',
-        '9 AM' => '9 AM',
-        '10 AM' => '10 AM',
-        '11 AM' => '11 AM',
-        '12 PM' => '12 PM',
-        '1 PM' => '1 PM',
-        '2 PM' => '2 PM',
-        '3 PM' => '3 PM',
-        '4 PM' => '4 PM',
-        '5 PM' => '5 PM',
-        '6 PM' => '6 PM',
-        '7 PM' => '7 PM',
-        '8 PM' => '8 PM',
-        '9 PM' => '9 PM',
-        '10 PM' => '10 PM',
-      ),
-      'allowed_values_function' => '',
-    ),
-    'translatable' => 0,
-    'type' => 'list_text',
-  );
-
-  // Exported field_base: 'field_survey_contact_first_name'.
-  $field_bases['field_survey_contact_first_name'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_survey_contact_first_name',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(
-      'max_length' => 255,
-    ),
-    'translatable' => 0,
-    'type' => 'text',
-  );
-
-  // Exported field_base: 'field_survey_contact_last_name'.
-  $field_bases['field_survey_contact_last_name'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_survey_contact_last_name',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(
-      'max_length' => 255,
-    ),
-    'translatable' => 0,
-    'type' => 'text',
-  );
-
-  // Exported field_base: 'field_survey_email_address'.
-  $field_bases['field_survey_email_address'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_survey_email_address',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(
-      'max_length' => 255,
-    ),
-    'translatable' => 0,
-    'type' => 'text',
-  );
-
   // Exported field_base: 'field_survey_name_of_certifier'.
   $field_bases['field_survey_name_of_certifier'] = array(
     'active' => 1,
@@ -720,60 +629,6 @@ function census_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'text',
-  );
-
-  // Exported field_base: 'field_survey_phone_number'.
-  $field_bases['field_survey_phone_number'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_survey_phone_number',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(
-      'max_length' => 255,
-    ),
-    'translatable' => 0,
-    'type' => 'text',
-  );
-
-  // Exported field_base: 'field_survey_time_zone'.
-  $field_bases['field_survey_time_zone'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_survey_time_zone',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(
-      'value' => array(
-        0 => 'value',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'list',
-    'settings' => array(
-      'allowed_values' => array(
-        'Eastern' => 'Eastern',
-        'Central' => 'Central',
-        'Mountain' => 'Mountain',
-        'Pacific' => 'Pacific',
-      ),
-      'allowed_values_function' => '',
-    ),
-    'translatable' => 0,
-    'type' => 'list_text',
   );
 
   // Exported field_base: 'field_telephone'.

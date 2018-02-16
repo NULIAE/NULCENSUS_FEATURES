@@ -274,7 +274,8 @@ function entreuprenuership_and_business_development_program_details_field_group_
       5 => 'field_program_entpr_sales',
       6 => 'field_program_entpr_new_jobs',
       7 => 'field_program_entpr_businesses',
-      8 => 'group_entpr_stage',
+      8 => 'field_program_entpr_total_sales',
+      9 => 'group_entpr_stage',
     ),
     'format_type' => 'div',
     'format_settings' => array(

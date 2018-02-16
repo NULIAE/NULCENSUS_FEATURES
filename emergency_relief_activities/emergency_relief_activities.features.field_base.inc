@@ -171,27 +171,124 @@ function emergency_relief_activities_field_default_field_bases() {
     'type' => 'markup',
   );
 
-  // Exported field_base: 'field_era_societal_impact'.
-  $field_bases['field_era_societal_impact'] = array(
+  // Exported field_base: 'field_legacy_relief_civic_impact'.
+  $field_bases['field_legacy_relief_civic_impact'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_era_societal_impact',
+    'field_name' => 'field_legacy_relief_civic_impact',
     'field_permissions' => array(
       'type' => 0,
     ),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'markup',
-    'settings' => array(
-      'markup' => array(
-        'format' => 'full_html',
-        'value' => '<div class="nulTableCell"><h3>Societal Impact</h3></div>',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
       ),
     ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
     'translatable' => 0,
-    'type' => 'markup',
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_legacy_relief_ed_impact'.
+  $field_bases['field_legacy_relief_ed_impact'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_legacy_relief_ed_impact',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_legacy_relief_employ_impac'.
+  $field_bases['field_legacy_relief_employ_impac'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_legacy_relief_employ_impac',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_legacy_relief_health_impac'.
+  $field_bases['field_legacy_relief_health_impac'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_legacy_relief_health_impac',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_legacy_relief_justice_impa'.
+  $field_bases['field_legacy_relief_justice_impa'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_legacy_relief_justice_impa',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
   );
 
   // Exported field_base: 'field_parent_census'.
@@ -340,24 +437,6 @@ function emergency_relief_activities_field_default_field_bases() {
     'type' => 'list_boolean',
   );
 
-  // Exported field_base: 'field_relief_civic_impact'.
-  $field_bases['field_relief_civic_impact'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_relief_civic_impact',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'number',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'number_integer',
-  );
-
   // Exported field_base: 'field_relief_civic_served'.
   $field_bases['field_relief_civic_served'] = array(
     'active' => 1,
@@ -482,24 +561,6 @@ function emergency_relief_activities_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'list_boolean',
-  );
-
-  // Exported field_base: 'field_relief_ed_impact'.
-  $field_bases['field_relief_ed_impact'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_relief_ed_impact',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'number',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'number_integer',
   );
 
   // Exported field_base: 'field_relief_ed_served'.
@@ -628,24 +689,6 @@ function emergency_relief_activities_field_default_field_bases() {
     'type' => 'list_boolean',
   );
 
-  // Exported field_base: 'field_relief_employ_impact'.
-  $field_bases['field_relief_employ_impact'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_relief_employ_impact',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'number',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'number_integer',
-  );
-
   // Exported field_base: 'field_relief_employ_served'.
   $field_bases['field_relief_employ_served'] = array(
     'active' => 1,
@@ -772,24 +815,6 @@ function emergency_relief_activities_field_default_field_bases() {
     'type' => 'list_boolean',
   );
 
-  // Exported field_base: 'field_relief_health_impact'.
-  $field_bases['field_relief_health_impact'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_relief_health_impact',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'number',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'number_integer',
-  );
-
   // Exported field_base: 'field_relief_health_served'.
   $field_bases['field_relief_health_served'] = array(
     'active' => 1,
@@ -914,24 +939,6 @@ function emergency_relief_activities_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'list_boolean',
-  );
-
-  // Exported field_base: 'field_relief_justice_impact'.
-  $field_bases['field_relief_justice_impact'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_relief_justice_impact',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'number',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'number_integer',
   );
 
   // Exported field_base: 'field_relief_justice_served'.

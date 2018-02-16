@@ -887,7 +887,7 @@ function revenue_field_default_field_instances() {
           'thousand_separator' => ',',
         ),
         'type' => 'number_decimal',
-        'weight' => 5,
+        'weight' => 11,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
@@ -912,7 +912,7 @@ function revenue_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 11,
+      'weight' => 14,
     ),
   );
 
@@ -934,7 +934,7 @@ function revenue_field_default_field_instances() {
           'thousand_separator' => ',',
         ),
         'type' => 'number_decimal',
-        'weight' => 4,
+        'weight' => 10,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
@@ -959,7 +959,7 @@ function revenue_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 10,
+      'weight' => 13,
     ),
   );
 
@@ -972,11 +972,11 @@ function revenue_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'text',
+        'label' => 'hidden',
+        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 6,
+        'type' => 'taxonomy_term_reference_plain',
+        'weight' => 9,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
@@ -987,20 +987,20 @@ function revenue_field_default_field_instances() {
     ),
     'entity_type' => 'paragraphs_item',
     'field_name' => 'field_budget_venture_type',
-    'label' => 'Type of Venture',
+    'label' => 'Venture Type',
     'required' => 0,
     'settings' => array(
-      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 1,
-      'module' => 'text',
+      'active' => 0,
+      'module' => 'taxonomy',
       'settings' => array(
+        'autocomplete_path' => 'taxonomy/autocomplete',
         'size' => 60,
       ),
-      'type' => 'text_textfield',
-      'weight' => 8,
+      'type' => 'taxonomy_autocomplete',
+      'weight' => 12,
     ),
   );
 
@@ -1135,8 +1135,8 @@ function revenue_field_default_field_instances() {
   t('Tab Status');
   t('This is calculated from the answers provided above');
   t('Total revenue for your affiliate:');
-  t('Type of Venture');
   t('United Way');
+  t('Venture Type');
   t('Venture type header');
   t('parent census');
   t('venture budgeted header');

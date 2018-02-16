@@ -649,9 +649,8 @@ function civic_engagement_field_group_info() {
     'label' => 'Civic Engagement',
     'weight' => '1',
     'children' => array(
-      0 => 'group_org_info',
-      1 => 'group_forum_info',
-      2 => 'group_voter_info',
+      0 => 'group_forum_info',
+      1 => 'group_voter_info',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -684,9 +683,8 @@ function civic_engagement_field_group_info() {
     'label' => 'Civic Engagement',
     'weight' => '1',
     'children' => array(
-      0 => 'group_org_info',
-      1 => 'group_forum_info',
-      2 => 'group_voter_info',
+      0 => 'group_forum_info',
+      1 => 'group_voter_info',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -1379,7 +1377,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_forum_info';
   $field_group->data = array(
     'label' => 'African American',
-    'weight' => '93',
+    'weight' => '94',
     'children' => array(
       0 => 'field_forums_african_am_female',
       1 => 'field_forums_african_am_male',
@@ -1413,7 +1411,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_forum_info';
   $field_group->data = array(
     'label' => 'African American',
-    'weight' => '108',
+    'weight' => '109',
     'children' => array(
       0 => 'field_forums_african_am_female',
       1 => 'field_forums_african_am_male',
@@ -1447,7 +1445,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_forum_info';
   $field_group->data = array(
     'label' => 'Asian American',
-    'weight' => '91',
+    'weight' => '92',
     'children' => array(
       0 => 'field_forums_asian_am_female',
       1 => 'field_forums_asian_am_male',
@@ -1481,7 +1479,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_forum_info';
   $field_group->data = array(
     'label' => 'Asian American',
-    'weight' => '106',
+    'weight' => '107',
     'children' => array(
       0 => 'field_forums_asian_am_female',
       1 => 'field_forums_asian_am_male',
@@ -1515,7 +1513,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_forum_info';
   $field_group->data = array(
     'label' => 'Hispanic/Latino',
-    'weight' => '90',
+    'weight' => '91',
     'children' => array(
       0 => 'field_forums_hispanic_female',
       1 => 'field_forums_hispanic_male',
@@ -1549,7 +1547,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_forum_info';
   $field_group->data = array(
     'label' => 'Hispanic/Latino',
-    'weight' => '105',
+    'weight' => '106',
     'children' => array(
       0 => 'field_forums_hispanic_female',
       1 => 'field_forums_hispanic_male',
@@ -1583,7 +1581,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_forum_info';
   $field_group->data = array(
     'label' => ' ',
-    'weight' => '95',
+    'weight' => '96',
     'children' => array(
       0 => 'field_forums_societal_impact',
       1 => 'field_forums_spacer',
@@ -1616,7 +1614,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_forum_info';
   $field_group->data = array(
     'label' => 'Total Number Served or Registered (Male and Female)',
-    'weight' => '110',
+    'weight' => '111',
     'children' => array(
       0 => 'field_forums_societal_impact',
       1 => 'field_forums_spacer',
@@ -1654,14 +1652,15 @@ function civic_engagement_field_group_info() {
     'children' => array(
       0 => 'field_community_forums',
       1 => 'field_forums_total',
-      2 => 'group_forum_race',
-      3 => 'group_forum_white',
-      4 => 'group_forum_hispanic',
-      5 => 'group_forum_asian_am',
-      6 => 'group_forum_native_am',
-      7 => 'group_forum_african_am',
-      8 => 'group_forum_other',
-      9 => 'group_forum_impact',
+      2 => 'field_forums_description',
+      3 => 'group_forum_race',
+      4 => 'group_forum_white',
+      5 => 'group_forum_hispanic',
+      6 => 'group_forum_asian_am',
+      7 => 'group_forum_native_am',
+      8 => 'group_forum_african_am',
+      9 => 'group_forum_other',
+      10 => 'group_forum_impact',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -1695,14 +1694,15 @@ function civic_engagement_field_group_info() {
     'children' => array(
       0 => 'field_community_forums',
       1 => 'field_forums_total',
-      2 => 'group_forum_race',
-      3 => 'group_forum_white',
-      4 => 'group_forum_hispanic',
-      5 => 'group_forum_asian_am',
-      6 => 'group_forum_native_am',
-      7 => 'group_forum_african_am',
-      8 => 'group_forum_other',
-      9 => 'group_forum_impact',
+      2 => 'field_forums_description',
+      3 => 'group_forum_race',
+      4 => 'group_forum_white',
+      5 => 'group_forum_hispanic',
+      6 => 'group_forum_asian_am',
+      7 => 'group_forum_native_am',
+      8 => 'group_forum_african_am',
+      9 => 'group_forum_other',
+      10 => 'group_forum_impact',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -1733,7 +1733,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_forum_info';
   $field_group->data = array(
     'label' => 'Native American',
-    'weight' => '92',
+    'weight' => '93',
     'children' => array(
       0 => 'field_forums_native_am_female',
       1 => 'field_forums_native_am_male',
@@ -1767,7 +1767,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_forum_info';
   $field_group->data = array(
     'label' => 'Native American',
-    'weight' => '107',
+    'weight' => '108',
     'children' => array(
       0 => 'field_forums_native_am_female',
       1 => 'field_forums_native_am_male',
@@ -1801,7 +1801,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_forum_info';
   $field_group->data = array(
     'label' => 'Other',
-    'weight' => '94',
+    'weight' => '95',
     'children' => array(
       0 => 'field_forums_other_female',
       1 => 'field_forums_other_male',
@@ -1835,7 +1835,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_forum_info';
   $field_group->data = array(
     'label' => 'Other',
-    'weight' => '109',
+    'weight' => '110',
     'children' => array(
       0 => 'field_forums_other_female',
       1 => 'field_forums_other_male',
@@ -1869,7 +1869,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_forum_info';
   $field_group->data = array(
     'label' => 'Race',
-    'weight' => '88',
+    'weight' => '89',
     'children' => array(
       0 => 'field_co_female',
       1 => 'field_co_male',
@@ -1903,7 +1903,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_forum_info';
   $field_group->data = array(
     'label' => 'Race',
-    'weight' => '103',
+    'weight' => '104',
     'children' => array(
       0 => 'field_cf_female',
       1 => 'field_cf_male',
@@ -1937,7 +1937,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_forum_info';
   $field_group->data = array(
     'label' => 'White',
-    'weight' => '89',
+    'weight' => '90',
     'children' => array(
       0 => 'field_forums_white_female',
       1 => 'field_forums_white_male',
@@ -1971,7 +1971,7 @@ function civic_engagement_field_group_info() {
   $field_group->parent_name = 'group_forum_info';
   $field_group->data = array(
     'label' => 'White',
-    'weight' => '104',
+    'weight' => '105',
     'children' => array(
       0 => 'field_forums_white_female',
       1 => 'field_forums_white_male',
@@ -1993,632 +1993,6 @@ function civic_engagement_field_group_info() {
     ),
   );
   $field_groups['group_forum_white|node|civic_engagement|form'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_org_african_am|node|civic_engagement|default';
-  $field_group->group_name = 'group_org_african_am';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'civic_engagement';
-  $field_group->mode = 'default';
-  $field_group->parent_name = 'group_org_info';
-  $field_group->data = array(
-    'label' => 'African American',
-    'weight' => '100',
-    'children' => array(
-      0 => 'field_comm_org_african_am_female',
-      1 => 'field_comm_org_african_am_male',
-    ),
-    'format_type' => 'div',
-    'format_settings' => array(
-      'label' => 'African American',
-      'instance_settings' => array(
-        'required_fields' => 1,
-        'id' => '',
-        'classes' => 'group-org-african-am field-group-div nulTableRow',
-        'description' => '',
-        'show_label' => '1',
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
-      ),
-      'formatter' => 'open',
-    ),
-  );
-  $field_groups['group_org_african_am|node|civic_engagement|default'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_org_african_am|node|civic_engagement|form';
-  $field_group->group_name = 'group_org_african_am';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'civic_engagement';
-  $field_group->mode = 'form';
-  $field_group->parent_name = 'group_org_info';
-  $field_group->data = array(
-    'label' => 'African American',
-    'weight' => '15',
-    'children' => array(
-      0 => 'field_comm_org_african_am_female',
-      1 => 'field_comm_org_african_am_male',
-    ),
-    'format_type' => 'div',
-    'format_settings' => array(
-      'label' => 'African American',
-      'instance_settings' => array(
-        'required_fields' => 1,
-        'id' => '',
-        'classes' => 'group-org-african-am field-group-div nulTableRow',
-        'description' => '',
-        'show_label' => '1',
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
-      ),
-      'formatter' => 'open',
-    ),
-  );
-  $field_groups['group_org_african_am|node|civic_engagement|form'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_org_asian_am|node|civic_engagement|default';
-  $field_group->group_name = 'group_org_asian_am';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'civic_engagement';
-  $field_group->mode = 'default';
-  $field_group->parent_name = 'group_org_info';
-  $field_group->data = array(
-    'label' => 'Asian American',
-    'weight' => '98',
-    'children' => array(
-      0 => 'field_comm_org_asian_am_male',
-      1 => 'field_comm_org_asian_am_female',
-    ),
-    'format_type' => 'div',
-    'format_settings' => array(
-      'label' => 'Asian American',
-      'instance_settings' => array(
-        'required_fields' => 1,
-        'id' => '',
-        'classes' => 'group-org-asian-am field-group-div nulTableRow',
-        'description' => '',
-        'show_label' => '1',
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
-      ),
-      'formatter' => 'open',
-    ),
-  );
-  $field_groups['group_org_asian_am|node|civic_engagement|default'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_org_asian_am|node|civic_engagement|form';
-  $field_group->group_name = 'group_org_asian_am';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'civic_engagement';
-  $field_group->mode = 'form';
-  $field_group->parent_name = 'group_org_info';
-  $field_group->data = array(
-    'label' => 'Asian American',
-    'weight' => '13',
-    'children' => array(
-      0 => 'field_comm_org_asian_am_male',
-      1 => 'field_comm_org_asian_am_female',
-    ),
-    'format_type' => 'div',
-    'format_settings' => array(
-      'label' => 'Asian American',
-      'instance_settings' => array(
-        'required_fields' => 1,
-        'id' => '',
-        'classes' => 'group-org-asian-am field-group-div nulTableRow',
-        'description' => '',
-        'show_label' => '1',
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
-      ),
-      'formatter' => 'open',
-    ),
-  );
-  $field_groups['group_org_asian_am|node|civic_engagement|form'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_org_hispanic|node|civic_engagement|default';
-  $field_group->group_name = 'group_org_hispanic';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'civic_engagement';
-  $field_group->mode = 'default';
-  $field_group->parent_name = 'group_org_info';
-  $field_group->data = array(
-    'label' => 'Hispanic/Latino',
-    'weight' => '97',
-    'children' => array(
-      0 => 'field_comm_org_hispanic_female',
-      1 => 'field_comm_org_hispanic_male',
-    ),
-    'format_type' => 'div',
-    'format_settings' => array(
-      'label' => 'Hispanic/Latino',
-      'instance_settings' => array(
-        'required_fields' => 1,
-        'id' => '',
-        'classes' => 'group-org-hispanic field-group-div nulTableRow',
-        'description' => '',
-        'show_label' => '1',
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
-      ),
-      'formatter' => 'open',
-    ),
-  );
-  $field_groups['group_org_hispanic|node|civic_engagement|default'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_org_hispanic|node|civic_engagement|form';
-  $field_group->group_name = 'group_org_hispanic';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'civic_engagement';
-  $field_group->mode = 'form';
-  $field_group->parent_name = 'group_org_info';
-  $field_group->data = array(
-    'label' => 'Hispanic/Latino',
-    'weight' => '12',
-    'children' => array(
-      0 => 'field_comm_org_hispanic_female',
-      1 => 'field_comm_org_hispanic_male',
-    ),
-    'format_type' => 'div',
-    'format_settings' => array(
-      'label' => 'Hispanic/Latino',
-      'instance_settings' => array(
-        'required_fields' => 1,
-        'id' => '',
-        'classes' => 'group-org-hispanic field-group-div nulTableRow',
-        'description' => '',
-        'show_label' => '1',
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
-      ),
-      'formatter' => 'open',
-    ),
-  );
-  $field_groups['group_org_hispanic|node|civic_engagement|form'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_org_impcat|node|civic_engagement|default';
-  $field_group->group_name = 'group_org_impcat';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'civic_engagement';
-  $field_group->mode = 'default';
-  $field_group->parent_name = 'group_org_info';
-  $field_group->data = array(
-    'label' => ' ',
-    'weight' => '102',
-    'children' => array(
-      0 => 'field_comm_org_societal_impact',
-      1 => 'field_org_spacer_impact',
-    ),
-    'format_type' => 'div',
-    'format_settings' => array(
-      'label' => ' ',
-      'instance_settings' => array(
-        'id' => '',
-        'classes' => 'group-org-impcat field-group-div nulTableRow',
-        'description' => '',
-        'show_label' => '1',
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
-      ),
-      'formatter' => 'open',
-    ),
-  );
-  $field_groups['group_org_impcat|node|civic_engagement|default'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_org_impcat|node|civic_engagement|form';
-  $field_group->group_name = 'group_org_impcat';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'civic_engagement';
-  $field_group->mode = 'form';
-  $field_group->parent_name = 'group_org_info';
-  $field_group->data = array(
-    'label' => 'Total Number Served or Registered (Male and Female)',
-    'weight' => '17',
-    'children' => array(
-      0 => 'field_comm_org_societal_impact',
-      1 => 'field_org_spacer_impact',
-    ),
-    'format_type' => 'div',
-    'format_settings' => array(
-      'label' => 'Total Number Served or Registered (Male and Female)',
-      'instance_settings' => array(
-        'required_fields' => 1,
-        'id' => '',
-        'classes' => 'group-org-impcat field-group-div nulTableRow',
-        'description' => '',
-        'show_label' => '1',
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
-      ),
-      'formatter' => 'open',
-    ),
-  );
-  $field_groups['group_org_impcat|node|civic_engagement|form'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_org_info|node|civic_engagement|default';
-  $field_group->group_name = 'group_org_info';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'civic_engagement';
-  $field_group->mode = 'default';
-  $field_group->parent_name = 'group_ce';
-  $field_group->data = array(
-    'label' => 'Community Organizations',
-    'weight' => '23',
-    'children' => array(
-      0 => 'field_community_organizations',
-      1 => 'field_comm_org_total',
-      2 => 'group_org_race',
-      3 => 'group_org_white',
-      4 => 'group_org_hispanic',
-      5 => 'group_org_asian_am',
-      6 => 'group_org_native_am',
-      7 => 'group_org_african_am',
-      8 => 'group_org_other',
-      9 => 'group_org_impcat',
-    ),
-    'format_type' => 'div',
-    'format_settings' => array(
-      'label' => 'Community Organizations',
-      'instance_settings' => array(
-        'id' => '',
-        'classes' => 'group-org-info field-group-div nulTable',
-        'description' => '',
-        'show_label' => '1',
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
-      ),
-      'formatter' => 'open',
-    ),
-  );
-  $field_groups['group_org_info|node|civic_engagement|default'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_org_info|node|civic_engagement|form';
-  $field_group->group_name = 'group_org_info';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'civic_engagement';
-  $field_group->mode = 'form';
-  $field_group->parent_name = 'group_ce';
-  $field_group->data = array(
-    'label' => 'Community Organizations',
-    'weight' => '119',
-    'children' => array(
-      0 => 'field_community_organizations',
-      1 => 'field_comm_org_total',
-      2 => 'group_org_race',
-      3 => 'group_org_white',
-      4 => 'group_org_hispanic',
-      5 => 'group_org_asian_am',
-      6 => 'group_org_native_am',
-      7 => 'group_org_african_am',
-      8 => 'group_org_other',
-      9 => 'group_org_impcat',
-    ),
-    'format_type' => 'div',
-    'format_settings' => array(
-      'label' => 'Community Organizations',
-      'instance_settings' => array(
-        'required_fields' => 1,
-        'id' => '',
-        'classes' => 'group-org-info field-group-div nulTable',
-        'description' => '',
-        'show_label' => '1',
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
-      ),
-      'formatter' => 'open',
-    ),
-  );
-  $field_groups['group_org_info|node|civic_engagement|form'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_org_native_am|node|civic_engagement|default';
-  $field_group->group_name = 'group_org_native_am';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'civic_engagement';
-  $field_group->mode = 'default';
-  $field_group->parent_name = 'group_org_info';
-  $field_group->data = array(
-    'label' => 'Native American',
-    'weight' => '99',
-    'children' => array(
-      0 => 'field_comm_org_native_am_male',
-      1 => 'field_comm_org_native_am_female',
-    ),
-    'format_type' => 'div',
-    'format_settings' => array(
-      'label' => 'Native American',
-      'instance_settings' => array(
-        'required_fields' => 1,
-        'id' => '',
-        'classes' => 'group-org-native-am field-group-div nulTableRow',
-        'description' => '',
-        'show_label' => '1',
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
-      ),
-      'formatter' => 'open',
-    ),
-  );
-  $field_groups['group_org_native_am|node|civic_engagement|default'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_org_native_am|node|civic_engagement|form';
-  $field_group->group_name = 'group_org_native_am';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'civic_engagement';
-  $field_group->mode = 'form';
-  $field_group->parent_name = 'group_org_info';
-  $field_group->data = array(
-    'label' => 'Native American',
-    'weight' => '14',
-    'children' => array(
-      0 => 'field_comm_org_native_am_male',
-      1 => 'field_comm_org_native_am_female',
-    ),
-    'format_type' => 'div',
-    'format_settings' => array(
-      'label' => 'Native American',
-      'instance_settings' => array(
-        'required_fields' => 1,
-        'id' => '',
-        'classes' => 'group-org-native-am field-group-div nulTableRow',
-        'description' => '',
-        'show_label' => '1',
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
-      ),
-      'formatter' => 'open',
-    ),
-  );
-  $field_groups['group_org_native_am|node|civic_engagement|form'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_org_other|node|civic_engagement|default';
-  $field_group->group_name = 'group_org_other';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'civic_engagement';
-  $field_group->mode = 'default';
-  $field_group->parent_name = 'group_org_info';
-  $field_group->data = array(
-    'label' => 'Other',
-    'weight' => '101',
-    'children' => array(
-      0 => 'field_comm_org_other_female',
-      1 => 'field_comm_org_other_male',
-    ),
-    'format_type' => 'div',
-    'format_settings' => array(
-      'label' => 'Other',
-      'instance_settings' => array(
-        'required_fields' => 1,
-        'id' => '',
-        'classes' => 'group-org-other field-group-div nulTableRow',
-        'description' => '',
-        'show_label' => '1',
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
-      ),
-      'formatter' => 'open',
-    ),
-  );
-  $field_groups['group_org_other|node|civic_engagement|default'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_org_other|node|civic_engagement|form';
-  $field_group->group_name = 'group_org_other';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'civic_engagement';
-  $field_group->mode = 'form';
-  $field_group->parent_name = 'group_org_info';
-  $field_group->data = array(
-    'label' => 'Other',
-    'weight' => '16',
-    'children' => array(
-      0 => 'field_comm_org_other_female',
-      1 => 'field_comm_org_other_male',
-    ),
-    'format_type' => 'div',
-    'format_settings' => array(
-      'label' => 'Other',
-      'instance_settings' => array(
-        'required_fields' => 1,
-        'id' => '',
-        'classes' => 'group-org-other field-group-div nulTableRow',
-        'description' => '',
-        'show_label' => '1',
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
-      ),
-      'formatter' => 'open',
-    ),
-  );
-  $field_groups['group_org_other|node|civic_engagement|form'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_org_race|node|civic_engagement|default';
-  $field_group->group_name = 'group_org_race';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'civic_engagement';
-  $field_group->mode = 'default';
-  $field_group->parent_name = 'group_org_info';
-  $field_group->data = array(
-    'label' => 'Race',
-    'weight' => '95',
-    'children' => array(
-      0 => 'field_cf_female',
-      1 => 'field_cf_male',
-    ),
-    'format_type' => 'div',
-    'format_settings' => array(
-      'label' => 'Race',
-      'instance_settings' => array(
-        'required_fields' => 1,
-        'id' => '',
-        'classes' => 'group-org-race field-group-div nulTableHeader',
-        'description' => '',
-        'show_label' => '1',
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
-      ),
-      'formatter' => 'open',
-    ),
-  );
-  $field_groups['group_org_race|node|civic_engagement|default'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_org_race|node|civic_engagement|form';
-  $field_group->group_name = 'group_org_race';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'civic_engagement';
-  $field_group->mode = 'form';
-  $field_group->parent_name = 'group_org_info';
-  $field_group->data = array(
-    'label' => 'Race',
-    'weight' => '10',
-    'children' => array(
-      0 => 'field_co_female',
-      1 => 'field_co_male',
-    ),
-    'format_type' => 'div',
-    'format_settings' => array(
-      'label' => 'Race',
-      'instance_settings' => array(
-        'required_fields' => 1,
-        'id' => '',
-        'classes' => 'group-org-race field-group-div nulTableHeader',
-        'description' => '',
-        'show_label' => '1',
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
-      ),
-      'formatter' => 'open',
-    ),
-  );
-  $field_groups['group_org_race|node|civic_engagement|form'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_org_white|node|civic_engagement|default';
-  $field_group->group_name = 'group_org_white';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'civic_engagement';
-  $field_group->mode = 'default';
-  $field_group->parent_name = 'group_org_info';
-  $field_group->data = array(
-    'label' => 'White',
-    'weight' => '96',
-    'children' => array(
-      0 => 'field_comm_org_white_female',
-      1 => 'field_comm_org_white_male',
-    ),
-    'format_type' => 'div',
-    'format_settings' => array(
-      'label' => 'White',
-      'instance_settings' => array(
-        'required_fields' => 1,
-        'id' => '',
-        'classes' => 'group-org-white field-group-div nulTableRow',
-        'description' => '',
-        'show_label' => '1',
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
-      ),
-      'formatter' => 'open',
-    ),
-  );
-  $field_groups['group_org_white|node|civic_engagement|default'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_org_white|node|civic_engagement|form';
-  $field_group->group_name = 'group_org_white';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'civic_engagement';
-  $field_group->mode = 'form';
-  $field_group->parent_name = 'group_org_info';
-  $field_group->data = array(
-    'label' => 'White',
-    'weight' => '11',
-    'children' => array(
-      0 => 'field_comm_org_white_female',
-      1 => 'field_comm_org_white_male',
-    ),
-    'format_type' => 'div',
-    'format_settings' => array(
-      'label' => 'White',
-      'instance_settings' => array(
-        'required_fields' => 1,
-        'id' => '',
-        'classes' => 'group-org-white field-group-div nulTableRow',
-        'description' => '',
-        'show_label' => '1',
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
-      ),
-      'formatter' => 'open',
-    ),
-  );
-  $field_groups['group_org_white|node|civic_engagement|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -3884,7 +3258,6 @@ function civic_engagement_field_group_info() {
   t('Civic Engagement');
   t('Civil Rights and Racial Justice Activities');
   t('Community Forums');
-  t('Community Organizations');
   t('Hispanic/Latino');
   t('Native American');
   t('Other');

@@ -1477,9 +1477,8 @@ function civic_engagement_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'markup',
         'settings' => array(),
-        'type' => 'markup_view',
+        'type' => 'hidden',
         'weight' => 7,
       ),
       'full' => array(
@@ -1533,9 +1532,8 @@ function civic_engagement_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'markup',
         'settings' => array(),
-        'type' => 'markup_view',
+        'type' => 'hidden',
         'weight' => 6,
       ),
       'full' => array(
@@ -1581,118 +1579,6 @@ function civic_engagement_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-civic_engagement-field_co_female'.
-  $field_instances['node-civic_engagement-field_co_female'] = array(
-    'bundle' => 'civic_engagement',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'markup',
-        'settings' => array(),
-        'type' => 'markup_view',
-        'weight' => 96,
-      ),
-      'full' => array(
-        'label' => 'hidden',
-        'module' => 'markup',
-        'settings' => array(),
-        'type' => 'markup_view',
-        'weight' => 96,
-      ),
-      'full_census_' => array(
-        'label' => 'hidden',
-        'module' => 'markup',
-        'settings' => array(),
-        'type' => 'markup_view',
-        'weight' => 96,
-      ),
-      'status_info' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 24,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_co_female',
-    'label' => 'female',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(),
-      'type' => 'markup',
-      'weight' => 28,
-    ),
-  );
-
-  // Exported field_instance: 'node-civic_engagement-field_co_male'.
-  $field_instances['node-civic_engagement-field_co_male'] = array(
-    'bundle' => 'civic_engagement',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'markup',
-        'settings' => array(),
-        'type' => 'markup_view',
-        'weight' => 95,
-      ),
-      'full' => array(
-        'label' => 'hidden',
-        'module' => 'markup',
-        'settings' => array(),
-        'type' => 'markup_view',
-        'weight' => 95,
-      ),
-      'full_census_' => array(
-        'label' => 'hidden',
-        'module' => 'markup',
-        'settings' => array(),
-        'type' => 'markup_view',
-        'weight' => 95,
-      ),
-      'status_info' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 25,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_co_male',
-    'label' => 'Male',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(),
-      'type' => 'markup',
-      'weight' => 27,
-    ),
-  );
-
   // Exported field_instance:
   // 'node-civic_engagement-field_comm_org_african_am_female'.
   $field_instances['node-civic_engagement-field_comm_org_african_am_female'] = array(
@@ -1703,14 +1589,8 @@ function civic_engagement_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 19,
       ),
       'full' => array(
@@ -1766,7 +1646,7 @@ function civic_engagement_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 31,
+      'weight' => 14,
     ),
   );
 
@@ -1780,14 +1660,8 @@ function civic_engagement_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 17,
       ),
       'full' => array(
@@ -1843,7 +1717,7 @@ function civic_engagement_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 30,
+      'weight' => 13,
     ),
   );
 
@@ -1857,14 +1731,8 @@ function civic_engagement_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 169,
       ),
       'full' => array(
@@ -1920,7 +1788,7 @@ function civic_engagement_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 35,
+      'weight' => 17,
     ),
   );
 
@@ -1934,14 +1802,8 @@ function civic_engagement_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 168,
       ),
       'full' => array(
@@ -1997,7 +1859,7 @@ function civic_engagement_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 34,
+      'weight' => 15,
     ),
   );
 
@@ -2011,14 +1873,8 @@ function civic_engagement_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 22,
       ),
       'full' => array(
@@ -2074,7 +1930,7 @@ function civic_engagement_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 35,
+      'weight' => 18,
     ),
   );
 
@@ -2088,14 +1944,8 @@ function civic_engagement_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 21,
       ),
       'full' => array(
@@ -2151,7 +2001,7 @@ function civic_engagement_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 34,
+      'weight' => 16,
     ),
   );
 
@@ -2165,14 +2015,8 @@ function civic_engagement_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 171,
       ),
       'full' => array(
@@ -2228,7 +2072,7 @@ function civic_engagement_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 39,
+      'weight' => 22,
     ),
   );
 
@@ -2242,14 +2086,8 @@ function civic_engagement_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 170,
       ),
       'full' => array(
@@ -2305,7 +2143,7 @@ function civic_engagement_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 38,
+      'weight' => 19,
     ),
   );
 
@@ -2319,14 +2157,8 @@ function civic_engagement_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 26,
       ),
       'full' => array(
@@ -2382,7 +2214,7 @@ function civic_engagement_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 39,
+      'weight' => 21,
     ),
   );
 
@@ -2395,14 +2227,8 @@ function civic_engagement_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 25,
       ),
       'full' => array(
@@ -2458,7 +2284,7 @@ function civic_engagement_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 38,
+      'weight' => 20,
     ),
   );
 
@@ -2535,7 +2361,7 @@ function civic_engagement_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 94,
+      'weight' => 23,
     ),
   );
 
@@ -2547,15 +2373,9 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 94,
       ),
       'full_census_' => array(
@@ -2593,7 +2413,7 @@ function civic_engagement_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 9,
+      'weight' => 10,
     ),
   );
 
@@ -2607,14 +2427,8 @@ function civic_engagement_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 29,
       ),
       'full' => array(
@@ -2670,7 +2484,7 @@ function civic_engagement_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 29,
+      'weight' => 12,
     ),
   );
 
@@ -2683,14 +2497,8 @@ function civic_engagement_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 28,
       ),
       'full' => array(
@@ -2746,7 +2554,7 @@ function civic_engagement_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 28,
+      'weight' => 11,
     ),
   );
 
@@ -2816,10 +2624,9 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
-        'module' => 'list',
+        'label' => 'hidden',
         'settings' => array(),
-        'type' => 'list_default',
+        'type' => 'hidden',
         'weight' => 93,
       ),
       'full' => array(
@@ -2861,7 +2668,7 @@ function civic_engagement_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 8,
+      'weight' => 9,
     ),
   );
 
@@ -4506,6 +4313,58 @@ function civic_engagement_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-civic_engagement-field_forums_description'.
+  $field_instances['node-civic_engagement-field_forums_description'] = array(
+    'bundle' => 'civic_engagement',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 88,
+      ),
+      'full_census_' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'status_info' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_forums_description',
+    'label' => 'Please describe',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 103,
+    ),
+  );
+
   // Exported field_instance:
   // 'node-civic_engagement-field_forums_hispanic_female'.
   $field_instances['node-civic_engagement-field_forums_hispanic_female'] = array(
@@ -5107,7 +4966,7 @@ function civic_engagement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -5306,62 +5165,6 @@ function civic_engagement_field_default_field_instances() {
       'settings' => array(),
       'type' => 'number',
       'weight' => 39,
-    ),
-  );
-
-  // Exported field_instance: 'node-civic_engagement-field_org_spacer_impact'.
-  $field_instances['node-civic_engagement-field_org_spacer_impact'] = array(
-    'bundle' => 'civic_engagement',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'markup',
-        'settings' => array(),
-        'type' => 'markup_view',
-        'weight' => 30,
-      ),
-      'full' => array(
-        'label' => 'hidden',
-        'module' => 'markup',
-        'settings' => array(),
-        'type' => 'markup_view',
-        'weight' => 30,
-      ),
-      'full_census_' => array(
-        'label' => 'hidden',
-        'module' => 'markup',
-        'settings' => array(),
-        'type' => 'markup_view',
-        'weight' => 30,
-      ),
-      'status_info' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 101,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_org_spacer_impact',
-    'label' => 'org spacer impact',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(),
-      'type' => 'markup',
-      'weight' => 92,
     ),
   );
 
@@ -8103,6 +7906,7 @@ function civic_engagement_field_default_field_instances() {
   t('Forums spacer');
   t('Male');
   t('PB Spacer');
+  t('Please describe');
   t('Police Brutality');
   t('Police Brutality African American Females');
   t('Police Brutality African American Males');
@@ -8137,9 +7941,7 @@ function civic_engagement_field_default_field_instances() {
   t('comm_org_asian_am_male');
   t('comm_org_native_am_female');
   t('comm_org_native_am_male');
-  t('female');
   t('female_ce_voter');
-  t('org spacer impact');
   t('parent census');
   t('voter male');
   t('voter_african_am_female');

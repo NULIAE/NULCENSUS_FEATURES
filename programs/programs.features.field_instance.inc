@@ -239,7 +239,7 @@ function programs_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 14,
+        'weight' => 12,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -280,7 +280,7 @@ function programs_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 13,
+        'weight' => 11,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -333,17 +333,15 @@ function programs_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_program_nul_funded',
     'label' => 'Is this program funded by NUL?',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(
-        'display_label' => 1,
-      ),
-      'type' => 'options_onoff',
+      'settings' => array(),
+      'type' => 'options_buttons',
       'weight' => 2,
     ),
   );
@@ -906,7 +904,7 @@ function programs_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 12,
+        'weight' => 13,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -949,7 +947,7 @@ function programs_field_default_field_instances() {
           'taxonomy_term_separator' => ', ',
         ),
         'type' => 'ds_taxonomy_separator',
-        'weight' => 11,
+        'weight' => 14,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -960,7 +958,7 @@ function programs_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_program_target_group',
-    'label' => 'Program Target Group',
+    'label' => 'Target Group(s) Served',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -997,7 +995,7 @@ function programs_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_program_types',
-    'label' => 'Program Types',
+    'label' => 'Program Type',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -1224,9 +1222,12 @@ function programs_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
+      'module' => 'taxonomy',
+      'settings' => array(
+        'autocomplete_path' => 'taxonomy/autocomplete',
+        'size' => 60,
+      ),
+      'type' => 'taxonomy_autocomplete',
       'weight' => 1,
     ),
   );
@@ -1757,7 +1758,7 @@ function programs_field_default_field_instances() {
     'entity_type' => 'taxonomy_term',
     'field_name' => 'field_program_area',
     'label' => 'Program Area',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -1789,7 +1790,7 @@ function programs_field_default_field_instances() {
     'entity_type' => 'taxonomy_term',
     'field_name' => 'field_program_area',
     'label' => 'Program Area',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -1821,11 +1822,12 @@ function programs_field_default_field_instances() {
     'entity_type' => 'taxonomy_term',
     'field_name' => 'field_program_area',
     'label' => 'Program Area',
-    'required' => FALSE,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
@@ -1860,12 +1862,12 @@ function programs_field_default_field_instances() {
   t('Program Area');
   t('Program Length Amount');
   t('Program Length Type');
-  t('Program Target Group');
-  t('Program Types');
+  t('Program Type');
   t('Purpose of Program');
   t('Sector');
   t('Service Provided');
   t('Services Provided');
+  t('Target Group(s) Served');
   t('Target age range');
   t('Total Program Budget Funded');
   t('education dollars header');

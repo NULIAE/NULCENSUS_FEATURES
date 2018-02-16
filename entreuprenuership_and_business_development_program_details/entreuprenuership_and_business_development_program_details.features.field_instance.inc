@@ -225,7 +225,7 @@ function entreuprenuership_and_business_development_program_details_field_defaul
       'module' => 'paragraphs',
       'settings' => array(),
       'type' => 'paragraphs_embed',
-      'weight' => 12,
+      'weight' => 11,
     ),
   );
 
@@ -877,6 +877,53 @@ function entreuprenuership_and_business_development_program_details_field_defaul
     ),
   );
 
+  // Exported field_instance:
+  // 'node-program_entrepreneurship-field_program_entpr_total_sales'.
+  $field_instances['node-program_entrepreneurship-field_program_entpr_total_sales'] = array(
+    'bundle' => 'program_entrepreneurship',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 18,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_program_entpr_total_sales',
+    'label' => 'Value of sales for all businesses',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '$',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 12,
+    ),
+  );
+
   // Exported field_instance: 'node-program_entrepreneurship-field_tab_status'.
   $field_instances['node-program_entrepreneurship-field_tab_status'] = array(
     'bundle' => 'program_entrepreneurship',
@@ -1181,6 +1228,7 @@ function entreuprenuership_and_business_development_program_details_field_defaul
   t('Total Participants in Entrepreneurship Programs');
   t('Total sales of businesses started by participants in entrepreneurship programs (i.e. Small Business Matters)');
   t('Type of Business');
+  t('Value of sales for all businesses');
   t('parent census');
 
   return $field_instances;

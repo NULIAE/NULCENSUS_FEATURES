@@ -24,12 +24,6 @@ function census_field_group_info() {
     'weight' => '4',
     'children' => array(
       0 => 'field_survey_name_of_certifier',
-      1 => 'field_survey_contact_first_name',
-      2 => 'field_survey_contact_last_name',
-      3 => 'field_survey_phone_number',
-      4 => 'field_survey_email_address',
-      5 => 'field_survey_best_time_to_call',
-      6 => 'field_survey_time_zone',
     ),
     'format_type' => 'div',
     'format_settings' => array(

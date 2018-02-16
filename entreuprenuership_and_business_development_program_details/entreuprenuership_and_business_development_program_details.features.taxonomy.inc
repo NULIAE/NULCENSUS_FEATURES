@@ -32,9 +32,9 @@ function entreuprenuership_and_business_development_program_details_taxonomy_def
         ),
       ),
     ),
-    'type_of_venture' => array(
-      'name' => 'Type of Venture',
-      'machine_name' => 'type_of_venture',
+    'type_of_business' => array(
+      'name' => 'Type of Business',
+      'machine_name' => 'type_of_business',
       'description' => '',
       'hierarchy' => 0,
       'module' => 'taxonomy',

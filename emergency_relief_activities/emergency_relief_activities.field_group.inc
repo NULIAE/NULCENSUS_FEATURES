@@ -27,8 +27,7 @@ function emergency_relief_activities_field_group_info() {
       1 => 'field_relief_civic_fund_nul',
       2 => 'field_relief_civic_fund_other',
       3 => 'field_relief_civic_fund_uway',
-      4 => 'field_relief_civic_impact',
-      5 => 'field_relief_civic_served',
+      4 => 'field_relief_civic_served',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -65,8 +64,7 @@ function emergency_relief_activities_field_group_info() {
       1 => 'field_relief_civic_fund_nul',
       2 => 'field_relief_civic_fund_other',
       3 => 'field_relief_civic_fund_uway',
-      4 => 'field_relief_civic_impact',
-      5 => 'field_relief_civic_served',
+      4 => 'field_relief_civic_served',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -103,8 +101,7 @@ function emergency_relief_activities_field_group_info() {
       1 => 'field_relief_ed_fund_nul',
       2 => 'field_relief_ed_fund_other',
       3 => 'field_relief_ed_fund_uway',
-      4 => 'field_relief_ed_impact',
-      5 => 'field_relief_ed_served',
+      4 => 'field_relief_ed_served',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -141,8 +138,7 @@ function emergency_relief_activities_field_group_info() {
       1 => 'field_relief_ed_fund_nul',
       2 => 'field_relief_ed_fund_other',
       3 => 'field_relief_ed_fund_uway',
-      4 => 'field_relief_ed_impact',
-      5 => 'field_relief_ed_served',
+      4 => 'field_relief_ed_served',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -179,8 +175,7 @@ function emergency_relief_activities_field_group_info() {
       1 => 'field_relief_employ_fund_nul',
       2 => 'field_relief_employ_fund_uway',
       3 => 'field_relief_employ_fund_other',
-      4 => 'field_relief_employ_impact',
-      5 => 'field_relief_employ_served',
+      4 => 'field_relief_employ_served',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -217,8 +212,7 @@ function emergency_relief_activities_field_group_info() {
       1 => 'field_relief_employ_fund_nul',
       2 => 'field_relief_employ_fund_uway',
       3 => 'field_relief_employ_fund_other',
-      4 => 'field_relief_employ_impact',
-      5 => 'field_relief_employ_served',
+      4 => 'field_relief_employ_served',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -256,8 +250,7 @@ function emergency_relief_activities_field_group_info() {
       2 => 'field_era_funding_source_other',
       3 => 'field_era_funding_source_u_way',
       4 => 'field_era_number_served',
-      5 => 'field_era_societal_impact',
-      6 => 'field_era_program_type',
+      5 => 'field_era_program_type',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -295,8 +288,7 @@ function emergency_relief_activities_field_group_info() {
       2 => 'field_era_funding_source_other',
       3 => 'field_era_funding_source_u_way',
       4 => 'field_era_number_served',
-      5 => 'field_era_societal_impact',
-      6 => 'field_era_program_type',
+      5 => 'field_era_program_type',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -333,8 +325,7 @@ function emergency_relief_activities_field_group_info() {
       1 => 'field_relief_health_fund_nul',
       2 => 'field_relief_health_fund_other',
       3 => 'field_relief_health_fund_uway',
-      4 => 'field_relief_health_impact',
-      5 => 'field_relief_health_served',
+      4 => 'field_relief_health_served',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -371,8 +362,7 @@ function emergency_relief_activities_field_group_info() {
       1 => 'field_relief_health_fund_nul',
       2 => 'field_relief_health_fund_other',
       3 => 'field_relief_health_fund_uway',
-      4 => 'field_relief_health_impact',
-      5 => 'field_relief_health_served',
+      4 => 'field_relief_health_served',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -409,8 +399,7 @@ function emergency_relief_activities_field_group_info() {
       1 => 'field_relief_justice_fund_other',
       2 => 'field_relief_justice_fund_nul',
       3 => 'field_relief_justice_fund_uway',
-      4 => 'field_relief_justice_impact',
-      5 => 'field_relief_justice_served',
+      4 => 'field_relief_justice_served',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -447,8 +436,7 @@ function emergency_relief_activities_field_group_info() {
       1 => 'field_relief_justice_fund_other',
       2 => 'field_relief_justice_fund_nul',
       3 => 'field_relief_justice_fund_uway',
-      4 => 'field_relief_justice_impact',
-      5 => 'field_relief_justice_served',
+      4 => 'field_relief_justice_served',
     ),
     'format_type' => 'div',
     'format_settings' => array(

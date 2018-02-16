@@ -102,7 +102,7 @@ function programs_taxonomy_default_vocabularies() {
       ),
     ),
     'program_types' => array(
-      'name' => 'Program Types',
+      'name' => 'Program Type',
       'machine_name' => 'program_types',
       'description' => '',
       'hierarchy' => 0,
@@ -150,7 +150,7 @@ function programs_taxonomy_default_vocabularies() {
     'target_group_served' => array(
       'name' => 'Target Group Served',
       'machine_name' => 'target_group_served',
-      'description' => 'Used on Programs content type',
+      'description' => '',
       'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => 0,

@@ -68,6 +68,6 @@ features[field_instance][] = paragraphs_item-budget_ventures-field_venture_type_
 features[node][] = revenue
 features[paragraphs][] = budget_ventures
 features[taxonomy][] = census_tab_status
-features[taxonomy][] = type_of_venture
+features[taxonomy][] = venture_type
 features_exclude[dependencies][ctools] = ctools
 project path = sites/all/modules/NULCENSUS_FEATURES

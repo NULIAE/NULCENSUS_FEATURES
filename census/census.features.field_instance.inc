@@ -467,6 +467,51 @@ function census_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-census-field_legacy_comments_contact'.
+  $field_instances['node-census-field_legacy_comments_contact'] = array(
+    'bundle' => 'census',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 33,
+      ),
+      'status_info' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_legacy_comments_contact',
+    'label' => 'Legacy Comments Contact info',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 24,
+    ),
+  );
+
   // Exported field_instance: 'node-census-field_number_of_years_as_ceo'.
   $field_instances['node-census-field_number_of_years_as_ceo'] = array(
     'bundle' => 'census',
@@ -808,187 +853,6 @@ function census_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-census-field_survey_best_time_to_call'.
-  $field_instances['node-census-field_survey_best_time_to_call'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'inline',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 26,
-      ),
-      'status_info' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_survey_best_time_to_call',
-    'label' => 'Best Time to Call',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 7,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_survey_contact_first_name'.
-  $field_instances['node-census-field_survey_contact_first_name'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'inline',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 22,
-      ),
-      'status_info' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_survey_contact_first_name',
-    'label' => 'Survey Contact First Name',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 4,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_survey_contact_last_name'.
-  $field_instances['node-census-field_survey_contact_last_name'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'inline',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 23,
-      ),
-      'status_info' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_survey_contact_last_name',
-    'label' => 'Survey Contact Last Name',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 5,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_survey_email_address'.
-  $field_instances['node-census-field_survey_email_address'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'inline',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 25,
-      ),
-      'status_info' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_survey_email_address',
-    'label' => 'Email address',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 9,
-    ),
-  );
-
   // Exported field_instance: 'node-census-field_survey_name_of_certifier'.
   $field_instances['node-census-field_survey_name_of_certifier'] = array(
     'bundle' => 'census',
@@ -1032,95 +896,6 @@ function census_field_default_field_instances() {
       ),
       'type' => 'text_textfield',
       'weight' => 10,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_survey_phone_number'.
-  $field_instances['node-census-field_survey_phone_number'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'inline',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 24,
-      ),
-      'status_info' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_survey_phone_number',
-    'label' => 'Phone Number',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 6,
-    ),
-  );
-
-  // Exported field_instance: 'node-census-field_survey_time_zone'.
-  $field_instances['node-census-field_survey_time_zone'] = array(
-    'bundle' => 'census',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'inline',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 27,
-      ),
-      'status_info' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_survey_time_zone',
-    'label' => 'Time Zone',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 8,
     ),
   );
 
@@ -1268,26 +1043,21 @@ function census_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Address Line 1');
   t('Address Line 2');
-  t('Best Time to Call');
   t('Cellular Number');
   t('Census Status');
   t('City');
   t('Email Address');
-  t('Email address');
   t('Fax');
   t('Legacy Census ID');
+  t('Legacy Comments Contact info');
   t('Number of Years as CEO');
   t('Number of Years of Service in Movement');
-  t('Phone Number');
   t('President/CEO First Name');
   t('President/CEO Last Name');
   t('President/CEO Middle Name');
   t('State/Province');
-  t('Survey Contact First Name');
-  t('Survey Contact Last Name');
   t('Telephone');
   t('This information has been reviewed and certified as accurate. (Enter name of certifier.):');
-  t('Time Zone');
   t('Year');
   t('Year Organization was Established');
   t('Zip Code');

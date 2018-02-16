@@ -472,52 +472,6 @@ function civic_engagement_field_default_field_bases() {
     'type' => 'markup',
   );
 
-  // Exported field_base: 'field_co_female'.
-  $field_bases['field_co_female'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_co_female',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'markup',
-    'settings' => array(
-      'markup' => array(
-        'format' => 'full_html',
-        'value' => '<div class="nulTableCell"><h3>Female</h3></div>',
-      ),
-    ),
-    'translatable' => 0,
-    'type' => 'markup',
-  );
-
-  // Exported field_base: 'field_co_male'.
-  $field_bases['field_co_male'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_co_male',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'markup',
-    'settings' => array(
-      'markup' => array(
-        'format' => 'full_html',
-        'value' => '<div class="nulTableCell"><h3>Male</h3></div>',
-      ),
-    ),
-    'translatable' => 0,
-    'type' => 'markup',
-  );
-
   // Exported field_base: 'field_comm_org_african_am_female'.
   $field_bases['field_comm_org_african_am_female'] = array(
     'active' => 1,
@@ -1270,6 +1224,28 @@ function civic_engagement_field_default_field_bases() {
     'type' => 'number_integer',
   );
 
+  // Exported field_base: 'field_forums_description'.
+  $field_bases['field_forums_description'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_forums_description',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'text_long',
+  );
+
   // Exported field_base: 'field_forums_hispanic_female'.
   $field_bases['field_forums_hispanic_female'] = array(
     'active' => 1,
@@ -1471,29 +1447,6 @@ function civic_engagement_field_default_field_bases() {
     'settings' => array(),
     'translatable' => 0,
     'type' => 'number_integer',
-  );
-
-  // Exported field_base: 'field_org_spacer_impact'.
-  $field_bases['field_org_spacer_impact'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_org_spacer_impact',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'markup',
-    'settings' => array(
-      'markup' => array(
-        'format' => 'full_html',
-        'value' => '<div></div>',
-      ),
-    ),
-    'translatable' => 0,
-    'type' => 'markup',
   );
 
   // Exported field_base: 'field_parent_census'.
