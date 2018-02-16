@@ -210,7 +210,7 @@ function programs_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_funding_organization',
     'field_permissions' => array(
-      'type' => 0,
+      'type' => 2,
     ),
     'indexes' => array(
       'tid' => array(
@@ -844,7 +844,7 @@ function programs_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_program_service_provided',
     'field_permissions' => array(
-      'type' => 0,
+      'type' => 2,
     ),
     'indexes' => array(
       'tid' => array(

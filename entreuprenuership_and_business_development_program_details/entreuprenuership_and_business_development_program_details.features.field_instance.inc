@@ -176,7 +176,7 @@ function entreuprenuership_and_business_development_program_details_field_defaul
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'paragraphs',
         'settings' => array(
           'view_mode' => 'full',

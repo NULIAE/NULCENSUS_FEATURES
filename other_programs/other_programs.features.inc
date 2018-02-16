@@ -15,7 +15,7 @@ function other_programs_node_info() {
       'description' => '',
       'has_title' => '1',
       'title_label' => t('Title'),
-      'help' => '',
+      'help' => t('Add Programs by clicking \'Save\' or \'View\' and then the Add a Program button'),
     ),
   );
   drupal_alter('node_info', $items);

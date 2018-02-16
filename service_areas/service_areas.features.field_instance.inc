@@ -89,15 +89,25 @@ function service_areas_field_default_field_instances() {
       'add_mode' => 'button',
       'allowed_bundles' => array(
         'budget_ventures' => -1,
+        'education_services' => -1,
+        'entpr_businesses' => -1,
+        'funding_source' => -1,
+        'health_services' => -1,
+        'program_services' => -1,
         'service_area' => 'service_area',
       ),
       'bundle_weights' => array(
         'budget_ventures' => 2,
+        'education_services' => 6,
+        'entpr_businesses' => 7,
+        'funding_source' => 8,
+        'health_services' => 9,
+        'program_services' => 10,
         'service_area' => 3,
       ),
       'default_edit_mode' => 'open',
-      'title' => 'Paragraph',
-      'title_multiple' => 'Paragraphs',
+      'title' => 'Service Area',
+      'title_multiple' => 'Service Areas',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -160,7 +170,7 @@ function service_areas_field_default_field_instances() {
   $field_instances['paragraphs_item-service_area-field_composition_'] = array(
     'bundle' => 'service_area',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Must add up to 100%',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -565,6 +575,7 @@ function service_areas_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Composition %');
+  t('Must add up to 100%');
   t('Service Area African American');
   t('Service Area Asian American');
   t('Service Area City/County');
