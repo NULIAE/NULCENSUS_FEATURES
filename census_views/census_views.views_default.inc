@@ -2039,31 +2039,37 @@ function census_views_views_default_views() {
   $export['education_programs_view'] = $view;
 
   $view = new view();
-  $view->name = 'full_census';
+  $view->name = 'full_content_type';
   $view->description = '';
   $view->tag = 'default';
   $view->base_table = 'node';
-  $view->human_name = 'Full Census';
+  $view->human_name = 'full content type';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Full Census';
+  $handler->display->display_options['title'] = 'full content type';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '50';
-  $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['pager']['options']['id'] = '0';
-  $handler->display->display_options['pager']['options']['quantity'] = '9';
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '1';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'node';
   $handler->display->display_options['row_options']['view_mode'] = 'full';
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = '<h2>Empowerment</h2>
+<p>Not Started, click <a href = "/node/add/!2/!1 ">here</a> to begin.</p>';
+  $handler->display->display_options['empty']['area']['format'] = 'full_html';
+  $handler->display->display_options['empty']['area']['tokenize'] = TRUE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -2071,16 +2077,33 @@ function census_views_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Sort criterion: Content: Post date */
+  $handler->display->display_options['sorts']['created']['id'] = 'created';
+  $handler->display->display_options['sorts']['created']['table'] = 'node';
+  $handler->display->display_options['sorts']['created']['field'] = 'created';
+  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
   /* Contextual filter: Content: parent census (field_parent_census) */
   $handler->display->display_options['arguments']['field_parent_census_target_id']['id'] = 'field_parent_census_target_id';
   $handler->display->display_options['arguments']['field_parent_census_target_id']['table'] = 'field_data_field_parent_census';
   $handler->display->display_options['arguments']['field_parent_census_target_id']['field'] = 'field_parent_census_target_id';
   $handler->display->display_options['arguments']['field_parent_census_target_id']['default_action'] = 'default';
   $handler->display->display_options['arguments']['field_parent_census_target_id']['default_argument_type'] = 'raw';
-  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_argument_options']['index'] = '1';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_argument_options']['index'] = '0';
   $handler->display->display_options['arguments']['field_parent_census_target_id']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['field_parent_census_target_id']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['field_parent_census_target_id']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['validate']['type'] = 'numeric';
+  /* Contextual filter: Global: Null */
+  $handler->display->display_options['arguments']['null']['id'] = 'null';
+  $handler->display->display_options['arguments']['null']['table'] = 'views';
+  $handler->display->display_options['arguments']['null']['field'] = 'null';
+  $handler->display->display_options['arguments']['null']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['null']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['null']['default_argument_options']['argument'] = 'civic-engagement';
+  $handler->display->display_options['arguments']['null']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['null']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['null']['summary_options']['items_per_page'] = '25';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -2093,64 +2116,837 @@ function census_views_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'census' => 'census',
-    'civic_engagement' => 'civic_engagement',
-    'community_relations' => 'community_relations',
-    'contact_data_direct_indirect_pub' => 'contact_data_direct_indirect_pub',
-    'program_education' => 'program_education',
-    'emergency_relief_activities' => 'emergency_relief_activities',
-    'employees_and_board_members' => 'employees_and_board_members',
-    'empowerment' => 'empowerment',
-    'program_entrepreneurship' => 'program_entrepreneurship',
-    'expenditures' => 'expenditures',
-    'program_health' => 'program_health',
-    'program_housing' => 'program_housing',
-    'program_other' => 'program_other',
-    'revenue' => 'revenue',
-    'service_areas' => 'service_areas',
-    'volunteers_members' => 'volunteers_members',
     'program_workforce' => 'program_workforce',
   );
-  $handler->display->display_options['filters']['type']['expose']['operator_id'] = 'type_op';
-  $handler->display->display_options['filters']['type']['expose']['label'] = 'Type';
-  $handler->display->display_options['filters']['type']['expose']['operator'] = 'type_op';
-  $handler->display->display_options['filters']['type']['expose']['identifier'] = 'type';
 
-  /* Display: Page */
-  $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['path'] = 'full-census';
-
-  /* Display: Data export */
-  $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
-  $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
-  $handler->display->display_options['path'] = 'RequiredReport4';
-  $handler->display->display_options['displays'] = array(
-    'page' => 'page',
-    'default' => 0,
+  /* Display: Civic Engagement Block */
+  $handler = $view->new_display('block', 'Civic Engagement Block', 'block');
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = '<h2>Civic Engagement</h2>
+<p>Not Started, click <a href = "/node/add/!2/!1 ">here</a> to begin.</p>';
+  $handler->display->display_options['empty']['area']['format'] = 'full_html';
+  $handler->display->display_options['empty']['area']['tokenize'] = TRUE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'civic_engagement' => 'civic_engagement',
   );
-  $translatables['full_census'] = array(
+
+  /* Display: Service Areas Block */
+  $handler = $view->new_display('block', 'Service Areas Block', 'block_1');
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = '<h2>Service Areas</h2>
+<p>Not Started, click <a href = "/node/add/!2/!1 ">here</a> to begin.</p>';
+  $handler->display->display_options['empty']['area']['format'] = 'full_html';
+  $handler->display->display_options['empty']['area']['tokenize'] = TRUE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: parent census (field_parent_census) */
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['id'] = 'field_parent_census_target_id';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['table'] = 'field_data_field_parent_census';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['field'] = 'field_parent_census_target_id';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_argument_type'] = 'raw';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_argument_options']['index'] = '0';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['validate']['type'] = 'numeric';
+  /* Contextual filter: Global: Null */
+  $handler->display->display_options['arguments']['null']['id'] = 'null';
+  $handler->display->display_options['arguments']['null']['table'] = 'views';
+  $handler->display->display_options['arguments']['null']['field'] = 'null';
+  $handler->display->display_options['arguments']['null']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['null']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['null']['default_argument_options']['argument'] = 'service-areas';
+  $handler->display->display_options['arguments']['null']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['null']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['null']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'service_areas' => 'service_areas',
+  );
+
+  /* Display: Community Relations */
+  $handler = $view->new_display('block', 'Community Relations', 'block_2');
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = '<h2>Community Relations</h2>
+<p>Not Started, click <a href = "/node/add/!2/!1 ">here</a> to begin.</p>';
+  $handler->display->display_options['empty']['area']['format'] = 'full_html';
+  $handler->display->display_options['empty']['area']['tokenize'] = TRUE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: parent census (field_parent_census) */
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['id'] = 'field_parent_census_target_id';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['table'] = 'field_data_field_parent_census';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['field'] = 'field_parent_census_target_id';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_argument_type'] = 'raw';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_argument_options']['index'] = '0';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['validate']['type'] = 'numeric';
+  /* Contextual filter: Global: Null */
+  $handler->display->display_options['arguments']['null']['id'] = 'null';
+  $handler->display->display_options['arguments']['null']['table'] = 'views';
+  $handler->display->display_options['arguments']['null']['field'] = 'null';
+  $handler->display->display_options['arguments']['null']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['null']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['null']['default_argument_options']['argument'] = 'community-relations';
+  $handler->display->display_options['arguments']['null']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['null']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['null']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'community_relations' => 'community_relations',
+  );
+
+  /* Display: Contact Data */
+  $handler = $view->new_display('block', 'Contact Data', 'block_3');
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = '<h2>Contact Data (Direct, Indirect & Public)</h2>
+<p>Not Started, click <a href = "/node/add/!2/!1 ">here</a> to begin.</p>';
+  $handler->display->display_options['empty']['area']['format'] = 'full_html';
+  $handler->display->display_options['empty']['area']['tokenize'] = TRUE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: parent census (field_parent_census) */
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['id'] = 'field_parent_census_target_id';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['table'] = 'field_data_field_parent_census';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['field'] = 'field_parent_census_target_id';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_argument_type'] = 'raw';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_argument_options']['index'] = '0';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['validate']['type'] = 'numeric';
+  /* Contextual filter: Global: Null */
+  $handler->display->display_options['arguments']['null']['id'] = 'null';
+  $handler->display->display_options['arguments']['null']['table'] = 'views';
+  $handler->display->display_options['arguments']['null']['field'] = 'null';
+  $handler->display->display_options['arguments']['null']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['null']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['null']['default_argument_options']['argument'] = 'contact-data-direct-indirect-pub';
+  $handler->display->display_options['arguments']['null']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['null']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['null']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'contact_data_direct_indirect_pub' => 'contact_data_direct_indirect_pub',
+  );
+
+  /* Display: Education Programs */
+  $handler = $view->new_display('block', 'Education Programs', 'block_4');
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = '<h2>Education Programs</h2>
+<p>Not Started, click <a href = "/node/add/!2/!1 ">here</a> to begin.</p>';
+  $handler->display->display_options['empty']['area']['format'] = 'full_html';
+  $handler->display->display_options['empty']['area']['tokenize'] = TRUE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: parent census (field_parent_census) */
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['id'] = 'field_parent_census_target_id';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['table'] = 'field_data_field_parent_census';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['field'] = 'field_parent_census_target_id';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_argument_type'] = 'raw';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_argument_options']['index'] = '0';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['validate']['type'] = 'numeric';
+  /* Contextual filter: Global: Null */
+  $handler->display->display_options['arguments']['null']['id'] = 'null';
+  $handler->display->display_options['arguments']['null']['table'] = 'views';
+  $handler->display->display_options['arguments']['null']['field'] = 'null';
+  $handler->display->display_options['arguments']['null']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['null']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['null']['default_argument_options']['argument'] = 'program-education';
+  $handler->display->display_options['arguments']['null']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['null']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['null']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'program_education' => 'program_education',
+  );
+
+  /* Display: Emergency Relief Activities */
+  $handler = $view->new_display('block', 'Emergency Relief Activities', 'block_5');
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = '<h2>Emergency Relief Activities</h2>
+<p>Not Started, click <a href = "/node/add/!2/!1 ">here</a> to begin.</p>';
+  $handler->display->display_options['empty']['area']['format'] = 'full_html';
+  $handler->display->display_options['empty']['area']['tokenize'] = TRUE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: parent census (field_parent_census) */
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['id'] = 'field_parent_census_target_id';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['table'] = 'field_data_field_parent_census';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['field'] = 'field_parent_census_target_id';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_argument_type'] = 'raw';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_argument_options']['index'] = '0';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['validate']['type'] = 'numeric';
+  /* Contextual filter: Global: Null */
+  $handler->display->display_options['arguments']['null']['id'] = 'null';
+  $handler->display->display_options['arguments']['null']['table'] = 'views';
+  $handler->display->display_options['arguments']['null']['field'] = 'null';
+  $handler->display->display_options['arguments']['null']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['null']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['null']['default_argument_options']['argument'] = 'emergency-relief-activities';
+  $handler->display->display_options['arguments']['null']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['null']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['null']['summary_options']['items_per_page'] = '25';
+
+  /* Display: Empowerment */
+  $handler = $view->new_display('block', 'Empowerment', 'block_6');
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: parent census (field_parent_census) */
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['id'] = 'field_parent_census_target_id';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['table'] = 'field_data_field_parent_census';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['field'] = 'field_parent_census_target_id';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_argument_type'] = 'raw';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_argument_options']['index'] = '0';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['validate']['type'] = 'numeric';
+  /* Contextual filter: Content: Type */
+  $handler->display->display_options['arguments']['type']['id'] = 'type';
+  $handler->display->display_options['arguments']['type']['table'] = 'node';
+  $handler->display->display_options['arguments']['type']['field'] = 'type';
+  $handler->display->display_options['arguments']['type']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['type']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['type']['default_argument_options']['argument'] = 'empowerment';
+  $handler->display->display_options['arguments']['type']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['type']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['type']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['type']['limit'] = '0';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'empowerment' => 'empowerment',
+  );
+
+  /* Display: Employees and Board Members */
+  $handler = $view->new_display('block', 'Employees and Board Members', 'block_7');
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = '<h2>Employees and Board Members</h2>
+<p>Not Started, click <a href = "/node/add/!2/!1 ">here</a> to begin.</p>';
+  $handler->display->display_options['empty']['area']['format'] = 'full_html';
+  $handler->display->display_options['empty']['area']['tokenize'] = TRUE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: parent census (field_parent_census) */
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['id'] = 'field_parent_census_target_id';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['table'] = 'field_data_field_parent_census';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['field'] = 'field_parent_census_target_id';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_argument_type'] = 'raw';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_argument_options']['index'] = '0';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['validate']['type'] = 'numeric';
+  /* Contextual filter: Global: Null */
+  $handler->display->display_options['arguments']['null']['id'] = 'null';
+  $handler->display->display_options['arguments']['null']['table'] = 'views';
+  $handler->display->display_options['arguments']['null']['field'] = 'null';
+  $handler->display->display_options['arguments']['null']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['null']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['null']['default_argument_options']['argument'] = 'employees-and-board-members';
+  $handler->display->display_options['arguments']['null']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['null']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['null']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'employees_and_board_members' => 'employees_and_board_members',
+  );
+
+  /* Display: Revenue */
+  $handler = $view->new_display('block', 'Revenue', 'block_8');
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = '<h2>Revenue</h2>
+<p>Not Started, click <a href = "/node/add/!2/!1 ">here</a> to begin.</p>';
+  $handler->display->display_options['empty']['area']['format'] = 'full_html';
+  $handler->display->display_options['empty']['area']['tokenize'] = TRUE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: parent census (field_parent_census) */
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['id'] = 'field_parent_census_target_id';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['table'] = 'field_data_field_parent_census';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['field'] = 'field_parent_census_target_id';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_argument_type'] = 'raw';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_argument_options']['index'] = '0';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['validate']['type'] = 'numeric';
+  /* Contextual filter: Content: Type */
+  $handler->display->display_options['arguments']['type']['id'] = 'type';
+  $handler->display->display_options['arguments']['type']['table'] = 'node';
+  $handler->display->display_options['arguments']['type']['field'] = 'type';
+  $handler->display->display_options['arguments']['type']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['type']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['type']['default_argument_options']['argument'] = 'revenue';
+  $handler->display->display_options['arguments']['type']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['type']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['type']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['type']['limit'] = '0';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'revenue' => 'revenue',
+  );
+
+  /* Display: Expenditures */
+  $handler = $view->new_display('block', 'Expenditures', 'block_9');
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = '<h2>Expenditures</h2>
+<p>Not Started, click <a href = "/node/add/!2/!1 ">here</a> to begin.</p>';
+  $handler->display->display_options['empty']['area']['format'] = 'full_html';
+  $handler->display->display_options['empty']['area']['tokenize'] = TRUE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: parent census (field_parent_census) */
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['id'] = 'field_parent_census_target_id';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['table'] = 'field_data_field_parent_census';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['field'] = 'field_parent_census_target_id';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_argument_type'] = 'raw';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_argument_options']['index'] = '0';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['validate']['type'] = 'numeric';
+  /* Contextual filter: Global: Null */
+  $handler->display->display_options['arguments']['null']['id'] = 'null';
+  $handler->display->display_options['arguments']['null']['table'] = 'views';
+  $handler->display->display_options['arguments']['null']['field'] = 'null';
+  $handler->display->display_options['arguments']['null']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['null']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['null']['default_argument_options']['argument'] = 'expenditures';
+  $handler->display->display_options['arguments']['null']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['null']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['null']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'expenditures' => 'expenditures',
+  );
+
+  /* Display: Volunteers/Members */
+  $handler = $view->new_display('block', 'Volunteers/Members', 'block_10');
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = '<h2>Volunteers/Members</h2>
+<p>Not Started, click <a href = "/node/add/!2/!1 ">here</a> to begin.</p>';
+  $handler->display->display_options['empty']['area']['format'] = 'full_html';
+  $handler->display->display_options['empty']['area']['tokenize'] = TRUE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: parent census (field_parent_census) */
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['id'] = 'field_parent_census_target_id';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['table'] = 'field_data_field_parent_census';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['field'] = 'field_parent_census_target_id';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_argument_type'] = 'raw';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_argument_options']['index'] = '0';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['validate']['type'] = 'numeric';
+  /* Contextual filter: Global: Null */
+  $handler->display->display_options['arguments']['null']['id'] = 'null';
+  $handler->display->display_options['arguments']['null']['table'] = 'views';
+  $handler->display->display_options['arguments']['null']['field'] = 'null';
+  $handler->display->display_options['arguments']['null']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['null']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['null']['default_argument_options']['argument'] = 'volunteers-members';
+  $handler->display->display_options['arguments']['null']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['null']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['null']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'volunteers_members' => 'volunteers_members',
+  );
+
+  /* Display: Entrepreneurship and Business Development Program Details */
+  $handler = $view->new_display('block', 'Entrepreneurship and Business Development Program Details', 'block_11');
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = '<h2>Entrepreneurship and Business Development Program Details</h2>
+<p>Not Started, click <a href = "/node/add/!2/!1 ">here</a> to begin.</p>';
+  $handler->display->display_options['empty']['area']['format'] = 'full_html';
+  $handler->display->display_options['empty']['area']['tokenize'] = TRUE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: parent census (field_parent_census) */
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['id'] = 'field_parent_census_target_id';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['table'] = 'field_data_field_parent_census';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['field'] = 'field_parent_census_target_id';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_argument_type'] = 'raw';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_argument_options']['index'] = '0';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['validate']['type'] = 'numeric';
+  /* Contextual filter: Global: Null */
+  $handler->display->display_options['arguments']['null']['id'] = 'null';
+  $handler->display->display_options['arguments']['null']['table'] = 'views';
+  $handler->display->display_options['arguments']['null']['field'] = 'null';
+  $handler->display->display_options['arguments']['null']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['null']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['null']['default_argument_options']['argument'] = 'program-entrepreneurship';
+  $handler->display->display_options['arguments']['null']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['null']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['null']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'program_entrepreneurship' => 'program_entrepreneurship',
+  );
+
+  /* Display: Health and Quality of Life Program Details */
+  $handler = $view->new_display('block', 'Health and Quality of Life Program Details', 'block_12');
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = '<h2>Health and Quality of Life Program Details</h2>
+<p>Not Started, click <a href = "/node/add/!2/!1 ">here</a> to begin.</p>';
+  $handler->display->display_options['empty']['area']['format'] = 'full_html';
+  $handler->display->display_options['empty']['area']['tokenize'] = TRUE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: parent census (field_parent_census) */
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['id'] = 'field_parent_census_target_id';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['table'] = 'field_data_field_parent_census';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['field'] = 'field_parent_census_target_id';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_argument_type'] = 'raw';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_argument_options']['index'] = '0';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['validate']['type'] = 'numeric';
+  /* Contextual filter: Global: Null */
+  $handler->display->display_options['arguments']['null']['id'] = 'null';
+  $handler->display->display_options['arguments']['null']['table'] = 'views';
+  $handler->display->display_options['arguments']['null']['field'] = 'null';
+  $handler->display->display_options['arguments']['null']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['null']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['null']['default_argument_options']['argument'] = 'program-health';
+  $handler->display->display_options['arguments']['null']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['null']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['null']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'program_health' => 'program_health',
+  );
+
+  /* Display: Housing and Community Development */
+  $handler = $view->new_display('block', 'Housing and Community Development', 'block_13');
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = '<h2>Housing and Community Development</h2>
+<p>Not Started, click <a href = "/node/add/!2/!1 ">here</a> to begin.</p>';
+  $handler->display->display_options['empty']['area']['format'] = 'full_html';
+  $handler->display->display_options['empty']['area']['tokenize'] = TRUE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: parent census (field_parent_census) */
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['id'] = 'field_parent_census_target_id';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['table'] = 'field_data_field_parent_census';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['field'] = 'field_parent_census_target_id';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_argument_type'] = 'raw';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_argument_options']['index'] = '0';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['validate']['type'] = 'numeric';
+  /* Contextual filter: Global: Null */
+  $handler->display->display_options['arguments']['null']['id'] = 'null';
+  $handler->display->display_options['arguments']['null']['table'] = 'views';
+  $handler->display->display_options['arguments']['null']['field'] = 'null';
+  $handler->display->display_options['arguments']['null']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['null']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['null']['default_argument_options']['argument'] = 'program-housing';
+  $handler->display->display_options['arguments']['null']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['null']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['null']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'program_housing' => 'program_housing',
+  );
+
+  /* Display: Workforce Development Program Details */
+  $handler = $view->new_display('block', 'Workforce Development Program Details', 'block_14');
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = '<h2>Workforce Development Program Details</h2>
+<p>Not Started, click <a href = "/node/add/!2/!1 ">here</a> to begin.</p>';
+  $handler->display->display_options['empty']['area']['format'] = 'full_html';
+  $handler->display->display_options['empty']['area']['tokenize'] = TRUE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: parent census (field_parent_census) */
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['id'] = 'field_parent_census_target_id';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['table'] = 'field_data_field_parent_census';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['field'] = 'field_parent_census_target_id';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_argument_type'] = 'raw';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_argument_options']['index'] = '0';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['validate']['type'] = 'numeric';
+  /* Contextual filter: Global: Null */
+  $handler->display->display_options['arguments']['null']['id'] = 'null';
+  $handler->display->display_options['arguments']['null']['table'] = 'views';
+  $handler->display->display_options['arguments']['null']['field'] = 'null';
+  $handler->display->display_options['arguments']['null']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['null']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['null']['default_argument_options']['argument'] = 'program-workforce';
+  $handler->display->display_options['arguments']['null']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['null']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['null']['summary_options']['items_per_page'] = '25';
+
+  /* Display: Other Programs */
+  $handler = $view->new_display('block', 'Other Programs', 'block_15');
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = '<h2>Other Programs</h2>
+<p>Not Started, click <a href = "/node/add/!2/!1 ">here</a> to begin.</p>';
+  $handler->display->display_options['empty']['area']['format'] = 'full_html';
+  $handler->display->display_options['empty']['area']['tokenize'] = TRUE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: parent census (field_parent_census) */
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['id'] = 'field_parent_census_target_id';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['table'] = 'field_data_field_parent_census';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['field'] = 'field_parent_census_target_id';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_argument_type'] = 'raw';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['default_argument_options']['index'] = '0';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['field_parent_census_target_id']['validate']['type'] = 'numeric';
+  /* Contextual filter: Global: Null */
+  $handler->display->display_options['arguments']['null']['id'] = 'null';
+  $handler->display->display_options['arguments']['null']['table'] = 'views';
+  $handler->display->display_options['arguments']['null']['field'] = 'null';
+  $handler->display->display_options['arguments']['null']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['null']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['null']['default_argument_options']['argument'] = 'program-other';
+  $handler->display->display_options['arguments']['null']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['null']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['null']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'program_other' => 'program_other',
+  );
+  $translatables['full_content_type'] = array(
     t('Master'),
-    t('Full Census'),
+    t('full content type'),
     t('more'),
     t('Apply'),
     t('Reset'),
     t('Sort by'),
     t('Asc'),
     t('Desc'),
-    t('Items per page'),
-    t('- All -'),
-    t('Offset'),
-    t('« first'),
-    t('‹ previous'),
-    t('next ›'),
-    t('last »'),
+    t('<h2>Empowerment</h2>
+<p>Not Started, click <a href = "/node/add/!2/!1 ">here</a> to begin.</p>'),
     t('All'),
-    t('Type'),
-    t('Page'),
-    t('Data export'),
+    t('Civic Engagement Block'),
+    t('<h2>Civic Engagement</h2>
+<p>Not Started, click <a href = "/node/add/!2/!1 ">here</a> to begin.</p>'),
+    t('Service Areas Block'),
+    t('<h2>Service Areas</h2>
+<p>Not Started, click <a href = "/node/add/!2/!1 ">here</a> to begin.</p>'),
+    t('Community Relations'),
+    t('<h2>Community Relations</h2>
+<p>Not Started, click <a href = "/node/add/!2/!1 ">here</a> to begin.</p>'),
+    t('Contact Data'),
+    t('<h2>Contact Data (Direct, Indirect & Public)</h2>
+<p>Not Started, click <a href = "/node/add/!2/!1 ">here</a> to begin.</p>'),
+    t('Education Programs'),
+    t('<h2>Education Programs</h2>
+<p>Not Started, click <a href = "/node/add/!2/!1 ">here</a> to begin.</p>'),
+    t('Emergency Relief Activities'),
+    t('<h2>Emergency Relief Activities</h2>
+<p>Not Started, click <a href = "/node/add/!2/!1 ">here</a> to begin.</p>'),
+    t('Empowerment'),
+    t('Employees and Board Members'),
+    t('<h2>Employees and Board Members</h2>
+<p>Not Started, click <a href = "/node/add/!2/!1 ">here</a> to begin.</p>'),
+    t('Revenue'),
+    t('<h2>Revenue</h2>
+<p>Not Started, click <a href = "/node/add/!2/!1 ">here</a> to begin.</p>'),
+    t('Expenditures'),
+    t('<h2>Expenditures</h2>
+<p>Not Started, click <a href = "/node/add/!2/!1 ">here</a> to begin.</p>'),
+    t('Volunteers/Members'),
+    t('<h2>Volunteers/Members</h2>
+<p>Not Started, click <a href = "/node/add/!2/!1 ">here</a> to begin.</p>'),
+    t('Entrepreneurship and Business Development Program Details'),
+    t('<h2>Entrepreneurship and Business Development Program Details</h2>
+<p>Not Started, click <a href = "/node/add/!2/!1 ">here</a> to begin.</p>'),
+    t('Health and Quality of Life Program Details'),
+    t('<h2>Health and Quality of Life Program Details</h2>
+<p>Not Started, click <a href = "/node/add/!2/!1 ">here</a> to begin.</p>'),
+    t('Housing and Community Development'),
+    t('<h2>Housing and Community Development</h2>
+<p>Not Started, click <a href = "/node/add/!2/!1 ">here</a> to begin.</p>'),
+    t('Workforce Development Program Details'),
+    t('<h2>Workforce Development Program Details</h2>
+<p>Not Started, click <a href = "/node/add/!2/!1 ">here</a> to begin.</p>'),
+    t('Other Programs'),
+    t('<h2>Other Programs</h2>
+<p>Not Started, click <a href = "/node/add/!2/!1 ">here</a> to begin.</p>'),
   );
-  $export['full_census'] = $view;
+  $export['full_content_type'] = $view;
 
   $view = new view();
   $view->name = 'full_parent_census';
@@ -2175,6 +2971,133 @@ function census_views_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'node';
   $handler->display->display_options['row_options']['view_mode'] = 'full';
+  /* Footer: Global: View area */
+  $handler->display->display_options['footer']['view_1']['id'] = 'view_1';
+  $handler->display->display_options['footer']['view_1']['table'] = 'views';
+  $handler->display->display_options['footer']['view_1']['field'] = 'view';
+  $handler->display->display_options['footer']['view_1']['label'] = 'Service Areas';
+  $handler->display->display_options['footer']['view_1']['empty'] = TRUE;
+  $handler->display->display_options['footer']['view_1']['view_to_insert'] = 'full_content_type:block_1';
+  $handler->display->display_options['footer']['view_1']['inherit_arguments'] = TRUE;
+  /* Footer: Global: View area */
+  $handler->display->display_options['footer']['view_2']['id'] = 'view_2';
+  $handler->display->display_options['footer']['view_2']['table'] = 'views';
+  $handler->display->display_options['footer']['view_2']['field'] = 'view';
+  $handler->display->display_options['footer']['view_2']['label'] = 'Community Relations';
+  $handler->display->display_options['footer']['view_2']['empty'] = TRUE;
+  $handler->display->display_options['footer']['view_2']['view_to_insert'] = 'full_content_type:block_2';
+  $handler->display->display_options['footer']['view_2']['inherit_arguments'] = TRUE;
+  /* Footer: Global: View area */
+  $handler->display->display_options['footer']['view_7']['id'] = 'view_7';
+  $handler->display->display_options['footer']['view_7']['table'] = 'views';
+  $handler->display->display_options['footer']['view_7']['field'] = 'view';
+  $handler->display->display_options['footer']['view_7']['label'] = 'Employees and Board Members';
+  $handler->display->display_options['footer']['view_7']['empty'] = TRUE;
+  $handler->display->display_options['footer']['view_7']['view_to_insert'] = 'full_content_type:block_7';
+  $handler->display->display_options['footer']['view_7']['inherit_arguments'] = TRUE;
+  /* Footer: Global: View area */
+  $handler->display->display_options['footer']['view_8']['id'] = 'view_8';
+  $handler->display->display_options['footer']['view_8']['table'] = 'views';
+  $handler->display->display_options['footer']['view_8']['field'] = 'view';
+  $handler->display->display_options['footer']['view_8']['label'] = 'Revenue';
+  $handler->display->display_options['footer']['view_8']['empty'] = TRUE;
+  $handler->display->display_options['footer']['view_8']['view_to_insert'] = 'full_content_type:block_8';
+  $handler->display->display_options['footer']['view_8']['inherit_arguments'] = TRUE;
+  /* Footer: Global: View area */
+  $handler->display->display_options['footer']['view_10']['id'] = 'view_10';
+  $handler->display->display_options['footer']['view_10']['table'] = 'views';
+  $handler->display->display_options['footer']['view_10']['field'] = 'view';
+  $handler->display->display_options['footer']['view_10']['label'] = 'expenditures';
+  $handler->display->display_options['footer']['view_10']['view_to_insert'] = 'full_content_type:block_9';
+  $handler->display->display_options['footer']['view_10']['inherit_arguments'] = TRUE;
+  /* Footer: Global: View area */
+  $handler->display->display_options['footer']['view_6']['id'] = 'view_6';
+  $handler->display->display_options['footer']['view_6']['table'] = 'views';
+  $handler->display->display_options['footer']['view_6']['field'] = 'view';
+  $handler->display->display_options['footer']['view_6']['label'] = 'Education Details Tab';
+  $handler->display->display_options['footer']['view_6']['empty'] = TRUE;
+  $handler->display->display_options['footer']['view_6']['view_to_insert'] = 'full_content_type:block_4';
+  $handler->display->display_options['footer']['view_6']['inherit_arguments'] = TRUE;
+  /* Footer: Global: View area */
+  $handler->display->display_options['footer']['view_12']['id'] = 'view_12';
+  $handler->display->display_options['footer']['view_12']['table'] = 'views';
+  $handler->display->display_options['footer']['view_12']['field'] = 'view';
+  $handler->display->display_options['footer']['view_12']['label'] = 'Entrepreneurship';
+  $handler->display->display_options['footer']['view_12']['view_to_insert'] = 'full_content_type:block_11';
+  $handler->display->display_options['footer']['view_12']['inherit_arguments'] = TRUE;
+  /* Footer: Global: View area */
+  $handler->display->display_options['footer']['view_13']['id'] = 'view_13';
+  $handler->display->display_options['footer']['view_13']['table'] = 'views';
+  $handler->display->display_options['footer']['view_13']['field'] = 'view';
+  $handler->display->display_options['footer']['view_13']['label'] = 'Health Programs';
+  $handler->display->display_options['footer']['view_13']['view_to_insert'] = 'full_content_type:block_12';
+  $handler->display->display_options['footer']['view_13']['inherit_arguments'] = TRUE;
+  /* Footer: Global: View area */
+  $handler->display->display_options['footer']['view_14']['id'] = 'view_14';
+  $handler->display->display_options['footer']['view_14']['table'] = 'views';
+  $handler->display->display_options['footer']['view_14']['field'] = 'view';
+  $handler->display->display_options['footer']['view_14']['label'] = 'housing tab';
+  $handler->display->display_options['footer']['view_14']['view_to_insert'] = 'full_content_type:block_13';
+  $handler->display->display_options['footer']['view_14']['inherit_arguments'] = TRUE;
+  /* Footer: Global: View area */
+  $handler->display->display_options['footer']['view_15']['id'] = 'view_15';
+  $handler->display->display_options['footer']['view_15']['table'] = 'views';
+  $handler->display->display_options['footer']['view_15']['field'] = 'view';
+  $handler->display->display_options['footer']['view_15']['label'] = 'workforce';
+  $handler->display->display_options['footer']['view_15']['view_to_insert'] = 'full_content_type:block_14';
+  $handler->display->display_options['footer']['view_15']['inherit_arguments'] = TRUE;
+  /* Footer: Global: View area */
+  $handler->display->display_options['footer']['view_11']['id'] = 'view_11';
+  $handler->display->display_options['footer']['view_11']['table'] = 'views';
+  $handler->display->display_options['footer']['view_11']['field'] = 'view';
+  $handler->display->display_options['footer']['view_11']['label'] = 'Other programs';
+  $handler->display->display_options['footer']['view_11']['view_to_insert'] = 'full_content_type:block_15';
+  $handler->display->display_options['footer']['view_11']['inherit_arguments'] = TRUE;
+  /* Footer: Global: View area */
+  $handler->display->display_options['footer']['view']['id'] = 'view';
+  $handler->display->display_options['footer']['view']['table'] = 'views';
+  $handler->display->display_options['footer']['view']['field'] = 'view';
+  $handler->display->display_options['footer']['view']['label'] = 'Civic Engagement';
+  $handler->display->display_options['footer']['view']['empty'] = TRUE;
+  $handler->display->display_options['footer']['view']['view_to_insert'] = 'full_content_type:block';
+  $handler->display->display_options['footer']['view']['inherit_arguments'] = TRUE;
+  /* Footer: Global: View area */
+  $handler->display->display_options['footer']['view_5']['id'] = 'view_5';
+  $handler->display->display_options['footer']['view_5']['table'] = 'views';
+  $handler->display->display_options['footer']['view_5']['field'] = 'view';
+  $handler->display->display_options['footer']['view_5']['label'] = 'Emergency Relief Activities';
+  $handler->display->display_options['footer']['view_5']['empty'] = TRUE;
+  $handler->display->display_options['footer']['view_5']['view_to_insert'] = 'full_content_type:block_5';
+  $handler->display->display_options['footer']['view_5']['inherit_arguments'] = TRUE;
+  /* Footer: Global: View area */
+  $handler->display->display_options['footer']['view_3']['id'] = 'view_3';
+  $handler->display->display_options['footer']['view_3']['table'] = 'views';
+  $handler->display->display_options['footer']['view_3']['field'] = 'view';
+  $handler->display->display_options['footer']['view_3']['label'] = 'Contact Data';
+  $handler->display->display_options['footer']['view_3']['empty'] = TRUE;
+  $handler->display->display_options['footer']['view_3']['view_to_insert'] = 'full_content_type:block_3';
+  $handler->display->display_options['footer']['view_3']['inherit_arguments'] = TRUE;
+  /* Footer: Global: View area */
+  $handler->display->display_options['footer']['view_4']['id'] = 'view_4';
+  $handler->display->display_options['footer']['view_4']['table'] = 'views';
+  $handler->display->display_options['footer']['view_4']['field'] = 'view';
+  $handler->display->display_options['footer']['view_4']['label'] = 'Empowerment';
+  $handler->display->display_options['footer']['view_4']['empty'] = TRUE;
+  $handler->display->display_options['footer']['view_4']['view_to_insert'] = 'full_content_type:block_6';
+  $handler->display->display_options['footer']['view_4']['inherit_arguments'] = TRUE;
+  /* Footer: Global: View area */
+  $handler->display->display_options['footer']['view_9']['id'] = 'view_9';
+  $handler->display->display_options['footer']['view_9']['table'] = 'views';
+  $handler->display->display_options['footer']['view_9']['field'] = 'view';
+  $handler->display->display_options['footer']['view_9']['label'] = 'Volunteers/Members';
+  $handler->display->display_options['footer']['view_9']['view_to_insert'] = 'full_content_type:block_10';
+  $handler->display->display_options['footer']['view_9']['inherit_arguments'] = TRUE;
+  /* No results behavior: Global: Unfiltered text */
+  $handler->display->display_options['empty']['area_text_custom']['id'] = 'area_text_custom';
+  $handler->display->display_options['empty']['area_text_custom']['table'] = 'views';
+  $handler->display->display_options['empty']['area_text_custom']['field'] = 'area_text_custom';
+  $handler->display->display_options['empty']['area_text_custom']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area_text_custom']['content'] = 'Not Found';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -2197,6 +3120,7 @@ function census_views_views_default_views() {
   $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['nid']['specify_validation'] = TRUE;
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -2214,6 +3138,10 @@ function census_views_views_default_views() {
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page_1');
+  $handler->display->display_options['path'] = 'full-census';
   $translatables['full_parent_census'] = array(
     t('Master'),
     t('Full Parent Census'),
@@ -2223,8 +3151,26 @@ function census_views_views_default_views() {
     t('Sort by'),
     t('Asc'),
     t('Desc'),
+    t('Service Areas'),
+    t('Community Relations'),
+    t('Employees and Board Members'),
+    t('Revenue'),
+    t('expenditures'),
+    t('Education Details Tab'),
+    t('Entrepreneurship'),
+    t('Health Programs'),
+    t('housing tab'),
+    t('workforce'),
+    t('Other programs'),
+    t('Civic Engagement'),
+    t('Emergency Relief Activities'),
+    t('Contact Data'),
+    t('Empowerment'),
+    t('Volunteers/Members'),
+    t('Not Found'),
     t('All'),
     t('Block'),
+    t('Page'),
   );
   $export['full_parent_census'] = $view;
 
