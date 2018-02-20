@@ -1472,7 +1472,7 @@ function census_views_views_default_views() {
       'aggr' => array(
         'views_aggregator_enumerate_raw' => 'views_aggregator_enumerate_raw',
       ),
-      'aggr_par' => '',
+      'aggr_par' => '</p><p>',
       'has_aggr_column' => 0,
       'aggr_column' => 'views_aggregator_sum',
       'aggr_par_column' => '',
@@ -1493,8 +1493,6 @@ function census_views_views_default_views() {
       'aggr_par_column' => '',
     ),
     'field_program_area' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
@@ -1502,7 +1500,7 @@ function census_views_views_default_views() {
       'aggr' => array(
         'views_aggregator_enumerate_raw' => 'views_aggregator_enumerate_raw',
       ),
-      'aggr_par' => '',
+      'aggr_par' => '</p><p>',
       'has_aggr_column' => 0,
       'aggr_column' => 'views_aggregator_sum',
       'aggr_par_column' => '',
@@ -1532,7 +1530,7 @@ function census_views_views_default_views() {
       'aggr' => array(
         'views_aggregator_enumerate_raw' => 'views_aggregator_enumerate_raw',
       ),
-      'aggr_par' => '',
+      'aggr_par' => '</p><p>',
       'has_aggr_column' => 0,
       'aggr_column' => 'views_aggregator_sum',
       'aggr_par_column' => '',
@@ -1568,7 +1566,7 @@ function census_views_views_default_views() {
       'aggr_par_column' => '',
     ),
   );
-  $handler->display->display_options['style_options']['group_aggregation']['grouping_field_class'] = 'a';
+  $handler->display->display_options['style_options']['group_aggregation']['grouping_field_class'] = 'nulGroup';
   $handler->display->display_options['style_options']['column_aggregation']['totals_per_page'] = '0';
   $handler->display->display_options['style_options']['column_aggregation']['totals_row_position'] = array(
     1 => 0,
@@ -1588,6 +1586,7 @@ function census_views_views_default_views() {
   $handler->display->display_options['fields']['field_year']['table'] = 'field_data_field_year';
   $handler->display->display_options['fields']['field_year']['field'] = 'field_year';
   $handler->display->display_options['fields']['field_year']['relationship'] = 'field_parent_census_target_id';
+  $handler->display->display_options['fields']['field_year']['element_type'] = 'p';
   $handler->display->display_options['fields']['field_year']['settings'] = array(
     'thousand_separator' => '',
     'prefix_suffix' => 1,
@@ -1598,11 +1597,13 @@ function census_views_views_default_views() {
   $handler->display->display_options['fields']['field_affiliate_select']['field'] = 'field_affiliate_select';
   $handler->display->display_options['fields']['field_affiliate_select']['relationship'] = 'field_parent_census_target_id';
   $handler->display->display_options['fields']['field_affiliate_select']['label'] = 'Affiliate';
+  $handler->display->display_options['fields']['field_affiliate_select']['element_type'] = 'p';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
   $handler->display->display_options['fields']['title_1']['table'] = 'node';
   $handler->display->display_options['fields']['title_1']['field'] = 'title';
   $handler->display->display_options['fields']['title_1']['label'] = 'Program Title';
+  $handler->display->display_options['fields']['title_1']['element_type'] = 'p';
   /* Field: Content: parent census */
   $handler->display->display_options['fields']['field_parent_census']['id'] = 'field_parent_census';
   $handler->display->display_options['fields']['field_parent_census']['table'] = 'field_data_field_parent_census';
@@ -1618,8 +1619,10 @@ function census_views_views_default_views() {
   $handler->display->display_options['fields']['field_program_area']['id'] = 'field_program_area';
   $handler->display->display_options['fields']['field_program_area']['table'] = 'field_data_field_program_area';
   $handler->display->display_options['fields']['field_program_area']['field'] = 'field_program_area';
+  $handler->display->display_options['fields']['field_program_area']['element_type'] = 'p';
   $handler->display->display_options['fields']['field_program_area']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_program_area']['type'] = 'taxonomy_term_reference_plain';
+  $handler->display->display_options['fields']['field_program_area']['delta_offset'] = '0';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -1634,6 +1637,7 @@ function census_views_views_default_views() {
   $handler->display->display_options['fields']['field_program_served_total_1']['table'] = 'field_data_field_program_served_total';
   $handler->display->display_options['fields']['field_program_served_total_1']['field'] = 'field_program_served_total';
   $handler->display->display_options['fields']['field_program_served_total_1']['label'] = 'Number of People Served Annually by this program';
+  $handler->display->display_options['fields']['field_program_served_total_1']['element_type'] = 'p';
   $handler->display->display_options['fields']['field_program_served_total_1']['settings'] = array(
     'thousand_separator' => '',
     'prefix_suffix' => 1,
@@ -1643,6 +1647,7 @@ function census_views_views_default_views() {
   $handler->display->display_options['fields']['field_program_served_total']['table'] = 'field_data_field_program_served_total';
   $handler->display->display_options['fields']['field_program_served_total']['field'] = 'field_program_served_total';
   $handler->display->display_options['fields']['field_program_served_total']['label'] = 'Total Number of People Served Annually for all Programs for this Affiliate';
+  $handler->display->display_options['fields']['field_program_served_total']['element_type'] = 'p';
   $handler->display->display_options['fields']['field_program_served_total']['settings'] = array(
     'thousand_separator' => '',
     'prefix_suffix' => 1,
@@ -2399,7 +2404,7 @@ function census_views_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Other Programs (Required Report 2)';
+  $handler->display->display_options['title'] = 'Programs Report (Required Report 2)';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -2566,7 +2571,7 @@ function census_views_views_default_views() {
   );
   $translatables['other_programs_required_report_2_'] = array(
     t('Master'),
-    t('Other Programs (Required Report 2)'),
+    t('Programs Report (Required Report 2)'),
     t('more'),
     t('Apply'),
     t('Reset'),
