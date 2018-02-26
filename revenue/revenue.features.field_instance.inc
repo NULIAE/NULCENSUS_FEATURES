@@ -10,6 +10,52 @@
 function revenue_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'node-revenue-field_legacy_budgetnulfunding'.
+  $field_instances['node-revenue-field_legacy_budgetnulfunding'] = array(
+    'bundle' => 'revenue',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 18,
+      ),
+      'status_info' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_legacy_budgetnulfunding',
+    'label' => 'legacy budgetNULFunding',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 18,
+    ),
+  );
+
   // Exported field_instance: 'node-revenue-field_parent_census'.
   $field_instances['node-revenue-field_parent_census'] = array(
     'bundle' => 'revenue',
@@ -1138,6 +1184,7 @@ function revenue_field_default_field_instances() {
   t('United Way');
   t('Venture Type');
   t('Venture type header');
+  t('legacy budgetNULFunding');
   t('parent census');
   t('venture budgeted header');
   t('venture earned header');

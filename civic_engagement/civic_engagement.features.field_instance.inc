@@ -5168,6 +5168,323 @@ function civic_engagement_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance:
+  // 'node-civic_engagement-field_legacy_advocacy_dup_tot'.
+  $field_instances['node-civic_engagement-field_legacy_advocacy_dup_tot'] = array(
+    'bundle' => 'civic_engagement',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 179,
+      ),
+      'full_census_' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'status_info' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_legacy_advocacy_dup_tot',
+    'label' => 'legacy_advocacy_dup_tot',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 119,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-civic_engagement-field_legacy_comm_org_dup_tot'.
+  $field_instances['node-civic_engagement-field_legacy_comm_org_dup_tot'] = array(
+    'bundle' => 'civic_engagement',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 175,
+      ),
+      'full_census_' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'status_info' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_legacy_comm_org_dup_tot',
+    'label' => 'legacy comm org dup tot',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 115,
+    ),
+  );
+
+  // Exported field_instance: 'node-civic_engagement-field_legacy_crja_dup_tot'.
+  $field_instances['node-civic_engagement-field_legacy_crja_dup_tot'] = array(
+    'bundle' => 'civic_engagement',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 177,
+      ),
+      'full_census_' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'status_info' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_legacy_crja_dup_tot',
+    'label' => 'legacy_crja_dup_tot',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 117,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-civic_engagement-field_legacy_forums_dup_tot'.
+  $field_instances['node-civic_engagement-field_legacy_forums_dup_tot'] = array(
+    'bundle' => 'civic_engagement',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 176,
+      ),
+      'full_census_' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'status_info' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_legacy_forums_dup_tot',
+    'label' => 'legacy_forums_dup_tot',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 116,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-civic_engagement-field_legacy_police_dup_tot'.
+  $field_instances['node-civic_engagement-field_legacy_police_dup_tot'] = array(
+    'bundle' => 'civic_engagement',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 178,
+      ),
+      'full_census_' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'status_info' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_legacy_police_dup_tot',
+    'label' => 'legacy_police_dup_tot',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 118,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-civic_engagement-field_legacy_voter_duplicate_tot'.
+  $field_instances['node-civic_engagement-field_legacy_voter_duplicate_tot'] = array(
+    'bundle' => 'civic_engagement',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 174,
+      ),
+      'full_census_' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'status_info' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_legacy_voter_duplicate_tot',
+    'label' => 'legacy_voter duplicate tot',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 114,
+    ),
+  );
+
   // Exported field_instance: 'node-civic_engagement-field_parent_census'.
   $field_instances['node-civic_engagement-field_parent_census'] = array(
     'bundle' => 'civic_engagement',
@@ -7942,6 +8259,12 @@ function civic_engagement_field_default_field_instances() {
   t('comm_org_native_am_female');
   t('comm_org_native_am_male');
   t('female_ce_voter');
+  t('legacy comm org dup tot');
+  t('legacy_advocacy_dup_tot');
+  t('legacy_crja_dup_tot');
+  t('legacy_forums_dup_tot');
+  t('legacy_police_dup_tot');
+  t('legacy_voter duplicate tot');
   t('parent census');
   t('voter male');
   t('voter_african_am_female');

@@ -1870,10 +1870,7 @@ function civic_engagement_field_group_info() {
   $field_group->data = array(
     'label' => 'Race',
     'weight' => '89',
-    'children' => array(
-      0 => 'field_co_female',
-      1 => 'field_co_male',
-    ),
+    'children' => array(),
     'format_type' => 'div',
     'format_settings' => array(
       'label' => 'Race',

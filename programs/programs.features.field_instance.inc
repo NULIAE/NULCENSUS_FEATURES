@@ -103,6 +103,45 @@ function programs_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-programs-field_legacy_target_group'.
+  $field_instances['node-programs-field_legacy_target_group'] = array(
+    'bundle' => 'programs',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 17,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_legacy_target_group',
+    'label' => 'legacy target group',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 18,
+    ),
+  );
+
   // Exported field_instance: 'node-programs-field_parent_census'.
   $field_instances['node-programs-field_parent_census'] = array(
     'bundle' => 'programs',
@@ -1877,6 +1916,7 @@ function programs_field_default_field_instances() {
   t('funding amount label');
   t('funding source type label');
   t('legacy program id');
+  t('legacy target group');
   t('parent census');
 
   return $field_instances;

@@ -131,6 +131,47 @@ function entreuprenuership_and_business_development_program_details_field_defaul
   );
 
   // Exported field_instance:
+  // 'node-program_entrepreneurship-field_legacy_business_sales_tot'.
+  $field_instances['node-program_entrepreneurship-field_legacy_business_sales_tot'] = array(
+    'bundle' => 'program_entrepreneurship',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 19,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_legacy_business_sales_tot',
+    'label' => 'legacy_business_sales tot',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 17,
+    ),
+  );
+
+  // Exported field_instance:
   // 'node-program_entrepreneurship-field_parent_census'.
   $field_instances['node-program_entrepreneurship-field_parent_census'] = array(
     'bundle' => 'program_entrepreneurship',
@@ -1229,6 +1270,7 @@ function entreuprenuership_and_business_development_program_details_field_defaul
   t('Total sales of businesses started by participants in entrepreneurship programs (i.e. Small Business Matters)');
   t('Type of Business');
   t('Value of sales for all businesses');
+  t('legacy_business_sales tot');
   t('parent census');
 
   return $field_instances;
