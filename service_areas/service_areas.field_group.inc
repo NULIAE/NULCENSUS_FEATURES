@@ -328,14 +328,14 @@ function service_areas_field_group_info() {
   $field_group->mode = 'form';
   $field_group->parent_name = 'group_sa_group';
   $field_group->data = array(
-    'label' => 'Race',
+    'label' => 'Race/Ethnicity',
     'weight' => '19',
     'children' => array(
       0 => 'field_composition_',
     ),
     'format_type' => 'div',
     'format_settings' => array(
-      'label' => 'Race',
+      'label' => 'Race/Ethnicity',
       'instance_settings' => array(
         'required_fields' => 1,
         'id' => '',
@@ -681,6 +681,7 @@ function service_areas_field_group_info() {
   t('Other');
   t('Population');
   t('Race');
+  t('Race/Ethnicity');
   t('Service Area');
   t('White');
 
