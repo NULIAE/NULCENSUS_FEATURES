@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Feeds feature feature.
+ */
+
+include_once 'feeds_feature.features.inc';
