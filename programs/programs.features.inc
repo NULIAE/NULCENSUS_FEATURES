@@ -30,3 +30,22 @@ function programs_node_info() {
   drupal_alter('node_info', $items);
   return $items;
 }
+
+/**
+ * Implements hook_paragraphs_info().
+ */
+function programs_paragraphs_info() {
+  $items = array(
+    'funding_source' => array(
+      'name' => 'Funding Source',
+      'bundle' => 'funding_source',
+      'locked' => '1',
+    ),
+    'program_services' => array(
+      'name' => 'Program Services',
+      'bundle' => 'program_services',
+      'locked' => '1',
+    ),
+  );
+  return $items;
+}
