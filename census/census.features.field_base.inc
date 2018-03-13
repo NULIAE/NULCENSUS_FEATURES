@@ -143,7 +143,7 @@ function census_field_default_field_bases() {
         69 => 'Urban League of Greater Madison',
         70 => 'Urban League of Greater Miami',
         71 => 'Urban League of Greater Muskegon',
-        15 => 'Urban League of Greater New Orleans',
+        15 => 'Urban League of Louisiana',
         19 => 'Urban League of Greater Pittsburgh',
         72 => 'Urban League of Greater Richmond',
         73 => 'Urban League of Hampton Roads',
