@@ -8,7 +8,7 @@
  * Implements hook_field_group_info().
  */
 function emergency_relief_activities_field_group_info() {
-  $field_groups = array();
+  $export = array();
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -45,7 +45,7 @@ function emergency_relief_activities_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $field_groups['group_era_civic_row|node|emergency_relief_activities|default'] = $field_group;
+  $export['group_era_civic_row|node|emergency_relief_activities|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -82,7 +82,7 @@ function emergency_relief_activities_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $field_groups['group_era_civic_row|node|emergency_relief_activities|form'] = $field_group;
+  $export['group_era_civic_row|node|emergency_relief_activities|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -119,7 +119,7 @@ function emergency_relief_activities_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $field_groups['group_era_education_row|node|emergency_relief_activities|default'] = $field_group;
+  $export['group_era_education_row|node|emergency_relief_activities|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -156,7 +156,7 @@ function emergency_relief_activities_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $field_groups['group_era_education_row|node|emergency_relief_activities|form'] = $field_group;
+  $export['group_era_education_row|node|emergency_relief_activities|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -193,7 +193,7 @@ function emergency_relief_activities_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $field_groups['group_era_employment_row|node|emergency_relief_activities|default'] = $field_group;
+  $export['group_era_employment_row|node|emergency_relief_activities|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -210,8 +210,8 @@ function emergency_relief_activities_field_group_info() {
     'children' => array(
       0 => 'field_relief_employ_desc',
       1 => 'field_relief_employ_fund_nul',
-      2 => 'field_relief_employ_fund_uway',
-      3 => 'field_relief_employ_fund_other',
+      2 => 'field_relief_employ_fund_other',
+      3 => 'field_relief_employ_fund_uway',
       4 => 'field_relief_employ_served',
     ),
     'format_type' => 'div',
@@ -230,7 +230,7 @@ function emergency_relief_activities_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $field_groups['group_era_employment_row|node|emergency_relief_activities|form'] = $field_group;
+  $export['group_era_employment_row|node|emergency_relief_activities|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -268,7 +268,7 @@ function emergency_relief_activities_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $field_groups['group_era_header|node|emergency_relief_activities|default'] = $field_group;
+  $export['group_era_header|node|emergency_relief_activities|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -306,7 +306,7 @@ function emergency_relief_activities_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $field_groups['group_era_header|node|emergency_relief_activities|form'] = $field_group;
+  $export['group_era_header|node|emergency_relief_activities|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -343,7 +343,7 @@ function emergency_relief_activities_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $field_groups['group_era_health_row|node|emergency_relief_activities|default'] = $field_group;
+  $export['group_era_health_row|node|emergency_relief_activities|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -380,7 +380,7 @@ function emergency_relief_activities_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $field_groups['group_era_health_row|node|emergency_relief_activities|form'] = $field_group;
+  $export['group_era_health_row|node|emergency_relief_activities|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -417,7 +417,7 @@ function emergency_relief_activities_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $field_groups['group_era_racial_row|node|emergency_relief_activities|default'] = $field_group;
+  $export['group_era_racial_row|node|emergency_relief_activities|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -433,8 +433,8 @@ function emergency_relief_activities_field_group_info() {
     'weight' => '43',
     'children' => array(
       0 => 'field_relief_justice_desc',
-      1 => 'field_relief_justice_fund_other',
-      2 => 'field_relief_justice_fund_nul',
+      1 => 'field_relief_justice_fund_nul',
+      2 => 'field_relief_justice_fund_other',
       3 => 'field_relief_justice_fund_uway',
       4 => 'field_relief_justice_served',
     ),
@@ -454,7 +454,7 @@ function emergency_relief_activities_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $field_groups['group_era_racial_row|node|emergency_relief_activities|form'] = $field_group;
+  $export['group_era_racial_row|node|emergency_relief_activities|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -493,7 +493,7 @@ function emergency_relief_activities_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $field_groups['group_era_table|node|emergency_relief_activities|default'] = $field_group;
+  $export['group_era_table|node|emergency_relief_activities|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -509,12 +509,12 @@ function emergency_relief_activities_field_group_info() {
     'weight' => '1',
     'children' => array(
       0 => 'field_era_help',
-      1 => 'group_era_education_row',
-      2 => 'group_era_employment_row',
-      3 => 'group_era_health_row',
-      4 => 'group_era_civic_row',
-      5 => 'group_era_racial_row',
-      6 => 'group_era_header',
+      1 => 'group_era_civic_row',
+      2 => 'group_era_education_row',
+      3 => 'group_era_employment_row',
+      4 => 'group_era_header',
+      5 => 'group_era_health_row',
+      6 => 'group_era_racial_row',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -532,17 +532,65 @@ function emergency_relief_activities_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $field_groups['group_era_table|node|emergency_relief_activities|form'] = $field_group;
+  $export['group_era_table|node|emergency_relief_activities|form'] = $field_group;
 
-  // Translatables
-  // Included for use with string extractors like potx.
-  t('Civic Engagement');
-  t('ERA Header');
-  t('ERA Table');
-  t('Education');
-  t('Employment Empowerment');
-  t('Health');
-  t('Racial Justice');
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_ppp1|node|emergency_relief_activities|form';
+  $field_group->group_name = 'group_ppp1';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'emergency_relief_activities';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'PPP Funding Cycle 1',
+    'weight' => '13',
+    'children' => array(
+      0 => 'field_did_your_affiliate_apply_f',
+      1 => 'field_if_yes_how_much_funding_di',
+      2 => 'field_if_yes_when_did_you_receiv',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'formatter' => 'collapsible',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-ppp1 field-group-fieldset',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_ppp1|node|emergency_relief_activities|form'] = $field_group;
 
-  return $field_groups;
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_ppp2|node|emergency_relief_activities|form';
+  $field_group->group_name = 'group_ppp2';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'emergency_relief_activities';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'PPP Funding Cycle 2',
+    'weight' => '14',
+    'children' => array(
+      0 => 'field_did_ppp2',
+      1 => 'field_funding_ppp2',
+      2 => 'field_if_yes_when_ppp2',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'formatter' => 'collapsible',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-ppp2 field-group-fieldset',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_ppp2|node|emergency_relief_activities|form'] = $field_group;
+
+  return $export;
 }

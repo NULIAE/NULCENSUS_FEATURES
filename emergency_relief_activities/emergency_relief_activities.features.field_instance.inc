@@ -11,6 +11,242 @@ function emergency_relief_activities_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance:
+  // 'node-emergency_relief_activities-field_2021_covid_additional_cens'.
+  $field_instances['node-emergency_relief_activities-field_2021_covid_additional_cens'] = array(
+    'bundle' => 'emergency_relief_activities',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(),
+        'type' => 'markup_default',
+        'weight' => 48,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_2021_covid_additional_cens',
+    'label' => '2021 COVID Additional Census Questions	',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 12,
+    ),
+  );
+
+  // Exported field_instance: 'node-emergency_relief_activities-field_did_ppp2'.
+  $field_instances['node-emergency_relief_activities-field_did_ppp2'] = array(
+    'bundle' => 'emergency_relief_activities',
+    'default_value' => NULL,
+    'default_value_function' => '',
+    'default_value_php' => '',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 52,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_did_ppp2',
+    'label' => 'Did your affiliate apply for a PPP Funding Cycle 2 loan?	',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 16,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-emergency_relief_activities-field_did_your_affiliate_apply_f'.
+  $field_instances['node-emergency_relief_activities-field_did_your_affiliate_apply_f'] = array(
+    'bundle' => 'emergency_relief_activities',
+    'default_value' => NULL,
+    'default_value_function' => '',
+    'default_value_php' => '',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 49,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_did_your_affiliate_apply_f',
+    'label' => 'Did your affiliate apply for a PPP Funding Cycle 1 loan?	',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 63,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-emergency_relief_activities-field_did_your_affiliate_receive'.
+  $field_instances['node-emergency_relief_activities-field_did_your_affiliate_receive'] = array(
+    'bundle' => 'emergency_relief_activities',
+    'default_value' => NULL,
+    'default_value_function' => '',
+    'default_value_php' => '',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 57,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_did_your_affiliate_receive',
+    'label' => 'Did your affiliate receive requests from constituents for any of the following services in the pandemic (check all applicable):',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 68,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-emergency_relief_activities-field_did_your_affiliate_staff_w'.
+  $field_instances['node-emergency_relief_activities-field_did_your_affiliate_staff_w'] = array(
+    'bundle' => 'emergency_relief_activities',
+    'default_value' => NULL,
+    'default_value_function' => '',
+    'default_value_php' => '',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 58,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_did_your_affiliate_staff_w',
+    'label' => 'Did your affiliate staff work remotely? ',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 69,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-emergency_relief_activities-field_during_the_pandemic_did_yo'.
+  $field_instances['node-emergency_relief_activities-field_during_the_pandemic_did_yo'] = array(
+    'bundle' => 'emergency_relief_activities',
+    'default_value' => NULL,
+    'default_value_function' => '',
+    'default_value_php' => '',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 60,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_during_the_pandemic_did_yo',
+    'label' => 'During the pandemic, did your affiliate do any of the following (check all applicable):',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 71,
+    ),
+  );
+
+  // Exported field_instance:
   // 'node-emergency_relief_activities-field_era_describe'.
   $field_instances['node-emergency_relief_activities-field_era_describe'] = array(
     'bundle' => 'emergency_relief_activities',
@@ -311,6 +547,342 @@ function emergency_relief_activities_field_default_field_instances() {
   );
 
   // Exported field_instance:
+  // 'node-emergency_relief_activities-field_funding_ppp2'.
+  $field_instances['node-emergency_relief_activities-field_funding_ppp2'] = array(
+    'bundle' => 'emergency_relief_activities',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 53,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_funding_ppp2',
+    'label' => 'If yes, how much funding did you receive in PPP Cycle 2?	',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 17,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-emergency_relief_activities-field_how_many_of_your_workforce'.
+  $field_instances['node-emergency_relief_activities-field_how_many_of_your_workforce'] = array(
+    'bundle' => 'emergency_relief_activities',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 56,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_how_many_of_your_workforce',
+    'label' => 'How many of your workforce development participants got laid off because of COVID-19?',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 67,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-emergency_relief_activities-field_how_many_people_did_you_as'.
+  $field_instances['node-emergency_relief_activities-field_how_many_people_did_you_as'] = array(
+    'bundle' => 'emergency_relief_activities',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 61,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_how_many_people_did_you_as',
+    'label' => 'How many people did you assist with Covid related Services',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 72,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-emergency_relief_activities-field_if_yes_how_much_funding_di'.
+  $field_instances['node-emergency_relief_activities-field_if_yes_how_much_funding_di'] = array(
+    'bundle' => 'emergency_relief_activities',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 50,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_if_yes_how_much_funding_di',
+    'label' => 'If yes, how much funding did you receive in PPP Cycle 1?',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 64,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-emergency_relief_activities-field_if_yes_when_did_you_receiv'.
+  $field_instances['node-emergency_relief_activities-field_if_yes_when_did_you_receiv'] = array(
+    'bundle' => 'emergency_relief_activities',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'long',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+        ),
+        'type' => 'date_default',
+        'weight' => 51,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_if_yes_when_did_you_receiv',
+    'label' => 'If yes, when did you receive PPP Funding Cycle 1 funds?',
+    'required' => 0,
+    'settings' => array(
+      'default_value' => 'now',
+      'default_value2' => 'same',
+      'default_value_code' => '',
+      'default_value_code2' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'date',
+      'settings' => array(
+        'increment' => 15,
+        'input_format' => 'm/d/Y - H:i:s',
+        'input_format_custom' => '',
+        'label_position' => 'above',
+        'text_parts' => array(),
+        'year_range' => '-3:+3',
+      ),
+      'type' => 'date_popup',
+      'weight' => 65,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-emergency_relief_activities-field_if_yes_when_ppp2'.
+  $field_instances['node-emergency_relief_activities-field_if_yes_when_ppp2'] = array(
+    'bundle' => 'emergency_relief_activities',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'long',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+        ),
+        'type' => 'date_default',
+        'weight' => 54,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_if_yes_when_ppp2',
+    'label' => 'If yes, when did you receive PPP Funding Cycle 2 funds?',
+    'required' => 0,
+    'settings' => array(
+      'default_value' => 'now',
+      'default_value2' => 'same',
+      'default_value_code' => '',
+      'default_value_code2' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'date',
+      'settings' => array(
+        'increment' => 15,
+        'input_format' => 'm/d/Y - H:i:s',
+        'input_format_custom' => '',
+        'label_position' => 'above',
+        'text_parts' => array(),
+        'year_range' => '-3:+3',
+      ),
+      'type' => 'date_popup',
+      'weight' => 18,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-emergency_relief_activities-field_if_your_staff_worked_remot'.
+  $field_instances['node-emergency_relief_activities-field_if_your_staff_worked_remot'] = array(
+    'bundle' => 'emergency_relief_activities',
+    'default_value' => NULL,
+    'default_value_function' => '',
+    'default_value_php' => '',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 59,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_if_your_staff_worked_remot',
+    'label' => 'If your staff worked remotely, how did they provide assistance to constituents? (check all applicable):',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 70,
+    ),
+  );
+
+  // Exported field_instance:
   // 'node-emergency_relief_activities-field_legacy_relief_civic_impact'.
   $field_instances['node-emergency_relief_activities-field_legacy_relief_civic_impact'] = array(
     'bundle' => 'emergency_relief_activities',
@@ -352,7 +924,7 @@ function emergency_relief_activities_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 58,
+      'weight' => 10,
     ),
   );
 
@@ -490,7 +1062,7 @@ function emergency_relief_activities_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 57,
+      'weight' => 9,
     ),
   );
 
@@ -536,7 +1108,7 @@ function emergency_relief_activities_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 59,
+      'weight' => 11,
     ),
   );
 
@@ -2001,14 +2573,67 @@ function emergency_relief_activities_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance:
+  // 'node-emergency_relief_activities-field_what_percentage_of_your_pr'.
+  $field_instances['node-emergency_relief_activities-field_what_percentage_of_your_pr'] = array(
+    'bundle' => 'emergency_relief_activities',
+    'default_value' => NULL,
+    'default_value_function' => '',
+    'default_value_php' => FALSE,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 55,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_what_percentage_of_your_pr',
+    'label' => 'What percentage of your programs and services were moved virtual or remote because of COVID-19?',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 66,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
+  t('2021 COVID Additional Census Questions	');
   t('Are there any other activities the affiliate is engaged in that are not reflected above? If so, please describe below');
   t('Describe the Programs');
+  t('Did your affiliate apply for a PPP Funding Cycle 1 loan?	');
+  t('Did your affiliate apply for a PPP Funding Cycle 2 loan?	');
+  t('Did your affiliate receive requests from constituents for any of the following services in the pandemic (check all applicable):');
+  t('Did your affiliate staff work remotely? ');
+  t('During the pandemic, did your affiliate do any of the following (check all applicable):');
   t('ERA Program Type');
   t('Funding Source: NUL');
   t('Funding Source: Other');
   t('Funding Source: U Way');
+  t('How many of your workforce development participants got laid off because of COVID-19?');
+  t('How many people did you assist with Covid related Services');
+  t('If yes, how much funding did you receive in PPP Cycle 1?');
+  t('If yes, how much funding did you receive in PPP Cycle 2?	');
+  t('If yes, when did you receive PPP Funding Cycle 1 funds?');
+  t('If yes, when did you receive PPP Funding Cycle 2 funds?');
+  t('If your staff worked remotely, how did they provide assistance to constituents? (check all applicable):');
   t('Number Served');
   t('Relief Civic Engagement Description');
   t('Relief Civic Engagement Funding NUL');
@@ -2037,6 +2662,7 @@ function emergency_relief_activities_field_default_field_instances() {
   t('Relief Racial Justice Number Served');
   t('Tab Status');
   t('Total Served');
+  t('What percentage of your programs and services were moved virtual or remote because of COVID-19?');
   t('era help');
   t('legacy relief ed impact');
   t('legacy relief_civic_impact');
